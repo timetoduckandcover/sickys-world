@@ -1,0 +1,79 @@
+//General
+.footer-widget-container {
+    padding: 65px 0 10px;
+}
+.footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+//Menu
+.footer-widget-container {
+    .widget {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .menu {
+        a {
+            line-height: 2.1 !important;
+            font-weight: 400 !important;
+            &:hover {
+                padding-left: 10px;
+            }
+            &:before {
+                content: "\e684";
+                padding-right: 3px;
+                @extend %pe-icon-7-stroke;
+            }
+        }
+    }
+}
+
+// Contact
+.custom-footer-contact {
+    [class^="pe-7s-"] {
+        float: left;
+        overflow: hidden;
+        padding-top: 8px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    .custom-contact-text {
+        display: block;
+        overflow: hidden;
+        line-height: 2.1;
+    }
+
+}
+
+// Custom Contact
+.custom-footer-contact-img {
+    float: left;
+    margin: 25px 0;
+}
+
+// Back to Top
+.scrollup {
+    position: fixed;
+    z-index: 99999;
+    bottom: -80px;
+    right: 30px;
+    display: none;
+    border: 1px solid transparent;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    &.show {
+        display: block;
+        bottom: 30px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@import "footer-01";
+@import "footer-03";

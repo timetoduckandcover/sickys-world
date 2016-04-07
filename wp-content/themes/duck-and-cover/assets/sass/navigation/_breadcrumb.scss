@@ -1,0 +1,11 @@
+.breadcrumbs {
+    font-size: 14px;
+    text-transform: capitalize;
+    [class^="pe-7s-"] {
+        width: 22px;
+        height: 24px;
+        vertical-align: middle;
+        font-size: 18px;
+        margin-top: 2px;
+    }
+}

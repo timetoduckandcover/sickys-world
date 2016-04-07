@@ -1,0 +1,43 @@
+//$width-line-heading: 44px;
+.heading {
+    margin-bottom: 20px;
+    span {
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            height: 1px;
+            background: #000;
+        }
+    }
+    &.style1 span {
+        &:before {
+            left: -$width-line-heading - 10;
+            width: $width-line-heading;
+        }
+    }
+    &.style2 span {
+        &:after {
+            right: -$width-line-heading - 10;
+            width: $width-line-heading;
+        }
+    }
+    &.style3 span {
+        &:before,
+        &:after {
+            left: -$width-line-heading/2 - 10;
+            width: $width-line-heading/2;
+        }
+        &:after {
+            left: auto;
+            right: -$width-line-heading/2 - 10;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+    .heading {
+        margin-bottom: 43px;
+    }
+}

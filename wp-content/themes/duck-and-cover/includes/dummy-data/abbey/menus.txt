@@ -1,0 +1,1 @@
+a:4:{s:17:"currency_switcher";s:8:"currency";s:17:"language_switcher";s:8:"language";s:13:"vertical_menu";s:14:"top-categories";s:7:"primary";s:4:"menu";}

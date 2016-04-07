@@ -1,0 +1,1 @@
+a:1:{s:11:"image_sizes";a:3:{s:7:"catalog";a:3:{s:5:"width";s:3:"270";s:6:"height";s:3:"340";s:4:"crop";i:1;}s:9:"thumbnail";a:3:{s:5:"width";s:2:"77";s:6:"height";s:2:"88";s:4:"crop";i:1;}s:6:"single";a:3:{s:5:"width";s:3:"960";s:6:"height";s:3:"770";s:4:"crop";i:1;}}}

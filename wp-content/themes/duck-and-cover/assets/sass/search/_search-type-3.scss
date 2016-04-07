@@ -1,0 +1,46 @@
+.search-type-3 {
+    .searchform {
+        vertical-align: top;
+        border: 1px solid #000000;
+        font-size: 0;
+    }
+    select,
+    input[type="text"],
+    .button {
+        vertical-align: top;
+    }
+    select {
+        border: none;
+        width: 220px;
+        height: 48px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    input[type="text"] {
+        width: calc(100% - 272px);
+        height: 48px;
+        margin: 0;
+        padding: 0 20px;
+        font-size: 14px;
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #000;
+        color: #000;
+    }
+    .btn {
+        margin-top: 0;
+        padding: 0;
+        width: 52px;
+        height: 48px;
+        background: none;
+        font-size: 18px;
+        [class^="pe-7s-"],
+        [class*=" pe-7s-"] {
+            font-weight: bold;
+        }
+    }
+    #search-overlay {
+        display: none;
+    }
+}

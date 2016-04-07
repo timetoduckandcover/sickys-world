@@ -1,0 +1,116 @@
+#mobile-menu-toggle {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#slide-menu {
+  position: fixed;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.mobile-menu-container {
+  .mobile-menu {
+    li {
+      display: block;
+      position: relative;
+      > a {
+        display: block;
+        padding: 18px 20px;
+        line-height: 1;
+      }
+      > ul {
+        margin-left: 15px;
+        display: none;
+      }
+      > .mobile-menu-toggle {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: #333;
+        &:hover {
+          cursor: pointer;
+        }
+        &:after {
+          @extend .font-awesome;
+          color: #000000;
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "\f105";
+        }
+      }
+
+      &.open {
+        > ul {
+          display: block;
+        }
+        > .mobile-menu-toggle:after {
+          content: "\f107";
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+#slide-menu {
+  padding-bottom: 30px;
+  background: rgba(0, 0, 0, .7);
+  opacity: 0;
+  &.slide_menu_open {
+    opacity: 1;
+  }
+
+  *, *:before, *:after {
+    color: #FFF;
+  }
+  .switchers-wrap > div {
+    margin-right: 15px;
+  }
+  &-top {
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #currency-switcher-menu:after,
+  #currency-switcher-mobile-menu:after,
+  #language-switcher-menu:after,
+  #language-switcher-mobile-menu:after {
+    display: none;
+  }
+  .search-type-2 {
+    margin-bottom: 15px;
+    #product_cat {
+      display: none;
+    }
+    .searchform {
+      background: #FFF;
+      width: 100%;
+    }
+    input[type="text"] {
+      width: 80%;
+      color: #000000;
+    }
+    .btn {
+      width: 20%;
+    }
+    .btn span:before {
+      color: #000;
+    }
+  }
+  .social-links {
+    .text {
+      display: none;
+    }
+    li a:before {
+      font-size: 18px;
+    }
+  }
+}

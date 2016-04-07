@@ -1,0 +1,17 @@
+table {
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+
+th, td {
+    padding: 0.4em;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+table, th, td {
+    border: 1px solid rgba(51, 51, 51, 0.1);
+}

@@ -1,0 +1,3708 @@
+# Copyright (C) 2016 facewp-abbey
+# This file is distributed under the same license as the facewp-abbey package.
+msgid ""
+msgstr ""
+"Project-Id-Version: facewp-abbey\n"
+"Report-Msgid-Bugs-To: http://facewp.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Language-Team: FaceWP <hifacewp@gmail.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: src\facewp-abbey\404.php:37
+msgid "404! That page can&rsquo;t be found."
+msgstr ""
+
+#: src\facewp-abbey\404.php:39
+msgid "The page you are looking for does not exist. Return to the "
+msgstr ""
+
+#: src\facewp-abbey\404.php:39
+msgid "home page."
+msgstr ""
+
+#: src\facewp-abbey\archive.php:41
+msgid "<span>Daily Archives:</span>"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:43, src\facewp-abbey\archive.php:51, src\facewp-abbey\archive.php:59
+msgid "<h1>%s</h1>"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:49
+msgid "<span>Monthly Archives:</span>"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:51
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:57
+msgid "<span>Yearly Archives:</span>"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:59
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: src\facewp-abbey\archive.php:65
+msgid "<h1>Archives:</h1>"
+msgstr ""
+
+#: src\facewp-abbey\author.php:23
+msgid "All Posts By:"
+msgstr ""
+
+#: src\facewp-abbey\category.php:11
+msgid "Category: "
+msgstr ""
+
+#: src\facewp-abbey\category.php:11, src\facewp-abbey\tag.php:23
+msgid "%s"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:49
+msgid "%1$s Comments"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:59, src\facewp-abbey\comments.php:107
+msgid "Comment navigation"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:65, src\facewp-abbey\comments.php:113
+msgid "Older Comments"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:67, src\facewp-abbey\comments.php:115
+msgid "Newer Comments"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:139
+msgid "Comments are closed."
+msgstr ""
+
+#: src\facewp-abbey\comments.php:155, src\facewp-abbey\includes\customizer\settings\site\site_social.php:153
+msgid "Name"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:159
+msgid "Email"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:163
+msgid "Website"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:173
+msgid "Post Comment"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:177
+msgid "Write a comment"
+msgstr ""
+
+#: src\facewp-abbey\comments.php:187
+msgid "Comment"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\custom-sidebar.php:11
+msgid "Custom Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\custom-sidebar.php:15
+msgid "Add Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\custom-sidebar.php:151, src\facewp-abbey\core\includes\custom-sidebar.php:205
+msgid "No sidebar name"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\custom-sidebar.php:189
+msgid "Added new sidebar"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\custom-sidebar.php:243
+msgid "Removed sidebar"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:131
+msgid "%s (Invalid)"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:139
+msgid "%s (Pending)"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:165
+msgid "sub item"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:195
+msgid "Move up"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:221
+msgid "Move down"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:225, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:229
+msgid "Edit Menu Item"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:247, src\facewp-abbey\includes\customizer\settings\site\site_social.php:163
+msgid "URL"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:261
+msgid "Navigation Label"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:273
+msgid "Title Attribute"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:287
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:297
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:311
+msgid "Don't link"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:323
+msgid "Don't show"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:333
+msgid "Type"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:337
+msgid "Narrow"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:339, src\facewp-abbey\includes\customizer\settings\post\archives.php:49, src\facewp-abbey\includes\customizer\settings\post\single.php:49, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:41, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:67, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:49, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:49, src\facewp-abbey\includes\metabox.php:83, src\facewp-abbey\includes\metabox.php:103
+msgid "Wide"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:341
+msgid "Full Width"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:353
+msgid "Sub-Menu Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:353
+msgid "Only with \"Wide\" menu type"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:359, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:397
+msgid "2 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:361, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:399
+msgid "3 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:363, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:401
+msgid "4 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:365, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:403
+msgid "5 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:367, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:405
+msgid "6 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:369, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:407
+msgid "7 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:371, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:409
+msgid "8 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:373, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:411
+msgid "9 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:375, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:413
+msgid "10 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:377, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:415
+msgid "11 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:379, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:417
+msgid "12 Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:391
+msgid "Columns"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:429
+msgid "Sub-Menu Position"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:435, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:41
+msgid "Left"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:437, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:45
+msgid "Right"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:449, src\facewp-abbey\includes\customizer\settings\post\archives.php:127, src\facewp-abbey\includes\metabox.php:241
+msgid "Background Image"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:453
+msgid "Upload Image"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:455
+msgid "Remove Image"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:465, src\facewp-abbey\includes\metabox.php:281
+msgid "Background Position"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:471, src\facewp-abbey\includes\metabox.php:291
+msgid "Left Top"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:473, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:475, src\facewp-abbey\includes\metabox.php:293
+msgid "Left Center"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:477, src\facewp-abbey\includes\metabox.php:295
+msgid "Left Bottom"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:479, src\facewp-abbey\includes\metabox.php:297
+msgid "Center Top"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:481, src\facewp-abbey\includes\metabox.php:299
+msgid "Center Center"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:483, src\facewp-abbey\includes\metabox.php:301
+msgid "Center Bottom"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:485, src\facewp-abbey\includes\metabox.php:303
+msgid "Right Top"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:487, src\facewp-abbey\includes\metabox.php:305
+msgid "Right Center"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:489, src\facewp-abbey\includes\metabox.php:307
+msgid "Right Bottom"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:501, src\facewp-abbey\includes\metabox.php:255
+msgid "Background Repeat"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:507, src\facewp-abbey\includes\customizer\settings\promo-popup.php:133, src\facewp-abbey\includes\metabox.php:265
+msgid "No Repeat"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:509, src\facewp-abbey\includes\customizer\settings\promo-popup.php:135
+msgid "Repeat All"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:511, src\facewp-abbey\includes\customizer\settings\promo-popup.php:137, src\facewp-abbey\includes\metabox.php:269
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:513, src\facewp-abbey\includes\customizer\settings\promo-popup.php:139, src\facewp-abbey\includes\metabox.php:271
+msgid "Repeat Vertically"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:525
+msgid "Icon Class"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:537
+msgid "Badge Label"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:549, src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:561
+msgid "Badge Text Color"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:573
+msgid "Custom Widget Position"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:595
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:607, src\facewp-abbey\includes\vc.php:4751
+msgid "Description"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:611
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:623
+msgid "Move"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:625
+msgid "Up one"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:627
+msgid "Down one"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:633
+msgid "To the top"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:647
+msgid "Original: %s"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:673
+msgid "Remove"
+msgstr ""
+
+#: src\facewp-abbey\core\includes\mega-menu\class-walker-nav-menu-edit.php:675
+msgid "Cancel"
+msgstr ""
+
+#: src\facewp-abbey\header\header_01.php:191, src\facewp-abbey\header\header_01.php:199, src\facewp-abbey\header\header_02.php:213, src\facewp-abbey\header\header_02.php:221
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: src\facewp-abbey\header\header_01.php:193, src\facewp-abbey\header\header_02.php:215
+msgctxt "label"
+msgid "Search:"
+msgstr ""
+
+#: src\facewp-abbey\header\header_01.php:209, src\facewp-abbey\header\header_02.php:231
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: src\facewp-abbey\includes\assets.php:131
+msgid "Days"
+msgstr ""
+
+#: src\facewp-abbey\includes\assets.php:133
+msgid "Hours"
+msgstr ""
+
+#: src\facewp-abbey\includes\assets.php:135
+msgid "Mins"
+msgstr ""
+
+#: src\facewp-abbey\includes\assets.php:137
+msgid "Secs"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:57
+msgid "General Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:65
+msgid "Header Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:73
+msgid "Footer Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:81
+msgid "Woocommerce Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:89
+msgid "Post Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:107
+msgid "Theme Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:117
+msgid "Logo and Icons"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:127
+msgid "Typography"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:137, src\facewp-abbey\includes\customizer\customizer.php:191, src\facewp-abbey\includes\customizer\customizer.php:383, src\facewp-abbey\includes\vc.php:2359, src\facewp-abbey\includes\vc.php:3799, src\facewp-abbey\includes\vc.php:4969
+msgid "Style"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:147
+msgid "Social"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:157
+msgid "Breadcrumb"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:171, src\facewp-abbey\includes\customizer\customizer.php:299
+msgid "Preset"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:181, src\facewp-abbey\includes\customizer\customizer.php:265, src\facewp-abbey\includes\customizer\customizer.php:309, src\facewp-abbey\includes\customizer\customizer.php:353, src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:15, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:15, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:15
+msgid "General"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:201
+msgid "Primary Menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:211
+msgid "Menu Dropdown"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:221, src\facewp-abbey\includes\init.php:109
+msgid "Vertical Menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:231, src\facewp-abbey\includes\metabox.php:213
+msgid "Sticky Header"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:245
+msgid "Post Archives"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:255
+msgid "Single Post"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:275, src\facewp-abbey\includes\customizer\settings\post\archives.php:23, src\facewp-abbey\includes\customizer\settings\post\single.php:23, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:15, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:23, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:23
+msgid "Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:287, src\facewp-abbey\includes\metabox.php:31
+msgid "Page Settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:319, src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:197, src\facewp-abbey\includes\customizer\settings\site\site_social.php:23, src\facewp-abbey\includes\vc.php:4665
+msgid "Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:329
+msgid "Copyright"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:339
+msgid "Extra Information"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:363
+msgid "Product Archives"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:373, src\facewp-abbey\includes\customizer\settings\woocommerce\style.php:15
+msgid "Single Product"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:397
+msgid "Promo Popup"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\customizer.php:409
+msgid "Custom Code"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\custom_code.php:15
+msgid "Custom CSS:"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\custom_code.php:57
+msgid "Custom JS:"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_copyright.php:15
+msgid "Show Copyright"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_copyright.php:17
+msgid "Enabling this option will display copyright area"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_copyright.php:35, src\facewp-abbey\includes\customizer\settings\footer_extra_info.php:35, src\facewp-abbey\includes\import.php:21
+msgid "Content"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_extra_info.php:15
+msgid "Show Extra Information"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_extra_info.php:17
+msgid "Enabling this option will display Extra Information area"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:15
+msgid "Footer Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:17
+msgid "Choose the footer type you want"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:45, src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:31, src\facewp-abbey\includes\customizer\settings\header\sticky.php:15, src\facewp-abbey\includes\customizer\settings\post\archives.php:109
+msgid "Background Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:77, src\facewp-abbey\includes\customizer\settings\header_style.php:103
+msgid "Text Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:125, src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:61, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:101, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:79, src\facewp-abbey\includes\vc.php:4705
+msgid "Border Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:157
+msgid "Show Back to Top"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_general.php:159
+msgid "Enabling this option will display Back to Top"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:15
+msgid "Footer Preset"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:21
+msgid "Choose footer style from our predefined presets"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:29, src\facewp-abbey\includes\customizer\settings\header\preset.php:29
+msgid "Preset 1"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:45, src\facewp-abbey\includes\customizer\settings\header\preset.php:41
+msgid "Preset 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:109, src\facewp-abbey\includes\customizer\settings\header\preset.php:53
+msgid "Preset 3"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:125, src\facewp-abbey\includes\customizer\settings\header\preset.php:63
+msgid "Preset 4"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:141, src\facewp-abbey\includes\customizer\settings\header\preset.php:79
+msgid "Preset 5"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\footer_preset.php:151
+msgid "2016 - FaceWP. All Rights Reserved."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:15
+msgid "Header Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:17
+msgid "Choose the header type you want"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:59, src\facewp-abbey\includes\customizer\settings\header_general.php:143, src\facewp-abbey\includes\customizer\settings\header_general.php:309, src\facewp-abbey\includes\customizer\settings\header_general.php:475, src\facewp-abbey\includes\customizer\settings\header_general.php:559
+msgid "Padding( Top & Bottom )"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:61
+msgid "Padding of Header Type 01"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:145
+msgid "Top Bar Header Type 02"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:227
+msgid "Logo of Header Type 02"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:311
+msgid "Top Bar Header Type 04"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:393
+msgid "Middle of Header Type 04"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:477
+msgid "Top Bar Header Type 05"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:561
+msgid "Logo of Header Type 06"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:643
+msgid "Cart of Header Type 06"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:725, src\facewp-abbey\includes\customizer\settings\header_general.php:793, src\facewp-abbey\includes\customizer\settings\header_general.php:827
+msgid "Header Contact Info"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:731
+msgid ""
+"<ul class=\"header-contact-info\">\n"
+"                    <li>\n"
+"                        <i class=\"icon-header pe-7s-call\"></i><span class=\"header-text-pri\">CALL US</span><span class=\"header-text-sec\">(001) 55 1939</span>\n"
+"                    </li>\n"
+"                    <li>\n"
+"                        <i class=\"icon-header pe-7s-mail\"></i><span class=\"header-text-pri\">MAIL US</span><span class=\"header-text-sec\">info@abbeytheme.com</span>\n"
+"                    </li>\n"
+"                </ul>"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:799
+msgid "<span style=\"font-size: 12px; text-transform: uppercase;\">Welcome You to Abbey</span>"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:833
+msgid ""
+"\n"
+"                    <ul class=\"header-contact-info\">\n"
+"                        <li>\n"
+"                            <i class=\"icon-header pe-7s-call\"></i>\n"
+"                            <div>\n"
+"                                <span class=\"header-text-pri\">CALL US</span><span class=\"header-text-sec\">(001) 55 1939</span>\n"
+"                            </div>\n"
+"                        </li>\n"
+"                        <li>\n"
+"                           <i class=\" icon-header pe-7s-mail\"></i>\n"
+"                            <div>\n"
+"                                <span class=\"header-text-pri\">MAIL US</span><span class=\"header-text-sec\">info@abbeytheme.com</span>\n"
+"                            </div>\n"
+"                        </li>\n"
+"                    </ul>\n"
+"                    "
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:891
+msgid "Contact Info"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:897
+msgid ""
+"<ul class=\"header-contact-info\">\n"
+"                    <li>\n"
+"                        <i class=\"icon-header pe-7s-call\"></i><span class=\"header-text-sec\">(001) 55 1939</span>\n"
+"                    </li>\n"
+"                    <li>\n"
+"                        <i class=\"icon-header pe-7s-mail\"></i><span class=\"header-text-sec\">info@abbeytheme.com</span>\n"
+"                    </li>\n"
+"                </ul>"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:939, src\facewp-abbey\includes\customizer\settings\header_general.php:973
+msgid "Copyright (Header Type 06)"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_general.php:945, src\facewp-abbey\includes\customizer\settings\header_general.php:979
+msgid "Copyright 2015. </ br> All rights reserved."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_search.php:15
+msgid "Show Search Form"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_search.php:33
+msgid "Show Categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_style.php:15
+msgid "Header BG"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_style.php:59
+msgid "Header Type 06 BG"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_style.php:159
+msgid "Meta Text Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_style.php:193
+msgid "Cart BG( Header Type 06 )"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header_style.php:223
+msgid "Cart Color( Header Type 06 )"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:91, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:239, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:177, src\facewp-abbey\includes\customizer\settings\site\site_style.php:145
+msgid "Link Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:121, src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:269, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:207
+msgid "Icon Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:151
+msgid "Border Bottom Color on Hover"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\menu-dropdown.php:181
+msgid "Mega Menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\preset.php:15
+msgid "Header Preset"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\preset.php:21
+msgid "Choose header style from our predefined presets"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\preset.php:91
+msgid "Preset 6"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\preset.php:107
+msgid "Preset 7"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:31
+msgid "Align"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:43
+msgid "Center"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:71, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:49
+msgid "Border"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:131, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:109
+msgid "Menu Item"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:147, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:125
+msgid "Font"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:199, src\facewp-abbey\includes\vc.php:197
+msgid "Text Transform"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:209, src\facewp-abbey\includes\vc.php:203, src\facewp-abbey\includes\vc.php:3237
+msgid "None"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:211, src\facewp-abbey\includes\vc.php:207
+msgid "Uppercase"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:213, src\facewp-abbey\includes\vc.php:209
+msgid "Lowercase"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:299
+msgid "Separator Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\primary-menu.php:329, src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:237
+msgid "Border Bottom on Hover"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:31
+msgid "Heading Text"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\header\vertical-menu.php:35
+msgid "TOP CATEGORIES"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\page.php:15, src\facewp-abbey\includes\customizer\settings\post_general.php:77
+msgid "Hide Share Buttons"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:17
+msgid "Hide Category"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:37
+msgid "Hide Date"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:57
+msgid "Hide Author Name"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:97
+msgid "Hide Read More Button"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:117
+msgid "Hide Comment Link"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:137
+msgid "Hide Featured Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:157
+msgid "Hide Tags"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:177
+msgid "Hide Author Area"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_general.php:197
+msgid "Hide Related Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:15
+msgid "Blog Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:25, src\facewp-abbey\includes\customizer\settings\post_layout.php:53
+msgid "Full Post Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:27, src\facewp-abbey\includes\customizer\settings\post_layout.php:55
+msgid "Masonry Post Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:29, src\facewp-abbey\includes\customizer\settings\post_layout.php:57
+msgid "List Post Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:43
+msgid "Blog Archive Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:71
+msgid "Homepage/Archive Post Summary Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:81
+msgid "Full Post"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:83
+msgid "Use Read More Tag"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post_layout.php:85
+msgid "Use Excerpt"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:39, src\facewp-abbey\includes\customizer\settings\post\single.php:39, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:57, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:39, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:39, src\facewp-abbey\includes\metabox.php:93
+msgid "Page Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:51, src\facewp-abbey\includes\customizer\settings\post\single.php:51, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:43, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:69, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:51, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:51, src\facewp-abbey\includes\metabox.php:85, src\facewp-abbey\includes\metabox.php:105
+msgid "Boxed"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:65, src\facewp-abbey\includes\customizer\settings\post\single.php:65, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:83, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:65, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:65, src\facewp-abbey\includes\metabox.php:113
+msgid "Sidebar Position"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:75, src\facewp-abbey\includes\customizer\settings\post\single.php:75, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:93, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:75, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:75, src\facewp-abbey\includes\metabox.php:123
+msgid "No Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:77, src\facewp-abbey\includes\customizer\settings\post\single.php:77, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:95, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:77, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:77, src\facewp-abbey\includes\metabox.php:125
+msgid "Left Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:79, src\facewp-abbey\includes\customizer\settings\post\single.php:79, src\facewp-abbey\includes\customizer\settings\site\site_layout.php:97, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:79, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:79, src\facewp-abbey\includes\metabox.php:127
+msgid "Right Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:93
+msgid "Big Title"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\post\archives.php:129
+msgid "Choose a default image to display"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:15
+msgid "Show Promo Popup"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:33
+msgid "Popup Content"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:51
+msgid "Popup Width (in px)"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:69
+msgid "Popup Height (in px)"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:87
+msgid "Popup Background Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:105
+msgid "Popup Background Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:123
+msgid "Popup Background Repeat"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:167
+msgid "Popup Background Attachment"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:177, src\facewp-abbey\includes\metabox.php:329
+msgid "Fixed"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:179, src\facewp-abbey\includes\metabox.php:327
+msgid "Scroll"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:207
+msgid "Popup Background Position"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:217
+msgid "left top"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:219, src\facewp-abbey\includes\customizer\settings\promo-popup.php:221
+msgid "left center"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:223
+msgid "left bottom"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:225
+msgid "center top"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:227
+msgid "center center"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:229
+msgid "center bottom"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:231
+msgid "right top"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:233
+msgid "right center"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\promo-popup.php:235
+msgid "right bottom"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_breadcrumb.php:23
+msgid "Show Breadcrumb"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_breadcrumb.php:25
+msgid "Enabling this option will display breadcrumb"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:25
+msgid "Body"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:93
+msgid "Heading Font"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:163
+msgid "Font size"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:165
+msgid "H1"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:225
+msgid "H2"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:285
+msgid "H3"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:345
+msgid "H4"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:405
+msgid "H5"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_font.php:465
+msgid "H6"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_layout.php:31, src\facewp-abbey\includes\metabox.php:73
+msgid "Body Wrapper"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:15
+msgid "Logo"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:17
+msgid "Choose a default logo image to display"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:35
+msgid "Retina"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:37
+msgid "Choose a image for retina logo"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:55
+msgid "Upload Favicon"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:57
+msgid "Choose a default favicon to display"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:75
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_logo.php:77
+msgid "File must be .png format. Optimal dimensions: 152px x 152px"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:25
+msgid "Choose color for social icon."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:63
+msgid "Choose color for social icon on hover."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:91
+msgid "Social items"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:93
+msgid "You can add/remove and sort your social network link in this section"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:105, src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:179
+msgid "Follow Us"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:113
+msgid "Facebook"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:121
+msgid "Twitter"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:129
+msgid "Instagram"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_social.php:137
+msgid "Vine"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:15
+msgid "Primary Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:61
+msgid "Secondary Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:99
+msgid "Heading Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:191
+msgid "Link Hover Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:237
+msgid "Button Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\site\site_style.php:283
+msgid "Button Hover Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:93, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:109
+msgid "Product Layout"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:119
+msgid "List"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:121, src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:285, src\facewp-abbey\includes\vc.php:451, src\facewp-abbey\includes\vc.php:675, src\facewp-abbey\includes\vc.php:915, src\facewp-abbey\includes\vc.php:1139, src\facewp-abbey\includes\vc.php:1331, src\facewp-abbey\includes\vc.php:1607, src\facewp-abbey\includes\vc.php:1845, src\facewp-abbey\includes\vc.php:2389, src\facewp-abbey\includes\vc.php:2721, src\facewp-abbey\includes\vc.php:5133
+msgid "Grid"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:135
+msgid "Sub-Categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:151
+msgid "Show Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:153
+msgid "Enable this setting to show images of sub-categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:171
+msgid "Show Name"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:173
+msgid "Enable this setting to show names of sub-categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:191
+msgid "Show Number of Products"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:193
+msgid "Enable this setting to show number of products in sub-category"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:225
+msgid "Image Size"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:227
+msgid "Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use \"shop_catalog\" size."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:259
+msgid "Display Style"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:283, src\facewp-abbey\includes\vc.php:453, src\facewp-abbey\includes\vc.php:677, src\facewp-abbey\includes\vc.php:917, src\facewp-abbey\includes\vc.php:1141, src\facewp-abbey\includes\vc.php:1333, src\facewp-abbey\includes\vc.php:1609, src\facewp-abbey\includes\vc.php:1847, src\facewp-abbey\includes\vc.php:2391, src\facewp-abbey\includes\vc.php:2723, src\facewp-abbey\includes\vc.php:5135
+msgid "Carousel"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:287, src\facewp-abbey\includes\vafpress.php:71
+msgid "Masonry"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:291
+msgid "Note: When you choose Masonry, please set \"Image Size\" to \"full\" to see the effect."
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:303
+msgid "Number of Sub-Categories per Row on Desktop"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:335
+msgid "Number of Sub-Categories per Row on Tabs"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:367
+msgid "Number of Sub-Categories per Row on Mobile"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:399
+msgid "Content Product"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:415
+msgid "Show Badge Hot"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:433
+msgid "Show Badge Sale"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:451
+msgid "Show Badge Sale as Percent"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:483
+msgid "Enable Swap Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:485
+msgid "Enable Swap Image on hover"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:503
+msgid "Show Quick View"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:521
+msgid "Show Wishlist"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:539
+msgid "Show Category"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:541
+msgid "Enable this setting to show Category"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:559
+msgid "Show Rating"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\archives.php:561
+msgid "Enable this setting to show Rating"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\general.php:15
+msgid "Catalog Mode"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\general.php:31
+msgid "Enable Catalog Mode"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\general.php:33
+msgid "Disable sales in your e-commerce and turn it into an e-commerce into an online catalogue"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:93
+msgid "Product Next-Prev Navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:109
+msgid "Show Product Navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:127
+msgid "Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:143
+msgid "Thumbnails Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:153, src\facewp-abbey\includes\vc.php:527, src\facewp-abbey\includes\vc.php:751, src\facewp-abbey\includes\vc.php:991, src\facewp-abbey\includes\vc.php:1215, src\facewp-abbey\includes\vc.php:1407, src\facewp-abbey\includes\vc.php:1683, src\facewp-abbey\includes\vc.php:1921, src\facewp-abbey\includes\vc.php:2473, src\facewp-abbey\includes\vc.php:5231
+msgid "Vertical"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:155, src\facewp-abbey\includes\vc.php:525, src\facewp-abbey\includes\vc.php:749, src\facewp-abbey\includes\vc.php:989, src\facewp-abbey\includes\vc.php:1213, src\facewp-abbey\includes\vc.php:1405, src\facewp-abbey\includes\vc.php:1681, src\facewp-abbey\includes\vc.php:1919, src\facewp-abbey\includes\vc.php:2471, src\facewp-abbey\includes\vc.php:5229
+msgid "Horizontal"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:169
+msgid "Enable Lightbox for product images"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:187
+msgid "Zoom Effect"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:197, src\facewp-abbey\includes\vc.php:4239, src\facewp-abbey\includes\vc.php:4261, src\facewp-abbey\includes\vc.php:4283, src\facewp-abbey\includes\vc.php:4305
+msgid "Disable"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:199
+msgid "Lens"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:201
+msgid "Window"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:203
+msgid "Inner"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:217, src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:267
+msgid "Lens Size"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:227
+msgid "Square"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:229
+msgid "Round"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:309
+msgid "Zoom Window Width"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:311
+msgid "Width of the zoom window"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:343
+msgid "Zoom Window Height"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:345
+msgid "Height of the zoom window"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:379, src\facewp-abbey\includes\woocommerce\woocommerce.php:641
+msgid "Custom Tab"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:395
+msgid "Custom Tab Title"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\single.php:413, src\facewp-abbey\includes\woocommerce\woocommerce.php:651
+msgid "Custom Tab Content"
+msgstr ""
+
+#: src\facewp-abbey\includes\customizer\settings\woocommerce\style.php:31
+msgid "Breadcumb Box BG"
+msgstr ""
+
+#: src\facewp-abbey\includes\import.php:19
+msgid "All"
+msgstr ""
+
+#: src\facewp-abbey\includes\import.php:23
+msgid "Page Options"
+msgstr ""
+
+#: src\facewp-abbey\includes\import.php:25
+msgid "Menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\import.php:27
+msgid "Widgets"
+msgstr ""
+
+#: src\facewp-abbey\includes\init.php:105
+msgid "Main Menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\init.php:107
+msgid "Social Profile Links"
+msgstr ""
+
+#: src\facewp-abbey\includes\init.php:111
+msgid "Language Switcher"
+msgstr ""
+
+#: src\facewp-abbey\includes\init.php:113
+msgid "Currency Switcher"
+msgstr ""
+
+#: src\facewp-abbey\includes\metabox.php:57, src\facewp-abbey\includes\metabox.php:81, src\facewp-abbey\includes\metabox.php:101, src\facewp-abbey\includes\metabox.php:121, src\facewp-abbey\includes\metabox.php:263, src\facewp-abbey\includes\metabox.php:289, src\facewp-abbey\includes\metabox.php:325
+msgid "Select"
+msgstr ""
+
+#: src\facewp-abbey\includes\metabox.php:135, src\facewp-abbey\includes\widgets-registration.php:7
+msgid "Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\metabox.php:227
+msgid "Overlay Header"
+msgstr ""
+
+#: src\facewp-abbey\includes\metabox.php:267
+msgid "Repeat"
+msgstr ""
+
+#: src\facewp-abbey\includes\metabox.php:317
+msgid "Background Attachment"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:203
+msgid "Install Required Plugins"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:205
+msgid "Install Plugins"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:207
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:211
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:213
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:217
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:221
+msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:225
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:229
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:233
+msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:237
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:241
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:245
+msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:249
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:251
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:253
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:255
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:257
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:259
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:261
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:265
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:269
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: src\facewp-abbey\includes\plugin-registration.php:273
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:473
+msgid "Select Category"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:497
+msgid "Search &hellip;"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:499
+msgid "Search"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:587
+msgid "Newer Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:589
+msgid "Older Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:649
+msgid "Post navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:723
+msgid "Related Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:847
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:849
+msgid "on"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:875
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:879, src\facewp-abbey\includes\template-tags.php:907, src\facewp-abbey\includes\template-tags.php:1159
+msgid "%1$s"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:1147
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:1155
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: src\facewp-abbey\includes\template-tags.php:1161
+msgid "(Edit)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vafpress.php:17
+msgid "Quote"
+msgstr ""
+
+#: src\facewp-abbey\includes\vafpress.php:59
+msgid "Gallery Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\vafpress.php:65
+msgid "Slider"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:17
+msgid "Abbey Options"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:21
+msgid "Animation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:27
+msgid "Animation Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:41
+msgid "Animation Duration"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:45, src\facewp-abbey\includes\vc.php:61
+msgid "numerical value (unit: seconds)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:57
+msgid "Animation Delay"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:75
+msgid "Wrap as Container"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:93
+msgid "Background Overlay"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:99
+msgid "Choose an overlay color for background of row. Leave blank for none."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:141
+msgid "Font Weight"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:147
+msgid "Extra-Light"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:149
+msgid "Light"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:151, src\facewp-abbey\includes\vc.php:179
+msgid "Normal"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:153
+msgid "Semi-Bold"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:155
+msgid "Bold"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:157
+msgid "Extra-Bold"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:173
+msgid "Font Style"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:181
+msgid "Italic"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:205
+msgid "Capitalize"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:225
+msgid "Letter Spacing"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:235
+msgid "For example: 0.5px"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:243
+msgid "Heading Style"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:249, src\facewp-abbey\includes\vc.php:4049, src\facewp-abbey\includes\vc.php:4179
+msgid "Default"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:251
+msgid "Style 1 (Left Line)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:253
+msgid "Style 2 (Right Line)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:255
+msgid "Style 3 (Both Line)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:365
+msgid "Abbey Recent products"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:371, src\facewp-abbey\includes\vc.php:595, src\facewp-abbey\includes\vc.php:819, src\facewp-abbey\includes\vc.php:1059, src\facewp-abbey\includes\vc.php:1283, src\facewp-abbey\includes\vc.php:1509, src\facewp-abbey\includes\vc.php:1751, src\facewp-abbey\includes\vc.php:1989, src\facewp-abbey\includes\vc.php:2145, src\facewp-abbey\includes\vc.php:2239, src\facewp-abbey\includes\vc.php:2577, src\facewp-abbey\includes\vc.php:2809, src\facewp-abbey\includes\vc.php:3193, src\facewp-abbey\includes\vc.php:3473, src\facewp-abbey\includes\vc.php:3661
+msgid "Abbey"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:445, src\facewp-abbey\includes\vc.php:669, src\facewp-abbey\includes\vc.php:909, src\facewp-abbey\includes\vc.php:1133, src\facewp-abbey\includes\vc.php:1325, src\facewp-abbey\includes\vc.php:1601, src\facewp-abbey\includes\vc.php:1839, src\facewp-abbey\includes\vc.php:2383, src\facewp-abbey\includes\vc.php:2715
+msgid "View type"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:467, src\facewp-abbey\includes\vc.php:691, src\facewp-abbey\includes\vc.php:931, src\facewp-abbey\includes\vc.php:1155, src\facewp-abbey\includes\vc.php:1347, src\facewp-abbey\includes\vc.php:1623, src\facewp-abbey\includes\vc.php:1861, src\facewp-abbey\includes\vc.php:2413
+msgid "Show navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:493, src\facewp-abbey\includes\vc.php:717, src\facewp-abbey\includes\vc.php:957, src\facewp-abbey\includes\vc.php:1181, src\facewp-abbey\includes\vc.php:1373, src\facewp-abbey\includes\vc.php:1649, src\facewp-abbey\includes\vc.php:1887, src\facewp-abbey\includes\vc.php:2439, src\facewp-abbey\includes\vc.php:2737
+msgid "Show pagination"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:519, src\facewp-abbey\includes\vc.php:743, src\facewp-abbey\includes\vc.php:983, src\facewp-abbey\includes\vc.php:1207, src\facewp-abbey\includes\vc.php:1399, src\facewp-abbey\includes\vc.php:1675, src\facewp-abbey\includes\vc.php:1913, src\facewp-abbey\includes\vc.php:2465
+msgid "Pagination position"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:1745
+msgid "Abbey Hot Deals"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:1767
+msgid "Enter tag in which products have \"Sale end date\". Leave empty to show all sale products."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:1983
+msgid "Abbey Widget Products"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2139
+msgid "Abbey Widget Top Rated Products"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2233
+msgid "Abbey Product Categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2345, src\facewp-abbey\includes\vc.php:3215
+msgid "Image size"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2351, src\facewp-abbey\includes\vc.php:3221
+msgid "Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use \"thumbnail\" size. If used slides per view, this will be used to define carousel wrapper size."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2365, src\facewp-abbey\includes\vc.php:3805, src\facewp-abbey\includes\vc.php:3855, src\facewp-abbey\includes\vc.php:4359, src\facewp-abbey\includes\vc.php:4977
+msgid "Style 1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2367, src\facewp-abbey\includes\vc.php:3807, src\facewp-abbey\includes\vc.php:3857, src\facewp-abbey\includes\vc.php:4361, src\facewp-abbey\includes\vc.php:4979
+msgid "Style 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2369, src\facewp-abbey\includes\vc.php:4363, src\facewp-abbey\includes\vc.php:4981
+msgid "Style 3"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2571
+msgid "Abbey Product Tabs"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2579
+msgid "Display Recent Products, Featured Products, Sale Products by tabs"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2589
+msgid "New Arrivals"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2603
+msgid "Featured"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2617
+msgid "On Sale"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2805
+msgid "Abbey Icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2813
+msgid "Eye catching icons from libraries"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2821, src\facewp-abbey\includes\vc.php:4379
+msgid "Icon library"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2825, src\facewp-abbey\includes\vc.php:4383
+msgid "Font Awesome"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2827, src\facewp-abbey\includes\vc.php:4385
+msgid "Open Iconic"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2829, src\facewp-abbey\includes\vc.php:4387
+msgid "Typicons"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2831, src\facewp-abbey\includes\vc.php:4389
+msgid "Entypo"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2833, src\facewp-abbey\includes\vc.php:4391
+msgid "Linecons"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2835, src\facewp-abbey\includes\vc.php:4393
+msgid "P7 Stroke"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2843, src\facewp-abbey\includes\vc.php:4403
+msgid "Select icon library."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2851, src\facewp-abbey\includes\vc.php:2885, src\facewp-abbey\includes\vc.php:2917, src\facewp-abbey\includes\vc.php:2949, src\facewp-abbey\includes\vc.php:2979, src\facewp-abbey\includes\vc.php:3011, src\facewp-abbey\includes\vc.php:4411, src\facewp-abbey\includes\vc.php:4445, src\facewp-abbey\includes\vc.php:4477, src\facewp-abbey\includes\vc.php:4509, src\facewp-abbey\includes\vc.php:4539, src\facewp-abbey\includes\vc.php:4571
+msgid "Icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:2877, src\facewp-abbey\includes\vc.php:2909, src\facewp-abbey\includes\vc.php:2941, src\facewp-abbey\includes\vc.php:3003, src\facewp-abbey\includes\vc.php:3035, src\facewp-abbey\includes\vc.php:4437, src\facewp-abbey\includes\vc.php:4469, src\facewp-abbey\includes\vc.php:4501, src\facewp-abbey\includes\vc.php:4563, src\facewp-abbey\includes\vc.php:4595
+msgid "Select icon from library."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3055
+msgid "Custom color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3059
+msgid "Select custom icon color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3067
+msgid "Background shape"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3089
+msgid "Select background shape and style for icon."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3097
+msgid "Custom background color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3101, src\facewp-abbey\includes\vc.php:4689
+msgid "Select custom icon background color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3109
+msgid "Icon alignment"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3123
+msgid "Select icon alignment."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3131
+msgid "URL (Link)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3135
+msgid "Add link to icon."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3143, src\facewp-abbey\includes\vc.php:3421, src\facewp-abbey\includes\vc.php:3905, src\facewp-abbey\includes\vc.php:4161, src\facewp-abbey\includes\vc.php:4847
+msgid "Extra class name"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3147, src\facewp-abbey\includes\vc.php:3425, src\facewp-abbey\includes\vc.php:4165, src\facewp-abbey\includes\vc.php:4851
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3155, src\facewp-abbey\includes\vc.php:4319, src\facewp-abbey\includes\vc.php:4859, src\facewp-abbey\includes\vc.php:5283
+msgid "CSS"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3159, src\facewp-abbey\includes\vc.php:3437, src\facewp-abbey\includes\vc.php:3623, src\facewp-abbey\includes\vc.php:3919, src\facewp-abbey\includes\vc.php:4323, src\facewp-abbey\includes\vc.php:4863, src\facewp-abbey\includes\vc.php:5287
+msgid "Design Options"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3189
+msgid "Abbey Image Carousel"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3201
+msgid "Images"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3207
+msgid "Select images from media library."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3229
+msgid "On click action"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3235
+msgid "Open prettyPhoto"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3239
+msgid "Open custom links"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3245
+msgid "Select action for click event."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3253
+msgid "Custom links"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3257
+msgid "Enter links for each slide (Note: divide links with linebreaks (Enter))."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3273
+msgid "Custom link target"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3277
+msgid "Select how to open custom links."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3289
+msgid "Same window"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3291
+msgid "New window"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3301
+msgid "Items to show on desktop"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3313
+msgid "Items to show on tabs"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3325
+msgid "Items to show on mobile"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3337
+msgid "Slider autoplay"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3341
+msgid "Enable autoplay mode."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3343, src\facewp-abbey\includes\vc.php:3381, src\facewp-abbey\includes\vc.php:3397, src\facewp-abbey\includes\vc.php:3733, src\facewp-abbey\includes\vc.php:3749, src\facewp-abbey\includes\vc.php:3765, src\facewp-abbey\includes\vc.php:3825, src\facewp-abbey\includes\vc.php:3839, src\facewp-abbey\includes\vc.php:3881
+msgid "Yes"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3353
+msgid "Slider speed"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3359
+msgid "Duration of animation between slides (in ms)."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3375
+msgid "Hide prev/next buttons"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3379
+msgid "If checked, prev/next buttons will be hidden."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3391
+msgid "Hide dots navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3395
+msgid "If checked, dots navigation will be hidden."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3407
+msgid "Space between two items in px"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3433, src\facewp-abbey\includes\vc.php:3619, src\facewp-abbey\includes\vc.php:3915
+msgid "CSS box"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3469
+msgid "Abbey Counter"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3475
+msgid "Your milestones, achievements, etc."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3485
+msgid "Counter Title "
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3493
+msgid "Enter title for counter block"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3503
+msgid "Counter Value"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3509
+msgid "Enter number for counter without any special character. You may enter a decimal number. Eg 23.8"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3519
+msgid "Thousands Separator"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3525
+msgid "Enter character for thousanda separator. e.g. ',' will separate 238000 into 238,000"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3535
+msgid "Replace Decimal Point With"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3541
+msgid "Did you enter a decimal number (Eg - 23.8) The decimal point '.' will be replaced with value that you will enter above."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3551
+msgid "Counter Value Prefix"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3557
+msgid "Enter prefix for counter value"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3567
+msgid "Counter Value Suffix"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3573
+msgid "Enter suffix for counter value"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3583
+msgid "Counter rolling time"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3595
+msgid "How many seconds the counter should roll?"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3605
+msgid "Extra Class"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3611
+msgid "Add extra class name that will be applied to the icon process, and you can use this class for your customizations."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3657
+msgid "Abbey Testimonial"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3663
+msgid "Customer's Testimonial"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3671
+msgid "Maximum number of items"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3677
+msgid "The maximum number of items to display"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3685
+msgid "Order by"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3691, src\facewp-abbey\includes\vc.php:4727, src\facewp-abbey\includes\vc.php:4953, src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:165, src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:193
+msgid "Title"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3693
+msgid "Date"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3695
+msgid "Menu Order"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3699
+msgid "How to order the items - accepts all default WordPress ordering options"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3709
+msgid "Order"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3715
+msgid "DESC"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3717
+msgid "ASC"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3721
+msgid "the order direction"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3729
+msgid "Display Author"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3735
+msgid "Whether or not to display the author information"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3745
+msgid "Display Avatar"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3751
+msgid "Whether or not to display the author avatar"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3761
+msgid "Display URL"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3767
+msgid "Whether or not to display the URL information"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3777
+msgid "Avatar size"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3783
+msgid "Dimension of the image in pixel, for example '60'"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3811
+msgid "Style of testimonial"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3819
+msgid "Carousel autoplay"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3823
+msgid "Enable carousel autoplay."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3835
+msgid "Display arrow navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3849
+msgid "Arrow navigation style"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3861
+msgid "Style of arrow navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3877
+msgid "Display dots navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3891
+msgid "Items to show"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3897
+msgid "Number of shown items on each slide"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3949
+msgid "Abbey Google Map"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3955, src\facewp-abbey\includes\vc.php:4945
+msgid "Display Google Maps to indicate your location."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3963
+msgid "Latitude"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3969, src\facewp-abbey\includes\vc.php:3983, src\facewp-abbey\includes\vc.php:4073
+msgid "Here is a tool"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3969, src\facewp-abbey\includes\vc.php:3983
+msgid "where you can find Latitude & Longitude of your location"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3977
+msgid "Longitude"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:3991
+msgid "Width (in %)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4003
+msgid "Height (in px)"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4015
+msgid "Map type"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4023
+msgid "Roadmap"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4025
+msgid "Satellite"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4027
+msgid "Hybrid"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4029
+msgid "Terrain"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4039
+msgid "Map style"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4045
+msgid "Choose a map style. This approach changes the style of the Roadmap types (base imagery in terrain and satellite views is not affected, but roads, labels, etc. respect styling rules"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4051
+msgid "Shades of Grey"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4053
+msgid "Ultra Light with Labels"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4055
+msgid "Apple Maps-esque"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4057
+msgid "Subtle Grayscale"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4059, src\facewp-abbey\includes\vc.php:4181
+msgid "Custom"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4069
+msgid "Map style custom"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4073
+msgid "where you can customize style of Google Map."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4089
+msgid "Map Zoom"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4151
+msgid "Disable map zoom on mouse wheel scroll"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4173
+msgid "Marker Icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4187, src\facewp-abbey\includes\vc.php:4199, src\facewp-abbey\includes\vc.php:4223
+msgid "Marker"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4195
+msgid "Custom marker icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4215
+msgid "Info Window"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4221
+msgid "Content for info window"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4231
+msgid "Street view control"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4237, src\facewp-abbey\includes\vc.php:4259, src\facewp-abbey\includes\vc.php:4281, src\facewp-abbey\includes\vc.php:4303
+msgid "Enable"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4245, src\facewp-abbey\includes\vc.php:4267, src\facewp-abbey\includes\vc.php:4289, src\facewp-abbey\includes\vc.php:4311
+msgid "Advanced"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4253
+msgid "Map type control"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4275
+msgid "Map pan control"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4297
+msgid "Zoom control"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4341
+msgid "Abbey Icon Box"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4353
+msgid "Box Style"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4365, src\facewp-abbey\includes\vc.php:4983
+msgid "Style 4"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4367
+msgid "Style 5"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4369
+msgid "Style 6"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4395
+msgid "Custom Image Icon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4669
+msgid "Select icon color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4685
+msgid "Background color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4711
+msgid "Select border color for icon."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4731
+msgid "Enter the title of this icon box."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4739
+msgid "Title Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4743
+msgid "Select title color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4757
+msgid "Enter the description for this icon box."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4765
+msgid "Content Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4769
+msgid "Select content color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4777
+msgid "Apply link to:"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4783
+msgid "No Link"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4785
+msgid "Complete Box"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4787
+msgid "Box Title"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4789
+msgid "Display Read More"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4793
+msgid "Select whether to use color for icon or not."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4801
+msgid "Add Link"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4807
+msgid "Add a custom link or select existing page. You can remove existing link as well."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4817
+msgid "Read More Text"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4823
+msgid "Customize the read more text."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4833
+msgid "Box Background Color"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4839
+msgid "Select Box background color."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4939
+msgid "Abbey Post Grid"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:4957
+msgid "News Update"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5025
+msgid "Enter categories, tags or custom taxonomies."
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5125
+msgid "Display Type"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5129, src\facewp-abbey\includes\vc.php:5165, src\facewp-abbey\includes\vc.php:5177, src\facewp-abbey\includes\vc.php:5199, src\facewp-abbey\includes\vc.php:5223, src\facewp-abbey\includes\vc.php:5255, src\facewp-abbey\includes\vc.php:5269
+msgid "Display"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5147
+msgid "Items per row"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5173
+msgid "Show arrow navigation"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5197
+msgid "Show dots pagination"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5221
+msgid "Pagination Position"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5251
+msgid "Show content"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5267
+msgid "Show read more"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5393
+msgid "Album"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5395
+msgid "arc"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5397
+msgid "back-2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5399
+msgid "bandaid"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5401
+msgid "car"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5403
+msgid "diamond"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5405
+msgid "door-lock"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5407
+msgid "eyedropper"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5409
+msgid "female"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5411
+msgid "gym"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5413
+msgid "hammer"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5415
+msgid "headphones"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5417
+msgid "helm"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5419
+msgid "hourglass"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5421
+msgid "leaf"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5423
+msgid "magic wand"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5425
+msgid "male"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5427
+msgid "map 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5429
+msgid "next 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5431
+msgid "paint bucket"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5433
+msgid "pendrive"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5435
+msgid "photo"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5437
+msgid "piggy"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5439
+msgid "plugin"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5441
+msgid "refresh 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5443
+msgid "rocket"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5445
+msgid "settings"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5447
+msgid "shield"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5449
+msgid "smile"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5451
+msgid "usb"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5453
+msgid "vector"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5455
+msgid "wine"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5457
+msgid "cloud upload"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5459
+msgid "cash"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5461
+msgid "close"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5463
+msgid "bluetooth"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5465
+msgid "cloud download"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5467
+msgid "way"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5469
+msgid "close circle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5471
+msgid "id"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5473
+msgid "angle up"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5475
+msgid "wristwatch"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5477
+msgid "angle-up-circle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5479
+msgid "world"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5481
+msgid "Angle Right"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5483
+msgid "volume"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5485
+msgid "angle right circle right"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5487
+msgid "Users"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5489
+msgid "angle left"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5491
+msgid "user female"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5493
+msgid "angle left circle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5495
+msgid "Sound"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5497
+msgid "up arrow"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5499
+msgid "switch"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5501
+msgid "down circle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5503
+msgid "scissors"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5505
+msgid "wallet"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5507
+msgid "safe"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5509
+msgid "volume2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5511
+msgid "volume1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5513
+msgid "voice mail"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5515
+msgid "video"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5517
+msgid "user"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5519
+msgid "upload"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5521
+msgid "unlock"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5523
+msgid "umbrella"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5525
+msgid "trash"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5527
+msgid "tools"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5529
+msgid "timer"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5531
+msgid "ticket"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5533
+msgid "target"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5535
+msgid "sun"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5537
+msgid "study"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5539
+msgid "stopwatch"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5541
+msgid "star"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5543
+msgid "speaker"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5545
+msgid "signal"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5547
+msgid "shuffle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5549
+msgid "shopbag"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5551
+msgid "share"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5553
+msgid "server"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5555
+msgid "search"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5557
+msgid "film"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5559
+msgid "science"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5561
+msgid "disk"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5563
+msgid "ribbon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5565
+msgid "repeat"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5567
+msgid "refresh"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5569
+msgid "add user"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5571
+msgid "refresh cloud"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5573
+msgid "paperclip"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5575
+msgid "radio"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5577
+msgid "note2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5579
+msgid "print"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5581
+msgid "network"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5583
+msgid "prev"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5585
+msgid "mute"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5587
+msgid "power"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5589
+msgid "medal"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5591
+msgid "portfolio"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5593
+msgid "like2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5595
+msgid "plus"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5597
+msgid "left arrow"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5599
+msgid "play"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5601
+msgid "key"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5603
+msgid "plane"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5605
+msgid "joy"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5607
+msgid "photo gallery"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5609
+msgid "pin"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5611
+msgid "phone"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5613
+msgid "plug"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5615
+msgid "pen"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5617
+msgid "right arrow"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5619
+msgid "paper plane"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5621
+msgid "delete user"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5623
+msgid "paint"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5625
+msgid "bottom arrow"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5627
+msgid "notebook"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5629
+msgid "note"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5631
+msgid "next"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5633
+msgid "news paper"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5635
+msgid "musiclist"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5637
+msgid "music"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5639
+msgid "mouse"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5641
+msgid "more"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5643
+msgid "moon"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5645
+msgid "monitor"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5647
+msgid "micro"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5649
+msgid "menu"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5651
+msgid "map"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5653
+msgid "map marker"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5655
+msgid "mail"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5657
+msgid "mail open"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5659
+msgid "mail open file"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5661
+msgid "magnet"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5663
+msgid "loop"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5665
+msgid "look"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5667
+msgid "lock"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5669
+msgid "lintern"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5671
+msgid "link"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5673
+msgid "like"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5675
+msgid "light"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5677
+msgid "less"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5679
+msgid "keypad"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5681
+msgid "junk"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5683
+msgid "info"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5685
+msgid "home"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5687
+msgid "help2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5689
+msgid "help1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5691, src\facewp-abbey\includes\vc.php:5697
+msgid "graph3"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5693
+msgid "graph2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5695
+msgid "graph1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5699
+msgid "global"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5701
+msgid "gleam"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5703
+msgid "glasses"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5705
+msgid "gift"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5707
+msgid "folder"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5709
+msgid "flag"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5711
+msgid "filter"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5713
+msgid "file"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5715
+msgid "expand1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5717
+msgid "expand2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5719
+msgid "edit"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5721
+msgid "drop"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5723
+msgid "drawer"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5725
+msgid "download"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5727
+msgid "display2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5729
+msgid "display1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5731
+msgid "diskette"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5733
+msgid "date"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5735
+msgid "cup"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5737
+msgid "culture"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5739
+msgid "crop"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5741
+msgid "credit"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5743
+msgid "copy file"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5745
+msgid "config"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5747
+msgid "compass"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5749
+msgid "comment"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5751
+msgid "coffee"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5753
+msgid "cloud"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5755
+msgid "clock"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5757
+msgid "check"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5759
+msgid "chat"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5761
+msgid "cart"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5763
+msgid "Camera"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5765
+msgid "call"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5767
+msgid "calculator"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5769
+msgid "browser"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5771
+msgid "box2"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5773
+msgid "box1"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5775
+msgid "bookmarks"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5777
+msgid "bicycle"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5779
+msgid "bell"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5781
+msgid "battery"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5783
+msgid "ball"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5785
+msgid "back"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5787
+msgid "attention"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5789
+msgid "anchor"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5791
+msgid "albums"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5793
+msgid "alarm"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5795
+msgid "airplay"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5819
+msgid "Attention Seekers"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5839
+msgid "Bouncing Entrances"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5853
+msgid "Fading Entrances"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5875
+msgid "Flippers"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5877
+msgid "Lightspeed"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5879
+msgid "Rotating Entrances"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5893
+msgid "Sliders"
+msgstr ""
+
+#: src\facewp-abbey\includes\vc.php:5895
+msgid "Specials"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:43
+msgid "A widget that displays an About widget"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:57
+msgid "FaceWP - About Me"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:227, src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:229, src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:303
+msgid "Title:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:245
+msgid "Image URL:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:263
+msgid "Name:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:281
+msgid "Information:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_about_widget.php:299
+msgid "Description:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:41
+msgid "FaceWP - Facebook Page Like"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:43
+msgid "Facebook Page \"Like\" button"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:179
+msgid "Facebook Page URL"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:193
+msgid "Width"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:203
+msgid "The pixel width of the embed (Min. 180 to Max. 500)"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:209
+msgid "Height"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:219
+msgid "The pixel height of the embed (Min. 70)"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:229
+msgid "Use Small Header"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:233
+msgid "Uses a smaller version of the page header"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:243
+msgid "Adapt to shortcode container width"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:247
+msgid "Shortcode will try to fit inside the container"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:257
+msgid "Hide cover photo"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:261
+msgid "Hide the cover photo in the header"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:271
+msgid "Show Friend's Faces"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:275
+msgid "Show profile photos when friends like this"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:285
+msgid "Show Page Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_facebook_widget.php:289
+msgid "Show posts from the Page's timeline"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:45
+msgid "FaceWP - Instagram"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:47
+msgid "Displays latest Instagram photos"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:73
+msgid "Follow us on Instagram"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:207
+msgid "User Name"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:221
+msgid "Number of items"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:241
+msgid "Show likes and comments"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:253
+msgid "Show follow text"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:261
+msgid "Text"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:279
+msgid "Open links in new page:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:283
+msgid "Responsiveness"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:327
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:335
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:351, src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:375, src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:383
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:467
+msgid "Instagram Image"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_instagram_widget.php:521
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:43
+msgid "A widget that displays your latest posts from all categories or a certain"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:57
+msgid "FaceWP - Latest Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:211
+msgid "Recent Posts"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:257
+msgid "All Categories"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_post_widget.php:285
+msgid "Number of posts to show:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:45
+msgid "A widget that displays your social icons"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:59
+msgid "FaceWP - Social Icons"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:319
+msgid "Enter link to Facebook:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:335
+msgid "Enter link to Twitter:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:351
+msgid "Enter link to Instagram:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:367
+msgid "Enter link to Pinterest:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:383
+msgid "Enter link to VK:&nbsp;&nbsp;&nbsp;&nbsp;"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:399
+msgid "Enter link to Google Plus:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:415
+msgid "Enter link to Tumblr:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:431
+msgid "Enter link to Youtube:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:447
+msgid "Enter link to Dribbble:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:463
+msgid "Enter link to Soundcloud:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:479
+msgid "Enter link to Vimeo:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widget\facewp_abbey_social_widget.php:495
+msgid "Enter link to RSS:"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:27
+msgid "Footer Widget 1"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:45
+msgid "Footer Widget 2"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:63
+msgid "Footer Widget 3"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:81
+msgid "Footer Widget 4"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:99
+msgid "Footer Widget 5"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:119
+msgid "WooCommerce Archives Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\widgets-registration.php:139
+msgid "WooCommerce Single Sidebar"
+msgstr ""
+
+#: src\facewp-abbey\includes\woocommerce\woocommerce.php:511
+msgid "Share this product"
+msgstr ""
+
+#: src\facewp-abbey\includes\woocommerce\woocommerce.php:623
+msgid "Product Custom Tab"
+msgstr ""
+
+#: src\facewp-abbey\search.php:45
+msgid "Search Results for: %s"
+msgstr ""
+
+#: src\facewp-abbey\tag.php:23
+msgid "Browsing Tag:"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-grid-style2.php:31, src\facewp-abbey\template-parts\content-list.php:107, src\facewp-abbey\template-parts\content-masonry.php:33, src\facewp-abbey\template-parts\content-simple.php:25, src\facewp-abbey\template-parts\content.php:335, src\facewp-abbey\vc_templates\facewp_abbey_post_grid.php:115
+msgid "Read More"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-list.php:63, src\facewp-abbey\template-parts\content.php:197
+msgid "by"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-list.php:129, src\facewp-abbey\template-parts\content.php:293
+msgid "posted in"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-none.php:27
+msgid "Nothing Found"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-none.php:39
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-none.php:47
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content-none.php:57
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content.php:237
+msgid "<span class=\"more-button\">Continue Reading</span>"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content.php:309
+msgid "tagged"
+msgstr ""
+
+#: src\facewp-abbey\template-parts\content.php:353
+msgid "Share This Post"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\cart\cart.php:41
+msgid "Shopping Cart"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\loop\category-title.php:21
+msgid "Products"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\loop\out-of-stock.php:9, src\facewp-abbey\woocommerce\single-product\sale-flash.php:63
+msgid "Out of stock"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\loop\sale-flash.php:39, src\facewp-abbey\woocommerce\single-product\sale-flash.php:39
+msgid "Hot"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\loop\sale-flash.php:55, src\facewp-abbey\woocommerce\single-product\sale-flash.php:55
+msgid "Sale"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\single-product\next-product.php:21
+msgid "Next Product"
+msgstr ""
+
+#: src\facewp-abbey\woocommerce\single-product\prev-product.php:21
+msgid "Previous Product"
+msgstr ""

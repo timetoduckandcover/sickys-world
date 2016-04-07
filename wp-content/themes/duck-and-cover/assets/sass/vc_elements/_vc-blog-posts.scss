@@ -1,0 +1,167 @@
+.abbey-blog-posts {
+    &.style1 {
+        .post-masonry-item {
+            position: relative;
+            .post-img {
+                width: 66.7%;
+            }
+            .masonry-content {
+                position: absolute;
+                top: 50%;
+                left: 240px;
+                transform: translateY(-50%);
+                width: 50%;
+                min-height: 290px;
+                padding: 20px;
+                background: #FFF;
+                border: none;
+                &-inner {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0 20px;
+                    border: 1px solid #000;
+                    min-height: 250px;
+                }
+            }
+        }
+    }
+    &.style2 {
+        .masonry-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 30px;
+            min-height: 220px;
+        }
+        .entry-content {
+            display: none;
+        }
+    }
+    &.style3 {
+        .post-masonry-item {
+            .masonry-content {
+                padding: 10px;
+                border: none;
+                &-inner {
+                    border: 1px solid #000;
+                    padding: 50px;
+                    margin: 0 auto;
+                    .heading {
+                        margin-bottom: 29px;
+                    }
+                    .entry-title {
+                        font-size: 36px;
+                        line-height: 1.4;
+                    }
+                    .entry-content p {
+                        margin-bottom: 0;
+                    }
+                    .more-link {
+                        display: block;
+                        margin-top: 28px;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        span {
+                            padding-bottom: 2px;
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style4 {
+        .post-img {
+            display: none;
+        }
+        .post-content {
+            padding: 40px 20px 32px 20px;
+            border: 1px solid #000000;
+            .post-date {
+                .posted-on {
+                    .meta-text {
+                        display: none;
+                    }
+                    .entry-date {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #000000;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .entry-title {
+                margin-top: 25px;
+                font-size: 24px;
+                line-height: 1.2em;
+                font-weight: 300;
+                color: #000000;
+            }
+            .entry-content {
+                .more-link {
+                    display: inline-block;
+                    padding-bottom: 1px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #202020;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    &.style3 {
+        .post-masonry-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex: 0 1 auto;
+            width: 100%;
+            .post-img {
+                -webkit-flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+            .masonry-content {
+                -webkit-flex-basis: 50%;
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                max-width: 50%;
+                padding: 50px;
+                justify-content: center;
+                &-inner {
+                    max-width: 670px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .abbey-blog-posts {
+        &.style1 {
+            .post-masonry-item {
+                position: relative;
+                .post-img {
+                    width: 100%;
+                }
+                .masonry-content {
+                    position: static;
+                    width: 100%;
+                    min-height: 0;
+                    transform: none;
+                }
+            }
+        }
+    }
+}

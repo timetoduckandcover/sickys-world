@@ -1,0 +1,31 @@
+.product_list_widget {
+    > li {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .product-thumb {
+        float: left;
+        width: 77px;
+        margin-right: 20px;
+    }
+    .product-title {
+        margin-top: -6px;
+        padding-top: 0;
+        line-height: 1.6;
+    }
+    .star-rating {
+        padding-top: 2px;
+    }
+    .price {
+        padding-top: 0;
+        margin-top: -10px;
+        ins {
+            font-size: 14px;
+        }
+    }
+}
+.product_list_widget {
+    li.product:hover .product-thumb a:before {
+        visibility: hidden;
+    }
+}

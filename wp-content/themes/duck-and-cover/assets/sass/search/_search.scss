@@ -1,0 +1,18 @@
+.searchform {
+    .search-submit {
+        display: none;
+    }
+    select {
+        background: #fff url(../img/arrow-down.png) no-repeat 77% center;
+    }
+    .btn {
+        border: none;
+    }
+    input[type="text"]:placeholder-shown {
+        font-size: 14px;
+    }
+}
+
+@import "search-type-1";
+@import "search-type-2";
+@import "search-type-3";

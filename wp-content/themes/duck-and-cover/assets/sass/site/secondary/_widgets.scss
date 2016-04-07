@@ -1,0 +1,409 @@
+.left-sidebar {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+}
+.widget {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    &-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -54px;
+            width: 44px;
+            height: 1px;
+            background: #000;
+        }
+    }
+}
+.sidebar .widget {
+    font-size: 14px;
+}
+
+/**
+ * Text, Banner, MailChimp for WordPress
+ */
+.widget_text {
+    .mc4wp-form {
+        label {
+            display: block;
+            margin-bottom: 14px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        input[type="email"] {
+            width: calc(100% - 100px);
+            max-width: 200px;
+            background: #FFF url(../img/line.png) no-repeat 100% center;
+            border-right: none;
+        }
+        input[type="submit"] {
+            width: 98px;
+            margin-left: -2px;
+            border-left: none;
+            background: #FFF;
+            font-weight: 400;
+            vertical-align: top;
+        }
+    }
+}
+
+/**
+ * Dropdown Type
+ */
+.widget_archive,
+.widget_categories {
+    select {
+        padding: 11px 15px;
+    }
+}
+
+/**
+ * List Type
+ */
+.widget_meta,
+.widget_archive,
+.widget_categories,
+.widget_recent_entries {
+    ul {
+        margin: auto 20px;
+        li {
+            padding: 10px 5px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            ul.children {
+                li {
+                    ul.children {
+                        margin-left: -40px !important;
+                    }
+                    &:nth-child(n+1) {
+                        border-top: none;
+                        ul li {
+                            padding-left: 60px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > ul > li > ul.children {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+        > li {
+            padding-left: 20px !important;
+        }
+    }
+}
+.widget_categories {
+    padding-bottom: 10px;
+    ul {
+        margin: auto 0;
+        li {
+            padding: 8px 5px;
+            a {
+                position: relative;
+                &:before {
+                    content: "\e684";
+                    @extend %pe-icon-7-stroke;
+                    font-size: 18px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Social Widget
+ */
+.facewp-social-widget {
+    a {
+        font-size: 19px;
+        margin-right: 16px;
+    }
+}
+
+/**
+ * Recent Post
+ */
+.facewp_abbey_latest_posts_widget {
+    padding-bottom: 0;
+    .post-simple-item {
+        margin-bottom: 10px;
+        padding: 27px 20px;
+        .post-date {
+            padding-bottom: 8px;
+        }
+        .entry-title {
+            padding-bottom: 0;
+        }
+        .more-link {
+            display: none;
+        }
+    }
+}
+
+
+/**
+ * Twitter
+ */
+.facewp-twitter {
+    .username {
+        font-size: 16px;
+        line-height: 1;
+    }
+    .tweet-content {
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+    .tweet-nav {
+        margin-top: 25px;
+        color: #999;
+        font-size: 12px;
+        > span:hover {
+            cursor: pointer;
+            opacity: .7;
+            @extend %transition;
+        }
+        &-prev {
+            margin-right: 5px;
+        }
+        i:before {
+            @extend %social-common;
+            background: #EEE;
+        }
+    }
+    .tweet-actions {
+        > li {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+}
+
+/**
+ * Instagram
+ */
+.fwp-instag {
+    margin: 0 8px;
+    .item {
+        padding: 7px;
+    }
+    .fwp-instag-follow {
+        height: 40px;
+        line-height: 38px;
+        margin: 7px -8px 0;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        &-text {
+            text-transform: lowercase;
+        }
+    }
+}
+
+/**
+ * Recent Comments
+ */
+.widget_recent_comments {
+    .recentcomments {
+        padding: 15px 0;
+        border-bottom: 1px solid #EEE;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .comment-author-link, a {
+        font-weight: bold;
+        line-height: 2;
+
+    }
+}
+
+/**
+ * Search
+ */
+.widget_search {
+    .search-form {
+        label {
+            margin-bottom: 0;
+        }
+        .search-field {
+            margin-bottom: 0;
+            width: 214px;
+            background: #FFF url(../img/line.png) no-repeat 100% center;
+        }
+        .search-submit {
+            vertical-align: top;
+            width: 56px;
+            margin-left: -3px;
+            border-left: none;
+            background: #FFF url(../img/search.png) no-repeat center center;
+            font-size: 0;
+            padding: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+/**
+ * Tag Cloud
+ */
+.tagcloud {
+    a {
+        display: inline-block;
+        margin: 0 1px 5px 0;
+        padding: 4px 11px;
+        border: 1px solid #000;
+        font-size: 14px;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}
+
+/**
+ * Woocommerce Widgets Filter by Attributes
+ */
+.yith-woo-ajax-navigation {
+    .yith-wcan-list {
+        li {
+            padding-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            .count {
+                float: right;
+                font-size: 100%;
+                &:before {
+                    content: "(";
+                }
+                &:after {
+                    content: ")";
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Woocommerce Widget Price Filter
+ */
+.widget_price_filter {
+    .price_slider {
+        height: 5px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #000;
+        }
+    }
+    .ui-slider {
+        position: relative;
+        text-align: left;
+        .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            outline: none;
+            top: -6px;
+            border-radius: 100%;
+            border: 3px solid transparent;
+            background: #FFF;
+            &:last-child {
+                margin-left: -16px;
+            }
+        }
+        .ui-slider-range {
+            position: absolute;
+            z-index: 1;
+            display: block;
+            border: 0;
+        }
+    }
+    .ui-slider-horizontal {
+        .ui-slider-range {
+            top: 0;
+            height: 100%;
+        }
+    }
+    #min_price,
+    #max_price {
+        width: 45%;
+        margin-right: 4%;
+        margin-top: 0.3571em;
+        margin-bottom: 1.0714em;
+    }
+    .price_slider_amount {
+        margin-top: 32px;
+        .button {
+            display: inline-block !important;
+            float: right;
+            height: 22px;
+            padding: 0;
+            background: none;
+            border: none;
+            border-bottom:1px solid;
+            line-height: 1.2 !important;
+            letter-spacing: 0.1em !important;
+        }
+    }
+}
+
+/**
+ * Woocommerce Widget Categories
+ */
+.widget_product_categories {
+    font-weight: 500;
+    .product-categories {
+        > .cat-item {
+            > a {
+                line-height: 3;
+            }
+            .children {
+                a {
+                    line-height: 2.4;
+                }
+                .count {
+                    line-height: 2.4;
+                }
+            }
+        }
+        .cat-item {
+            text-transform: capitalize;
+            &:before {
+                content: "\e684";
+                @extend %pe-icon-7-stroke;
+                font-size: 18px;
+                vertical-align: middle;
+            }
+            .count {
+                float: right;
+                line-height: 3;
+            }
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}

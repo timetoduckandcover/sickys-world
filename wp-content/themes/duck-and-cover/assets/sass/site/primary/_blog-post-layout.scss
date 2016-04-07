@@ -1,0 +1,135 @@
+/**
+ * Post Full Layout & Single
+ */
+.full-layout {
+    .entry-title {
+        padding-top: 8px;
+    }
+    .entry-meta {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .entry-footer {
+        border-bottom: 1px solid #000;
+        padding: 20px 0 40px;
+        .single & {
+            margin-top: 0;
+        }
+    }
+    .single-post-meta {
+        display: flex;
+        padding: 33px 0;
+        border-top: 1px solid transparent;
+        [class*= 'col-'] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+/**
+ * Post List Layout
+ */
+.list-layout {
+    &.post {
+        overflow: hidden;
+        .list-content {
+            overflow: hidden;
+        }
+        .post-img {
+            margin-right: 30px;
+        }
+        .entry-meta {
+            padding-top: 25px;
+        }
+        .entry-title {
+            padding-top: 15px;
+            font-size: 30px;
+            line-height: 1.2;
+        }
+        .entry-footer {
+            padding-top: 8px;
+        }
+    }
+}
+
+/**
+ * Post Masonry
+ */
+.post-masonry-item {
+    margin-bottom: 30px;
+    .masonry-content {
+        border: 1px solid #000;
+        padding: 35px 30px 18px 30px;
+    }
+    .post-date {
+        padding-bottom: 15px;
+        font-size: 12px;
+        text-transform: uppercase;
+        .meta-text {
+            display: none;
+        }
+    }
+    .entry-title {
+        padding-bottom: 8px;
+        font-size: 30px;
+        line-height: 1.2;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/**
+ * Post Simple
+ */
+.post-simple-item {
+    padding: 38px 20px 30px 20px;
+    border: 1px solid #000;
+    .post-date {
+        padding-bottom: 15px;
+        font-size: 12px;
+        text-transform: uppercase;
+        .meta-text {
+            display: none;
+        }
+    }
+    .entry-title {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .more-link {
+        position: relative;
+        font-size: 13px;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background: #202020;
+            left: 0;
+            bottom: -1px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .list-layout {
+        &.post {
+            .post-img {
+                float: left;
+            }
+        }
+    }
+}

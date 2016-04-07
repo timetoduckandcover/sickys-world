@@ -1,0 +1,114 @@
+.start-xs {
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+}
+.center-xs {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+.end-xs {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+@include media-breakpoint-up(sm) {
+    .start-sm {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .center-sm {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .end-sm {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        text-align: end;
+    }
+}
+@include media-breakpoint-up(md) {
+    .start-md {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .center-md {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .end-md {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        text-align: end;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .start-lg {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .center-lg {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .end-lg {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        text-align: end;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .start-xl {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .center-xl {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .end-xl {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        text-align: end;
+    }
+}

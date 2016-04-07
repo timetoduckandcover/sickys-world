@@ -1,0 +1,40 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+#respond #submit {
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 38px !important;
+    letter-spacing: 0 !important;
+    @extend %transition;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: #FFF;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.button {
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 38px !important;
+    letter-spacing: 0 !important;
+}
+a.button.secondary-button {
+    color: #FFF;
+}
+.secondary-button {
+    border: none !important;
+    color: #FFF;
+}

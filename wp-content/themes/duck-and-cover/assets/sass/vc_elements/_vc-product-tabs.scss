@@ -1,0 +1,32 @@
+.facewp-product-tabs {
+    .nav-tabs {
+        margin: 0 15px 20px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #000;
+        > li {
+            display: inline-block;
+            padding-right: 25px;
+            &:hover,
+            &.active {
+                a {
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 10px 0;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+//todo: create border-bottom follow cursor when hover on nav-tabs
+.tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.tab-content > .active {
+  height: auto;
+}

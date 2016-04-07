@@ -1,0 +1,38 @@
+.col-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.font-size-20 {
+    font-size: 20px;
+}
+
+.icon-box-style5 {
+    .icon-box-content {
+        margin-top: -16px;
+    }
+}
+.icon-box-contact {
+    .icon-box-icon {
+        margin-bottom: 35px !important;
+    }
+}
+
+.purchase-this-theme {
+    &.icon-box {
+        .icon-box-title {
+            padding-bottom: 16px;
+            font-size: 36px;
+        }
+        .icon-box-content {
+            padding-bottom: 40px;
+            font-size: 14px;
+        }
+        .icon-box-read-more {
+            a {
+                padding-bottom: 2px;
+                color: #FFF;
+                border-bottom: 1px solid #FFF;
+            }
+        }
+    }
+}

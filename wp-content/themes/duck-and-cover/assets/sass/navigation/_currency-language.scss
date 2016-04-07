@@ -1,0 +1,75 @@
+// language switcher menu
+#language-switcher-menu,
+#language-switcher-mobile-menu,
+#currency-switcher-menu,
+#currency-switcher-mobile-menu {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 44%;
+        right: -19px;
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+    }
+    &.menu {
+        ul a,
+        ul ul a {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            text-transform: uppercase;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 0;
+            font-size: 12px;
+            font-weight: bold;
+            &.menu-item-has-children:after {
+                display: inline-block;
+                content: '\f107';
+                width: 22px;
+                text-align: center;
+                @extend %fontawesome;
+                font-size: 13px;
+                transform: translateY(-1px);
+            }
+
+            .flag {
+                margin-right: 5px;
+            }
+
+            .sub-menu {
+                width: auto;
+                left: auto;
+                background: #fff;
+                li {
+                    display: block;
+                    margin: 0;
+                    &:after {
+                        display: none;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// currency switcher menu
+#currency-switcher-menu,
+#currency-switcher-mobile-menu,
+#language-switcher-menu,
+#language-switcher-mobile-menu {
+    &.menu {
+        li {
+            .sub-menu {
+                padding: 10px;
+                border: 1px solid #000;
+            }
+        }
+    }
+}

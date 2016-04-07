@@ -1,0 +1,53 @@
+$reserved-grid-breakpoints: (
+        md: 1024px,
+        sm: 768px,
+        xs: 320px,
+);
+
+@each $breakpoint in map-keys($reserved-grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    @each $position in (top,right,bottom,left) {
+      @for $i from 0 through 15 {
+        $step: $i * 10;
+
+        body .margin-#{$position}-#{$breakpoint}-#{$step},
+        body .margin-#{$position}-#{$breakpoint}-#{$step} > .vc_column-inner {
+          margin-#{$position}: #{$step}px !important;
+        }
+
+        body .padding-#{$position}-#{$breakpoint}-#{$step},
+        body .padding-#{$position}-#{$breakpoint}-#{$step} > .vc_column-inner {
+          padding-#{$position}: #{$step}px !important;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 through 50 {
+  .z-index-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+@each $float in (left, right) {
+  .float-#{$float} {
+    float: #{$float};
+  }
+}
+
+.clear-both {
+  clear: both;
+}
+
+@each $align in (left, center, right) {
+  .text-align-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+@for $i from 10 through 50 {
+  .font-size-#{$i} {
+    font-size: #{$i}px;
+  }
+}

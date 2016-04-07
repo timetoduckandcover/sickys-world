@@ -1,0 +1,49 @@
+.track_order {
+  margin: 0 auto;
+  width: 570px;
+  text-align: center;
+
+  p:first-child {
+    margin-bottom: 0;
+  }
+
+  .form-row-first,
+  .form-row-last {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-row-first {
+    margin-top: 80px;
+  }
+
+  .form-row-last {
+    margin-top: 2px;
+  }
+
+  .form-row {
+    overflow: hidden;
+    text-align: left;
+    label {
+      display: inline-block;
+      margin-bottom: 0;
+      width: 30%;
+      float: left;
+      line-height: 40px;
+    }
+    input {
+      width: 70%;
+      font-size: 14px;
+      padding: 12px;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      background-color: #202020;
+      color: #FFFFFF;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.woocommerce-checkout {
+    #ship-to-different-address, h3,
+    .woocommerce-billing-fields h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #ship-to-different-address {
+        span:after {
+            right: -55px;
+        }
+    }
+    .woocommerce-checkout-review-order-table {
+        &, th, td {
+            border: none;
+        }
+        thead {
+            border-bottom: 1px solid #000;
+            th {
+                padding: 20px 0;
+            }
+        }
+        th, td {
+            padding: 0.4em 0;
+        }
+        tbody {
+            padding-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"] {
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    height: 40px;
+
+    &:focus {
+        outline: none;
+        outline-offset: 0;
+    }
+}
+textarea {
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    &:focus {
+        outline: none;
+        outline-offset: 0;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+textarea {
+    padding-left: 3px;
+    width: 100%;
+}
+select {
+    height: 40px;
+    background: #FFF url(../img/arrow-down.png) no-repeat 98.5% center;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    padding: 0 10px;
+}
+select::-ms-expand {
+    display: none;
+}
+select:focus {
+    outline: none;
+}

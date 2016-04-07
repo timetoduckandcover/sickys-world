@@ -1,0 +1,22 @@
+//Woocommerce Message
+.woocommerce-message {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px 15px 20px 50px;
+    border: 3px solid #000;
+    background: #FFF;
+    &.success {
+        &:before {
+            @extend .pre-7s;
+            content: "\e66c";
+            @extend %translate-center-y;
+            left: 20px;
+            font-size: 25px;
+        }
+        .button {
+            position: absolute;
+            @extend %translate-center-y;
+            right: 20px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.pagination {
+    .page-numbers {
+        vertical-align: middle;
+    }
+    li {
+        display: inline-block;
+        .next,
+        .prev {
+            font-size: 30px;
+            transform: translateY(2px);
+        }
+    }
+    .page-numbers {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    &.loop-pagination {
+        margin-bottom: 72px;
+        .prev,
+        .next {
+            font-size: 0;
+            position: relative;
+            &:before {
+                content: "";
+                display: inline-block;
+                @extend %pe-icon-7-stroke;
+                font-size: 30px;
+            }
+        }
+        .prev:before {
+            content: "\e686";
+            margin-right: -12px;
+        }
+        .next:before {
+            content: "\e684";
+            margin-left: -12px;
+        }
+    }
+}

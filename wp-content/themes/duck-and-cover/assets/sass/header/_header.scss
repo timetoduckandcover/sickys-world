@@ -1,0 +1,80 @@
+// Header Overlay
+#header.header-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    background: transparent;
+}
+
+/*------------
+## Common Headers
+------------*/
+// Mini Cart
+.mini-cart {
+    display: inline-block;
+    .cart-contents {
+        font-size: 12px;
+    }
+    .cart-icon {
+        padding-right: 10px;
+    }
+    .cart-text {
+        padding-right: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+}
+.icon-header {
+    vertical-align: middle;
+    font-size: 18px;
+}
+.header-item {
+    vertical-align: middle;
+    padding-right: 22px;
+}
+
+//Custom Header Contact Info
+.header-contact-info {
+    display: inline-block;
+    > li {
+        display: inline-block;
+        padding-right: 7px;
+        &:last-child {
+            padding-right: 0;
+            .header-text-sec {
+                padding-right: 0;
+            }
+        }
+    }
+    span {
+        padding-right: 12px;
+        font-size: 12px;
+    }
+    i {
+        padding-right: 13px;
+    }
+    .header-text-pri {
+        font-weight: bold;
+    }
+}
+
+//Language and Currency
+.switchers-wrap {
+    display: inline-block;
+    > div {
+        display: inline-block;
+        margin-right: 25px;
+    }
+}
+.mobile-right {
+    .cart-text {
+        display: none;
+    }
+}
+
+//Header 01
+@import "header-01";
+@import "header-02";
+@import "header-04";
+@import "header-05";
+@import "header-06";

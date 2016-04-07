@@ -1,0 +1,121 @@
+/* Slider */
+.slick-slide {
+    height: auto;
+    &:focus {
+        outline: none;
+    }
+}
+/* Arrows */
+.slick-arrow {
+    font-size: 30px;
+    position: absolute;
+    top: -50px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: none;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+    &:hover,
+    &:focus {
+        color: #000;
+        border: 1px solid #DDD;
+    }
+    &-prev {
+        right: 41px;
+    }
+    &-next {
+        right: 3px;
+    }
+}
+
+/* Dots */
+.slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            font-size: 0;
+            line-height: 20px !important;
+            display: block;
+            height:auto;
+            padding: 0;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+            &:hover,
+            &:focus {
+                outline: none;
+                &:before {
+                    background: #000;
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin: 5px;
+                border-radius: 50%;
+                background: #FFF;
+                border: 2px solid #000;
+                opacity: 1;
+            }
+        }
+        &.slick-active button:before {
+            background: #000;
+            opacity: 1;
+        }
+    }
+}
+.pagination-vertical {
+    .slick-dots {
+        width: auto;
+        bottom: 50%;
+        left: auto;
+        right: -10px;
+        transform: translateY(50%);
+        li {
+            display: block;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .pagination-vertical {
+        .slick-dots {
+            right: -50px;
+        }
+    }
+    .slick-arrow {
+        top: -70px
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .pagination-vertical {
+        .slick-dots {
+            right: -70px;
+        }
+    }
+}

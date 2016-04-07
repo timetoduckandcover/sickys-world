@@ -1,0 +1,23 @@
+.wide,
+.main-content.wide,
+.navigation-shop.wide.container {
+    min-width: 100%;
+}
+.single-product {
+    .main-content.wide {
+        padding-left: 0;
+        padding-right: 0;
+        #container.container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .container.boxed {
+            min-width: 0;
+        }
+        .vc_row {
+            .container {
+                min-width: 0;
+            }
+        }
+    }
+}

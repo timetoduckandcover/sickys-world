@@ -1,0 +1,13 @@
+.counter-container {
+    //todo: add customize have font-weight: 200.
+    .counter,
+    .counter-prefix,
+    .counter-suffix {
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 300;
+    }
+    .counter-title {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,75 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    transition: $transition;
+  }
+}
+
+@mixin order($int: 0) {
+  box-ordinal-group: $int;
+  order: $int;
+  -ms-flex-order: $int;
+}
+
+@mixin align-items($value: stretch) {
+
+  $alt-value: $value;
+
+  @if $value == "flex-start" {
+    $alt-value: start;
+  } @else if $value == "flex-end" {
+    $alt-value: end;
+  }
+
+  box-align: $alt-value;
+  align-items: $value;
+  -ms-flex-align: $alt-value;
+}
+
+@mixin align-self($value: auto) {
+
+  $value-2011: $value;
+  @if $value == "flex-start" {
+    $value-2011: start;
+  } @else if $value == "flex-end" {
+    $value-2011: end;
+  }
+
+  align-self: $value;
+  -ms-flex-item-align: $value-2011;
+}
+
+// Utilities
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/image";
+@import "mixins/reset-filter";
+@import "mixins/resize";
+@import "mixins/screen-reader";
+@import "mixins/size";
+@import "mixins/tab-focus";
+@import "mixins/reset-text";
+@import "mixins/text-emphasis";
+@import "mixins/text-hide";
+@import "mixins/text-truncate";
+
+// // Skins
+@import "mixins/background-variant";
+@import "mixins/border-radius";
+@import "mixins/gradients";
+
+// // Layout
+@import "mixins/clearfix";
+@import "mixins/center-block";
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/pulls";

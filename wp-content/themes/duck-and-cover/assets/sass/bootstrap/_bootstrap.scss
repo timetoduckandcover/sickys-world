@@ -1,0 +1,59 @@
+$enable-flex        : true;
+$enable-shadows     : true;
+$enable-gradients   : true;
+$enable-transitions : true;
+$font-size-root     : 10px;
+
+// Grid system
+// Define your custom responsive grid.
+$grid-breakpoints : (
+    // Extra small screen / phone / 320px
+    xs: 320px,
+    // Small screen / phone / 768px
+    sm: 768px,
+    // Medium screen / tablet / 1024px
+    md: 1024px,
+    // Large screen / desktop / 1280px
+    lg: 1280px,
+    // Extra large screen / wide desktop / 1920px
+    xl: 1920px
+) !default;
+
+// Number of columns in the grid.
+$grid-columns : 12;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width : 30px;
+
+// Container sizes
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths : (
+    sm: 640px, // 640
+    md: 960px, // 960
+    lg: 1200px, // 1200
+);
+
+
+//
+// Grid mixins
+//
+
+@import "variables";
+@import "mixins";
+
+@import "normalize";
+@import "reboot";
+
+@import "images";
+@import "tables";
+
+@import "grid";
+@import "align";
+
+@import "dropdown";
+@import "tooltip";
+
+@import "responsive-embed";
+@import "utilities";
+@import "utilities-responsive";

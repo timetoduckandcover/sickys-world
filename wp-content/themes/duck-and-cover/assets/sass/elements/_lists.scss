@@ -1,0 +1,37 @@
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.comment-text,
+.entry-content {
+
+    ul,
+    ol {
+        padding-left: 45px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 1.5em 1.5em;
+}

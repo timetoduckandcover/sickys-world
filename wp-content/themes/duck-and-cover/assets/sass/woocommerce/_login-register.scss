@@ -1,0 +1,36 @@
+#customer_login {
+    padding-top: 70px;
+    margin-bottom: 140px;
+    .page-title {
+        margin-bottom: 80px;
+    }
+    .login,
+    .register {
+        label {
+            &.inline {
+                display: inline-block;
+                text-transform: inherit;
+            }
+        }
+        input {
+            &.button {
+                width: 100%;
+            }
+        }
+        .lost_password {
+            margin-top: 28px;
+            a {
+                float: right;
+                border-bottom: 1px solid;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+.lost_reset_password {
+    #user_login {
+        width: 100%;
+    }
+}

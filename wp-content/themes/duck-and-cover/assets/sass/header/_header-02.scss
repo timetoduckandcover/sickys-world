@@ -1,0 +1,14 @@
+.header-02 {
+    .switchers-wrap > div {
+        margin-right: 0;
+        a {
+            line-height: 2.3;
+        }
+    }
+    #language-switcher-menu {
+        &.menu li.menu-item-has-children:after,
+        &:after {
+            display: none;
+        }
+    }
+}
