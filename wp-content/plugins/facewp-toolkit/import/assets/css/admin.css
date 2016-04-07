@@ -1,0 +1,190 @@
+.facewp-import-about-text {
+    margin: 1em 200px 1em 0;
+    color: #777;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+.facewp-demo-source-container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.facewp-demo-source {
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.facewp-demo-source .facewp-demo-source-screenshot img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.facewp-demo-source-heading {
+    position: relative;
+    border-top: 1px solid #dadada;
+    padding: 5px;
+    min-height: 22px;
+}
+
+.facewp-demo-source-heading .facewp-demo-source-title {
+    margin: 0;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.facewp-demo-source-heading .facewp-demo-source-install {
+    position: absolute;
+    bottom: 11px;
+    right: 10px;
+}
+
+.facewp-demo-source-heading .facewp-demo-source-install:hover {
+    cursor: pointer;
+}
+
+#facewp-import-result-container {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    pointer-events: none;
+    transform: scale(1.25);
+    transition: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1),opacity 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 999999999;
+    text-align: center;
+}
+
+#facewp-import-result {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#facewp-import-result-container.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.facewp-import-progressbar {
+    overflow: hidden;
+    height: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 3px;
+}
+
+.facewp-import-progress h3 {
+    width: 100%;
+    margin: 0 0 25px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.facewp-import-progressbar .facewp-import-progressbar-inner {
+    position: relative;
+    width: 0;
+    height: 10px;
+    background-color: #1d6fa5;
+    border-radius: 3px;
+    transition: width 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.facewp-import-progressbar .facewp-import-progressbar-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image:
+            -webkit-gradient(linear, 0 0, 100% 100%,
+            color-stop(.25, rgba(255, 255, 255, .2)),
+            color-stop(.25, transparent), color-stop(.5, transparent),
+            color-stop(.5, rgba(255, 255, 255, .2)),
+            color-stop(.75, rgba(255, 255, 255, .2)),
+            color-stop(.75, transparent), to(transparent)
+            );
+    background-image:
+            -moz-linear-gradient(
+                    -45deg,
+                    rgba(255, 255, 255, .2) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, .2) 50%,
+                    rgba(255, 255, 255, .2) 75%,
+                    transparent 75%,
+                    transparent
+            );
+    z-index: 1;
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    -webkit-animation: move 2s linear infinite;
+    -moz-animation: move 2s linear infinite;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.facewp-import-button,
+.facewp-import-button:active,
+.facewp-import-button:focus {
+    color: #eee;
+    margin: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.facewp-import-button:hover {
+    text-decoration: underline;
+    color: white;
+}
