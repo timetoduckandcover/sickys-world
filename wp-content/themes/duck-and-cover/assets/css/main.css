@@ -2582,8 +2582,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2608,8 +2608,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -6608,6 +6608,9 @@ select:focus {
 
 .header-01 #logo {
   position: relative; }
+  .header-01 #logo a {
+    width: 100px;
+    display: block; }
 
 #header.header-01.header-enable-sticky {
   position: fixed;
@@ -7725,7 +7728,7 @@ ul.menu-horizontal > li > .children,
     clip: auto !important;
     color: #21759b;
     display: block;
-    font-size: 0.76563em;
+    font-size: 0.76562em;
     font-weight: bold;
     height: auto;
     left: 5px;
@@ -10971,5 +10974,3 @@ body.boxed .navigation-shop.container {
     font-size: 18px;
     color: #ffffff;
     border-left: 1px solid #ffffff; }
-
-/*# sourceMappingURL=../maps/main.css.map */
