@@ -8828,6 +8828,19 @@ object {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-footer {
+  margin-top: 60px;
+  background: #efefef;
+  padding: 40px 0; }
+  .site-footer .footer-social {
+    text-align: center;
+    margin-bottom: 60px; }
+    .site-footer .footer-social li {
+      display: inline-block;
+      margin: 0 14px; }
+      .site-footer .footer-social li a {
+        font-size: 240%; }
+
 .footer-widget-container {
   padding: 65px 0 10px; }
 
@@ -10974,3 +10987,10 @@ body.boxed .navigation-shop.container {
     font-size: 18px;
     color: #ffffff;
     border-left: 1px solid #ffffff; }
+
+/*--------------------------------------------------------------
+# Duck & Cover Elements
+--------------------------------------------------------------*/
+.sicky-crew-all img {
+  display: block;
+  border-radius: 50%; }
