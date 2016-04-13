@@ -8,48 +8,50 @@
 </div><!-- #page -->
 <footer class="site-footer <?php echo esc_attr( Kirki::get_option( 'facewp', 'footer_type' ));?>">
   <div class="container boxed">
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="footer-social">
-          <li>
-            <a href="https://www.facebook.com/sickysworld/" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/SickysWorld" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://uk.pinterest.com/sickysworld/" target="_blank">
-              <i class="fa fa-pinterest"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/sickysworld/" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://vimeo.com/sickysworld" target="_blank">
-              <i class="fa fa-vimeo"></i>
-            </a>
-          </li>
-        </ul>
+    <div class="footer-inner">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="footer-social">
+            <li>
+              <a href="https://www.facebook.com/sickysworld/" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/SickysWorld" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://uk.pinterest.com/sickysworld/" target="_blank">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sickysworld/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://vimeo.com/sickysworld" target="_blank">
+                <i class="fa fa-vimeo"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <?php $args = array( 'menu' => 'footer-menu-1',);
-        wp_nav_menu( $args ); ?>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <?php $args = array( 'menu' => 'footer-menu-2',);
-        wp_nav_menu( $args ); ?>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        mailchimp here
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <?php $args = array( 'menu' => 'footer-menu-1',);
+          wp_nav_menu( $args ); ?>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <?php $args = array( 'menu' => 'footer-menu-2',);
+          wp_nav_menu( $args ); ?>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          mailchimp here
+        </div>
       </div>
     </div>
   </div>

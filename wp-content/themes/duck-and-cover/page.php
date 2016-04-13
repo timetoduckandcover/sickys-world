@@ -13,9 +13,12 @@ get_header(); ?>
 
     <div class="content-wrapper">
         <main class="content site-main">
+          <div class="wrapper">
+            <h1><?php the_title();?></h1>
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
             <?php endwhile; // end of the loop. ?>
+          </div>
         </main>
     </div><!--.content-wrapper-->
 <?php get_footer(); ?>

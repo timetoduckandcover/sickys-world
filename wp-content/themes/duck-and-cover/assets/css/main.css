@@ -7812,6 +7812,12 @@ ul.menu-horizontal > li > .children,
   .single-product .main-content.wide .vc_row .container {
     min-width: 0; }
 
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
 /*--------------------------------------------------------------
 ## Boxed
 --------------------------------------------------------------*/
@@ -8837,6 +8843,8 @@ object {
   margin-top: 60px;
   background: #efefef;
   padding: 40px 0; }
+  .site-footer .footer-inner {
+    padding: 0 80px; }
   .site-footer .footer-social {
     text-align: center;
     margin-bottom: 60px; }
@@ -11004,4 +11012,10 @@ body.boxed .navigation-shop.container {
   -o-background-size: cover;
   background-size: cover; }
   .sicky-crew-all li .sicky-crew-member {
-    padding: 180px 0 40px 0; }
+    padding: 220px 0 50px 0; }
+    .sicky-crew-all li .sicky-crew-member .button {
+      margin-top: 30px; }
+
+.sicky-crew_signature {
+  width: 170px;
+  margin: 14px 0; }

@@ -3,7 +3,10 @@
   li {
     @include backgroundCover;
     .sicky-crew-member {
-      padding: 180px 0 40px 0;
+      padding: 220px 0 50px 0;
+      .button {
+        margin-top: 30px;
+      }
     }
   }
 }
@@ -11,4 +14,10 @@
 // Single member page
 .sicky-single {
 
+}
+
+// Common styles
+.sicky-crew_signature {
+  width: 170px;
+  margin: 14px 0;
 }
