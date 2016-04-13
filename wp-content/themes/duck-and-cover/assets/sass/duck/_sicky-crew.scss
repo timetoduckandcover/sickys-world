@@ -1,6 +1,8 @@
 .sicky-crew-all {
-  img {
-    display: block;
-    border-radius: 50%;
+  li {
+    @include backgroundCover;
+    .sicky-crew-member {
+      padding: 180px 0 40px 0;
+    }
   }
 }

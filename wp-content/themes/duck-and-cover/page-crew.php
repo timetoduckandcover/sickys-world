@@ -19,10 +19,14 @@ Template Name: Crew
     					$image_array = wp_get_attachment_image_src($image_id, $image_size);
     					$image_url = $image_array[0];
   					?>
-            <li class="col-xs-6 col-sm-3">
-              <a href="<?php the_permalink();?>">
-                <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full"/>
-              </a>
+            <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
+              <div class="container">
+                <div class="sicky-crew-member">
+                  <h4><?php the_field('job_title');?></h4>
+                  <h2><?php the_field('name');?></h2>
+                  <a href="<?php the_permalink();?>">View</a>
+                </div>
+              </div>
             </li>
     			<?php endwhile; endif; ?>
         </ul>
