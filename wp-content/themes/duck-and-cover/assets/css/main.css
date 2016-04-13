@@ -6232,6 +6232,11 @@ img {
   max-width: 100%;
   /* Adhere to container width. */ }
 
+img.img-full {
+  width: 100%;
+  height: auto;
+  display: block; }
+
 table {
   margin: 0 0 1.5em;
   width: 100%; }

@@ -40,4 +40,10 @@ img {
     max-width: 100%; /* Adhere to container width. */
 }
 
+img.img-full {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @import "tables";
