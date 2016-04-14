@@ -14,7 +14,7 @@ Template Name: Crew
 
             <?php
     					$image_id = get_field('image');
-    					$image_size = 'thumb-size';
+    					$image_size = 'full-size';
     					$image_array = wp_get_attachment_image_src($image_id, $image_size);
     					$image_url = $image_array[0];
   					?>

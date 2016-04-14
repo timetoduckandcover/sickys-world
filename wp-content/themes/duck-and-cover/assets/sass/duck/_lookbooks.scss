@@ -1,0 +1,12 @@
+.lookbooks-all {
+  li {
+    @include backgroundCover;
+    .lookbooks-all_single {
+      padding: 620px 0 50px 0;
+    }
+  }
+}
+
+.lookbooks-single {
+  
+}

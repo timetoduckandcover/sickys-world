@@ -9,21 +9,21 @@ Template Name: Lookbooks
 
         <?php $args = array( 'post_type' => 'lookbooks' );
   			      $the_query = new WP_Query( $args ) ;?>
-        <ul class="row sicky-crew-all">
+        <ul class="row lookbooks-all">
     			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <?php
-    					$image_id = get_field('image');
-    					$image_size = 'thumb-size';
+    					$image_id = get_field('hero_image');
+    					$image_size = 'full-size';
     					$image_array = wp_get_attachment_image_src($image_id, $image_size);
     					$image_url = $image_array[0];
   					?>
 
             <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
               <div class="wrapper">
-                <p>
-                  LOOKBOOK TEST
-                </p>
+                <div class="lookbooks-all_single">
+                  <a href="<?php the_permalink();?>" class="button">View Lookbook</a>
+                </div>
               </div>
             </li>
 
