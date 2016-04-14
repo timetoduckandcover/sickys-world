@@ -22,7 +22,7 @@ if ( ! function_exists( 'facewp_abbey_cart_link' ) ) {
             <a class="cart-contents" data-toggle="dropdown" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>">
                 <span class="icon-header cart-icon pe-7s-shopbag"></span>
                 <strong class="cart-text">Shopping Bag</strong>
-                <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span>
+                <!-- <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> -->
             </a>
             <div class="cart-details dropdown-menu">
                 <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>

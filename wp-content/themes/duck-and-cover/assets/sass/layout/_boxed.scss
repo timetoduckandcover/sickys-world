@@ -5,6 +5,10 @@
     background: #FFF;
 }
 
+.main-content {
+  padding-top: 71px; // allow for fixed header
+}
+
 body.boxed {
     .page-wrapper {
         margin: 0 auto;

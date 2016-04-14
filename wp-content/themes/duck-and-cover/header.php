@@ -72,7 +72,7 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
 </div>
 
 <div id="page" class="page-wrapper">
-    <?php require_once( get_template_directory() . '/header/' . Kirki::get_option( 'facewp', 'header_type' ) . '.php' ); ?>
+    <?php require_once( get_template_directory() . '/includes/header/' . Kirki::get_option( 'facewp', 'header_type' ) . '.php' ); ?>
 
     <?php if ( function_exists( 'wc_print_notices' ) && ! ( is_singular() && get_post_type() == 'product' ) ) : ?>
         <?php wc_print_notices(); // @todo style WC notices when add to cart in quick view ?>

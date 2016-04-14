@@ -1,3 +1,4 @@
+@import url("//hello.myfonts.net/count/30e28c");
 button,
 input[type="button"],
 input[type="reset"],
@@ -6066,6 +6067,66 @@ Copyright (c) 2015 Daniel Eden
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Gibson-LightIt';
+  src: url("../fonts/30E28C_0_0.eot");
+  src: url("../fonts/30E28C_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_0_0.woff2") format("woff2"), url("../fonts/30E28C_0_0.woff") format("woff"), url("../fonts/30E28C_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-BoldItalic';
+  src: url("../fonts/30E28C_1_0.eot");
+  src: url("../fonts/30E28C_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_1_0.woff2") format("woff2"), url("../fonts/30E28C_1_0.woff") format("woff"), url("../fonts/30E28C_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-SemiboldIt';
+  src: url("../fonts/30E28C_2_0.eot");
+  src: url("../fonts/30E28C_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_2_0.woff2") format("woff2"), url("../fonts/30E28C_2_0.woff") format("woff"), url("../fonts/30E28C_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-Bold';
+  src: url("../fonts/30E28C_3_0.eot");
+  src: url("../fonts/30E28C_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_3_0.woff2") format("woff2"), url("../fonts/30E28C_3_0.woff") format("woff"), url("../fonts/30E28C_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-Regular';
+  src: url("../fonts/30E28C_4_0.eot");
+  src: url("../fonts/30E28C_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_4_0.woff2") format("woff2"), url("../fonts/30E28C_4_0.woff") format("woff"), url("../fonts/30E28C_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-SemiBold';
+  src: url("../fonts/30E28C_5_0.eot");
+  src: url("../fonts/30E28C_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_5_0.woff2") format("woff2"), url("../fonts/30E28C_5_0.woff") format("woff"), url("../fonts/30E28C_5_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-Italic';
+  src: url("../fonts/30E28C_6_0.eot");
+  src: url("../fonts/30E28C_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_6_0.woff2") format("woff2"), url("../fonts/30E28C_6_0.woff") format("woff"), url("../fonts/30E28C_6_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gibson-Light';
+  src: url("../fonts/30E28C_7_0.eot");
+  src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
+
+.gibson-light {
+  font-family: 'Gibson-Light', arial, sans-serif; }
+
+.gibson-regular, body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Gibson-Regular', arial, sans-serif !important; }
+
+.gibson-semibold, .header-01 #primary-menu > .menu-item > a,
+.header-02 #primary-menu > .menu-item > a,
+.header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
+.header-02 #primary-menu > ul > li > a,
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a {
+  font-family: 'Gibson-SemiBold', arial, sans-serif; }
+
+.gibson-bold {
+  font-family: 'Gibson-Bold', arial, sans-serif; }
+
 body,
 button,
 input,
@@ -6075,6 +6136,9 @@ textarea {
 
 [class^="pe-7s-"], [class*=" pe-7s-"] {
   font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -6555,6 +6619,45 @@ select:focus {
   z-index: 99999;
   background: transparent; }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; }
+  #header .container-fluid {
+    position: relative; }
+  #header .header-social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16.66%; }
+    #header .header-social ul::after {
+      content: "";
+      display: table;
+      clear: both; }
+    #header .header-social ul li {
+      width: 33.33%;
+      float: left; }
+      #header .header-social ul li.facebook a {
+        background: #3b5998; }
+      #header .header-social ul li.instagram a {
+        background: #125688; }
+      #header .header-social ul li.twitter a {
+        background: #00aced; }
+      #header .header-social ul li a {
+        height: 71px;
+        display: block;
+        position: relative; }
+        #header .header-social ul li a i {
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 /*------------
 ## Common Headers
 ------------*/
@@ -6562,15 +6665,12 @@ select:focus {
   display: inline-block; }
   .mini-cart .cart-contents {
     font-size: 12px; }
-  .mini-cart .cart-icon {
-    padding-right: 10px; }
   .mini-cart .cart-text {
     padding-right: 5px;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
 
 .icon-header {
-  vertical-align: middle;
   font-size: 18px; }
 
 .header-item {
@@ -6612,10 +6712,13 @@ select:focus {
   display: none; }
 
 .header-01 #logo {
-  position: relative; }
+  position: relative;
+  padding: 7px 0; }
   .header-01 #logo a {
-    width: 100px;
+    width: 74px;
     display: block; }
+    .header-01 #logo a img {
+      display: block; }
 
 #header.header-01.header-enable-sticky {
   position: fixed;
@@ -7518,13 +7621,6 @@ ul.menu-horizontal > li > .children,
   .header-03 #primary-menu > ul > li, .header-04 #primary-menu > ul > li {
     padding: 20px 0;
     line-height: 12px; }
-    .header-01 #primary-menu > .menu-item:not(:last-child):after,
-    .header-02 #primary-menu > .menu-item:not(:last-child):after,
-    .header-03 #primary-menu > .menu-item:not(:last-child):after, .header-04 #primary-menu > .menu-item:not(:last-child):after, .header-01 #primary-menu > ul > li:not(:last-child):after,
-    .header-02 #primary-menu > ul > li:not(:last-child):after,
-    .header-03 #primary-menu > ul > li:not(:last-child):after, .header-04 #primary-menu > ul > li:not(:last-child):after {
-      content: "/";
-      font-size: 11px; }
     .header-01 #primary-menu > .menu-item > a,
     .header-02 #primary-menu > .menu-item > a,
     .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
@@ -7826,6 +7922,9 @@ ul.menu-horizontal > li > .children,
   left: 0;
   z-index: 2;
   background: #FFF; }
+
+.main-content {
+  padding-top: 71px; }
 
 body.boxed .page-wrapper {
   margin: 0 auto;

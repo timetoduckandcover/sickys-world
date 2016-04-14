@@ -6,6 +6,47 @@
     background: transparent;
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  .container-fluid {
+    position: relative;
+  }
+  .header-social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16.66%;
+    ul {
+      @include clearfix();
+      li {
+        width: 33.33%;
+        float: left;
+        &.facebook a { background: #3b5998; }
+        &.instagram a { background: #125688; }
+        &.twitter a { background: #00aced; }
+        a {
+          height: 71px;
+          display: block;
+          position: relative;
+          i {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
 /*------------
 ## Common Headers
 ------------*/
@@ -15,9 +56,9 @@
     .cart-contents {
         font-size: 12px;
     }
-    .cart-icon {
-        padding-right: 10px;
-    }
+    // .cart-icon {
+    //     padding-right: 10px;
+    // }
     .cart-text {
         padding-right: 5px;
         text-transform: uppercase;
@@ -25,7 +66,7 @@
     }
 }
 .icon-header {
-    vertical-align: middle;
+    //vertical-align: middle;
     font-size: 18px;
 }
 .header-item {

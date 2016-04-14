@@ -1,13 +1,42 @@
+@import url("//hello.myfonts.net/count/30e28c");
+@font-face {font-family: 'Gibson-LightIt';src: url('../fonts/30E28C_0_0.eot');src: url('../fonts/30E28C_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_0_0.woff2') format('woff2'),url('../fonts/30E28C_0_0.woff') format('woff'),url('../fonts/30E28C_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-BoldItalic';src: url('../fonts/30E28C_1_0.eot');src: url('../fonts/30E28C_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_1_0.woff2') format('woff2'),url('../fonts/30E28C_1_0.woff') format('woff'),url('../fonts/30E28C_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-SemiboldIt';src: url('../fonts/30E28C_2_0.eot');src: url('../fonts/30E28C_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_2_0.woff2') format('woff2'),url('../fonts/30E28C_2_0.woff') format('woff'),url('../fonts/30E28C_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-Bold';src: url('../fonts/30E28C_3_0.eot');src: url('../fonts/30E28C_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_3_0.woff2') format('woff2'),url('../fonts/30E28C_3_0.woff') format('woff'),url('../fonts/30E28C_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-Regular';src: url('../fonts/30E28C_4_0.eot');src: url('../fonts/30E28C_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_4_0.woff2') format('woff2'),url('../fonts/30E28C_4_0.woff') format('woff'),url('../fonts/30E28C_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-SemiBold';src: url('../fonts/30E28C_5_0.eot');src: url('../fonts/30E28C_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_5_0.woff2') format('woff2'),url('../fonts/30E28C_5_0.woff') format('woff'),url('../fonts/30E28C_5_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-Italic';src: url('../fonts/30E28C_6_0.eot');src: url('../fonts/30E28C_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_6_0.woff2') format('woff2'),url('../fonts/30E28C_6_0.woff') format('woff'),url('../fonts/30E28C_6_0.ttf') format('truetype');}
+@font-face {font-family: 'Gibson-Light';src: url('../fonts/30E28C_7_0.eot');src: url('../fonts/30E28C_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_7_0.woff2') format('woff2'),url('../fonts/30E28C_7_0.woff') format('woff'),url('../fonts/30E28C_7_0.ttf') format('truetype');}
+
+.gibson-light {
+  font-family: 'Gibson-Light', arial, sans-serif;
+}
+.gibson-regular {
+  font-family: 'Gibson-Regular', arial, sans-serif !important;
+}
+.gibson-semibold {
+  font-family: 'Gibson-SemiBold', arial, sans-serif;
+}
+.gibson-bold {
+  font-family: 'Gibson-Bold', arial, sans-serif;
+}
+
 body,
 button,
 input,
 select,
 textarea {
-    line-height: $font__line-height-body;
+  line-height: $font__line-height-body;
+  @extend .gibson-regular;
 }
 [class^="pe-7s-"], [class*=" pe-7s-"] {
     font-weight: bold;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 
 @import "headings";
 

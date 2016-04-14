@@ -219,17 +219,17 @@ class Kirki_Styles_Output_CSS {
 					if ( isset( $value['strikethrough'] ) && $value['strikethrough'] ) {
 						$styles[ $output['media_query'] ][ $element ]['text-decoration'] = 'strikethrough';
 					}
-					if ( isset( $value['font-family'] ) ) {
-						$styles[ $output['media_query'] ][ $element ]['font-family'] = $value['font-family'];
-						// Add backup font
-						if ( Kirki()->font_registry->is_google_font( $value['font-family'] ) ) {
-							if ( isset( $google_fonts_array[ $value['font-family'] ] ) && isset( $google_fonts_array[ $value['font-family'] ]['category'] ) ) {
-								if ( isset( $backup_fonts[ $google_fonts_array[ $value['font-family'] ]['category'] ] ) ) {
-									$styles[ $output['media_query'] ][ $element ]['font-family'] = $value['font-family'] . ', ' . $backup_fonts[ $google_fonts_array[ $value['font-family'] ]['category'] ];
-								}
-							}
-						}
-					}
+					// if ( isset( $value['font-family'] ) ) {
+					// 	$styles[ $output['media_query'] ][ $element ]['font-family'] = $value['font-family'];
+					// 	// Add backup font
+					// 	if ( Kirki()->font_registry->is_google_font( $value['font-family'] ) ) {
+					// 		if ( isset( $google_fonts_array[ $value['font-family'] ] ) && isset( $google_fonts_array[ $value['font-family'] ]['category'] ) ) {
+					// 			if ( isset( $backup_fonts[ $google_fonts_array[ $value['font-family'] ]['category'] ] ) ) {
+					// 				$styles[ $output['media_query'] ][ $element ]['font-family'] = $value['font-family'] . ', ' . $backup_fonts[ $google_fonts_array[ $value['font-family'] ]['category'] ];
+					// 			}
+					// 		}
+					// 	}
+					// }
 					if ( isset( $value['font-size'] ) ) {
 						$styles[ $output['media_query'] ][ $element ]['font-size'] = $value['font-size'];
 					}

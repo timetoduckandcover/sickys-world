@@ -1,23 +1,27 @@
 .header-01  {
-    .switchers-wrap > div {
-        margin-right: 0;
-        a {
-            line-height: 2.3;
-        }
+  .switchers-wrap > div {
+      margin-right: 0;
+      a {
+          line-height: 2.3;
+      }
+  }
+  #language-switcher-menu {
+      &.menu li.menu-item-has-children:after,
+      &:after {
+          display: none;
+      }
+  }
+  #logo {
+    position: relative;
+    padding: 7px 0;
+    a {
+      width: 74px;
+      display: block;
+      img {
+        display: block;
+      }
     }
-    #language-switcher-menu {
-        &.menu li.menu-item-has-children:after,
-        &:after {
-            display: none;
-        }
-    }
-    #logo {
-        position: relative;
-        a {
-          width: 100px;
-          display: block;
-        }
-    }
+  }
 }
 
 // Sticky Header
