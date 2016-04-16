@@ -362,4 +362,28 @@ jQuery( document ).ready( function( $ ) {
          $( "html, body" ).animate( { scrollTop: 0 }, 600 );
          evt.preventDefault();
      } );
+
+    // Set parent object that we will bind all data to
+    // console.log(location);
+    // var Duck = {
+    //   base: location.origin
+    // };
+    //
+    // // If is blog page
+    // if(location.pathname.indexOf('blog') > -1) {
+    //   var splitPath = location.pathname.split('/');
+    //   console.log(splitPath);
+    //   if(splitPath.length > 3) {
+    //     var post = splitPath[2];
+    //     console.log(post);
+    //   }
+    // }
+    //
+    // function _getProductForBlogPage() {
+    //   $.ajax({
+    //     url: 'something',
+    //     method: 'GET'
+    //   })
+    // };
+
 } );

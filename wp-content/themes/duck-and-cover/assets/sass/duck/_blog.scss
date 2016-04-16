@@ -1,0 +1,35 @@
+// Article listing
+.duck-blog {
+  article {
+    padding: 0 20px;
+    .post-meta {
+      margin: 30px 0;
+      .post-meta-by {
+        font-size: 14px;
+      }
+      .post-meta-name {
+        @extend .gibson-semibold;
+      }
+      .post-meta-date {
+        position: relative;
+        @extend .gibson-semibold;
+        padding-left: 30px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 20px;
+          height: 1px;
+          bottom: 0;
+          background: black;
+        }
+      }
+    }
+    .blog-meta-footer {
+      @include clearfix();
+      .read-more {
+        float: right;
+      }
+    }
+  }
+}

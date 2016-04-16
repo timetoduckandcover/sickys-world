@@ -1,5 +1,36 @@
 // Header box content
 <div class="container main-content <?php echo esc_attr( facewp_abbey_get_page_layout() ); ?>">
 
+// Blog header
+// style="background-image: url('<?php echo esc_url( $facewp_abbey_big_title_img ); ?>')"
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="page-title"><?php echo '' . Kirki::get_option( 'facewp', 'post_single_title' ); ?></h1>
+        </div>
+    </div>
+</div> -->
+
 // Footer pull in widgets
 <?php require_once( get_template_directory() . '/footer/' . Kirki::get_option( 'facewp', 'footer_type' ) . '.php' ); ?>
+
+// blog posts
+<?php if ( $facewp_abbey_post_layout == 'full' ) : ?>
+
+    <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+
+<?php elseif ( $facewp_abbey_post_layout == 'list' ) : ?>
+
+    <?php get_template_part( 'template-parts/content', 'list' ); ?>
+
+<?php elseif ( $facewp_abbey_post_layout == 'masonry' ) : ?>
+
+    <?php get_template_part( 'template-parts/content', 'masonry' ); ?>
+
+<?php endif; ?>
+
+// Api (consumer) key
+// ck_85c8499befb9b1829aefe08de12eec4bacb09452
+
+// Api (consumer) secret
+// cs_b8b925cb657a19d9eb8669cb4c3da0f94bee3aa6

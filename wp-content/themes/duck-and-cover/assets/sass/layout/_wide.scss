@@ -27,4 +27,7 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  &.wrapper-padded {
+    padding: 40px 20px;
+  }
 }

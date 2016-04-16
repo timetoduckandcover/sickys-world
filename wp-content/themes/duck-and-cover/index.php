@@ -16,14 +16,8 @@ $facewp_abbey_big_title_color = Kirki::get_option( 'facewp', 'post_archives_big_
 $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_title_image' );
 get_header( 'blog' ); ?>
 
-<div class="archive-box" style="background-image: url('<?php echo esc_url( $facewp_abbey_big_title_img ); ?>')">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="page-title"><?php echo '' . Kirki::get_option( 'facewp', 'post_single_title' ); ?></h1>
-            </div>
-        </div>
-    </div>
+<div class="archive-box">
+  <?php echo do_shortcode('[rev_slider alias="blog_main_slider"]');?>
 </div>
 <div class="container">
     <div class="row">
@@ -54,22 +48,15 @@ get_header( 'blog' ); ?>
 
                 <?php /* Start the Loop */ ?>
 
-                <?php while ( have_posts() ) : the_post(); ?>
+                <div class="row duck-blog">
 
-                    <?php if ( $facewp_abbey_post_layout == 'full' ) : ?>
+                  <?php while ( have_posts() ) : the_post(); ?>
 
-                        <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+                    <?php get_template_part( 'template-parts/content', 'duck' ); ?>
 
-                    <?php elseif ( $facewp_abbey_post_layout == 'list' ) : ?>
+                  <?php endwhile; ?>
 
-                        <?php get_template_part( 'template-parts/content', 'list' ); ?>
-
-                    <?php elseif ( $facewp_abbey_post_layout == 'masonry' ) : ?>
-
-                        <?php get_template_part( 'template-parts/content', 'masonry' ); ?>
-
-                    <?php endif; ?>
-                <?php endwhile; ?>
+                </div>
 
                 <?php facewp_abbey_paging_nav(); ?>
 
@@ -97,4 +84,3 @@ get_header( 'blog' ); ?>
 
 <?php } ?>
 <?php get_footer(); ?>
-
