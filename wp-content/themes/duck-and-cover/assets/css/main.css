@@ -6117,7 +6117,7 @@ select,
 textarea {
   font-family: 'Gibson-Regular', arial, sans-serif !important; }
 
-.gibson-semibold, .header-01 #primary-menu > .menu-item > a,
+.gibson-semibold, .header-2, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
@@ -6139,6 +6139,9 @@ textarea {
 
 .uppercase {
   text-transform: uppercase; }
+
+.header-2 {
+  font-size: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -7962,6 +7965,12 @@ body.boxed .archive-box {
     padding-right: 15px; }
   .container.boxed {
     max-width: 1200px !important; } }
+
+.text-center {
+  text-align: center; }
+
+.mb {
+  margin-bottom: 40px; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -11115,6 +11124,15 @@ body.boxed .navigation-shop.container {
     .sicky-crew-all li .sicky-crew-member .button {
       margin-top: 30px; }
 
+.sicky-single .sicky-single_hero {
+  margin-bottom: 40px; }
+
+.sicky-single h1 {
+  font-size: 32px !important; }
+
+.sicky-single .widget_facewp_instagram {
+  margin-top: 40px; }
+
 .sicky-crew_signature {
   width: 170px;
   margin: 14px 0; }
@@ -11152,3 +11170,11 @@ body.boxed .navigation-shop.container {
     clear: both; }
   .duck-blog article .blog-meta-footer .read-more {
     float: right; }
+
+.share-buttons {
+  margin-bottom: 12px; }
+  .share-buttons li {
+    display: inline-block;
+    margin-right: 16px; }
+    .share-buttons li a {
+      font-size: 160%; }

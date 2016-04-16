@@ -13,7 +13,15 @@
 
 // Single member page
 .sicky-single {
-
+  .sicky-single_hero {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 32px !important;
+  }
+  .widget_facewp_instagram {
+    margin-top: 40px;
+  }
 }
 
 // Common styles

@@ -37,6 +37,11 @@ textarea {
   text-transform: uppercase;
 }
 
+.header-2 {
+  @extend .gibson-semibold;
+  font-size: 20px;
+}
+
 
 @import "headings";
 

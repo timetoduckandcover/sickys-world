@@ -20,10 +20,42 @@
         <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
       </div>
       <div class="wrapper">
-        <h1><?php the_field('name');?></h1>
-        <h3><?php the_field('job_title');?></h3>
+        <div class="row mb">
+          <div class="col-xs-12 col-sm-4">
+            <ul class="share-buttons">
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <h1><?php the_field('name');?></h1>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <?php the_field('custom_header_text');?>
+          </div>
+        </div>
+        <h3 class="header-2"><?php the_field('job_title');?></h3>
         <p><?php the_content();?></p>
-        <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
+        <div class="text-center">
+          <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
+        </div>
+        <br/><br/>
+        <?php the_field('custom_content');?>
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="<?php the_field('video');?>" frameborder="0"></iframe>
+        </div>
+        <?php dynamic_sidebar(get_field('instagram_feed'));?>
       </div>
 
     <?php endwhile; // End of the loop. ?>
