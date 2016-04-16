@@ -144,6 +144,6 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
         </div>
     <?php endif; ?>
 
-    <div class="main-content">
+    <div class="main-content <?php if ( is_woocommerce() ) { ?> container <?php } ;?>">
         <div class="row">
             <div class="col-xs-12 <?php echo esc_attr( ( 'no-sidebar' != FaceWPC()->get( 'facewp_abbey_sidebar_position' ) && is_active_sidebar( FaceWPC()->get( 'facewp_abbey_sidebar' ) ) ) ? 'col-md-9' : '' ); ?>">
