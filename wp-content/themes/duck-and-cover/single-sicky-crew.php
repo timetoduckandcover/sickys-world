@@ -22,23 +22,7 @@
       <div class="wrapper">
         <div class="row mb">
           <div class="col-xs-12 col-sm-4">
-            <ul class="share-buttons">
-              <li>
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+            <?php include('includes/share-buttons.php');?>
             <h1><?php the_field('name');?></h1>
           </div>
           <div class="col-xs-12 col-sm-8">
@@ -52,9 +36,11 @@
         </div>
         <br/><br/>
         <?php the_field('custom_content');?>
-        <div class="video-wrapper">
-          <iframe width="560" height="315" src="<?php the_field('video');?>" frameborder="0"></iframe>
-        </div>
+        <?php if( get_field('video') ): ?>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="<?php the_field('video');?>" frameborder="0"></iframe>
+          </div>
+        <?php endif; ?>
         <?php dynamic_sidebar(get_field('instagram_feed'));?>
       </div>
 
