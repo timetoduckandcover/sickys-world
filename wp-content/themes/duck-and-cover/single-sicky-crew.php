@@ -23,7 +23,7 @@
         <div class="row mb">
           <div class="col-xs-12 col-sm-4">
             <?php include('includes/share-buttons.php');?>
-            <h1><?php the_field('name');?></h1>
+            <h1 class="gibson-light"><?php the_field('name');?></h1>
           </div>
           <div class="col-xs-12 col-sm-8">
             <?php the_field('custom_header_text');?>
