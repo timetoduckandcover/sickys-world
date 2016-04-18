@@ -2,7 +2,8 @@
  *  Page Common
  */
 .page-title-row {
-    padding: 75px 15px;
+    padding: 150px 15px;
+    margin-bottom: 40px;
     .product-category-list {
         text-align: center;
         padding-top: 50px;
@@ -39,7 +40,7 @@
 }
 
 .page-title {
-    text-align: center;
+    // text-align: center;
     font-size: 100px !important;
     font-weight: 100 !important;
     line-height: 1.2 !important;

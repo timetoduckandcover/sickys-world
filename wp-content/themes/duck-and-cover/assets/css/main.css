@@ -10199,7 +10199,8 @@ body.boxed .navigation-shop.container {
  *  Page Common
  */
 .page-title-row {
-  padding: 75px 15px; }
+  padding: 150px 15px;
+  margin-bottom: 40px; }
   .page-title-row .product-category-list {
     text-align: center;
     padding-top: 50px; }
@@ -10226,7 +10227,6 @@ body.boxed .navigation-shop.container {
         display: none; }
 
 .page-title {
-  text-align: center;
   font-size: 100px !important;
   font-weight: 100 !important;
   line-height: 1.2 !important;

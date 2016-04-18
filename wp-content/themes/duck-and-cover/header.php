@@ -79,10 +79,23 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
     <?php endif; ?>
 
     <?php if ( function_exists( 'is_product_category' ) && is_product_category() ) : ?>
-        <div class="page-title-row">
-            <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+        <?php if ( is_product_category() ){
+            global $wp_query;
 
+            // get the query object
+            $cat = $wp_query->get_queried_object();
+
+            // get the thumbnail id using the queried category term_id
+            $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+
+            // get the image URL
+            $image = wp_get_attachment_url( $thumbnail_id );
+        } ;?>
+        <div class="page-title-row" style="background-image:url(<?php echo $image ;?>); margin-top:75px;">
+            <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+              <div class="container">
                 <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+              </div>
 
                 <?php
                 /**
