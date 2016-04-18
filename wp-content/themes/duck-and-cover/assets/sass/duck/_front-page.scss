@@ -1,0 +1,14 @@
+#duck-front-page {
+
+  // Instagram feed
+  .widget_facewp_instagram {
+    ul {
+      display: flex;
+      margin: 0 -20px;
+      li {
+        width: 20%;
+        padding: 0 10px 20px 10px;
+      }
+    }
+  }
+}

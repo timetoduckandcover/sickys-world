@@ -40,7 +40,7 @@ if ( ! class_exists( 'FaceWP_Abbey_Instagram_Widget' ) ) {
 
             //$output = '<h3 class="widget-title">' . $title . '</h3>';
 
-            $class = 'col-xs-6 col-md-3';
+            $class = 'insta-custom-feed-item';
 
             // if hidden on device, find [class*=col] and replace to '', use only hidden
             $class_container = preg_replace( '/col\-(lg|md|sm|xs)[^\s]*/', '', $class );

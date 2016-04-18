@@ -22,6 +22,14 @@
   .widget_facewp_instagram {
     margin-top: 40px;
   }
+  .widget_facewp_instagram {
+    ul {
+      li {
+        @extend .col-xs-6;
+        @extend .col-sm-3;
+      }
+    }
+  }
 }
 
 // Common styles
