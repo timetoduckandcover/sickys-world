@@ -30,3 +30,20 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+@mixin centre($axis: "both") {
+	position:absolute;
+	@if $axis == "y"{
+		top:50%;
+    transform: translate(0, -50%);
+	}
+	@if $axis == "x"{
+		left:50%;
+		transform: translate(-50%, 0);
+	}
+	@if $axis == "both"{
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+	}
+}

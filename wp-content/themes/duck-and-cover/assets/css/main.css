@@ -6121,7 +6121,7 @@ textarea {
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -6643,11 +6643,11 @@ select:focus {
       width: 33.33%;
       float: left; }
       #header .header-social ul li.facebook a {
-        background: #3b5998; }
+        background: #d8120f; }
       #header .header-social ul li.instagram a {
-        background: #125688; }
+        background: #e14644; }
       #header .header-social ul li.twitter a {
-        background: #00aced; }
+        background: #eb8887; }
       #header .header-social ul li a {
         height: 71px;
         display: block;
@@ -11146,6 +11146,50 @@ body.boxed .navigation-shop.container {
   background-size: cover; }
   .lookbooks-all li .lookbooks-all_single {
     padding: 620px 0 50px 0; }
+
+.celebwears-all .hero {
+  margin-bottom: 40px; }
+
+.celebwears-all ul {
+  margin-top: 40px; }
+  .celebwears-all ul li a {
+    display: block;
+    position: relative; }
+    .celebwears-all ul li a .caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all .2s ease;
+      opacity: 0; }
+      .celebwears-all ul li a .caption .caption-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .celebwears-all ul li a .caption .caption-inner h3, .celebwears-all ul li a .caption .caption-inner h4 {
+          color: white; }
+    .celebwears-all ul li a:hover .caption {
+      opacity: 1; }
+
+.celebwears-single .celebwears-single_hero {
+  margin: 40px 0; }
+
+.celebwears-single .celebwears-single_share {
+  margin: 40px 0; }
+  .celebwears-single .celebwears-single_share::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .celebwears-single .celebwears-single_share span {
+    float: left; }
+    .celebwears-single .celebwears-single_share span:first-child {
+      padding: 10px 14px 0 0;
+      display: block;
+      text-transform: uppercase;
+      opacity: .5; }
 
 .duck-blog article {
   padding: 0 20px; }

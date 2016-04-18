@@ -1,0 +1,57 @@
+
+.celebwears-all {
+  .hero {
+    margin-bottom: 40px;
+  }
+  ul {
+    margin-top: 40px;
+    li {
+      a {
+        display: block;
+        position: relative;
+        .caption {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0,0,0,.3);
+          transition: all .2s ease;
+          opacity: 0;
+          .caption-inner {
+            @include centre;
+            h3, h4 {
+              color: white;
+            }
+          }
+        }
+        &:hover {
+          .caption {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.celebwears-single {
+  .celebwears-single_hero {
+    margin: 40px 0;
+  }
+  .celebwears-single_share {
+    margin: 40px 0;
+    @include clearfix();
+    span {
+      float: left;
+      &:first-child {
+        padding: 10px 14px 0 0;
+        display: block;
+        text-transform: uppercase;
+        @extend .gibson-semibold;
+        opacity: .5;
+      }
+    }
+  }
+}
