@@ -91,7 +91,7 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
             // get the image URL
             $image = wp_get_attachment_url( $thumbnail_id );
         } ;?>
-        <div class="page-title-row" style="background-image:url(<?php echo $image ;?>); margin-top:75px;">
+        <div class="page-title-row duck-collection-header" style="background-image:url(<?php echo $image ;?>);">
             <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
               <div class="container">
                 <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>

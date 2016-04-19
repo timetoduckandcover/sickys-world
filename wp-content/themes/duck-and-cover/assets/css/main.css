@@ -11197,6 +11197,12 @@ body.boxed .navigation-shop.container {
       text-transform: uppercase;
       opacity: .5; }
 
+.duck-collection-header {
+  margin-top: 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 #duck-front-page .widget_facewp_instagram ul {
   display: flex;
   margin: 0 -20px; }
