@@ -2,6 +2,14 @@
 .celebwears-all {
   .hero {
     margin-bottom: 40px;
+    position: relative;
+    .caption {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
   }
   ul {
     margin-top: 40px;

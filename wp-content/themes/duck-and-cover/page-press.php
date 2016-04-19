@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Celeb Wears
+Template Name: Press
 */
 ?>
 <?php get_header(); ?>
@@ -21,7 +21,7 @@ Template Name: Celeb Wears
             <?php the_content();?>
           <?php endwhile; // end of the loop. ?>
 
-          <?php $args = array( 'post_type' => 'celeb-wears' );
+          <?php $args = array( 'post_type' => 'press' );
     			      $the_query = new WP_Query( $args ) ;?>
           <ul class="row">
       			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

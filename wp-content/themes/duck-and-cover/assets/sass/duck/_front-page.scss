@@ -14,4 +14,13 @@
       }
     }
   }
+
+  // Pre Footer Image
+  .pre-footer-image {
+    position: relative;
+    .caption {
+      @include centre(y);
+      right: 15%;
+    }
+  }
 }

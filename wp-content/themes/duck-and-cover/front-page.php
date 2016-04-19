@@ -40,8 +40,8 @@ get_header(); ?>
             <div class="pre-footer-image">
               <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
               <div class="caption">
-                <h3 class="header-2"><?php the_field('pre_footer_second_header');?></h3>
-                <h2><?php the_field('pre_footer_header');?></h2>
+                <h3 class="header-2 uppercase"><?php the_field('pre_footer_second_header');?></h3>
+                <h2><?php the_field('pre_footer_main_header');?></h2>
                 <a href="<?php the_field('pre_footer_link');?>" class="button">View More</a>
               </div>
             </div>

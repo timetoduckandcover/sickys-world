@@ -15,11 +15,9 @@ wc_print_notices();
 
 ?>
 
-<div class="container cart_container">
+<div class="container cart_container" id="cart">
     <?php do_action( 'woocommerce_before_cart' ); ?>
-    <p class="page-title">
-        <?php _e( 'Shopping Cart', 'facewp-abbey' ); ?>
-    </p>
+		<h2 class="header-2 uppercase">Your Cart</h2>
     <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post" class="table-responsive">
 
         <?php do_action( 'woocommerce_before_cart_table' ); ?>

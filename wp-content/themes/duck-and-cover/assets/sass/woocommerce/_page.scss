@@ -92,10 +92,10 @@
  *  Cart
  */
 .cart_container {
-    padding: 80px 15px;
-    .page-title {
-        margin-bottom: 90px;
-    }
+    //padding: 80px 15px;
+    // .page-title {
+    //     margin-bottom: 90px;
+    // }
 }
 .shop_table.cart {
     margin-bottom: 30px;
@@ -105,9 +105,10 @@
     thead {
         border-bottom: 1px solid #000;
         th {
-            padding: 23px 0;
+            padding: 6px 0;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 14px;
+            @extend .gibson-semibold;
         }
     }
     .cart_item {

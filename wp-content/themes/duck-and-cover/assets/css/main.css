@@ -653,8 +653,7 @@ table th[class*="col-"] {
     .table-responsive {
       width: 100%;
       overflow-y: hidden;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
-      border: 1px solid #eceeef; }
+      -ms-overflow-style: -ms-autohiding-scrollbar; }
       .table-responsive > .table {
         margin-bottom: 0; }
         .table-responsive > .table > thead > tr > th,
@@ -6121,7 +6120,7 @@ textarea {
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .shop_table.cart thead th, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -10268,11 +10267,6 @@ body.boxed .navigation-shop.container {
 /**
  *  Cart
  */
-.cart_container {
-  padding: 80px 15px; }
-  .cart_container .page-title {
-    margin-bottom: 90px; }
-
 .shop_table.cart {
   margin-bottom: 30px; }
   .shop_table.cart, .shop_table.cart th, .shop_table.cart td {
@@ -10280,9 +10274,9 @@ body.boxed .navigation-shop.container {
   .shop_table.cart thead {
     border-bottom: 1px solid #000; }
     .shop_table.cart thead th {
-      padding: 23px 0;
+      padding: 6px 0;
       text-transform: uppercase;
-      font-size: 13px; }
+      font-size: 14px; }
   .shop_table.cart .cart_item {
     border-bottom: 1px solid #EEE; }
     .shop_table.cart .cart_item td {
@@ -11148,7 +11142,14 @@ body.boxed .navigation-shop.container {
     padding: 620px 0 50px 0; }
 
 .celebwears-all .hero {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative; }
+  .celebwears-all .hero .caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
 
 .celebwears-all ul {
   margin-top: 40px; }
@@ -11202,6 +11203,14 @@ body.boxed .navigation-shop.container {
     @media (min-width: 1024px) {
       #duck-front-page .widget_facewp_instagram ul li {
         width: 20%; } }
+
+#duck-front-page .pre-footer-image {
+  position: relative; }
+  #duck-front-page .pre-footer-image .caption {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15%; }
 
 .duck-blog article {
   padding: 0 20px; }
