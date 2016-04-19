@@ -13,9 +13,8 @@ get_header(); ?>
 
     <div class="content-wrapper">
         <main class="content site-main" id="duck-front-page">
-          <div class="wrapper">
-            <?php while ( have_posts() ) : the_post(); ?>
-
+          <?php while ( have_posts() ) : the_post(); ?>
+            <div class="wrapper">
               <!-- Main Slider -->
               <?php the_field('main_slider_shortcode');?>
 
@@ -26,10 +25,27 @@ get_header(); ?>
               <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
               <!-- Instagram Feed -->
+              <h3 class="header-2 uppercase">Instagram</h3>
+              <br/>
               <?php dynamic_sidebar('Home Page Instagram Feed');?>
+            </div>
 
-            <?php endwhile; // end of the loop. ?>
-          </div>
+            <!-- Pre Footer Image -->
+            <?php
+              $image_id = get_field('pre_footer_image');
+              $image_size = 'full-size';
+              $image_array = wp_get_attachment_image_src($image_id, $image_size);
+              $image_url = $image_array[0];
+            ?>
+            <div class="pre-footer-image">
+              <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+              <div class="caption">
+                <h3 class="header-2"><?php the_field('pre_footer_second_header');?></h3>
+                <h2><?php the_field('pre_footer_header');?></h2>
+                <a href="<?php the_field('pre_footer_link');?>" class="button">View More</a>
+              </div>
+            </div>
+          <?php endwhile; // end of the loop. ?>
         </main>
     </div><!--.content-wrapper-->
 <?php get_footer(); ?>

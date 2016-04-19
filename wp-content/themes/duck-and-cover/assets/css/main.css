@@ -11197,8 +11197,11 @@ body.boxed .navigation-shop.container {
   display: flex;
   margin: 0 -20px; }
   #duck-front-page .widget_facewp_instagram ul li {
-    width: 20%;
+    width: 50%;
     padding: 0 10px 20px 10px; }
+    @media (min-width: 1024px) {
+      #duck-front-page .widget_facewp_instagram ul li {
+        width: 20%; } }
 
 .duck-blog article {
   padding: 0 20px; }
