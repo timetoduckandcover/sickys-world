@@ -11,5 +11,8 @@ add_image_size('list-size', 600);
 add_image_size('single-size', 930);
 add_image_size('full-size', 2000);
 
+// Filters
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 500;' ), 20 );
+
 require_once( FaceWP_Abbey_THEME_DIR . 'core/core.php' );
 require_once( FaceWP_Abbey_THEME_DIR . 'includes/init.php' );

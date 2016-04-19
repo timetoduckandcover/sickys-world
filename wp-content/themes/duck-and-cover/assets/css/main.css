@@ -8948,7 +8948,7 @@ object {
 --------------------------------------------------------------*/
 .site-footer {
   margin-top: 60px;
-  background: #efefef;
+  background-color: #f9f9f9 !important;
   padding: 40px 0; }
   .site-footer .footer-inner {
     padding: 0 80px; }
@@ -10267,6 +10267,9 @@ body.boxed .navigation-shop.container {
 /**
  *  Cart
  */
+.cart_container {
+  padding: 60px 0 0 0; }
+
 .shop_table.cart {
   margin-bottom: 30px; }
   .shop_table.cart, .shop_table.cart th, .shop_table.cart td {
