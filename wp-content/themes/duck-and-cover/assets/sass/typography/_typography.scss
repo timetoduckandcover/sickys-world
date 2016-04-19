@@ -28,6 +28,7 @@ select,
 textarea {
   line-height: $font__line-height-body;
   @extend .gibson-regular;
+  letter-spacing: 0 !important;
 }
 [class^="pe-7s-"], [class*=" pe-7s-"] {
     font-weight: bold;
@@ -39,7 +40,7 @@ textarea {
 
 .header-2 {
   @extend .gibson-semibold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 
