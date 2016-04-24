@@ -21,12 +21,16 @@
   font-family: 'Gibson-Bold', arial, sans-serif;
 }
 
+body {
+  line-height: 1.4 !important;
+}
+
 body,
 button,
 input,
 select,
 textarea {
-  line-height: $font__line-height-body;
+  // line-height: $font__line-height-body;
   @extend .gibson-regular;
   letter-spacing: 0 !important;
 }

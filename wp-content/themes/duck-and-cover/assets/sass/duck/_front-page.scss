@@ -1,6 +1,84 @@
 #duck-front-page {
 
+  .hero-slider {
+    margin-bottom: 60px;
+    p:first-child {
+      display: none;
+    }
+  }
+
+  #single-featured-product-section {
+    margin: 60px 0 0 0;
+    .single-featured-product-caption {
+      padding: 60px 20px;
+    }
+  }
+
+  #sunglasses-section {
+    background: #f4f4f4;
+    padding-top: 60px;
+    .sunglasses-section_top {
+      width: 320px;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      img {
+        padding: 20px;
+      }
+    }
+    .sunglasses-section_main {
+      background: #d8d8d8;
+      margin: 100px 0 340px 0;
+      position: relative;
+      padding: 80px 0;
+      .container {
+        position: relative;
+        z-index: 1;
+      }
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        background: #d8d8d8;
+      }
+      &:before {
+        height: 100px;
+        width: 122%;
+        top: -50px;
+        transform: rotate(-3deg);
+      }
+      &:after {
+        height: 134px;
+        width: 122%;
+        bottom: -67px;
+        transform: rotate(4deg);
+      }
+      .sunglasses-image-box {
+        position: absolute;
+        bottom: -330px;
+        height: 400px;
+        right: 100px;
+        width: 300px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .button {
+          bottom: 40px;
+          @include centre(x);
+          color: white;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+
   // Instagram feed
+  .front-page-instagram {
+    margin: 100px -20px 60px -20px;
+    h2 {
+      text-indent: 20px;
+    }
+  }
   .widget_facewp_instagram {
     ul {
       display: flex;

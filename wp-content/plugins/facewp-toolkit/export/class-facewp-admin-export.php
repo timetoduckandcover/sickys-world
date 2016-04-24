@@ -11,11 +11,11 @@ class FaceWP_Abbey_Admin_Export {
 
     add_filter( 'facewp_admin_menus', function ( $menus ) {
       $menus[] = array(
-        'func'        => array( $this, 'page_export' ),
-        'page_title'  => sprintf( __( '%s Export', 'facewp-abbey' ), FaceWP_Abbey_THEME ),
-        'menu_title'  => sprintf( __( '%s Export', 'facewp-abbey' ), FaceWP_Abbey_THEME ),
-        'menu_slug'   => FacewWP_THEME_PREFIX . 'export',
-        'capability'  => 'manage_options',
+        'func' => array( $this, 'page_export' ),
+        'page_title' => sprintf( __( '%s Export', 'facewp-abbey' ), FaceWP_Abbey_THEME ),
+        'menu_title' => sprintf( __( '%s Export', 'facewp-abbey' ), FaceWP_Abbey_THEME ),
+        'menu_slug' => FacewWP_THEME_PREFIX . 'export',
+        'capability' => 'manage_options',
       );
 
       return $menus;

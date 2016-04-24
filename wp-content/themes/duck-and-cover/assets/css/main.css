@@ -6106,7 +6106,7 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light {
+.gibson-light, h1 {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
 .gibson-regular, body,
@@ -6116,7 +6116,7 @@ select,
 textarea {
   font-family: 'Gibson-Regular', arial, sans-serif !important; }
 
-.gibson-semibold, .header-2, .widget-title, .header-01 #primary-menu > .menu-item > a,
+.gibson-semibold, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
@@ -6126,12 +6126,14 @@ textarea {
 .gibson-bold {
   font-family: 'Gibson-Bold', arial, sans-serif; }
 
+body {
+  line-height: 1.4 !important; }
+
 body,
 button,
 input,
 select,
 textarea {
-  line-height: 1.6;
   letter-spacing: 0 !important; }
 
 [class^="pe-7s-"], [class*=" pe-7s-"] {
@@ -6146,6 +6148,13 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   letter-spacing: 0.05em; }
+
+h1 {
+  font-weight: normal !important; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 18px !important; }
 
 .comment-text h1, .comment-text h2, .comment-text h3, .comment-text h4, .comment-text h5, .comment-text h6,
 .entry-content h1,
@@ -6327,12 +6336,12 @@ input[type="reset"],
 input[type="submit"],
 #respond #submit {
   display: inline-block;
-  height: 40px;
-  padding: 0 20px;
+  height: 37px;
+  padding: 0 30px;
   border: 1px solid;
   font-size: 13px;
   text-transform: uppercase;
-  line-height: 38px !important;
+  line-height: 39px !important;
   letter-spacing: 0 !important;
   cursor: pointer; }
 
@@ -6343,12 +6352,12 @@ input[type="submit"],
 
 .button {
   display: inline-block;
-  height: 40px;
-  padding: 0 20px;
+  height: 37px;
+  padding: 0 30px;
   border: 1px solid;
   font-size: 13px;
   text-transform: uppercase;
-  line-height: 38px !important;
+  line-height: 39px !important;
   letter-spacing: 0 !important; }
 
 a.button.secondary-button {
@@ -8946,9 +8955,8 @@ object {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  margin-top: 60px;
   background-color: #f9f9f9 !important;
-  padding: 40px 0; }
+  padding: 80px 0; }
   .site-footer .footer-inner {
     padding: 0 80px; }
   .site-footer .footer-social {
@@ -11201,6 +11209,71 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+
+#duck-front-page .hero-slider {
+  margin-bottom: 60px; }
+  #duck-front-page .hero-slider p:first-child {
+    display: none; }
+
+#duck-front-page #single-featured-product-section {
+  margin: 60px 0 0 0; }
+  #duck-front-page #single-featured-product-section .single-featured-product-caption {
+    padding: 60px 20px; }
+
+#duck-front-page #sunglasses-section {
+  background: #f4f4f4;
+  padding-top: 60px; }
+  #duck-front-page #sunglasses-section .sunglasses-section_top {
+    width: 320px;
+    display: block;
+    height: auto;
+    margin: 0 auto; }
+    #duck-front-page #sunglasses-section .sunglasses-section_top img {
+      padding: 20px; }
+  #duck-front-page #sunglasses-section .sunglasses-section_main {
+    background: #d8d8d8;
+    margin: 100px 0 340px 0;
+    position: relative;
+    padding: 80px 0; }
+    #duck-front-page #sunglasses-section .sunglasses-section_main .container, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar {
+      position: relative;
+      z-index: 1; }
+    #duck-front-page #sunglasses-section .sunglasses-section_main:before, #duck-front-page #sunglasses-section .sunglasses-section_main:after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      background: #d8d8d8; }
+    #duck-front-page #sunglasses-section .sunglasses-section_main:before {
+      height: 100px;
+      width: 122%;
+      top: -50px;
+      transform: rotate(-3deg); }
+    #duck-front-page #sunglasses-section .sunglasses-section_main:after {
+      height: 134px;
+      width: 122%;
+      bottom: -67px;
+      transform: rotate(4deg); }
+    #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
+      position: absolute;
+      bottom: -330px;
+      height: 400px;
+      right: 100px;
+      width: 300px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button {
+        bottom: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: white;
+        border: 1px solid white; }
+
+#duck-front-page .front-page-instagram {
+  margin: 100px -20px 60px -20px; }
+  #duck-front-page .front-page-instagram h2 {
+    text-indent: 20px; }
 
 #duck-front-page .widget_facewp_instagram ul {
   display: flex;

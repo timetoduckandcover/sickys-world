@@ -3,6 +3,17 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.05em;
 }
 
+h1 {
+  font-weight: normal !important;
+  @extend .gibson-light;
+}
+
+h2 {
+  text-transform: uppercase;
+  @extend .gibson-semibold;
+  font-size: 18px !important;
+}
+
 .comment-text,
 .entry-content {
     h1, h2, h3, h4, h5, h6 {
