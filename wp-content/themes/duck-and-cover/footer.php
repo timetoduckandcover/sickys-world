@@ -53,7 +53,7 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <h4 class="uppercase gibson-semibold">Newsletter</h4>
-          mailchimp here
+          <?php dynamic_sidebar('Mailchimp Signup');?>
         </div>
       </div>
     </div>

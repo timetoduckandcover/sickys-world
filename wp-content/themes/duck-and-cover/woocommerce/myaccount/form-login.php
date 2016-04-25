@@ -25,7 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php endif; ?>
 
-		<h2 class="page-title"><?php _e( 'Login', 'woocommerce' ); ?></h2>
+	<div class="login-header">
+		<h1><?php _e( 'Login', 'woocommerce' ); ?></h1>
+	</div>
 
 		<form method="post" class="login">
 
@@ -44,13 +46,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login' ); ?>
-				<input type="submit" class="button secondary-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
+				<input type="submit" class="button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
 			</p>
 			<p class="lost_password">
                 <label for="rememberme" class="inline">
                     <input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php _e( 'Remember me', 'woocommerce' ); ?>
                 </label>
-				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'woocommerce' ); ?></a>
+				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Forgot your password?', 'woocommerce' ); ?></a>
 			</p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -63,7 +65,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="col-md-6">
 
-		<h2 class="page-title"><?php _e( 'Register', 'woocommerce' ); ?></h2>
+		<div class="register-header">
+			<h1><?php _e( 'New User', 'woocommerce' ); ?></h1>
+			<p class="register-sub-header">Create a new account below.</p>
+		</div>
 
 		<form method="post" class="register">
 
@@ -100,7 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-register' ); ?>
-				<input type="submit" class="button secondary-button" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>" />
+				<input type="submit" class="button" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>" />
 			</p>
 
 			<?php do_action( 'woocommerce_register_form_end' ); ?>

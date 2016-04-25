@@ -26,10 +26,11 @@ form {
     margin-bottom: 7px;
     label {
         display: block;
-        margin-bottom: 13px;
+        //margin-bottom: 13px;
         font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 0;
+        @extend .gibson-semibold;
         &.checkbox {
             display: inline-block;
         }

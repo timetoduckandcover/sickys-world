@@ -137,10 +137,6 @@ a:hover {
 abbr[title] {
   border-bottom: 1px dotted; }
 
-b,
-strong {
-  font-weight: bold; }
-
 dfn {
   font-style: italic; }
 
@@ -6106,7 +6102,8 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1 {
+.gibson-light, h1, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
+#customer_login .register .lost_password a {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
 .gibson-regular, body,
@@ -6116,11 +6113,12 @@ select,
 textarea {
   font-family: 'Gibson-Regular', arial, sans-serif !important; }
 
-.gibson-semibold, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
+.gibson-semibold, b,
+strong, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .shop_table.cart thead th, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -6343,7 +6341,8 @@ input[type="submit"],
   text-transform: uppercase;
   line-height: 39px !important;
   letter-spacing: 0 !important;
-  cursor: pointer; }
+  cursor: pointer;
+  background: transparent; }
 
 .primary-button {
   background: #FFF; }
@@ -8004,7 +8003,7 @@ body.boxed .archive-box {
 .widget {
   flex: 16.66%;
   border-right: 1px solid #d8d8d8;
-  padding: 10px 20px; }
+  padding: 10px 0; }
   .widget:last-child {
     border-right: none; }
   .widget-title {
@@ -8959,6 +8958,13 @@ object {
   padding: 80px 0; }
   .site-footer .footer-inner {
     padding: 0 80px; }
+  .site-footer .menu {
+    margin-top: 8px; }
+    .site-footer .menu li a {
+      text-transform: uppercase;
+      font-size: 13px; }
+  .site-footer input[type=email] {
+    width: 100%; }
   .site-footer .footer-social {
     text-align: center;
     margin-bottom: 60px; }
@@ -9024,8 +9030,7 @@ object {
     line-height: 40px; }
 
 .footer-03 {
-  padding: 90px 0;
-  text-align: center; }
+  padding: 90px 0; }
   .footer-03 .footer-widget-container {
     padding: 0; }
     .footer-03 .footer-widget-container .widget {
@@ -9086,7 +9091,6 @@ form .form-row-last {
   margin-bottom: 7px; }
   .form-row label {
     display: block;
-    margin-bottom: 13px;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0; }
@@ -10100,17 +10104,23 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 ## Login & Register
 --------------------------------------------------------------*/
 #customer_login {
-  padding-top: 70px;
+  padding-top: 20px;
   margin-bottom: 140px; }
-  #customer_login .page-title {
-    margin-bottom: 80px; }
+  #customer_login .login-header {
+    margin-bottom: 56px; }
+    #customer_login .login-header h1 {
+      line-height: 37px; }
+  #customer_login .register-header {
+    margin-bottom: 34px; }
+    #customer_login .register-header h1 {
+      line-height: 37px; }
   #customer_login .login label.inline,
   #customer_login .register label.inline {
     display: inline-block;
     text-transform: inherit; }
   #customer_login .login input.button,
   #customer_login .register input.button {
-    width: 100%; }
+    background: transparent; }
   #customer_login .login .lost_password,
   #customer_login .register .lost_password {
     margin-top: 28px; }
@@ -10118,8 +10128,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     #customer_login .register .lost_password a {
       float: right;
       border-bottom: 1px solid;
-      font-size: 13px;
-      text-transform: uppercase;
+      font-size: 14px;
       letter-spacing: 0; }
 
 .lost_reset_password #user_login {
@@ -11292,6 +11301,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     top: 50%;
     transform: translate(0, -50%);
     right: 15%; }
+
+#our-story .our-story-first-section {
+  padding: 100px 0; }
+
+#our-story .our-story-second-section {
+  padding: 100px 0;
+  background: #D8D8D8; }
+
+#our-story .our-story-third-section {
+  padding: 100px 0; }
 
 .duck-blog article {
   padding: 0 20px; }

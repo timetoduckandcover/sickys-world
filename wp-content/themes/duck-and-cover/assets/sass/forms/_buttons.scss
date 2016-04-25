@@ -13,6 +13,7 @@ input[type="submit"],
     letter-spacing: 0 !important;
     @extend %transition;
     cursor: pointer;
+    background: transparent;
 }
 
 .primary-button {
