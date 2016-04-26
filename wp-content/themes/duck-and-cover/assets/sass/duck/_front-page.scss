@@ -7,8 +7,17 @@
     }
   }
 
+  .duck-front-page-top-categories {
+    text-align: center;
+    padding: 40px 0 80px 0;
+    .duck-front-page-top-category {
+      display: block;
+      padding: 50px;
+    }
+  }
+
   #single-featured-product-section {
-    margin: 60px 0 0 0;
+    //margin: 60px 0 0 0;
     .single-featured-product-caption {
       padding: 60px 20px;
     }

@@ -12,15 +12,27 @@
   left: 0;
   right: 0;
   z-index: 9999;
-  box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+  background-color: transparent !important;
+  @include media-breakpoint-up(md) {
+    box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+    background-color: white !important;
+  }
+  #mobile-menu-toggle {
+    color: #d8120f;
+    font-size: 20px;
+  }
   .container-fluid {
     position: relative;
   }
   .header-social {
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
     width: 16.66%;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
     ul {
       @include clearfix();
       li {

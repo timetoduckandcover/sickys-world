@@ -6636,14 +6636,25 @@ select:focus {
   left: 0;
   right: 0;
   z-index: 9999;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); }
+  background-color: transparent !important; }
+  @media (min-width: 1024px) {
+    #header {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+      background-color: white !important; } }
+  #header #mobile-menu-toggle {
+    color: #d8120f;
+    font-size: 20px; }
   #header .container-fluid {
     position: relative; }
   #header .header-social {
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
     width: 16.66%; }
+    @media (min-width: 1024px) {
+      #header .header-social {
+        display: block; } }
     #header .header-social ul::after {
       content: "";
       display: table;
@@ -7938,8 +7949,9 @@ ul.menu-horizontal > li > .children,
   z-index: 2;
   background: #FFF; }
 
-.main-content {
-  padding-top: 71px; }
+@media (min-width: 1024px) {
+  .main-content {
+    padding-top: 71px; } }
 
 body.boxed .page-wrapper {
   margin: 0 auto;
@@ -8012,7 +8024,8 @@ body.boxed .archive-box {
     text-transform: uppercase; }
 
 .sidebar .widget {
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 20px; }
 
 /**
  * Text, Banner, MailChimp for WordPress
@@ -11218,20 +11231,27 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       opacity: .5; }
 
 .duck-collection-header {
-  margin-top: 71px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  @media (min-width: 1024px) {
+    .duck-collection-header {
+      margin-top: 71px; } }
 
 #duck-front-page .hero-slider {
   margin-bottom: 60px; }
   #duck-front-page .hero-slider p:first-child {
     display: none; }
 
-#duck-front-page #single-featured-product-section {
-  margin: 60px 0 0 0; }
-  #duck-front-page #single-featured-product-section .single-featured-product-caption {
-    padding: 60px 20px; }
+#duck-front-page .duck-front-page-top-categories {
+  text-align: center;
+  padding: 40px 0 80px 0; }
+  #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category {
+    display: block;
+    padding: 50px; }
+
+#duck-front-page #single-featured-product-section .single-featured-product-caption {
+  padding: 60px 20px; }
 
 #duck-front-page #sunglasses-section {
   background: #f4f4f4;

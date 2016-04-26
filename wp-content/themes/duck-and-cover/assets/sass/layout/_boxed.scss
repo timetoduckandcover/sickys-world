@@ -6,7 +6,9 @@
 }
 
 .main-content {
-  padding-top: 71px; // allow for fixed header
+  @include media-breakpoint-up(md) {
+    padding-top: 71px; // allow for fixed header
+  }
 }
 
 body.boxed {

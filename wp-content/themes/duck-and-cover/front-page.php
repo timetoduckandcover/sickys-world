@@ -21,8 +21,9 @@ get_header(); ?>
                 <?php the_field('main_slider_shortcode');?>
               </div>
 
-              <!-- Featured products -->
-              <?php the_field('featured_products_shortcode');?>
+              <!-- Men's/Women's Categories -->
+              <?php include('front-page/top-categories.php');?>
+              
             </div>
 
             <!-- Single Featured Product Section -->

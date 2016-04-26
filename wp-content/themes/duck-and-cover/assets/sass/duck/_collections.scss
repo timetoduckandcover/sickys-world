@@ -1,6 +1,8 @@
 .duck-collection-header {
-  margin-top: 71px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  @include media-breakpoint-up(md) {
+    margin-top: 71px;
+  }
 }
