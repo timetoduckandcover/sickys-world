@@ -126,18 +126,18 @@ wc_print_notices();
     </form>
 
     <div class="row row-xs-center actions">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <?php if ( WC()->cart->coupons_enabled() ) { ?>
                 <div class="coupon">
-
-                    <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Enter coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button primary-button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" />
+										<label for="coupon_code" class="uppercase">Promo Code</label>
+                    <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button primary-button" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
 
                     <?php do_action( 'woocommerce_cart_coupon' ); ?>
                 </div>
             <?php } ?>
         </div>
-        <div class="col-md-4 end-md">
-            <input type="submit" class="button primary-button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" />
+        <div class="col-md-5 end-md push-checkout-btns">
+            <input type="submit" class="button primary-button" name="update_cart" value="<?php esc_attr_e( 'Update', 'woocommerce' ); ?>" />
 
             <?php do_action( 'woocommerce_cart_actions' ); ?>
 

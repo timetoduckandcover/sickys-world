@@ -92,13 +92,13 @@
  *  Cart
  */
 .cart_container {
-    padding: 60px 0 0 0;
+    //padding: 60px 0 0 0;
     // .page-title {
     //     margin-bottom: 90px;
     // }
 }
 .shop_table.cart {
-    margin-bottom: 30px;
+    margin: 60px 0 30px 0;
     &, th, td {
         border: none;
     }
@@ -130,17 +130,26 @@
     }
 }
 .coupon {
-    display: inline-block;
-    padding: 30px;
-    #coupon_code {
-        margin-bottom: 0;
-        margin-right: 6px;
-        vertical-align: bottom;
-        border: none;
-    }
-    .button {
-        border: none;
-    }
+  background-color: transparent !important;
+  display: inline-block;
+  position: relative;
+  padding-top: 18px;
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @extend .gibson-semibold;
+    font-size: 12px;
+  }
+  #coupon_code {
+    margin-bottom: 0;
+    margin-right: 6px;
+    vertical-align: bottom;
+    height: 37px;
+  }
+}
+.push-checkout-btns {
+  padding-top: 18px;
 }
 .actions {
     margin-bottom: 30px;

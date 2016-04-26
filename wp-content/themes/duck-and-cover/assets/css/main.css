@@ -6118,7 +6118,7 @@ strong, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -10282,11 +10282,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 /**
  *  Cart
  */
-.cart_container {
-  padding: 60px 0 0 0; }
-
 .shop_table.cart {
-  margin-bottom: 30px; }
+  margin: 60px 0 30px 0; }
   .shop_table.cart, .shop_table.cart th, .shop_table.cart td {
     border: none; }
   .shop_table.cart thead {
@@ -10307,15 +10304,23 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
         font-size: 24px; }
 
 .coupon {
+  background-color: transparent !important;
   display: inline-block;
-  padding: 30px; }
+  position: relative;
+  padding-top: 18px; }
+  .coupon label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px; }
   .coupon #coupon_code {
     margin-bottom: 0;
     margin-right: 6px;
     vertical-align: bottom;
-    border: none; }
-  .coupon .button {
-    border: none; }
+    height: 37px; }
+
+.push-checkout-btns {
+  padding-top: 18px; }
 
 .actions {
   margin-bottom: 30px; }
