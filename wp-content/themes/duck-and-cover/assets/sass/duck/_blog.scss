@@ -1,7 +1,15 @@
 // Article listing
+.blog-list-image-square {
+  display: block;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
 .duck-blog {
   article {
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     .post-meta {
       margin: 30px 0;
       .post-meta-by {

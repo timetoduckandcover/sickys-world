@@ -11336,8 +11336,15 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 #our-story .our-story-third-section {
   padding: 100px 0; }
 
+.blog-list-image-square {
+  display: block; }
+  .blog-list-image-square img {
+    width: 100%;
+    height: auto;
+    display: block; }
+
 .duck-blog article {
-  padding: 0 20px; }
+  padding: 0 20px 20px 20px; }
   .duck-blog article .post-meta {
     margin: 30px 0; }
     .duck-blog article .post-meta .post-meta-by {

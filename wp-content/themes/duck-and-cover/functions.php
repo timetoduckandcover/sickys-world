@@ -17,3 +17,9 @@ add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 1000;' ), 20
 
 require_once( FaceWP_Abbey_THEME_DIR . 'core/core.php' );
 require_once( FaceWP_Abbey_THEME_DIR . 'includes/init.php' );
+
+// Post thumbnails
+function my_theme_thumb() {
+set_post_thumbnail_size( 400, 400, true );
+}
+add_action( 'after_setup_theme', 'my_theme_thumb', 11 );

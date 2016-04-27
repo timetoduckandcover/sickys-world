@@ -7,7 +7,9 @@
 ?>
 <article class="col-xs-12 col-sm-6 col-md-4" id="post-<?php the_ID(); ?>" <?php post_class( 'post-simple-item' ); ?>>
   <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
-  <img src="<?php echo $url; ?>" class="img-full" alt="Text_2" />
+  <a href="<?php echo get_permalink() ?>" class="blog-list-image-square">
+    <?php the_post_thumbnail();?>
+  </a>
   <h3 class="uppercase"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
   <div class="post-meta">
     <?php
