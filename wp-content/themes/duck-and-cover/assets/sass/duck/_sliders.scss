@@ -1,0 +1,43 @@
+.duck-slider-caption {
+  text-align: left !important;
+  h3 {
+    text-transform: uppercase;
+    color: #4c4c4c;
+    @extend .gibson-light;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin: 0 0 15px 0 !important;
+  }
+  h2 {
+    text-transform: uppercase;
+    color: #4c4c4c;
+    @extend .gibson-semibold;
+    font-size: 42px !important;
+    line-height: 42px !important;
+    margin: 0 0 15px 0 !important;
+  }
+  p {
+    color: #4c4c4c;
+    @extend .gibson-light;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin: 0 0 15px 0 !important;
+    a {
+      font-size: 14px !important;
+      line-height: 14px !important;
+      color: #d8120f;
+    }
+  }
+  .duck-slider-button {
+    background: #d8120f;
+    display: inline-block;
+    padding: 15px 30px;
+    @extend .gibson-semibold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    padding: 2px 28px 0 28px !important;
+  }
+}

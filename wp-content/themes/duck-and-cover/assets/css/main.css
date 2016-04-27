@@ -6103,7 +6103,7 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
 .gibson-light, h1, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a {
+#customer_login .register .lost_password a, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
 .gibson-regular, body,
@@ -6118,7 +6118,7 @@ strong, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -11366,6 +11366,40 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     clear: both; }
   .duck-blog article .blog-meta-footer .read-more {
     float: right; }
+
+.duck-slider-caption {
+  text-align: left !important; }
+  .duck-slider-caption h3 {
+    text-transform: uppercase;
+    color: #4c4c4c;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin: 0 0 15px 0 !important; }
+  .duck-slider-caption h2 {
+    text-transform: uppercase;
+    color: #4c4c4c;
+    font-size: 42px !important;
+    line-height: 42px !important;
+    margin: 0 0 15px 0 !important; }
+  .duck-slider-caption p {
+    color: #4c4c4c;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin: 0 0 15px 0 !important; }
+    .duck-slider-caption p a {
+      font-size: 14px !important;
+      line-height: 14px !important;
+      color: #d8120f; }
+  .duck-slider-caption .duck-slider-button {
+    background: #d8120f;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    padding: 2px 28px 0 28px !important; }
 
 .share-buttons {
   margin-bottom: 12px; }
