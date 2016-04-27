@@ -10,6 +10,7 @@ add_image_size('thumb-size', 410);
 add_image_size('list-size', 600);
 add_image_size('single-size', 930);
 add_image_size('full-size', 2000);
+//add_image_size('blog-crop', 600, 600, true);
 
 // Filters
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 1000;' ), 20 );
