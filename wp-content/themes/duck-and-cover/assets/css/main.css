@@ -11344,7 +11344,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     display: block; }
 
 .duck-blog article {
-  padding: 0 20px 20px 20px; }
+  padding: 0 40px 100px 40px; }
   .duck-blog article .post-meta {
     margin: 30px 0; }
     .duck-blog article .post-meta .post-meta-by {
