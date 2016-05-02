@@ -10,7 +10,6 @@
   <a href="<?php echo get_permalink() ?>" class="blog-list-image-square">
     <?php the_post_thumbnail();?>
   </a>
-  <h3 class="uppercase"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
   <div class="post-meta">
     <?php
       $fname = get_the_author_meta('first_name');
@@ -25,12 +24,11 @@
         $full_name = "{$fname} {$lname}";
       }
     ?>
-    <!-- <span class="post-meta-by">by</span>
-    <span class="uppercase post-meta-name"><?php echo $full_name;?></span> -->
-    <span class="uppercase post-meta-date"><?php the_date(); ?></span>
+    <h6 class="uppercase post-meta-date"><?php the_date(); ?></h6>
   </div>
+  <h4 class="uppercase"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
   <p><?php echo substr(wp_strip_all_tags( get_the_content() ),0,100); ?>...</p>
   <div class="blog-meta-footer">
-    <a href="<?php echo get_permalink() ?>" class="read-more button"><?php esc_html_e( 'Read More', 'facewp-abbey' ); ?></a>
+    <a href="<?php echo get_permalink() ?>" class="read-more button-transparent"><?php esc_html_e( 'Read More', 'facewp-abbey' ); ?></a>
   </div>
 </article>

@@ -6,12 +6,41 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: normal !important;
   @extend .gibson-light;
+  color: #4C4C4C !important;
+  @extend .gibson-semibold;
 }
 
 h2 {
   text-transform: uppercase;
   @extend .gibson-semibold;
+  font-size: 22px !important;
+  color: #4C4C4C !important;
+  @extend .gibson-semibold;
+}
+
+h3 {
+  font-size: 20px !important;
+  color: #AAAAAA !important;
+  @extend .gibson-semibold;
+}
+
+h4 {
   font-size: 18px !important;
+  line-height: 24px !important;
+  color: #4C4C4C !important;
+  @extend .gibson-semibold;
+}
+
+h5 {
+  font-size: 14px !important;
+  color: #4C4C4C !important;
+  @extend .gibson-light;
+}
+
+h6 {
+  font-size: 14px !important;
+  @extend .gibson-semibold;
+  color: #AAAAAA !important;
 }
 
 .comment-text,

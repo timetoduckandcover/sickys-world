@@ -6102,8 +6102,8 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .duck-slider-caption h3, .duck-slider-caption p {
+.gibson-light, h1, h5, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
+#customer_login .register .lost_password a, .duck-collection-header .page-title, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
 .gibson-regular, body,
@@ -6114,11 +6114,11 @@ textarea {
   font-family: 'Gibson-Regular', arial, sans-serif !important; }
 
 .gibson-semibold, b,
-strong, .header-2, .widget-title, h2, .header-01 #primary-menu > .menu-item > a,
+strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, .button-transparent, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-name, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
   font-family: 'Gibson-SemiBold', arial, sans-serif; }
 
 .gibson-bold {
@@ -6148,11 +6148,30 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em; }
 
 h1 {
-  font-weight: normal !important; }
+  font-weight: normal !important;
+  color: #4C4C4C !important; }
 
 h2 {
   text-transform: uppercase;
-  font-size: 18px !important; }
+  font-size: 22px !important;
+  color: #4C4C4C !important; }
+
+h3 {
+  font-size: 20px !important;
+  color: #AAAAAA !important; }
+
+h4 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #4C4C4C !important; }
+
+h5 {
+  font-size: 14px !important;
+  color: #4C4C4C !important; }
+
+h6 {
+  font-size: 14px !important;
+  color: #AAAAAA !important; }
 
 .comment-text h1, .comment-text h2, .comment-text h3, .comment-text h4, .comment-text h5, .comment-text h6,
 .entry-content h1,
@@ -6353,11 +6372,27 @@ input[type="submit"],
   display: inline-block;
   height: 37px;
   padding: 0 30px;
-  border: 1px solid;
+  border: 1px solid #fb0a09;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 39px !important;
+  letter-spacing: 0 !important;
+  background: #fb0a09;
+  color: #ffffff; }
+
+.button-transparent {
+  border: 1px solid #fb0a09;
+  color: #fb0a09 !important;
+  display: inline-block;
+  height: 37px;
+  padding: 0 30px;
   font-size: 13px;
   text-transform: uppercase;
   line-height: 39px !important;
   letter-spacing: 0 !important; }
+  .button-transparent:hover {
+    color: #ffffff !important;
+    background: #fb0a09; }
 
 a.button.secondary-button {
   color: #FFF; }
@@ -8021,7 +8056,8 @@ body.boxed .archive-box {
   .widget-title {
     position: relative;
     margin-bottom: 8px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #4C4C4C; }
 
 .sidebar .widget {
   font-size: 14px;
@@ -9220,12 +9256,14 @@ form .form-row-last {
 .product-layout-grid .added_to_cart {
   display: none; }
 
-.product-layout-grid .ajax_add_to_cart.loading .pe-7s-cart:before {
-  content: "\e6c2";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+.product-layout-grid .ajax_add_to_cart.loading .pe-7s-cart {
+  color: #000; }
+  .product-layout-grid .ajax_add_to_cart.loading .pe-7s-cart:before {
+    content: "\e6c2";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .product-layout-grid .ajax_add_to_cart.added .pe-7s-cart:before {
   content: "\e66c";
@@ -11237,6 +11275,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   @media (min-width: 1024px) {
     .duck-collection-header {
       margin-top: 71px; } }
+  .duck-collection-header .page-title {
+    font-size: 80px !important; }
 
 #duck-front-page .hero-slider {
   margin-bottom: 60px; }
@@ -11304,9 +11344,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
         border: 1px solid white; }
 
 #duck-front-page .front-page-instagram {
-  margin: 100px -20px 60px -20px; }
-  #duck-front-page .front-page-instagram h2 {
-    text-indent: 20px; }
+  margin: 100px 0 60px 0; }
 
 #duck-front-page .widget_facewp_instagram ul {
   display: flex;
@@ -11337,7 +11375,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   padding: 100px 0; }
 
 .blog-list-image-square {
-  display: block; }
+  display: block;
+  margin-bottom: 20px; }
   .blog-list-image-square img {
     width: 100%;
     height: auto;
@@ -11346,26 +11385,13 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 .duck-blog article {
   padding: 0 40px 100px 40px; }
   .duck-blog article .post-meta {
-    margin: 30px 0; }
-    .duck-blog article .post-meta .post-meta-by {
-      font-size: 14px; }
+    margin: 0 0 8px 0; }
     .duck-blog article .post-meta .post-meta-date {
-      position: relative;
-      padding-left: 30px; }
-      .duck-blog article .post-meta .post-meta-date:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 20px;
-        height: 1px;
-        bottom: 0;
-        background: black; }
-  .duck-blog article .blog-meta-footer::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .duck-blog article .blog-meta-footer .read-more {
-    float: right; }
+      position: relative; }
+  .duck-blog article h4 {
+    margin: 0 0 10px 0; }
+  .duck-blog article .blog-meta-footer {
+    margin: 30px 0 0 0; }
 
 .duck-slider-caption {
   text-align: left !important; }

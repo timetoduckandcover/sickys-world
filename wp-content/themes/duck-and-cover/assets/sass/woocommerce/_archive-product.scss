@@ -43,6 +43,7 @@
 .product-layout-grid .ajax_add_to_cart {
     &.loading {
         .pe-7s-cart {
+          color: #000;
             @extend .pe-spin;
             &:before {
                 content: "\e6c2";
@@ -195,4 +196,3 @@
         }
     }
 }
-

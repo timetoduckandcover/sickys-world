@@ -26,11 +26,30 @@ input[type="submit"],
     display: inline-block;
     height: 37px;
     padding: 0 30px;
-    border: 1px solid;
+    border: 1px solid #fb0a09;
     font-size: 13px;
     text-transform: uppercase;
     line-height: 39px !important;
     letter-spacing: 0 !important;
+    background: #fb0a09;
+    @extend .gibson-semibold;
+    color: #ffffff;
+}
+.button-transparent {
+  border: 1px solid #fb0a09;
+  color: #fb0a09 !important;
+  display: inline-block;
+  height: 37px;
+  padding: 0 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 39px !important;
+  letter-spacing: 0 !important;
+  @extend .gibson-semibold;
+  &:hover {
+    color: #ffffff !important;
+    background: #fb0a09;
+  }
 }
 a.button.secondary-button {
     color: #FFF;
