@@ -6507,7 +6507,8 @@ select:focus {
   visibility: hidden;
   backface-visibility: hidden;
   opacity: 0;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  background-color: rgba(216, 18, 15, 0.93); }
   .full-screen-search-container .container, .full-screen-search-container .sidebar {
     height: 100%; }
     .full-screen-search-container .container .row, .full-screen-search-container .sidebar .row, .full-screen-search-container .container #reviews #review_form_wrapper .comment-form, #reviews #review_form_wrapper .full-screen-search-container .container .comment-form, .full-screen-search-container .sidebar #reviews #review_form_wrapper .comment-form, #reviews #review_form_wrapper .full-screen-search-container .sidebar .comment-form {

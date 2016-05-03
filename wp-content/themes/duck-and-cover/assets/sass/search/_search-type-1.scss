@@ -39,6 +39,7 @@
     backface-visibility: hidden;
     opacity: 0;
     @include transition(all 0.2s);
+    background-color: rgba(216, 18, 15, 0.93);
     .container {
         height: 100%;
         .row {
