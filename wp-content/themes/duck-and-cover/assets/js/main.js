@@ -476,6 +476,63 @@ jQuery( document ).ready( function( $ ) {
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
 
+
+// D & C
 jQuery( document ).ready( function( $ ) {
+
+  // Fitvids
   $('.video-wrapper').fitVids();
+
+  // Scroll event for home page parallax
+  var lastScrollTop = 0;
+  $(window).scroll(function(e) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+      if(_isScrolledIntoView('.sunglasses-image-box')) {
+        _renderParallax('down');
+      } else {
+        _resetParallax();
+      }
+    } else {
+      if(_isScrolledIntoView('.sunglasses-image-box')) {
+         _renderParallax('up');
+      } else {
+        _resetParallax();
+      }
+    }
+    lastScrollTop = st;
+  });
+
+  function _isScrolledIntoView(elem) {
+    var $elem = $(elem);
+    var $window = $(window);
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+    return ((( elemTop >= docViewTop) && (elemTop <= docViewBottom)) || ((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)));
+  };
+
+  function _renderParallax(dir) {
+    var el = $('.sunglasses-image-box').css('background-position');
+    el = el.split(' ');
+    var intVal = el[1].split('%');
+    var intValFin = Number(intVal[0]);
+    console.log(intValFin);
+    //console.log(el[1]);
+    var newPos;
+    if(dir === 'down') {
+      //newPos = intValFin * 1.01;
+      newPos = intValFin + 0.35;
+    } else {
+      //newPos = intValFin * 0.99;
+      newPos = intValFin - 0.35;
+    }
+    $('.sunglasses-image-box').css('background-position', el[0] + ' ' + newPos + '%');
+  };
+
+  function _resetParallax() {
+    //$('.sunglasses-image-box').css('background-position', '50% 50%');
+  };
+
 });

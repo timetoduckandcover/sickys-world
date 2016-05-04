@@ -6508,7 +6508,7 @@ select:focus {
   backface-visibility: hidden;
   opacity: 0;
   transition: all 0.2s;
-  background-color: rgba(216, 18, 15, 0.93); }
+  background-color: rgba(216, 18, 15, 0.73) !important; }
   .full-screen-search-container .container, .full-screen-search-container .sidebar {
     height: 100%; }
     .full-screen-search-container .container .row, .full-screen-search-container .sidebar .row, .full-screen-search-container .container #reviews #review_form_wrapper .comment-form, #reviews #review_form_wrapper .full-screen-search-container .container .comment-form, .full-screen-search-container .sidebar #reviews #review_form_wrapper .comment-form, #reviews #review_form_wrapper .full-screen-search-container .sidebar .comment-form {
@@ -11333,8 +11333,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       height: 400px;
       right: 100px;
       width: 300px;
-      background-size: cover;
-      background-position: center center;
+      background-position: center 50%;
       background-repeat: no-repeat; }
       #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button {
         bottom: 40px;
@@ -11393,6 +11392,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     margin: 0 0 10px 0; }
   .duck-blog article .blog-meta-footer {
     margin: 30px 0 0 0; }
+
+.tp-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important; }
 
 .duck-slider-caption {
   text-align: left !important; }
