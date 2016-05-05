@@ -513,26 +513,25 @@ jQuery( document ).ready( function( $ ) {
     return ((( elemTop >= docViewTop) && (elemTop <= docViewBottom)) || ((elemBottom >= docViewTop) && (elemBottom <= docViewBottom)));
   };
 
+  var newVal = 0;
   function _renderParallax(dir) {
-    var el = $('.sunglasses-image-box').css('background-position');
-    el = el.split(' ');
-    var intVal = el[1].split('%');
-    var intValFin = Number(intVal[0]);
-    console.log(intValFin);
-    //console.log(el[1]);
-    var newPos;
+
     if(dir === 'down') {
-      //newPos = intValFin * 1.01;
-      newPos = intValFin + 0.35;
+      // console.log('down', newVal);
+      if(newVal > -220) {
+        newVal = newVal - 2;
+      }
     } else {
-      //newPos = intValFin * 0.99;
-      newPos = intValFin - 0.35;
+      // console.log('up', newVal);
+      if(newVal < 100) {
+        newVal = newVal + 2;
+      }
     }
-    $('.sunglasses-image-box').css('background-position', el[0] + ' ' + newPos + '%');
+    $('.sunglasses-image-box').css('top', newVal + 'px');
   };
 
   function _resetParallax() {
-    //$('.sunglasses-image-box').css('background-position', '50% 50%');
+    //$('.sunglasses-image-box').css('top', '0px');
   };
 
 });

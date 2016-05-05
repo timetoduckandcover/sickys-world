@@ -9007,7 +9007,7 @@ object {
   background-color: #f9f9f9 !important;
   padding: 80px 0; }
   .site-footer .footer-inner {
-    padding: 0 80px; }
+    padding: 0 20px; }
   .site-footer .menu {
     margin-top: 8px; }
     .site-footer .menu li a {
@@ -11272,12 +11272,17 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 .duck-collection-header {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 150px 15px; }
   @media (min-width: 1024px) {
     .duck-collection-header {
       margin-top: 71px; } }
   .duck-collection-header .page-title {
     font-size: 80px !important; }
+
+.duck-collection-description {
+  padding: 70px 0;
+  margin-bottom: -90px; }
 
 #duck-front-page .hero-slider {
   margin-bottom: 60px; }
@@ -11292,44 +11297,49 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     padding: 50px; }
 
 #duck-front-page #single-featured-product-section .single-featured-product-caption {
-  padding: 60px 20px; }
+  padding: 40px 20px; }
 
 #duck-front-page #sunglasses-section {
   background: #f4f4f4;
   padding-top: 60px; }
   #duck-front-page #sunglasses-section .sunglasses-section_top {
-    width: 320px;
+    width: 340px;
     display: block;
     height: auto;
     margin: 0 auto; }
     #duck-front-page #sunglasses-section .sunglasses-section_top img {
-      padding: 20px; }
+      padding: 20px 0; }
   #duck-front-page #sunglasses-section .sunglasses-section_main {
     background: #d8d8d8;
     margin: 100px 0 340px 0;
     position: relative;
-    padding: 80px 0; }
+    padding: 80px 0 200px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
     #duck-front-page #sunglasses-section .sunglasses-section_main .container, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar {
       position: relative;
       z-index: 1; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:before, #duck-front-page #sunglasses-section .sunglasses-section_main:after {
       content: '';
       position: absolute;
-      z-index: 0;
-      background: #d8d8d8; }
+      z-index: 0; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:before {
       height: 100px;
       width: 122%;
       top: -50px;
-      transform: rotate(-3deg); }
+      transform: rotate(-3deg);
+      display: none; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:after {
       height: 134px;
-      width: 122%;
-      bottom: -67px;
-      transform: rotate(4deg); }
+      width: 127%;
+      bottom: -98px;
+      left: -5px;
+      transform: rotate(4deg);
+      background: #fff; }
     #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
       position: absolute;
-      bottom: -330px;
+      top: 0px;
       height: 400px;
       right: 100px;
       width: 300px;

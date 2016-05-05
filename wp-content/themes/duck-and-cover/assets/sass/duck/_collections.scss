@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 150px 15px;
   @include media-breakpoint-up(md) {
     margin-top: 71px;
   }
@@ -9,4 +10,9 @@
     @extend .gibson-light;
     font-size: 80px !important;
   }
+}
+
+.duck-collection-description {
+  padding: 70px 0;
+  margin-bottom: -90px;
 }

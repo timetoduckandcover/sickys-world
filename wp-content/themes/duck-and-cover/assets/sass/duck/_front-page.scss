@@ -19,7 +19,7 @@
   #single-featured-product-section {
     //margin: 60px 0 0 0;
     .single-featured-product-caption {
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
   }
 
@@ -27,19 +27,22 @@
     background: #f4f4f4;
     padding-top: 60px;
     .sunglasses-section_top {
-      width: 320px;
+      width: 340px;
       display: block;
       height: auto;
       margin: 0 auto;
       img {
-        padding: 20px;
+        padding: 20px 0;
       }
     }
     .sunglasses-section_main {
       background: #d8d8d8;
       margin: 100px 0 340px 0;
       position: relative;
-      padding: 80px 0;
+      padding: 80px 0 200px 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
       .container {
         position: relative;
         z-index: 1;
@@ -48,23 +51,26 @@
         content: '';
         position: absolute;
         z-index: 0;
-        background: #d8d8d8;
+        // background: #d8d8d8;
       }
       &:before {
         height: 100px;
         width: 122%;
         top: -50px;
         transform: rotate(-3deg);
+        display: none; // Hide for now
       }
       &:after {
         height: 134px;
-        width: 122%;
-        bottom: -67px;
+        width: 127%;
+        bottom: -98px;
+        left: -5px;
         transform: rotate(4deg);
+        background: #fff;
       }
       .sunglasses-image-box {
         position: absolute;
-        bottom: -330px;
+        top: 0px;
         height: 400px;
         right: 100px;
         width: 300px;

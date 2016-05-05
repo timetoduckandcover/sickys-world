@@ -91,21 +91,11 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
             // get the image URL
             $image = wp_get_attachment_url( $thumbnail_id );
         } ;?>
-        <div class="page-title-row duck-collection-header" style="background-image:url(<?php echo $image ;?>);">
+        <div class="duck-collection-header" style="background-image:url(<?php echo $image ;?>);">
             <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
               <div class="container">
                 <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
               </div>
-
-                <?php
-                /**
-                 * woocommerce_archive_description hook
-                 *
-                 * @hooked woocommerce_taxonomy_archive_description - 10
-                 * @hooked woocommerce_product_archive_description - 10
-                 */
-                do_action( 'woocommerce_archive_description' );
-                ?>
 
                 <?php $facewp_abbey_category_output = woocommerce_product_subcategories( array(
                                                                                 'before' => facewp_abbey_category_loop_start( false ),
@@ -113,6 +103,19 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
                                                                             ) ); ?>
 
             <?php endif; ?>
+        </div>
+        <div class="duck-collection-description">
+          <div class="container">
+            <?php
+            /**
+             * woocommerce_archive_description hook
+             *
+             * @hooked woocommerce_taxonomy_archive_description - 10
+             * @hooked woocommerce_product_archive_description - 10
+             */
+            do_action( 'woocommerce_archive_description' );
+            ?>
+          </div>
         </div>
     <?php elseif ( function_exists( 'is_product' ) && is_product() ) : ?>
         <div class="container wide navigation-shop">
