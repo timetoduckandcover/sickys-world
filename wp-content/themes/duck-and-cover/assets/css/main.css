@@ -11311,9 +11311,9 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       padding: 20px 0; }
   #duck-front-page #sunglasses-section .sunglasses-section_main {
     background: #d8d8d8;
-    margin: 100px 0 340px 0;
+    margin: 100px 0 180px 0;
     position: relative;
-    padding: 80px 0 200px 0;
+    padding: 250px 0 350px 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
@@ -11333,7 +11333,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     #duck-front-page #sunglasses-section .sunglasses-section_main:after {
       height: 134px;
       width: 127%;
-      bottom: -98px;
+      bottom: -83px;
       left: -5px;
       transform: rotate(4deg);
       background: #fff; }
