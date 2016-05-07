@@ -6102,7 +6102,7 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1, h5, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
+.gibson-light, h1, h5, p, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
 #customer_login .register .lost_password a, .duck-collection-header .page-title, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
@@ -9022,7 +9022,10 @@ object {
       display: inline-block;
       margin: 0 14px; }
       .site-footer .footer-social li a {
-        font-size: 240%; }
+        font-size: 150%;
+        color: #424242; }
+        .site-footer .footer-social li a i {
+          color: #424242; }
 
 .footer-widget-container {
   padding: 65px 0 10px; }
@@ -9080,7 +9083,7 @@ object {
     line-height: 40px; }
 
 .footer-03 {
-  padding: 90px 0; }
+  padding: 80px 0; }
   .footer-03 .footer-widget-container {
     padding: 0; }
     .footer-03 .footer-widget-container .widget {

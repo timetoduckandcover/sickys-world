@@ -1,5 +1,6 @@
 p {
     margin-bottom: 1.125em;
+    @extend .gibson-light;
 }
 
 dfn, cite, em, i {
