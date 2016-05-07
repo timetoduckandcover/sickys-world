@@ -13,6 +13,27 @@
     .duck-front-page-top-category {
       display: block;
       padding: 50px;
+      .top-category-images {
+        position: relative;
+        .top-cat-first {
+          transition: all .2s ease;
+          z-index: 2;
+          position: relative;
+        }
+        .top-cat-second {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+        &:hover {
+          .top-cat-first {
+            opacity: 0;
+          }
+        }
+      }
     }
   }
 

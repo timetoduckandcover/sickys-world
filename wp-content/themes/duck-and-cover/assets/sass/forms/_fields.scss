@@ -1,3 +1,8 @@
+::-webkit-input-placeholder { color:#4c4c4c; }
+::-moz-placeholder { color:#4c4c4c; } /* firefox 19+ */
+:-ms-input-placeholder { color:#4c4c4c; } /* ie */
+input:-moz-placeholder { color:#4c4c4c; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -8,7 +13,7 @@ input[type="tel"] {
     margin-bottom: 15px;
     padding: 8px 10px;
     height: 40px;
-
+    color: #4c4c4c;
     &:focus {
         outline: none;
         outline-offset: 0;

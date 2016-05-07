@@ -1,39 +1,20 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-#respond #submit {
-    display: inline-block;
-    height: 37px;
-    padding: 0 30px;
-    border: 1px solid;
-    font-size: 13px;
-    text-transform: uppercase;
-    line-height: 39px !important;
-    letter-spacing: 0 !important;
-    @extend %transition;
-    cursor: pointer;
-    background: transparent;
-}
-
-.primary-button {
-    background: #FFF;
-    &:hover {
-        text-decoration: underline;
-    }
-}
 .button {
     display: inline-block;
-    height: 37px;
-    padding: 0 30px;
+    height: 41px;
+    padding: 1px 30px;
     border: 1px solid #fb0a09;
     font-size: 13px;
     text-transform: uppercase;
     line-height: 39px !important;
-    letter-spacing: 0 !important;
+    letter-spacing: 0.1em !important;
     background: #fb0a09;
     @extend .gibson-semibold;
     color: #ffffff;
+    transition: all .1s ease;
+    &:hover {
+      color: #ffffff;
+      background: lighten(#fb0a09, 10%);
+    }
 }
 .button-transparent {
   border: 1px solid #fb0a09;
@@ -44,13 +25,41 @@ input[type="submit"],
   font-size: 13px;
   text-transform: uppercase;
   line-height: 39px !important;
-  letter-spacing: 0 !important;
+  letter-spacing: 0.1em !important;
   @extend .gibson-semibold;
+  transition: all .1s ease;
   &:hover {
     color: #ffffff !important;
     background: #fb0a09;
   }
 }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+#respond #submit {
+  @extend .button;
+    // display: inline-block;
+    // height: 37px;
+    // padding: 0 30px;
+    // border: 1px solid;
+    // font-size: 13px;
+    // text-transform: uppercase;
+    // line-height: 39px !important;
+    // letter-spacing: 0.1em !important;
+    // @extend %transition;
+    // cursor: pointer;
+    // background: transparent;
+}
+
+.primary-button {
+    background: #FFF;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 a.button.secondary-button {
     color: #FFF;
 }

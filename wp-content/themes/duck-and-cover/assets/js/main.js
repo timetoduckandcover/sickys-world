@@ -484,24 +484,26 @@ jQuery( document ).ready( function( $ ) {
   $('.video-wrapper').fitVids();
 
   // Scroll event for home page parallax
-  var lastScrollTop = 0;
-  $(window).scroll(function(e) {
-    var st = $(this).scrollTop();
-    if (st > lastScrollTop){
-      if(_isScrolledIntoView('.sunglasses-image-box')) {
-        _renderParallax('down');
+  if(window.location.pathname === '/') {
+    var lastScrollTop = 0;
+    $(window).scroll(function(e) {
+      var st = $(this).scrollTop();
+      if (st > lastScrollTop){
+        if(_isScrolledIntoView('.sunglasses-image-box')) {
+          _renderParallax('down');
+        } else {
+          _resetParallax();
+        }
       } else {
-        _resetParallax();
+        if(_isScrolledIntoView('.sunglasses-image-box')) {
+           _renderParallax('up');
+        } else {
+          _resetParallax();
+        }
       }
-    } else {
-      if(_isScrolledIntoView('.sunglasses-image-box')) {
-         _renderParallax('up');
-      } else {
-        _resetParallax();
-      }
-    }
-    lastScrollTop = st;
-  });
+      lastScrollTop = st;
+    });
+  }
 
   function _isScrolledIntoView(elem) {
     var $elem = $(elem);

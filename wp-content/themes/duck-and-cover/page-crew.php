@@ -26,11 +26,11 @@ Template Name: Crew
   					?>
 
             <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
-              <div class="wrapper">
+              <div class="container">
                 <div class="sicky-crew-member" style="text-align:<?php the_field('alignment');?>">
-                  <h4 style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
+                  <h4 class="uppercase" style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
                   <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
-                  <h3 style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></h3>
+                  <span style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></span>
                   <a href="<?php the_permalink();?>" class="button" style="color:<?php the_field('sicky_crew_font_color');?>">Meet the crew</a>
                 </div>
               </div>

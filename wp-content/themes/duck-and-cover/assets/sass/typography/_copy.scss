@@ -3,6 +3,10 @@ p {
     @extend .gibson-light;
 }
 
+span {
+  @extend .gibson-light;
+}
+
 dfn, cite, em, i {
     font-style: italic;
 }

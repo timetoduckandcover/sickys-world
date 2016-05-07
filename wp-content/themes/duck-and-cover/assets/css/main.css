@@ -1,9 +1,5 @@
 @import url("//hello.myfonts.net/count/30e28c");
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-#respond #submit, a, .facewp-twitter .tweet-nav > span:hover, .product-layout-list .product:before, .product-thumb a:before, .navigation-shop .navigation-product, .images .main-images .slick-arrow, .page-title-row .product-category-list .product-category .overlay-inner p:after, .facewp-product-categories .categories-overlay {
+a, .facewp-twitter .tweet-nav > span:hover, .product-layout-list .product:before, .product-thumb a:before, .navigation-shop .navigation-product, .images .main-images .slick-arrow, .page-title-row .product-category-list .product-category .overlay-inner p:after, .facewp-product-categories .categories-overlay {
   -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   -moz-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
@@ -81,7 +77,12 @@ input[type="submit"],
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.woocommerce-message.success:before, .woocommerce-message.success .button, .quick-view:before,
+.woocommerce-message.success:before, .woocommerce-message.success .button, .woocommerce-message.success button, .woocommerce-message.success
+input[type="button"], .woocommerce-message.success
+input[type="reset"], .woocommerce-message.success
+input[type="submit"], .woocommerce-message.success
+#respond #submit,
+#respond .woocommerce-message.success #submit, .quick-view:before,
 .add_to_cart_button:before, .product-countdown > span:after {
   position: absolute;
   top: 50%;
@@ -6102,7 +6103,7 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1, h5, p, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
+.gibson-light, h1, h5, p, span, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
 #customer_login .register .lost_password a, .duck-collection-header .page-title, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif; }
 
@@ -6114,7 +6115,11 @@ textarea {
   font-family: 'Gibson-Regular', arial, sans-serif !important; }
 
 .gibson-semibold, b,
-strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, .button-transparent, .header-01 #primary-menu > .menu-item > a,
+strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+#respond #submit, .button-transparent, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
@@ -6347,38 +6352,29 @@ table, th, td {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+.button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
 #respond #submit {
   display: inline-block;
-  height: 37px;
-  padding: 0 30px;
-  border: 1px solid;
-  font-size: 13px;
-  text-transform: uppercase;
-  line-height: 39px !important;
-  letter-spacing: 0 !important;
-  cursor: pointer;
-  background: transparent; }
-
-.primary-button {
-  background: #FFF; }
-  .primary-button:hover {
-    text-decoration: underline; }
-
-.button {
-  display: inline-block;
-  height: 37px;
-  padding: 0 30px;
+  height: 41px;
+  padding: 1px 30px;
   border: 1px solid #fb0a09;
   font-size: 13px;
   text-transform: uppercase;
   line-height: 39px !important;
-  letter-spacing: 0 !important;
+  letter-spacing: 0.1em !important;
   background: #fb0a09;
-  color: #ffffff; }
+  color: #ffffff;
+  transition: all .1s ease; }
+  .button:hover, button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  #respond #submit:hover {
+    color: #ffffff;
+    background: #fc3c3b; }
 
 .button-transparent {
   border: 1px solid #fb0a09;
@@ -6389,17 +6385,38 @@ input[type="submit"],
   font-size: 13px;
   text-transform: uppercase;
   line-height: 39px !important;
-  letter-spacing: 0 !important; }
+  letter-spacing: 0.1em !important;
+  transition: all .1s ease; }
   .button-transparent:hover {
     color: #ffffff !important;
     background: #fb0a09; }
 
-a.button.secondary-button {
+.primary-button {
+  background: #FFF; }
+  .primary-button:hover {
+    text-decoration: underline; }
+
+a.button.secondary-button,
+#respond a.secondary-button#submit {
   color: #FFF; }
 
 .secondary-button {
   border: none !important;
   color: #FFF; }
+
+::-webkit-input-placeholder {
+  color: #4c4c4c; }
+
+::-moz-placeholder {
+  color: #4c4c4c; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #4c4c4c; }
+
+/* ie */
+input:-moz-placeholder {
+  color: #4c4c4c; }
 
 input[type="text"],
 input[type="email"],
@@ -6410,7 +6427,8 @@ input[type="tel"] {
   border: 1px solid #000;
   margin-bottom: 15px;
   padding: 8px 10px;
-  height: 40px; }
+  height: 40px;
+  color: #4c4c4c; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -6563,7 +6581,18 @@ select:focus {
 
 .search-type-2 select,
 .search-type-2 input[type="text"],
-.search-type-2 .button {
+.search-type-2 .button,
+.search-type-2 button,
+.search-type-2
+input[type="button"],
+.search-type-2
+input[type="reset"],
+.search-type-2
+input[type="submit"],
+.search-type-2
+#respond #submit,
+#respond
+.search-type-2 #submit {
   vertical-align: top; }
 
 .search-type-2 select {
@@ -6621,7 +6650,18 @@ select:focus {
 
 .search-type-3 select,
 .search-type-3 input[type="text"],
-.search-type-3 .button {
+.search-type-3 .button,
+.search-type-3 button,
+.search-type-3
+input[type="button"],
+.search-type-3
+input[type="reset"],
+.search-type-3
+input[type="submit"],
+.search-type-3
+#respond #submit,
+#respond
+.search-type-3 #submit {
   vertical-align: top; }
 
 .search-type-3 select {
@@ -6675,7 +6715,7 @@ select:focus {
   background-color: transparent !important; }
   @media (min-width: 1024px) {
     #header {
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
       background-color: white !important; } }
   #header #mobile-menu-toggle {
     color: #d8120f;
@@ -8327,7 +8367,12 @@ body.boxed .archive-box {
 
 .widget_price_filter .price_slider_amount {
   margin-top: 32px; }
-  .widget_price_filter .price_slider_amount .button {
+  .widget_price_filter .price_slider_amount .button, .widget_price_filter .price_slider_amount button, .widget_price_filter .price_slider_amount
+  input[type="button"], .widget_price_filter .price_slider_amount
+  input[type="reset"], .widget_price_filter .price_slider_amount
+  input[type="submit"], .widget_price_filter .price_slider_amount
+  #respond #submit,
+  #respond .widget_price_filter .price_slider_amount #submit {
     display: inline-block !important;
     float: right;
     height: 22px;
@@ -9014,7 +9059,8 @@ object {
       text-transform: uppercase;
       font-size: 13px; }
   .site-footer input[type=email] {
-    width: 100%; }
+    width: 100%;
+    color: #4c4c4c; }
   .site-footer .footer-social {
     text-align: center;
     margin-bottom: 60px; }
@@ -9023,9 +9069,9 @@ object {
       margin: 0 14px; }
       .site-footer .footer-social li a {
         font-size: 150%;
-        color: #424242; }
+        color: #4c4c4c; }
         .site-footer .footer-social li a i {
-          color: #424242; }
+          color: #4c4c4c; }
 
 .footer-widget-container {
   padding: 65px 0 10px; }
@@ -9151,7 +9197,12 @@ form .form-row-last {
       display: inline-block; }
   .form-row input {
     width: 100%; }
-    .form-row input#rememberme, .form-row input.button, .form-row input.input-checkbox {
+    .form-row input#rememberme, .form-row input.button, .form-row
+    input[type="button"], .form-row
+    input[type="reset"], .form-row
+    input[type="submit"], .form-row
+    #respond input#submit,
+    #respond .form-row input#submit, .form-row input.input-checkbox {
       width: auto; }
 
 .select2-container .select2-choice {
@@ -9173,7 +9224,12 @@ form .form-row-last {
     content: "\e66c";
     left: 20px;
     font-size: 25px; }
-  .woocommerce-message.success .button {
+  .woocommerce-message.success .button, .woocommerce-message.success button, .woocommerce-message.success
+  input[type="button"], .woocommerce-message.success
+  input[type="reset"], .woocommerce-message.success
+  input[type="submit"], .woocommerce-message.success
+  #respond #submit,
+  #respond .woocommerce-message.success #submit {
     position: absolute;
     right: 20px; }
 
@@ -10172,8 +10228,23 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #customer_login .register label.inline {
     display: inline-block;
     text-transform: inherit; }
-  #customer_login .login input.button,
-  #customer_login .register input.button {
+  #customer_login .login input.button, #customer_login .login
+  input[type="button"], #customer_login .login
+  input[type="reset"], #customer_login .login
+  input[type="submit"], #customer_login .login
+  #respond input#submit,
+  #respond #customer_login .login input#submit,
+  #customer_login .register input.button,
+  #customer_login .register
+  input[type="button"],
+  #customer_login .register
+  input[type="reset"],
+  #customer_login .register
+  input[type="submit"],
+  #customer_login .register
+  #respond input#submit,
+  #respond
+  #customer_login .register input#submit {
     background: transparent; }
   #customer_login .login .lost_password,
   #customer_login .register .lost_password {
@@ -10244,7 +10315,12 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       width: 70%;
       font-size: 14px;
       padding: 12px; }
-    .track_order .form-row .button {
+    .track_order .form-row .button, .track_order .form-row button, .track_order .form-row
+    input[type="button"], .track_order .form-row
+    input[type="reset"], .track_order .form-row
+    input[type="submit"], .track_order .form-row
+    #respond #submit,
+    #respond .track_order .form-row #submit {
       margin-top: 20px;
       padding: 0;
       width: 100%;
@@ -11192,9 +11268,17 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   -o-background-size: cover;
   background-size: cover; }
   .sicky-crew-all li .sicky-crew-member {
-    padding: 220px 0 50px 0; }
-    .sicky-crew-all li .sicky-crew-member .button {
-      margin-top: 30px; }
+    padding: 180px 0 90px 0; }
+    .sicky-crew-all li .sicky-crew-member span {
+      display: block;
+      font-size: 34px; }
+    .sicky-crew-all li .sicky-crew-member .button, .sicky-crew-all li .sicky-crew-member button, .sicky-crew-all li .sicky-crew-member
+    input[type="button"], .sicky-crew-all li .sicky-crew-member
+    input[type="reset"], .sicky-crew-all li .sicky-crew-member
+    input[type="submit"], .sicky-crew-all li .sicky-crew-member
+    #respond #submit,
+    #respond .sicky-crew-all li .sicky-crew-member #submit {
+      margin-top: 20px; }
 
 .sicky-single .sicky-single_hero {
   margin-bottom: 40px; }
@@ -11298,6 +11382,21 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category {
     display: block;
     padding: 50px; }
+    #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category .top-category-images {
+      position: relative; }
+      #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category .top-category-images .top-cat-first {
+        transition: all .2s ease;
+        z-index: 2;
+        position: relative; }
+      #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category .top-category-images .top-cat-second {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1; }
+      #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category .top-category-images:hover .top-cat-first {
+        opacity: 0; }
 
 #duck-front-page #single-featured-product-section .single-featured-product-caption {
   padding: 40px 20px; }
@@ -11348,7 +11447,12 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       width: 300px;
       background-position: center 50%;
       background-repeat: no-repeat; }
-      #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button {
+      #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
+      input[type="button"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
+      input[type="reset"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
+      input[type="submit"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
+      #respond #submit,
+      #respond #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box #submit {
         bottom: 40px;
         position: absolute;
         left: 50%;

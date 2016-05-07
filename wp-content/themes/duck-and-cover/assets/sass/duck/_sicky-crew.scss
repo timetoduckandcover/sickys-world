@@ -3,9 +3,13 @@
   li {
     @include backgroundCover;
     .sicky-crew-member {
-      padding: 220px 0 50px 0;
+      padding: 180px 0 90px 0;
+      span {
+        display: block;
+        font-size: 34px;
+      }
       .button {
-        margin-top: 30px;
+        margin-top: 20px;
       }
     }
   }

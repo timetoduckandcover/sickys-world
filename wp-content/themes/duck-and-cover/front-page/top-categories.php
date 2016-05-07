@@ -27,13 +27,19 @@
   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <a href="<?php the_field('top_category_1_link');?>" class="duck-front-page-top-category">
-        <img src="<?php echo $category1_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+        <div class="top-category-images">
+          <img src="<?php echo $category1_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full top-cat-first" />
+          <img src="<?php echo $category1hover_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full top-cat-second" />
+        </div>
         <h3 class="header-2 uppercase"><?php the_field('top_category_1_name');?></h3>
       </a>
     </div>
     <div class="col-xs-12 col-sm-6">
       <a href="<?php the_field('top_category_2_link');?>" class="duck-front-page-top-category">
-        <img src="<?php echo $category2_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+        <div class="top-category-images">
+          <img src="<?php echo $category2_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full top-cat-first" />
+          <img src="<?php echo $category2hover_url; ?>" alt="<?php echo $image['alt']; ?>" class="top-cat-second" />
+        </div>
         <h3 class="header-2 uppercase"><?php the_field('top_category_2_name');?></h3>
       </a>
     </div>
