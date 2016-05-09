@@ -22,6 +22,9 @@ h3 {
   font-size: 20px !important;
   color: #AAAAAA !important;
   @extend .gibson-semibold;
+  &.widget-title {
+    color: #4c4c4c !important;
+  }
 }
 
 h4 {

@@ -133,7 +133,7 @@
   background-color: transparent !important;
   display: inline-block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 19px;
   label {
     position: absolute;
     top: 0;
@@ -145,7 +145,10 @@
     margin-bottom: 0;
     margin-right: 6px;
     vertical-align: bottom;
-    height: 37px;
+    height: 41px;
+  }
+  .button {
+    margin-top: -1px;
   }
 }
 .push-checkout-btns {

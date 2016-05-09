@@ -11,6 +11,17 @@
       .button {
         margin-top: 20px;
       }
+      .sicky-crew-member-social {
+        margin-top: 20px;
+        li {
+          display: inline-block;
+          margin-right: 13px;
+          a {
+            display: block;
+            font-size: 150%;
+          }
+        }
+      }
     }
   }
 }

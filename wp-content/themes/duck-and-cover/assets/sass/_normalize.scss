@@ -57,6 +57,7 @@ abbr[title] {
 b,
 strong {
     @extend .gibson-semibold;
+    letter-spacing: 2px;
 }
 
 dfn {

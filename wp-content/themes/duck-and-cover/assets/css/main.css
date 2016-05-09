@@ -138,6 +138,10 @@ a:hover {
 abbr[title] {
   border-bottom: 1px dotted; }
 
+b,
+strong {
+  letter-spacing: 2px; }
+
 dfn {
   font-style: italic; }
 
@@ -6119,7 +6123,7 @@ strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-#respond #submit, .button-transparent, .header-01 #primary-menu > .menu-item > a,
+#respond #submit, .button-transparent, .menu .menu-item > a .menu-item-text, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
@@ -6130,7 +6134,7 @@ input[type="submit"],
   font-family: 'Gibson-Bold', arial, sans-serif; }
 
 body {
-  line-height: 1.4 !important; }
+  line-height: 1.6 !important; }
 
 body,
 button,
@@ -6164,6 +6168,8 @@ h2 {
 h3 {
   font-size: 20px !important;
   color: #AAAAAA !important; }
+  h3.widget-title {
+    color: #4c4c4c !important; }
 
 h4 {
   font-size: 18px !important;
@@ -6366,7 +6372,7 @@ input[type="submit"],
   line-height: 39px !important;
   letter-spacing: 0.1em !important;
   background: #fb0a09;
-  color: #ffffff;
+  color: #ffffff !important;
   transition: all .1s ease; }
   .button:hover, button:hover,
   input[type="button"]:hover,
@@ -10438,7 +10444,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   background-color: transparent !important;
   display: inline-block;
   position: relative;
-  padding-top: 18px; }
+  padding-top: 19px; }
   .coupon label {
     position: absolute;
     top: 0;
@@ -10448,7 +10454,14 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     margin-bottom: 0;
     margin-right: 6px;
     vertical-align: bottom;
-    height: 37px; }
+    height: 41px; }
+  .coupon .button, .coupon button, .coupon
+  input[type="button"], .coupon
+  input[type="reset"], .coupon
+  input[type="submit"], .coupon
+  #respond #submit,
+  #respond .coupon #submit {
+    margin-top: -1px; }
 
 .push-checkout-btns {
   padding-top: 18px; }
@@ -11279,6 +11292,14 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     #respond #submit,
     #respond .sicky-crew-all li .sicky-crew-member #submit {
       margin-top: 20px; }
+    .sicky-crew-all li .sicky-crew-member .sicky-crew-member-social {
+      margin-top: 20px; }
+      .sicky-crew-all li .sicky-crew-member .sicky-crew-member-social li {
+        display: inline-block;
+        margin-right: 13px; }
+        .sicky-crew-all li .sicky-crew-member .sicky-crew-member-social li a {
+          display: block;
+          font-size: 150%; }
 
 .sicky-single .sicky-single_hero {
   margin-bottom: 40px; }
@@ -11368,7 +11389,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     font-size: 80px !important; }
 
 .duck-collection-description {
-  padding: 70px 0;
+  padding: 70px 0 64px 0;
   margin-bottom: -90px; }
 
 #duck-front-page .hero-slider {

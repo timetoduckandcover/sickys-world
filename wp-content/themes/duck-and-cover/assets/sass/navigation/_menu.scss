@@ -26,6 +26,7 @@ $sub-menu-padding-narrow: 25px 0;
     position: relative;
     .menu-item-text {
       position: relative;
+      @extend .gibson-semibold;
     }
     .menu-item-icon {
       position: absolute;

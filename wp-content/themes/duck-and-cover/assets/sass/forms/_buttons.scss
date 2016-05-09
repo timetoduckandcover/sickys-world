@@ -9,7 +9,7 @@
     letter-spacing: 0.1em !important;
     background: #fb0a09;
     @extend .gibson-semibold;
-    color: #ffffff;
+    color: #ffffff !important;
     transition: all .1s ease;
     &:hover {
       color: #ffffff;
