@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 global $product;
 ?>
-<h4 class="product-category-name uppercase">
+<!-- <h4 class="product-category-name uppercase">
     <?php
     $products_cats = $product->get_categories();
     list($firstpart) = explode(',', $products_cats);
     echo '' . $firstpart;
     ?>
-</h4>
+</h4> -->

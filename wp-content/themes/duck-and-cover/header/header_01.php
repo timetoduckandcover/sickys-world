@@ -67,7 +67,7 @@ if ( ! $facewp_abbey_logo && ! $facewp_abbey_woocommerce_exists ) {
                 </div>
             </div>
             <?php if ( $facewp_abbey_woocommerce_exists ) : ?>
-                <div class="col-md-2 start-xs hidden-sm-down">
+                <div class="col-md-2 start-xs hidden-sm-down header-icons">
                     <?php facewp_abbey_cart_link() ?>
                     <div id="header-search" class="search-type-1 header-item">
                         <span id="js-search-overlay" class="icon-header pe-7s-search"></span>

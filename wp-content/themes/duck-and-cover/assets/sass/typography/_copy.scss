@@ -1,9 +1,10 @@
 p {
     margin-bottom: 1.125em;
     @extend .gibson-light;
+    letter-spacing: 1px;
 }
 
-span {
+span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]) {
   @extend .gibson-light;
 }
 

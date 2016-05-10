@@ -13,4 +13,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-echo '<a href="' . esc_url( WC()->cart->get_checkout_url() ) . '" class="checkout-button button secondary-button alt wc-forward">' . __( 'Proceed to Checkout', 'woocommerce' ) . '</a>';
+echo '<a href="' . esc_url( WC()->cart->get_checkout_url() ) . '" class="button alt wc-forward">' . __( 'Checkout', 'woocommerce' ) . '</a>';

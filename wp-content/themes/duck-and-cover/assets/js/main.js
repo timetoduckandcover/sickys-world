@@ -483,10 +483,30 @@ jQuery( document ).ready( function( $ ) {
   // Fitvids
   $('.video-wrapper').fitVids();
 
-  // Scroll event for home page parallax
-  if(window.location.pathname === '/') {
-    var lastScrollTop = 0;
-    $(window).scroll(function(e) {
+  // If product page, replace container class
+  if(window.location.href.indexOf('/product/') > -1) {
+    $('#container').addClass('container-wide').removeClass('container').css('padding', '0 40px');
+  }
+
+  // Scroll events
+  var lastScrollTop = 0;
+  $(window).scroll(function(e) {
+
+    // Reduce height of header
+    var scrollTop = $(this).scrollTop();
+    var header = $('#header');
+    if(scrollTop > 500) {
+      if(!header.hasClass('reduced-header')) {
+        $('#header').addClass('reduced-header');
+      }
+    } else {
+      if(header.hasClass('reduced-header')) {
+        $('#header').removeClass('reduced-header');
+      }
+    }
+
+    // Scroll event for home page parallax
+    if(window.location.pathname === '/') {
       var st = $(this).scrollTop();
       if (st > lastScrollTop){
         if(_isScrolledIntoView('.sunglasses-image-box')) {
@@ -502,8 +522,9 @@ jQuery( document ).ready( function( $ ) {
         }
       }
       lastScrollTop = st;
-    });
-  }
+    }
+  });
+
 
   function _isScrolledIntoView(elem) {
     var $elem = $(elem);

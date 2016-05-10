@@ -16,6 +16,26 @@
       background: lighten(#fb0a09, 10%);
     }
 }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]:not(.grey-button),
+#respond #submit {
+  @extend .button;
+    // display: inline-block;
+    // height: 37px;
+    // padding: 0 30px;
+    // border: 1px solid;
+    // font-size: 13px;
+    // text-transform: uppercase;
+    // line-height: 39px !important;
+    // letter-spacing: 0.1em !important;
+    // @extend %transition;
+    // cursor: pointer;
+    // background: transparent;
+}
+
 .button-transparent {
   border: 1px solid #fb0a09;
   color: #fb0a09 !important;
@@ -34,24 +54,24 @@
   }
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-#respond #submit {
-  @extend .button;
-    // display: inline-block;
-    // height: 37px;
-    // padding: 0 30px;
-    // border: 1px solid;
-    // font-size: 13px;
-    // text-transform: uppercase;
-    // line-height: 39px !important;
-    // letter-spacing: 0.1em !important;
-    // @extend %transition;
-    // cursor: pointer;
-    // background: transparent;
+.grey-button {
+  background: #eee !important;
+  border: 1px solid #eee !important;
+  color: #4c4c4c !important;
+  display: inline-block !important;
+  height: 41px !important;
+  padding: 0 30px !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  line-height: 39px !important;
+  letter-spacing: 0.1em !important;
+  @extend .gibson-semibold;
+  transition: all .1s ease !important;
+  &:hover {
+    background: darken(#eee, 10%) !important;
+  }
 }
+
 
 .primary-button {
     background: #FFF;

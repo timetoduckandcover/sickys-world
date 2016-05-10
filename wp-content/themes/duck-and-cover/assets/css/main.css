@@ -80,7 +80,7 @@ a, .facewp-twitter .tweet-nav > span:hover, .product-layout-list .product:before
 .woocommerce-message.success:before, .woocommerce-message.success .button, .woocommerce-message.success button, .woocommerce-message.success
 input[type="button"], .woocommerce-message.success
 input[type="reset"], .woocommerce-message.success
-input[type="submit"], .woocommerce-message.success
+input[type="submit"]:not(.grey-button), .woocommerce-message.success
 #respond #submit,
 #respond .woocommerce-message.success #submit, .quick-view:before,
 .add_to_cart_button:before, .product-countdown > span:after {
@@ -6107,9 +6107,9 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1, h5, p, span, .site-footer .menu li a, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .duck-collection-header .page-title, .duck-slider-caption h3, .duck-slider-caption p {
-  font-family: 'Gibson-Light', arial, sans-serif; }
+.gibson-light, h1, h5, p, span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]), .site-footer .menu li a, .site-footer input[type=email], #customer_login .register-sub-header, #customer_login .login .lost_password a,
+#customer_login .register .lost_password a, .duck-collection-header .page-title, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .duck-slider-caption h3, .duck-slider-caption p {
+  font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
 button,
@@ -6122,16 +6122,16 @@ textarea {
 strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"],
-#respond #submit, .button-transparent, .menu .menu-item > a .menu-item-text, .header-01 #primary-menu > .menu-item > a,
+input[type="submit"]:not(.grey-button),
+#respond #submit, .button-transparent, .grey-button, .menu .menu-item > a .menu-item-text, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
 .header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
-  font-family: 'Gibson-SemiBold', arial, sans-serif; }
+  font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
-  font-family: 'Gibson-Bold', arial, sans-serif; }
+  font-family: 'Gibson-Bold', arial, sans-serif !important; }
 
 body {
   line-height: 1.6 !important; }
@@ -6226,7 +6226,8 @@ h6 {
       background: #FFF; }
 
 p {
-  margin-bottom: 1.125em; }
+  margin-bottom: 1.125em;
+  letter-spacing: 1px; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -6361,7 +6362,7 @@ table, th, td {
 .button, button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"],
+input[type="submit"]:not(.grey-button),
 #respond #submit {
   display: inline-block;
   height: 41px;
@@ -6377,7 +6378,7 @@ input[type="submit"],
   .button:hover, button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
-  input[type="submit"]:hover,
+  input[type="submit"]:hover:not(.grey-button),
   #respond #submit:hover {
     color: #ffffff;
     background: #fc3c3b; }
@@ -6396,6 +6397,21 @@ input[type="submit"],
   .button-transparent:hover {
     color: #ffffff !important;
     background: #fb0a09; }
+
+.grey-button {
+  background: #eee !important;
+  border: 1px solid #eee !important;
+  color: #4c4c4c !important;
+  display: inline-block !important;
+  height: 41px !important;
+  padding: 0 30px !important;
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+  line-height: 39px !important;
+  letter-spacing: 0.1em !important;
+  transition: all .1s ease !important; }
+  .grey-button:hover {
+    background: #d5d5d5 !important; }
 
 .primary-button {
   background: #FFF; }
@@ -6594,7 +6610,7 @@ input[type="button"],
 .search-type-2
 input[type="reset"],
 .search-type-2
-input[type="submit"],
+input[type="submit"]:not(.grey-button),
 .search-type-2
 #respond #submit,
 #respond
@@ -6663,7 +6679,7 @@ input[type="button"],
 .search-type-3
 input[type="reset"],
 .search-type-3
-input[type="submit"],
+input[type="submit"]:not(.grey-button),
 .search-type-3
 #respond #submit,
 #respond
@@ -6712,6 +6728,9 @@ input[type="submit"],
   z-index: 99999;
   background: transparent; }
 
+.header-icons {
+  margin-top: 5px; }
+
 #header {
   position: fixed;
   top: 0;
@@ -6719,13 +6738,21 @@ input[type="submit"],
   right: 0;
   z-index: 9999;
   background-color: transparent !important; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     #header {
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
       background-color: white !important; } }
   #header #mobile-menu-toggle {
     color: #d8120f;
     font-size: 20px; }
+  #header.reduced-header #logo {
+    padding: 2px 0 2px 15px; }
+    #header.reduced-header #logo a {
+      width: 50px; }
+  #header.reduced-header .header-social ul li a {
+    height: 53px; }
+  #header.reduced-header #primary-menu li.menu-item {
+    padding: 16px 0; }
   #header .container-fluid {
     position: relative; }
   #header .header-social {
@@ -6753,7 +6780,8 @@ input[type="submit"],
       #header .header-social ul li a {
         height: 71px;
         display: block;
-        position: relative; }
+        position: relative;
+        transition: all .2s ease; }
         #header .header-social ul li a i {
           color: white;
           position: absolute;
@@ -6821,7 +6849,8 @@ input[type="submit"],
   padding: 7px 0 7px 15px; }
   .header-01 #logo a {
     width: 74px;
-    display: block; }
+    display: block;
+    transition: all .2s ease; }
     .header-01 #logo a img {
       display: block; }
 
@@ -8376,7 +8405,7 @@ body.boxed .archive-box {
   .widget_price_filter .price_slider_amount .button, .widget_price_filter .price_slider_amount button, .widget_price_filter .price_slider_amount
   input[type="button"], .widget_price_filter .price_slider_amount
   input[type="reset"], .widget_price_filter .price_slider_amount
-  input[type="submit"], .widget_price_filter .price_slider_amount
+  input[type="submit"]:not(.grey-button), .widget_price_filter .price_slider_amount
   #respond #submit,
   #respond .widget_price_filter .price_slider_amount #submit {
     display: inline-block !important;
@@ -9066,6 +9095,19 @@ object {
       font-size: 13px; }
   .site-footer input[type=email] {
     width: 100%;
+    color: #4c4c4c;
+    text-transform: uppercase;
+    padding: 8px 10px 3px 10px;
+    letter-spacing: 1px !important; }
+  .site-footer input[type=email]::-webkit-input-placeholder {
+    color: #4c4c4c; }
+  .site-footer input[type=email]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #4c4c4c; }
+  .site-footer input[type=email]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #4c4c4c; }
+  .site-footer input[type=email]:-ms-input-placeholder {
     color: #4c4c4c; }
   .site-footer .footer-social {
     text-align: center;
@@ -9206,7 +9248,7 @@ form .form-row-last {
     .form-row input#rememberme, .form-row input.button, .form-row
     input[type="button"], .form-row
     input[type="reset"], .form-row
-    input[type="submit"], .form-row
+    input[type="submit"]:not(.grey-button), .form-row
     #respond input#submit,
     #respond .form-row input#submit, .form-row input.input-checkbox {
       width: auto; }
@@ -9233,7 +9275,7 @@ form .form-row-last {
   .woocommerce-message.success .button, .woocommerce-message.success button, .woocommerce-message.success
   input[type="button"], .woocommerce-message.success
   input[type="reset"], .woocommerce-message.success
-  input[type="submit"], .woocommerce-message.success
+  input[type="submit"]:not(.grey-button), .woocommerce-message.success
   #respond #submit,
   #respond .woocommerce-message.success #submit {
     position: absolute;
@@ -9348,6 +9390,9 @@ form .form-row-last {
 .product-layout-grid .yith-wcwl-add-to-wishlist:hover .ajax-loading {
   background-color: #eeeeee; }
 
+.products .product-title {
+  font-size: 16px !important; }
+
 .product-layout-list .product {
   position: relative;
   padding-left: 0;
@@ -9372,7 +9417,7 @@ form .form-row-last {
     margin-left: calc(25% + 30px); }
     .product-layout-list .product .product-summary .product-title {
       padding-bottom: 10px;
-      font-size: 24px;
+      font-size: 16px;
       letter-spacing: 0; }
     .product-layout-list .product .product-summary .woocommerce-product-rating {
       padding-bottom: 5px; }
@@ -9515,6 +9560,7 @@ form .form-row-last {
   display: none; }
 
 .add-links-wrapper {
+  display: none;
   position: absolute;
   opacity: 0;
   z-index: 2;
@@ -9717,7 +9763,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .navigation-shop {
   margin-bottom: 50px;
-  padding: 26px 0; }
+  padding: 106px 0 40px 0; }
   .navigation-shop.wide {
     padding-left: 20px;
     padding-right: 20px; }
@@ -9796,7 +9842,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   right: 25px;
   bottom: 25px;
   z-index: 99999;
-  opacity: 0;
+  opacity: 1;
   background-color: #57585C;
   width: 40px;
   height: 40px;
@@ -10237,7 +10283,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #customer_login .login input.button, #customer_login .login
   input[type="button"], #customer_login .login
   input[type="reset"], #customer_login .login
-  input[type="submit"], #customer_login .login
+  input[type="submit"]:not(.grey-button), #customer_login .login
   #respond input#submit,
   #respond #customer_login .login input#submit,
   #customer_login .register input.button,
@@ -10246,7 +10292,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #customer_login .register
   input[type="reset"],
   #customer_login .register
-  input[type="submit"],
+  input[type="submit"]:not(.grey-button),
   #customer_login .register
   #respond input#submit,
   #respond
@@ -10324,7 +10370,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     .track_order .form-row .button, .track_order .form-row button, .track_order .form-row
     input[type="button"], .track_order .form-row
     input[type="reset"], .track_order .form-row
-    input[type="submit"], .track_order .form-row
+    input[type="submit"]:not(.grey-button), .track_order .form-row
     #respond #submit,
     #respond .track_order .form-row #submit {
       margin-top: 20px;
@@ -10458,7 +10504,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   .coupon .button, .coupon button, .coupon
   input[type="button"], .coupon
   input[type="reset"], .coupon
-  input[type="submit"], .coupon
+  input[type="submit"]:not(.grey-button), .coupon
   #respond #submit,
   #respond .coupon #submit {
     margin-top: -1px; }
@@ -11288,7 +11334,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     .sicky-crew-all li .sicky-crew-member .button, .sicky-crew-all li .sicky-crew-member button, .sicky-crew-all li .sicky-crew-member
     input[type="button"], .sicky-crew-all li .sicky-crew-member
     input[type="reset"], .sicky-crew-all li .sicky-crew-member
-    input[type="submit"], .sicky-crew-all li .sicky-crew-member
+    input[type="submit"]:not(.grey-button), .sicky-crew-all li .sicky-crew-member
     #respond #submit,
     #respond .sicky-crew-all li .sicky-crew-member #submit {
       margin-top: 20px; }
@@ -11392,6 +11438,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   padding: 70px 0 64px 0;
   margin-bottom: -90px; }
 
+.yith-woocommerce-ajax-product-filter a {
+  text-transform: uppercase;
+  color: #4c4c4c; }
+
+.yith-woocommerce-ajax-product-filter .chosen a {
+  color: #d8120f; }
+
+.price_slider_amount button {
+  color: #4c4c4c !important; }
+
 #duck-front-page .hero-slider {
   margin-bottom: 60px; }
   #duck-front-page .hero-slider p:first-child {
@@ -11443,6 +11499,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     #duck-front-page #sunglasses-section .sunglasses-section_main .container, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar {
       position: relative;
       z-index: 1; }
+      #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1 {
+        font-size: 42px; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:before, #duck-front-page #sunglasses-section .sunglasses-section_main:after {
       content: '';
       position: absolute;
@@ -11461,17 +11519,21 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       transform: rotate(4deg);
       background: #fff; }
     #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
+      display: none;
       position: absolute;
       top: 0px;
       height: 400px;
       right: 100px;
-      width: 300px;
+      width: 600px;
       background-position: center 50%;
       background-repeat: no-repeat; }
+      @media (min-width: 1024px) {
+        #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
+          display: block; } }
       #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
       input[type="button"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
       input[type="reset"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
-      input[type="submit"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
+      input[type="submit"]:not(.grey-button), #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
       #respond #submit,
       #respond #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box #submit {
         bottom: 40px;

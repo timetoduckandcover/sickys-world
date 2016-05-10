@@ -20,6 +20,22 @@
   input[type=email] {
     width: 100%;
     color: #4c4c4c;
+    text-transform: uppercase;
+    padding: 8px 10px 3px 10px;
+    @extend .gibson-light;
+    letter-spacing: 1px !important;
+  }
+  input[type=email]::-webkit-input-placeholder {
+    color: #4c4c4c;
+  }
+  input[type=email]:-moz-placeholder { /* Firefox 18- */
+    color: #4c4c4c;
+  }
+  input[type=email]::-moz-placeholder {  /* Firefox 19+ */
+    color: #4c4c4c;
+  }
+  input[type=email]:-ms-input-placeholder {
+    color: #4c4c4c;
   }
   .footer-social {
     text-align: center;

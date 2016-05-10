@@ -67,6 +67,10 @@
       .container {
         position: relative;
         z-index: 1;
+        h1 {
+          @extend .gibson-light;
+          font-size: 42px;
+        }
       }
       &:before, &:after {
         content: '';
@@ -90,14 +94,18 @@
         background: #fff;
       }
       .sunglasses-image-box {
+        display: none;
         position: absolute;
         top: 0px;
         height: 400px;
         right: 100px;
-        width: 300px;
+        width: 600px;
         //background-size: cover;
         background-position: center 50%;
         background-repeat: no-repeat;
+        @include media-breakpoint-up(md) {
+          display: block;
+        }
         .button {
           bottom: 40px;
           @include centre(x);

@@ -6,6 +6,10 @@
     background: transparent;
 }
 
+.header-icons {
+  margin-top: 5px;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -13,13 +17,29 @@
   right: 0;
   z-index: 9999;
   background-color: transparent !important;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     box-shadow: 1px 1px 10px rgba(0,0,0,.1);
     background-color: white !important;
   }
   #mobile-menu-toggle {
     color: #d8120f;
     font-size: 20px;
+  }
+  &.reduced-header {
+    #logo {
+      padding: 2px 0 2px 15px;
+      a {
+        width: 50px;
+      }
+    }
+    .header-social ul li a {
+      height: 53px;
+    }
+    #primary-menu {
+      li.menu-item {
+        padding: 16px 0;
+      }
+    }
   }
   .container-fluid {
     position: relative;
@@ -45,6 +65,7 @@
           height: 71px;
           display: block;
           position: relative;
+          transition: all .2s ease;
           i {
             color: white;
             position: absolute;

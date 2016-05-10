@@ -137,7 +137,7 @@ wc_print_notices();
             <?php } ?>
         </div>
         <div class="col-md-5 end-md push-checkout-btns">
-            <input type="submit" class="button primary-button" name="update_cart" value="<?php esc_attr_e( 'Update', 'woocommerce' ); ?>" />
+            <input type="submit" class="grey-button" name="update_cart" value="<?php esc_attr_e( 'Update', 'woocommerce' ); ?>" />
 
             <?php do_action( 'woocommerce_cart_actions' ); ?>
 

@@ -9,16 +9,16 @@
 @font-face {font-family: 'Gibson-Light';src: url('../fonts/30E28C_7_0.eot');src: url('../fonts/30E28C_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/30E28C_7_0.woff2') format('woff2'),url('../fonts/30E28C_7_0.woff') format('woff'),url('../fonts/30E28C_7_0.ttf') format('truetype');}
 
 .gibson-light {
-  font-family: 'Gibson-Light', arial, sans-serif;
+  font-family: 'Gibson-Light', arial, sans-serif !important;
 }
 .gibson-regular {
   font-family: 'Gibson-Regular', arial, sans-serif !important;
 }
 .gibson-semibold {
-  font-family: 'Gibson-SemiBold', arial, sans-serif;
+  font-family: 'Gibson-SemiBold', arial, sans-serif !important;
 }
 .gibson-bold {
-  font-family: 'Gibson-Bold', arial, sans-serif;
+  font-family: 'Gibson-Bold', arial, sans-serif !important;
 }
 
 body {
