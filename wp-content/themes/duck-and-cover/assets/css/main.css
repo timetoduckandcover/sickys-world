@@ -6342,6 +6342,9 @@ img.img-full {
   height: auto;
   display: block; }
 
+.push-empty-space {
+  height: 80px; }
+
 table {
   margin: 0 0 1.5em;
   width: 100%; }
@@ -11609,7 +11612,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   text-transform: uppercase;
   color: #fff !important;
   white-space: nowrap;
-  transition: all .2s ease; }
+  transition: all .2s ease !important; }
   .blog-slider-caption h1:hover {
     color: rgba(216, 18, 15, 0.5) !important; }
 

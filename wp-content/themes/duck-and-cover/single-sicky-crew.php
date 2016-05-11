@@ -10,15 +10,26 @@
 				$image_url = $image_array[0];
 			?>
       <?php
+				$image_single_id = get_field('single_crew_member_header_image');
+				$image_single_size = 'single-size';
+				$image_single_array = wp_get_attachment_image_src($image_single_id, $image_single_size);
+				$image_single_url = $image_single_array[0];
+			?>
+      <?php
 				$signature_id = get_field('signature');
 				$signature_size = 'single-size';
 				$signature_array = wp_get_attachment_image_src($signature_id, $signature_size);
 				$signature_url = $signature_array[0];
 			?>
 
-      <div class="sicky-single_hero">
-        <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
-      </div>
+      <?php if( get_field('single_crew_member_header_image') ): ?>
+        <div class="sicky-single_hero">
+          <img src="<?php echo $image_single_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+        </div>
+      <?php else : ?>
+        <div class="push-empty-space"></div>
+      <?php endif; ?>
+
       <div class="wrapper">
         <div class="row mb">
           <div class="col-xs-12 col-sm-4">

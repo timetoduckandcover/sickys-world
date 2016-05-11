@@ -14,6 +14,7 @@ $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_ti
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="page-title"><?php echo '' . Kirki::get_option( 'facewp', 'post_single_title' ); ?></h1>
+                <h1 class="page-title"><?php the_title();?></h1>
             </div>
         </div>
     </div>
