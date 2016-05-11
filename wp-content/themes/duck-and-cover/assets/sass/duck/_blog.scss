@@ -26,3 +26,16 @@
     }
   }
 }
+.blog-slider-caption {
+  h1 {
+    @extend .gibson-light;
+    font-size: 42px !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    white-space: nowrap;
+    transition: all .2s ease;
+    &:hover {
+      color: rgba(216, 18, 15, 0.5) !important;
+    }
+  }
+}
