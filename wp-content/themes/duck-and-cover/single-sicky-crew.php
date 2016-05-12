@@ -11,7 +11,7 @@
 			?>
       <?php
 				$image_single_id = get_field('single_crew_member_header_image');
-				$image_single_size = 'single-size';
+				$image_single_size = 'full-size';
 				$image_single_array = wp_get_attachment_image_src($image_single_id, $image_single_size);
 				$image_single_url = $image_single_array[0];
 			?>

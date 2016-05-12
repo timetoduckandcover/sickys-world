@@ -31,7 +31,7 @@ Template Name: Crew
                   <h4 class="uppercase" style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
                   <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
                   <span style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></span>
-                  <a href="<?php the_permalink();?>" class="button">Meet the crew</a>
+                  <a href="<?php the_permalink();?>" class="button"><?php the_field('button_text');?></a>
                   <ul class="sicky-crew-member-social">
                     <?php if( get_field('facebook_page') ): ?>
                       <li>
