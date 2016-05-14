@@ -110,4 +110,3 @@ $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_ti
 
 <?php } ?>
 <?php get_footer(); ?>
-

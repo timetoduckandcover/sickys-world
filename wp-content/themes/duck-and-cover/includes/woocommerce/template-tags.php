@@ -14,15 +14,18 @@
  */
 if ( ! function_exists( 'facewp_abbey_cart_link' ) ) {
     function facewp_abbey_cart_link() {
-        if ( Kirki::get_option( 'facewp', 'woocommerce_general_catalog_mode' ) ) {
+        if ( Kirki::get_option( 'facewp', 'woocommwerce_general_catalog_mode' ) ) {
             return;
         }
         ?>
         <div class="mini-cart header-item dropdown">
             <a class="cart-contents" data-toggle="dropdown" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>">
-                <span class="icon-header cart-icon pe-7s-shopbag"></span>
-                <strong class="cart-text">Shopping Bag</strong>
-                <!-- <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> -->
+                <span class="icon-header cart-icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sicky-shopping-bag.png" alt="" style="height:25px;"/>
+                  <span class="cart-count-fixed"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                </span>
+                <!-- <strong class="cart-text">Shopping Bag</strong>  pe-7s-shopbag
+                <span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> -->
             </a>
             <div class="cart-details dropdown-menu">
                 <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>

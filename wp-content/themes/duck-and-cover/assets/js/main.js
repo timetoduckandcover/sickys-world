@@ -495,7 +495,7 @@ jQuery( document ).ready( function( $ ) {
     // Reduce height of header
     var scrollTop = $(this).scrollTop();
     var header = $('#header');
-    if(scrollTop > 500) {
+    if(scrollTop > 20) {
       if(!header.hasClass('reduced-header')) {
         $('#header').addClass('reduced-header');
       }

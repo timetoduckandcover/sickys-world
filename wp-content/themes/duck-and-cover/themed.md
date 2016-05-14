@@ -1,3 +1,25 @@
+
+// Single blog page
+<?php if ( ! $facewp_abbey_hide_author ) { ?>
+    <span class="post-author">
+        <span class="meta-text"><?php esc_html_e( 'by', 'facewp-abbey' ) ?></span>
+        <?php the_author_posts_link(); ?>
+    </span>
+<?php } ?>
+
+<?php facewp_abbey_entry_author(); ?>
+
+<div class="archive-box" style="background-image: url('<?php echo esc_url( $facewp_abbey_big_title_img ); ?>')">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="page-title"><?php echo '' . Kirki::get_option( 'facewp', 'post_single_title' ); ?></h1>
+                <h1 class="page-title"><?php the_title();?></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
 // Instagram feed home
       <?php dynamic_sidebar('Home Page Instagram Feed');?>
 

@@ -7,7 +7,7 @@
 }
 
 .header-icons {
-  margin-top: 5px;
+  margin-top: -1px;
 }
 
 #header {
@@ -58,9 +58,9 @@
       li {
         width: 33.33%;
         float: left;
-        &.facebook a { background: #d8120f; }
-        &.instagram a { background: #e14644; }
-        &.twitter a { background: #eb8887; }
+        &.instagram a { background: #d8120f; }
+        &.twitter a { background: #e14644; }
+        &.facebook a { background: #eb8887; }
         a {
           height: 71px;
           display: block;
@@ -90,9 +90,16 @@
     .cart-contents {
         font-size: 12px;
     }
-    // .cart-icon {
-    //     padding-right: 10px;
-    // }
+    .cart-icon {
+      position: relative;
+      .cart-count-fixed {
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        color: #d8120f;
+        font-size: 12px;
+      }
+    }
     .cart-text {
         padding-right: 5px;
         text-transform: uppercase;

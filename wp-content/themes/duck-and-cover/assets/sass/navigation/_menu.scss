@@ -1,6 +1,6 @@
-$menu-item-width-narrow: 268px;
-$menu-item-padding-narrow: 0 20px;
-$sub-menu-padding-narrow: 25px 0;
+$menu-item-width-narrow: 200px;
+$menu-item-padding-narrow: 0;
+$sub-menu-padding-narrow: 25px;
 
 .menu-inner {
   position: relative;
@@ -69,6 +69,10 @@ $sub-menu-padding-narrow: 25px 0;
 
       > a {
         display: block;
+        text-transform: uppercase;
+        .menu-item-text {
+          @extend .gibson-light;
+        }
       }
     }
 
@@ -159,7 +163,7 @@ $sub-menu-padding-narrow: 25px 0;
 %menu-icon-item {
   > a {
     position: relative;
-    margin-left: 15px;
+    //margin-left: 15px;
     .menu-item-text {
       position: relative;
       &:after {
@@ -175,15 +179,15 @@ $sub-menu-padding-narrow: 25px 0;
       }
     }
 
-    &:not(.has-icon):after {
-      content: "\e684";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -20px;
-      @extend %pe-icon-7-stroke;
-      font-size: 18px;
-    }
+    // &:not(.has-icon):after {
+    //   content: "\e684";
+    //   position: absolute;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   left: -20px;
+    //   @extend %pe-icon-7-stroke;
+    //   font-size: 18px;
+    // }
   }
   &:hover {
     > a > span:after {
@@ -204,9 +208,10 @@ $sub-menu-padding-narrow: 25px 0;
       padding-bottom: 0;
     }
     > a {
-      font-family: Lato;
+      //font-family: Lato;
       font-size: 14px;
       line-height: 14px;
+      @extend .gibson-light;
     }
 
     @extend %menu-icon-item;
@@ -472,10 +477,10 @@ $sub-menu-padding-narrow: 25px 0;
         width: 0;
         position: absolute;
         left: 50%;
-        bottom: -3px;
+        bottom: -4px;
         opacity: 0;
         transition: all 0.2s;
-        border-bottom: 1px solid;
+        border-bottom: 4px solid rgba(216, 18, 15, .8);
       }
       .menu-item-badge {
         top: calc(-100% + 1px);
@@ -500,6 +505,15 @@ $sub-menu-padding-narrow: 25px 0;
   & > ul > li .children {
     border-width: 1px;
     border-style: solid;
+    border-color: #fff !important;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    & > li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
   }
 }
 

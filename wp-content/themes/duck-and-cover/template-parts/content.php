@@ -94,13 +94,6 @@ $facewp_abbey_hide_related_posts  = Kirki::get_option( 'facewp', 'post_hide_rela
         <?php if ( ! $facewp_abbey_hide_date || ! $facewp_abbey_hide_author || ! $facewp_abbey_hide_comment_link ) { ?>
             <div class="entry-meta">
 
-                <?php if ( ! $facewp_abbey_hide_author ) { ?>
-                    <span class="post-author">
-                        <span class="meta-text"><?php esc_html_e( 'by', 'facewp-abbey' ) ?></span>
-                        <?php the_author_posts_link(); ?>
-                    </span>
-                <?php } ?>
-
                 <?php if ( ! $facewp_abbey_hide_date ) { ?>
                     <span class="post-date">
                         <?php facewp_abbey_posted_on(); ?>

@@ -7,8 +7,12 @@ Template Name: Crew
     <div class="content-wrapper">
       <main class="content">
 
-        <?php $args = array( 'post_type' => 'sicky-crew' );
-  			      $the_query = new WP_Query( $args ) ;?>
+        <?php $args = array(
+          'post_type' => 'sicky-crew',
+          'posts_per_page' => -1
+        );
+  			$the_query = new WP_Query( $args )
+        ;?>
         <ul class="row sicky-crew-all">
     			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
