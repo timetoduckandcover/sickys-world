@@ -9,8 +9,7 @@ Template Name: Celeb Wears
 
           <?php while ( have_posts() ) : the_post(); ?>
             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
-            <div class="hero">
-              <img src="<?php echo $url; ?>" class="img-full" alt="Celeb Wears Hero Image" />
+            <div class="hero" style="background-image:url(<?php echo $url; ?>)">
               <div class="caption">
                 <div class="container">
                   <h1><?php the_title();?></h1>
@@ -34,6 +33,7 @@ Template Name: Celeb Wears
               <li class="col-xs-12 col-sm-6 col-md-3">
                 <a href="<?php the_permalink();?>">
                   <img src="<?php echo $image_url; ?>" alt="" class="img-full" />
+                  <?php the_post_thumbnail();?>
                   <div class="caption">
                     <div class="caption-inner">
                       <h3><?php the_field('name') ;?></h3>

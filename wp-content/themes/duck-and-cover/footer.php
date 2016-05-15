@@ -41,17 +41,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-3">
           <h4 class="uppercase gibson-semibold">Legal</h4>
-          <?php $args = array( 'menu' => 'footer-menu-1',);
+          <?php $args = array( 'menu' => 'footer-menu-1');
           wp_nav_menu( $args ); ?>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-3">
           <h4 class="uppercase gibson-semibold">Account</h4>
-          <?php $args = array( 'menu' => 'footer-menu-2',);
+          <?php $args = array( 'menu' => 'footer-menu-2');
           wp_nav_menu( $args ); ?>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-3">
+          <h4 class="uppercase gibson-semibold">Third</h4>
+          <?php $args = array( 'menu' => 'footer-menu-3');
+          wp_nav_menu( $args ); ?>
+        </div>
+        <div class="col-xs-12 col-sm-3">
           <h4 class="uppercase gibson-semibold">Newsletter</h4>
           <?php dynamic_sidebar('Mailchimp Signup');?>
         </div>

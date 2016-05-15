@@ -39,22 +39,22 @@
     font-size: 24px;
     letter-spacing: -0.05em;
     text-transform: uppercase;
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        top: 51%;
-        display: inline-block;
-        width: 22px;
-        height: 1px;
-        background: #000;
-    }
-    &:before {
-        left: -32px;
-    }
-    &:after {
-        right: -32px;
-    }
+    // &:before,
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 51%;
+    //     display: inline-block;
+    //     width: 22px;
+    //     height: 1px;
+    //     background: #000;
+    // }
+    // &:before {
+    //     left: -32px;
+    // }
+    // &:after {
+    //     right: -32px;
+    // }
 }
 %translate-center {
     position: absolute;

@@ -5,6 +5,7 @@
         position: relative;
         &:before,
         &:after {
+          display: none; // Hide all these shapes
             content: "";
             position: absolute;
             top: 50%;

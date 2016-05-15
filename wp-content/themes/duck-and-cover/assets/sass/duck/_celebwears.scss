@@ -3,12 +3,22 @@
   .hero {
     margin-bottom: 40px;
     position: relative;
+    //min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    @include media-breakpoint-up(md) {
+      background-position: center center;
+    }
     .caption {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
+      h1 {
+        padding: 200px 0;
+        @extend .gibson-light;
+        font-size: 30px;
+        @include media-breakpoint-up(md) {
+          font-size: 42px;
+        }
+      }
     }
   }
   ul {
@@ -47,7 +57,15 @@
 
 .celebwears-single {
   .celebwears-single_hero {
-    margin: 40px 0;
+    @include media-breakpoint-up(sm) {
+      margin: 40px 0;
+    }
+    .celebwears-single_hero-inner {
+      margin: 0 -15px;
+      @include media-breakpoint-up(sm) {
+        margin: 0;
+      }
+    }
   }
   .celebwears-single_share {
     margin: 40px 0;
@@ -60,6 +78,7 @@
         text-transform: uppercase;
         @extend .gibson-semibold;
         opacity: .5;
+        font-size: 12px;
       }
     }
   }

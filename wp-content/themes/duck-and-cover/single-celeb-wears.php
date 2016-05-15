@@ -10,7 +10,9 @@
   				$image_url = $image_array[0];
   			?>
         <div class="celebwears-single_hero">
-          <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+          <div class="celebwears-single_hero-inner">
+            <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
+          </div>
           <h1><?php the_field('name');?></h1>
           <h3><?php the_field('frame_name');?></h3>
           <div class="celebwears-single_share">

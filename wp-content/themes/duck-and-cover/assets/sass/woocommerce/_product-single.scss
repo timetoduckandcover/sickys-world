@@ -230,10 +230,11 @@ body.boxed {
     }
     .product-title {
         padding-top: 0;
-        padding-bottom: 30px;
-        font-size: 50px;
-        letter-spacing: -0.04em;
+        padding-bottom: 10px;
+        font-size: 42px;
+        letter-spacing: 1px;
         line-height: 1.2;
+        @extend .gibson-light;
     }
     .price {
         ins {
@@ -382,7 +383,8 @@ body.boxed {
 }
 
 .product-socials-wrapper {
-    text-align: center;
+    //text-align: center;
+    margin: 20px 0;
     span {
         display: block;
         text-transform: uppercase;
@@ -417,25 +419,28 @@ body.boxed {
     .wc-tabs {
         border-bottom: 1px solid #DDD;
         text-align: center;
+        margin: 0 -40px;
         > li {
             padding: 10px 0;
             text-transform: uppercase;
             font-size: 14px;
+            border-bottom: 1px solid #4c4c4c;
             a {
                 position: relative;
                 margin: 0 23px;
+                @extend .gibson-semibold;
             }
             &.active {
-                a:before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -15px;
-                    display: inline-block;
-                    width: 100%;
-                    height: 1px;
-                    background: #000;
-                }
+                // a:before {
+                //     content: "";
+                //     position: absolute;
+                //     left: 0;
+                //     bottom: -15px;
+                //     display: inline-block;
+                //     width: 100%;
+                //     height: 1px;
+                //     background: #000;
+                // }
             }
         }
     }

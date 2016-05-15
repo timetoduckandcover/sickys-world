@@ -8,7 +8,7 @@ if ( ! $next_post ) {
 $next_product = wc_get_product( $next_post );
 ?>
 <div class="next-product navigation-product">
-    <span class="icon"><a href="<?php echo esc_url( $next_product->get_permalink() ); ?>"><?php echo esc_html( __( 'Next Product', 'facewp-abbey' ) ); ?></a></span>
+    <span class="icon"><a href="<?php echo esc_url( $next_product->get_permalink() ); ?>"><?php echo esc_html( __( 'Next', 'facewp-abbey' ) ); ?></a></span>
 
     <div class="product-info product_list_widget">
         <a href="<?php echo esc_url( $next_product->get_permalink() ); ?>">

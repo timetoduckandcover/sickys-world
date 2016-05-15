@@ -134,6 +134,10 @@
   display: inline-block;
   position: relative;
   padding-top: 19px;
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: auto;
+  }
   label {
     position: absolute;
     top: 0;
@@ -146,13 +150,33 @@
     margin-right: 6px;
     vertical-align: bottom;
     height: 41px;
+    width: calc(100% - 114px);
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
   }
   .button {
     margin-top: -1px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 .push-checkout-btns {
   padding-top: 18px;
+  input, a {
+    width: 100%;
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
+  }
+  input {
+    margin-bottom: 12px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0;
+    }
+  }
 }
 .actions {
     margin-bottom: 30px;

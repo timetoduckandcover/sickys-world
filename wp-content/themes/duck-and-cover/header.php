@@ -130,21 +130,44 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
           </div>
         </div>
     <?php elseif ( function_exists( 'is_product' ) && is_product() ) : ?>
-        <div class="container wide navigation-shop">
+        <div class="container wide navigation-shop navigation-shop-mobile text-center">
             <div class="row row-xs-center">
-                <div class="col-md-2 start-md">
+              <div class="col-xs-12 center-md">
+                <?php woocommerce_breadcrumb(); ?>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="duck-nav-links-wrapper">
+                  <div class="duck-nav-links duck-nav-prev">
                     <?php if ( Kirki::get_option( 'facewp', 'woocommerce_single_product_navigation' ) ) : ?>
-                        <?php wc_get_template( 'single-product/prev-product.php' ); ?>
+                      <?php wc_get_template( 'single-product/prev-product.php' ); ?>
                     <?php endif; ?>
-                </div>
-                <div class="col-md-8 center-md">
-                    <?php woocommerce_breadcrumb(); ?>
-                </div>
-                <div class="col-md-2 end-md">
+                  </div>
+                  <div class="duck-nav-links duck-nav-next">
                     <?php if ( Kirki::get_option( 'facewp', 'woocommerce_single_product_navigation' ) ) : ?>
-                        <?php wc_get_template( 'single-product/next-product.php' ); ?>
+                      <?php wc_get_template( 'single-product/next-product.php' ); ?>
                     <?php endif; ?>
+                  </div>
                 </div>
+              </div>
+            </div>
+        </div>
+        <div class="container wide navigation-shop navigation-shop-desktop">
+            <div class="row row-xs-center">
+              <div class="col-md-2 start-md">
+                <?php if ( Kirki::get_option( 'facewp', 'woocommerce_single_product_navigation' ) ) : ?>
+                  <?php wc_get_template( 'single-product/prev-product.php' ); ?>
+                <?php endif; ?>
+              </div>
+              <div class="col-md-8 center-md">
+                <?php woocommerce_breadcrumb(); ?>
+              </div>
+              <div class="col-md-2 end-md">
+                <?php if ( Kirki::get_option( 'facewp', 'woocommerce_single_product_navigation' ) ) : ?>
+                  <?php wc_get_template( 'single-product/next-product.php' ); ?>
+                <?php endif; ?>
+              </div>
             </div>
         </div>
     <?php endif; ?>
