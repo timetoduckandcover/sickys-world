@@ -1,3 +1,10 @@
+.blog-title {
+  @extend .gibson-light;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 40px;
+}
+
 // Article listing
 .blog-list-image-square {
   display: block;
@@ -37,5 +44,12 @@
     &:hover {
       color: rgba(216, 18, 15, 0.5) !important;
     }
+  }
+}
+
+.fullwidthbanner-container {
+  min-height: 500px !important;
+  .fullwidthabanner {
+    min-height: 500px !important;
   }
 }

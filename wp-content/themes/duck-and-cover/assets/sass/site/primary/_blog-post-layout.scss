@@ -7,8 +7,12 @@
     }
     .entry-meta {
         position: relative;
-        padding-top: 25px;
+        padding-top: 10px;
         padding-bottom: 10px;
+        time {
+          @extend .gibson-semibold;
+          color: #ccc;
+        }
     }
     .entry-footer {
         //border-bottom: 1px solid #000;

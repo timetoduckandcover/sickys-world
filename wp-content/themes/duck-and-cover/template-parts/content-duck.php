@@ -27,7 +27,7 @@
     <h6 class="uppercase post-meta-date"><?php the_date(); ?></h6>
   </div>
   <h4 class="uppercase"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
-  <p><?php echo substr(wp_strip_all_tags( get_the_content() ),0,100); ?>...</p>
+  <p><?php the_field('listing_excerpt');?></p>
   <div class="blog-meta-footer">
     <a href="<?php echo get_permalink() ?>" class="read-more button-transparent"><?php esc_html_e( 'Read More', 'facewp-abbey' ); ?></a>
   </div>

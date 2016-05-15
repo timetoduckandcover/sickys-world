@@ -6110,7 +6110,7 @@ Copyright (c) 2015 Daniel Eden
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
 .menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .duck-collection-header .page-title, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
+#customer_login .register .lost_password a, .duck-collection-header .page-title, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
@@ -6129,7 +6129,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -8501,7 +8501,11 @@ body.boxed .archive-box {
  * Image
  */
 .post-img {
-  display: block; }
+  display: block;
+  margin: 0 -15px; }
+  @media (min-width: 768px) {
+    .post-img {
+      margin: 0; } }
 
 /**
  * Entry Header
@@ -8546,7 +8550,8 @@ body.boxed .archive-box {
  * Entry Content
  */
 .entry-content p {
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-size: 15px; }
 
 .entry-content a {
   text-decoration: underline; }
@@ -8770,8 +8775,10 @@ body.boxed .archive-box {
 
 .full-layout .entry-meta {
   position: relative;
-  padding-top: 25px;
+  padding-top: 10px;
   padding-bottom: 10px; }
+  .full-layout .entry-meta time {
+    color: #ccc; }
 
 .full-layout .entry-footer {
   padding: 20px 0 40px; }
@@ -11600,6 +11607,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 #our-story .our-story-third-section {
   padding: 100px 0; }
 
+.blog-title {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 40px; }
+
 .blog-list-image-square {
   display: block;
   margin-bottom: 20px; }
@@ -11627,6 +11639,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   transition: all .2s ease !important; }
   .blog-slider-caption h1:hover {
     color: rgba(216, 18, 15, 0.5) !important; }
+
+.fullwidthbanner-container {
+  min-height: 500px !important; }
+  .fullwidthbanner-container .fullwidthabanner {
+    min-height: 500px !important; }
 
 .tp-bullet {
   width: 8px !important;

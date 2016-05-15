@@ -424,7 +424,7 @@ if ( ! function_exists( 'facewp_abbey_posted_on' ) ) :
         $posted_on = sprintf( esc_html_x( '%s', 'post date', 'facewp-abbey' ), $time_string );
         $posted_on_text = '<span class="meta-text">' . esc_html__( 'on', 'facewp-abbey' ) . '</span>';
 
-        echo '<span class="posted-on">' . $posted_on_text . $posted_on . '</span>';
+        echo '<span class="posted-on">' . $posted_on . '</span>';
 
     }
 endif;

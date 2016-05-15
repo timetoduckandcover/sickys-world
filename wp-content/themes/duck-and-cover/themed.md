@@ -2,6 +2,9 @@
 'website'  => '<p class="col-md-4 comment-form-website"><label for="website">' . esc_html__( 'Website', 'facewp-abbey' ) . '</label> ' .
             '<input id="website" name="website" type="text" value="' . esc_attr(  $facewp_abbey_commenter['comment_author_url'] ) . '" size="30"/></p>',
 
+// Blog listing page
+<p><?php echo substr(wp_strip_all_tags( get_the_content() ),0,100); ?>...</p>
+
 
 // Single blog page
 <?php facewp_abbey_post_pagination(); ?>
