@@ -21,9 +21,14 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
     <?php if ( have_comments() ) : ?>
-        <h3 class="heading style3">
-            <span><?php printf(esc_html__('%1$s Comments', 'facewp-abbey'), get_comments_number()); ?></span>
-        </h3>
+        <h2 class="uppercase text-center mb">
+          <?php
+            $commentscount = get_comments_number();
+            if($commentscount == 1): $commenttext = 'comment'; endif;
+            if($commentscount > 1 || $commentscount == 0): $commenttext = 'comments'; endif;
+            echo $commentscount.' '.$commenttext;
+          ?>
+        </h2>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation">
@@ -75,23 +80,23 @@ if ( post_password_required() ) {
     $facewp_abbey_req           = get_option('require_name_email');
     $facewp_abbey_aria_req      = ($facewp_abbey_req ? " aria-required='true'" : '');
     $facewp_abbey_fields        = array(
-        'author' => '<p class="col-md-4 comment-form-author">' . '<label for="author">' . esc_html__( 'Name', 'facewp-abbey' ) . ' <span class="required">*</span></label> ' .
+        'author' => '<p class="col-md-6 comment-form-author">' . '<label for="author">' . esc_html__( 'Name', 'facewp-abbey' ) . ' <span class="required">*</span></label> ' .
                     '<input id="author" name="author" type="text" value="' . esc_attr( $facewp_abbey_commenter['comment_author'] ) . '" size="30" aria-required="true" /></p>',
-        'email'  => '<p class="col-md-4 comment-form-email"><label for="email">' . esc_html__( 'Email', 'facewp-abbey' ) . ' <span class="required">*</span></label> ' .
-                    '<input id="email" name="email" type="text" value="' . esc_attr(  $facewp_abbey_commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>',
-        'website'  => '<p class="col-md-4 comment-form-website"><label for="website">' . esc_html__( 'Website', 'facewp-abbey' ) . '</label> ' .
-                    '<input id="website" name="website" type="text" value="' . esc_attr(  $facewp_abbey_commenter['comment_author_url'] ) . '" size="30"/></p>',
+        'email'  => '<p class="col-md-6 comment-form-email"><label for="email">' . esc_html__( 'Email', 'facewp-abbey' ) . ' <span class="required">*</span></label> ' .
+                    '<input id="email" name="email" type="text" value="' . esc_attr(  $facewp_abbey_commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>'
     );
     $facewp_abbey_comments_args = array(
         // change the title of send button
-        'label_submit'         => esc_html__('Post Comment', 'facewp-abbey'),
+        'label_submit'         => esc_html__('Submit', 'facewp-abbey'),
         // change the title of the reply section
-        'title_reply'          => esc_html__( 'Write a comment', 'facewp-abbey' ) ,
+        'title_reply'          => esc_html__( 'Comment', 'facewp-abbey' ) ,
+        'title_reply_before'   => '<h2 id="reply-title" class="header-2 uppercase mb text-center">',
+        'title_reply_after'    => '</h2>',
         // remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after'  => '',
         'comment_notes_before' => '',
         'fields'               => apply_filters('comment_form_default_fields', $facewp_abbey_fields),
-        'comment_field' => '<div class="col-sm-12"><label for="comment">' . esc_html__( 'Comment','facewp-abbey' ) . '<span class="required">*</span></label><textarea id="comment" rows="5" name="comment" aria-required="true"></textarea></div>',
+        'comment_field' => '<div class="col-sm-12"><label for="comment">' . esc_html__( 'Your Review','facewp-abbey' ) . '<span class="required">*</span></label><textarea id="comment" rows="5" name="comment" aria-required="true"></textarea></div>',
     );
     comment_form($facewp_abbey_comments_args); ?>
 

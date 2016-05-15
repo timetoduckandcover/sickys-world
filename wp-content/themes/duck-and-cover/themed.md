@@ -1,5 +1,12 @@
+// comments
+'website'  => '<p class="col-md-4 comment-form-website"><label for="website">' . esc_html__( 'Website', 'facewp-abbey' ) . '</label> ' .
+            '<input id="website" name="website" type="text" value="' . esc_attr(  $facewp_abbey_commenter['comment_author_url'] ) . '" size="30"/></p>',
+
 
 // Single blog page
+<?php facewp_abbey_post_pagination(); ?>
+
+
 <?php if ( ! $facewp_abbey_hide_author ) { ?>
     <span class="post-author">
         <span class="meta-text"><?php esc_html_e( 'by', 'facewp-abbey' ) ?></span>

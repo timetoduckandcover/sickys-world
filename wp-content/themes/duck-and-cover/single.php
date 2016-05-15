@@ -17,8 +17,6 @@ $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_ti
 
                 <?php get_template_part( 'template-parts/content' ); ?>
 
-                <?php facewp_abbey_post_pagination(); ?>
-
                 <div class="related-posts">
                   <?php facewp_abbey_related_posts(); ?>
                 </div>

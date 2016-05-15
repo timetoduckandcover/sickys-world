@@ -576,8 +576,8 @@ function facewp_abbey_comment( $comment, $args, $depth ) {
             <?php endif; ?>
             <div class="metadata">
                 <?php printf( wp_kses( __( '<cite class="fn">%s</cite>', 'facewp-abbey' ), array( 'cite' => array() ), 'facewp-abbey' ), get_comment_author_link() ) ?>
-                <span
-                    class="post-date"><?php printf( esc_html__( '%1$s', 'facewp-abbey' ), get_comment_date(), get_comment_time() ) ?></span>
+                <p
+                    class="post-date"><?php printf( esc_html__( '%1$s', 'facewp-abbey' ), get_comment_date(), get_comment_time() ) ?></p>
                 <?php edit_comment_link( esc_html__( '(Edit)', 'facewp-abbey' ), '  ', '' ) ?>
             </div>
             <?php comment_text() ?>

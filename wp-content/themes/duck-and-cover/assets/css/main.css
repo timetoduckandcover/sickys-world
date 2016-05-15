@@ -723,7 +723,7 @@ table th[class*="col-"] {
   margin-left: -15px;
   margin-right: -15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .comments-area .comment-respond .comment-form .form-submit, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   min-height: 1px;
   width: 100%;
@@ -1065,7 +1065,7 @@ table th[class*="col-"] {
     -ms-flex-preferred-size: 41.66667%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
-  .col-md-6 {
+  .col-md-6, .comments-area .comment-respond .comment-form .form-submit {
     flex: 50%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -6129,7 +6129,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -8608,13 +8608,15 @@ body.boxed .archive-box {
   padding-top: 40px;
   padding-bottom: 6px; }
   .post-share-buttons .share-buttons-text {
-    font-size: 13px;
+    font-size: 11px;
     text-transform: uppercase;
-    padding-right: 27px; }
+    padding-right: 20px;
+    color: #4c4c4c;
+    display: inline-block; }
   .post-share-buttons a {
     padding: 0 17px; }
   .post-share-buttons .fa {
-    font-size: 20px; }
+    font-size: 26px; }
 
 /**
  * Archive Box
@@ -8772,7 +8774,6 @@ body.boxed .archive-box {
   padding-bottom: 10px; }
 
 .full-layout .entry-footer {
-  border-bottom: 1px solid #000;
   padding: 20px 0 40px; }
   .single .full-layout .entry-footer {
     margin-top: 0; }
@@ -8875,15 +8876,14 @@ body.boxed .archive-box {
 --------------------------------------------------------------*/
 /*Comment*/
 .comments-area {
-  background: #FFF;
-  border-top: 1px solid transparent;
   /*Comment Area*/ }
   .comments-area .heading {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase; }
   .comments-area .comment-list {
-    margin-bottom: 30px; }
+    margin: 0 auto 30px auto;
+    max-width: 700px; }
     .comments-area .comment-list > .comment {
       padding: 0 0 40px 0; }
     .comments-area .comment-list .comment {
@@ -8902,7 +8902,6 @@ body.boxed .archive-box {
           font-style: normal;
           font-weight: bold; }
         .comments-area .comment-list .comment .comment-content p {
-          margin-top: 14px;
           margin-bottom: 0;
           line-height: 2; }
       .comments-area .comment-list .comment .comment-reply-link {
@@ -8921,15 +8920,17 @@ body.boxed .archive-box {
         .comments-area .comment-list .comment .children .comment-reply-link {
           top: 35px; }
     .comments-area .comment-list .metadata {
-      padding-bottom: 13px;
-      border-bottom: 1px solid #EEE; }
+      padding-bottom: 13px; }
       .comments-area .comment-list .metadata .post-date {
         font-size: 12px;
-        font-weight: 400 !important;
-        text-transform: uppercase; }
+        display: inline-block;
+        text-transform: uppercase;
+        color: #ccc; }
   .comments-area .comment-respond {
     padding: 0 0 40px;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px; }
     .comments-area .comment-respond .comment-reply-title {
       margin-bottom: 37px; }
       .comments-area .comment-respond .comment-reply-title a {
@@ -8961,21 +8962,20 @@ body.boxed .archive-box {
         padding-left: 15px;
         padding-right: 15px; }
       .comments-area .comment-respond .comment-form label {
-        margin-bottom: 16px;
-        font-size: 13px;
+        margin-bottom: 0;
+        font-size: 12px;
         text-transform: uppercase; }
       .comments-area .comment-respond .comment-form input[type="text"] {
         width: 100%;
         margin-bottom: 12px;
-        border: 1px solid #000;
-        text-align: center; }
+        border: 1px solid #000; }
       .comments-area .comment-respond .comment-form textarea {
         height: auto;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        padding: 10px; }
       .comments-area .comment-respond .comment-form .form-submit {
         text-align: center;
-        margin: 0;
-        padding: 20px 15px 0; }
+        margin: 0; }
         .comments-area .comment-respond .comment-form .form-submit .submit {
           display: inline-block;
           width: 100%;

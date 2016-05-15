@@ -187,15 +187,18 @@
     padding-top: 40px;
     padding-bottom: 6px;
     .share-buttons-text {
-        font-size: 13px;
+        font-size: 11px;
         text-transform: uppercase;
-        padding-right: 27px;
+        padding-right: 20px;
+        color: #4c4c4c;
+        @extend .gibson-semibold;
+        display: inline-block;
     }
     a {
         padding: 0 17px;
     }
     .fa {
-        font-size: 20px;
+        font-size: 26px;
     }
 }
 

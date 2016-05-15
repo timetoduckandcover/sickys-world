@@ -166,9 +166,9 @@ $facewp_abbey_hide_related_posts  = Kirki::get_option( 'facewp', 'post_hide_rela
         <?php if ( is_single() ) { ?>
             <?php if ( ! $facewp_abbey_hide_share_buttons ) { ?>
                 <div class="post-share-buttons">
-                    <span class="share-buttons-text">
-                        <?php esc_html_e( 'Share This Post', 'facewp-abbey' ) ?>
-                    </span>
+                    <p class="share-buttons-text">
+                        <?php esc_html_e( 'Share', 'facewp-abbey' ) ?>
+                    </p>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
                        onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
                         <i class="fa fa-facebook"></i>
