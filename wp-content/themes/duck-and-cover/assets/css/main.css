@@ -6110,7 +6110,7 @@ Copyright (c) 2015 Daniel Eden
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
 .menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .duck-collection-header .page-title, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
+#customer_login .register .lost_password a, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
@@ -6129,7 +6129,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #sticky-promo-cta, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -6165,7 +6165,7 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-size: 22px !important;
-  color: #4C4C4C !important; }
+  color: #4C4C4C; }
 
 h3 {
   font-size: 20px !important;
@@ -7411,6 +7411,10 @@ a {
   .menu > ul > li li > a {
     display: block;
     text-transform: uppercase; }
+    .menu > .menu-item .menu-item > a .menu-item-text, .menu > .menu-item li > a .menu-item-text,
+    .menu > ul > li .menu-item > a .menu-item-text,
+    .menu > ul > li li > a .menu-item-text {
+      font-size: 12px; }
 
 .menu > .menu-item .sub-menu, .menu > .menu-item .children,
 .menu > ul > li .sub-menu,
@@ -11460,7 +11464,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   padding: 70px 0 64px 0;
   margin-bottom: -90px; }
 
-.yith-woocommerce-ajax-product-filter a {
+.yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span {
   text-transform: uppercase;
   color: #4c4c4c; }
 
@@ -11469,6 +11473,23 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .price_slider_amount button {
   color: #4c4c4c !important; }
+
+#sticky-promo-cta {
+  position: fixed;
+  top: 57%;
+  right: -30px;
+  font-size: 14px;
+  -webkit-transform: rotate(90deg) translateX(-50%);
+  -moz-transform: rotate(90deg) translateX(-50%);
+  -o-transform: rotate(90deg) translateX(-50%);
+  transform: rotate(90deg) translateX(-50%);
+  color: #d8120f;
+  z-index: 999;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .2s ease; }
+  #sticky-promo-cta:hover {
+    opacity: 1; }
 
 #duck-front-page .hero-slider {
   margin-bottom: 60px; }

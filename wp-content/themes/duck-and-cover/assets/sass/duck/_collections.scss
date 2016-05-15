@@ -18,9 +18,10 @@
 }
 
 .yith-woocommerce-ajax-product-filter {
-  a {
+  a, span {
     text-transform: uppercase;
     color: #4c4c4c;
+    @extend .gibson-light;
   }
   .chosen a {
     color: #d8120f;

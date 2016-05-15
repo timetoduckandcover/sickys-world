@@ -480,6 +480,11 @@ jQuery( document ).ready( function( $ ) {
 // D & C
 jQuery( document ).ready( function( $ ) {
 
+  // Fade in CTA
+  setTimeout(function() {
+    $('#sticky-promo-cta').animate({opacity: 1}, 3000);
+  }, 5000);
+
   // Fitvids
   $('.video-wrapper').fitVids();
 

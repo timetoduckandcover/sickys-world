@@ -38,6 +38,18 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
 
 <body <?php body_class(); ?>>
 
+  <?php $args = array(
+    'post_type' => 'sticky_promo_cta',
+    'posts_per_page' => 1
+  );
+  $the_query = new WP_Query( $args );
+  ?>
+
+  <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <a id="sticky-promo-cta" href="<?php the_field('link');?>"><?php the_field('text');?></a>
+  <?php endwhile; endif; ?>
+  <?php wp_reset_query();?>
+
 <div id="slide-menu">
     <?php
     $facewp_abbey_language_switcher = facewp_abbey_language_switcher('language-switcher-mobile-menu');

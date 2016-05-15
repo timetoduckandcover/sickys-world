@@ -72,6 +72,7 @@ $sub-menu-padding-narrow: 25px;
         text-transform: uppercase;
         .menu-item-text {
           @extend .gibson-light;
+          font-size: 12px;
         }
       }
     }
