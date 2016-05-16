@@ -6273,7 +6273,9 @@ body {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: hidden;
-  word-spacing: -1px; }
+  word-spacing: -1px;
+  width: 100%;
+  overflow-x: hidden; }
 
 blockquote {
   quotes: "" ""; }
@@ -9101,7 +9103,7 @@ object {
   .site-footer .footer-inner {
     padding: 0 20px; }
     .site-footer .footer-inner .col-xs-12 {
-      margin-bottom: 20px; }
+      margin-bottom: 38px; }
   .site-footer .menu {
     margin-top: 8px; }
     .site-footer .menu li a {
@@ -10472,6 +10474,12 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 /**
  *  Cart
  */
+.cart_totals {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .cart_totals {
+      margin-top: 0; } }
+
 .shop_table.cart {
   margin: 60px 0 30px 0; }
   .shop_table.cart, .shop_table.cart th, .shop_table.cart td {
@@ -10482,6 +10490,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       padding: 6px 0;
       text-transform: uppercase;
       font-size: 14px; }
+  .shop_table.cart .product-name img {
+    width: 80px; }
+    @media (min-width: 768px) {
+      .shop_table.cart .product-name img {
+        width: 180px; } }
+  .shop_table.cart .product-price {
+    display: none; }
+    @media (min-width: 768px) {
+      .shop_table.cart .product-price {
+        display: block; } }
   .shop_table.cart .cart_item {
     border-bottom: 1px solid #EEE; }
     .shop_table.cart .cart_item td {
@@ -11547,12 +11565,12 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   background: #f4f4f4;
   padding-top: 60px; }
   #duck-front-page #sunglasses-section .sunglasses-section_top {
-    width: 340px;
+    width: 100%;
+    max-width: 640px;
     display: block;
     height: auto;
-    margin: 0 auto; }
-    #duck-front-page #sunglasses-section .sunglasses-section_top img {
-      padding: 20px 0; }
+    margin: 0 auto;
+    padding: 0 20px; }
   #duck-front-page #sunglasses-section .sunglasses-section_main {
     background: #d8d8d8;
     margin: 100px 0 180px 0;
@@ -11637,8 +11655,18 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #duck-front-page .pre-footer-image .caption {
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
-    right: 15%; }
+    right: 4%;
+    -webkit-transform: scale(0.7) translateY(-50%);
+    -moz-transform: scale(0.7) translateY(-50%);
+    -o-transform: scale(0.7) translateY(-50%);
+    transform: scale(0.7) translateY(-50%); }
+    @media (min-width: 1024px) {
+      #duck-front-page .pre-footer-image .caption {
+        right: 12%;
+        -webkit-transform: scale(1) translateY(-50%);
+        -moz-transform: scale(1) translateY(-50%);
+        -o-transform: scale(1) translateY(-50%);
+        transform: scale(1) translateY(-50%); } }
 
 #our-story .our-story-first-section {
   padding: 100px 0; }

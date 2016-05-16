@@ -68,13 +68,15 @@
     background: #f4f4f4;
     padding-top: 60px;
     .sunglasses-section_top {
-      width: 340px;
+      width: 100%;
+      max-width: 640px;
       display: block;
       height: auto;
       margin: 0 auto;
-      img {
-        padding: 20px 0;
-      }
+      padding: 0 20px;
+      // img {
+      //   padding: 20px 0;
+      // }
     }
     .sunglasses-section_main {
       background: #d8d8d8;
@@ -171,8 +173,20 @@
   .pre-footer-image {
     position: relative;
     .caption {
-      @include centre(y);
-      right: 15%;
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      -webkit-transform: scale(.7) translateY(-50%);
+      -moz-transform: scale(.7) translateY(-50%);
+      -o-transform: scale(.7) translateY(-50%);
+      transform: scale(.7) translateY(-50%);
+      @include media-breakpoint-up(md) {
+        right: 12%;
+        -webkit-transform: scale(1) translateY(-50%);
+        -moz-transform: scale(1) translateY(-50%);
+        -o-transform: scale(1) translateY(-50%);
+        transform: scale(1) translateY(-50%);
+      }
     }
   }
 }

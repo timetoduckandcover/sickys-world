@@ -97,6 +97,12 @@
     //     margin-bottom: 90px;
     // }
 }
+.cart_totals {
+  margin-top: 30px;
+  @include media-breakpoint-up(sm) {
+    margin-top: 0;
+  }
+}
 .shop_table.cart {
     margin: 60px 0 30px 0;
     &, th, td {
@@ -110,6 +116,20 @@
             font-size: 14px;
             @extend .gibson-semibold;
         }
+    }
+    .product-name {
+      img {
+        width: 80px;
+        @include media-breakpoint-up(sm) {
+          width: 180px;
+        }
+      }
+    }
+    .product-price {
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
     }
     .cart_item {
         border-bottom: 1px solid #EEE;

@@ -67,19 +67,7 @@ $facewp_abbey_hide_related_posts  = Kirki::get_option( 'facewp', 'post_hide_rela
         <?php } ?>
     <?php } else { ?>
         <?php if ( has_post_thumbnail() && ! $facewp_abbey_hide_featured_image ) { ?>
-            <?php if ( ! is_single() ) : ?>
-                <a href="<?php echo get_permalink(); ?>" class="post-img">
-            <?php endif; ?>
-            <picture class="<?php if ( is_single() ) echo 'post-img'; ?>">
-                <?php if ( is_single() ) : ?>
-                    <?php the_post_thumbnail( 'facewp-abbey-full-thumb' ); ?>
-                <?php else : ?>
-                    <?php the_post_thumbnail( 'full-thumb' ); ?>
-                <?php endif; ?>
-            </picture>
-            <?php if ( ! is_single() ) : ?>
-                </a>
-            <?php endif; ?>
+          <!-- See themed -->
         <?php } ?>
     <?php } ?>
 
