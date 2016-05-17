@@ -6736,7 +6736,8 @@ input[type="submit"]:not(.grey-button),
       background-color: white !important; } }
   #header #mobile-menu-toggle {
     color: #d8120f;
-    font-size: 20px; }
+    font-size: 30px;
+    margin-left: 20px; }
   #header.reduced-header #logo {
     padding: 2px 0 2px 15px; }
     #header.reduced-header #logo a {
@@ -6789,7 +6790,13 @@ input[type="submit"]:not(.grey-button),
 .mini-cart {
   display: inline-block; }
   .mini-cart .cart-contents {
-    font-size: 12px; }
+    font-size: 12px;
+    display: block;
+    margin-top: -16px; }
+    @media (min-width: 1024px) {
+      .mini-cart .cart-contents {
+        display: inline;
+        margin-top: 0; } }
   .mini-cart .cart-icon {
     position: relative; }
     .mini-cart .cart-icon .cart-count-fixed {
