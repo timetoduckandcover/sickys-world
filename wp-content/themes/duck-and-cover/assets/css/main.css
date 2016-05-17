@@ -8125,8 +8125,10 @@ body.boxed .archive-box {
   max-width: 100% !important;
   flex: 100% !important;
   border-top: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
   margin-bottom: 40px; }
+  @media (min-width: 1024px) {
+    .left-sidebar {
+      border-bottom: 1px solid #d8d8d8; } }
 
 @media (min-width: 1024px) {
   .sidebar {
@@ -8152,7 +8154,10 @@ body.boxed .archive-box {
 
 .sidebar .widget {
   font-size: 14px;
-  padding: 20px; }
+  padding: 20px 20px 14px 20px; }
+  @media (min-width: 1024px) {
+    .sidebar .widget {
+      padding: 20px; } }
 
 /**
  * Text, Banner, MailChimp for WordPress

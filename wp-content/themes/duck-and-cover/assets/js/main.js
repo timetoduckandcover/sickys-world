@@ -566,4 +566,36 @@ jQuery( document ).ready( function( $ ) {
     //$('.sunglasses-image-box').css('top', '0px');
   };
 
+
+  // Collection accordion
+  if (matchMedia) {
+    function hideWidgets () {
+      var widgets = $('.widget')
+      widgets.each(function () {
+        var h3 = $(this).find('h3')
+        h3.next().slideUp()
+      })
+    }
+
+    if (window.location.href.indexOf('/shop') > -1) {
+
+      var mq = window.matchMedia('(min-width: 1020px)')
+      if (!mq.matches) {
+        // Hide all widgets
+        hideWidgets()
+
+        // Click event for accordion
+        $('.widget-title').on('click', function () {
+          var $this = $(this)
+          if ($this.next().is(':visible')) {
+            $(this).next().slideUp()
+          } else {
+            hideWidgets()
+            $(this).next().slideDown()
+          }
+        })
+      }
+    }
+  }
+
 });

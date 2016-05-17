@@ -7,13 +7,15 @@
     max-width: 100% !important;
     flex: 100% !important;
     border-top: 1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
     margin-bottom: 40px;
+    @include media-breakpoint-up(md) {
+      border-bottom: 1px solid #d8d8d8;
+    }
 }
 .sidebar {
+  @extend .container;
   @include media-breakpoint-up(md) {
     display: flex;
-    @extend .container;
   }
 }
 .widget {
@@ -45,7 +47,10 @@
 }
 .sidebar .widget {
     font-size: 14px;
-    padding: 20px;
+    padding: 20px 20px 14px 20px;
+    @include media-breakpoint-up(md) {
+      padding: 20px;
+    }
 }
 
 /**
