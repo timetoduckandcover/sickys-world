@@ -29,8 +29,12 @@ wc_print_notices(); ?>
 		wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) )
 	);
 	?>
-  <a href="/my-account/customer-logout" class="account-sign-out-link">Sign Out</a>
+	<?php if ( class_exists( 'YITH_WCWL' ) ) : ?>
+		<a href="<?php echo esc_url( YITH_WCWL::get_instance()->get_wishlist_url() ); ?>" class="account-sign-out-link">View My Wishlist</a>
+	<?php endif; ?>
+	<a href="/my-account/customer-logout" class="account-sign-out-link">Sign Out</a>
 </p>
+
 
 <?php do_action( 'woocommerce_before_my_account' ); ?>
 

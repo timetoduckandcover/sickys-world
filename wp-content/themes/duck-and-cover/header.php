@@ -46,7 +46,10 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
   ?>
 
   <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-    <a id="sticky-promo-cta" href="<?php the_field('link');?>"><?php the_field('text');?></a>
+    <div class="sticky-promo-cta-wrapper">
+      <a id="sticky-promo-cta" href="<?php the_field('link');?>"><?php the_field('text');?></a>
+      <i><a href="javascript:;" class="sticky-promo-close"></a></i>
+    </div>
   <?php endwhile; endif; ?>
   <?php wp_reset_query();?>
 

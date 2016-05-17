@@ -11,7 +11,7 @@ Template Name: Celeb Wears
             <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
             <div class="hero" style="background-image:url(<?php echo $url; ?>)">
               <div class="caption">
-                <div class="container">
+                <div class="caption-inner">
                   <h1><?php the_title();?></h1>
                 </div>
               </div>
@@ -33,7 +33,7 @@ Template Name: Celeb Wears
       			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
               <?php
       					$image_id = get_field('image_thumbnail');
-      					$image_size = 'full-size';
+      					$image_size = 'custom-crop';
       					$image_array = wp_get_attachment_image_src($image_id, $image_size);
       					$image_url = $image_array[0];
     					?>
@@ -43,8 +43,8 @@ Template Name: Celeb Wears
                   <?php the_post_thumbnail();?>
                   <div class="caption">
                     <div class="caption-inner">
-                      <h3><?php the_field('name') ;?></h3>
-                      <h4><?php the_field('frame_name');?></h4>
+                      <h4 class="uppercase" style="color:#fff !important"><?php the_field('name') ;?></h4>
+                      <h5 class="uppercase" style="color:#fff !important"><?php the_field('frame_name');?></h5>
                     </div>
                   </div>
                 </a>

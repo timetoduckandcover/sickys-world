@@ -72,9 +72,6 @@ if ( ! $facewp_abbey_logo && ! $facewp_abbey_woocommerce_exists ) {
                     <div id="header-search" class="search-type-1 header-item" style="padding-top:10px;display:inline-block;">
                         <span id="js-search-overlay" class="icon-header pe-7s-search"></span>
                     </div>
-	                <?php if ( class_exists( 'YITH_WCWL' ) ) : ?>
-                        <a class="header-item" style="padding-top:10px;display:inline-block;" href="<?php echo esc_url( YITH_WCWL::get_instance()->get_wishlist_url() ); ?>"><span class="icon-header pe-7s-like"></span></a>
-		            <?php endif; ?>
                     <a class="header-item" style="padding-top:10px;display:inline-block;" href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><span class="icon-header pe-7s-user"></span></a>
                     <?php
                     $facewp_abbey_language_switcher = facewp_abbey_language_switcher('language-switcher-menu');

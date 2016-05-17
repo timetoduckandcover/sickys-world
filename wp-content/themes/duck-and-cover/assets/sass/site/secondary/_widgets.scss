@@ -11,17 +11,26 @@
     margin-bottom: 40px;
 }
 .sidebar {
-  display: flex;
-  @extend .container;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    @extend .container;
+  }
 }
 .widget {
     // margin-bottom: 30px;
     // padding-bottom: 30px;
     flex: 16.66%;
-    border-right: 1px solid #d8d8d8;
     padding: 10px 0;
+    border-bottom: 1px solid #d8d8d8;
     &:last-child {
-      border-right: none;
+      border-bottom: none;
+    }
+    @include media-breakpoint-up(md) {
+      border-right: 1px solid #d8d8d8;
+      border-bottom: none;
+      &:last-child {
+        border-right: none;
+      }
     }
     &-title {
       @extend .header-2;

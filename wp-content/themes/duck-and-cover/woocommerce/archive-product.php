@@ -31,14 +31,14 @@ get_header( 'shop' ); ?>
 
 			<div class="container breadcrumb-row">
 					<div class="row">
-							<div class="col-md-7 start-xs">
+							<div class="col-md-7 start-xs duck-collection-breadcrumbs">
 									<?php if ( Kirki::get_option( 'facewp', 'site_breadcrumb_enable' ) == 1 ) : ?>
 											<?php woocommerce_breadcrumb(); ?>
 									<?php endif; ?>
 							</div>
 
 							<?php if ( have_posts() ) : ?>
-									<div class="col-md-5 end-xs">
+									<div class="col-md-5 end-xs duck-collection-dropdowns">
 											<?php
 											/**
 											 * woocommerce_before_shop_loop hook

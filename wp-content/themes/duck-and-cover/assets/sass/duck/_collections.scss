@@ -8,7 +8,9 @@
   }
   .page-title {
     @extend .gibson-light;
-    font-size: 80px !important;
+    font-size: 42px !important;
+    text-align: center;
+    color: #fff !important;
   }
 }
 
@@ -31,5 +33,29 @@
 .price_slider_amount {
   button {
     color: #4c4c4c !important;
+  }
+}
+
+.duck-collection-breadcrumbs {
+  text-align: center;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.duck-collection-dropdowns {
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+}
+
+.duck-collection-filter-list {
+  .widget {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 16.66%;
+    }
   }
 }

@@ -22,12 +22,19 @@
       background-position: center center;
     }
     .caption {
+      .caption-inner {
+        position: relative;
+        padding: 200px 0;
+      }
       h1 {
+        @include centre;
+        color: #fff !important;
         padding: 200px 0;
         @extend .gibson-light;
         font-size: 30px;
         @include media-breakpoint-up(md) {
           font-size: 42px;
+          white-space: nowrap;
         }
       }
     }
@@ -35,7 +42,7 @@
   ul {
     margin-top: 40px;
     li {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       a {
         display: block;
         position: relative;
@@ -45,7 +52,7 @@
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(0,0,0,.3);
+          background: rgba(251, 10, 7, 0.73);
           transition: all .2s ease;
           opacity: 0;
           .caption-inner {

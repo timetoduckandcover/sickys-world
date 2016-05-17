@@ -482,8 +482,12 @@ jQuery( document ).ready( function( $ ) {
 
   // Fade in CTA
   setTimeout(function() {
-    $('#sticky-promo-cta').animate({opacity: 1}, 3000);
+    $('.sticky-promo-cta-wrapper').animate({opacity: 1}, 3000);
   }, 5000);
+
+  $('.sticky-promo-close').on('click', function () {
+    $('.sticky-promo-cta-wrapper').hide();
+  });
 
   // Fitvids
   $('.video-wrapper').fitVids();
