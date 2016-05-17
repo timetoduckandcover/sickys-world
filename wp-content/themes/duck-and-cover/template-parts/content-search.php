@@ -55,7 +55,7 @@ $facewp_abbey_hide_comment_link   =  Kirki::get_option( 'facewp', 'post_hide_com
         <?php if($facewp_abbey_hide_comment_link || $facewp_abbey_hide_share_buttons) {
           $class = 'col-xs-12';
         } else {
-          $class = 'col-xs-12 col-sm-6';
+          $class = 'col-xs-12';
         } ?>
         <?php if(!$facewp_abbey_hide_comment_link) { ?>
           <div class="post-comments <?php echo esc_attr($class); ?>">
@@ -88,4 +88,3 @@ $facewp_abbey_hide_comment_link   =  Kirki::get_option( 'facewp', 'post_hide_com
     </div>
   </footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-

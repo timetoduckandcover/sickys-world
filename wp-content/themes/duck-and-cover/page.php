@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="content-wrapper">
         <main class="content site-main">
           <div class="wrapper wrapper-padded">
-            <?php if ( !is_cart() ) { ?>
+            <?php if ( !is_cart() || !is_woocommerce()) { ?>
               <h1><?php the_title();?></h1>
             <?php } ;?>
             <?php while ( have_posts() ) : the_post(); ?>

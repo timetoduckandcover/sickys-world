@@ -1,0 +1,21 @@
+.myaccount_user {
+  margin-bottom: 60px;
+}
+
+.account-sign-out-link {
+  padding-left: 60px;
+  text-decoration: underline;
+}
+
+.duck-addresses {
+  margin-top: 50px;
+
+  // Single Address
+  .duck-account-address {
+    margin-top: 40px;
+    padding-left: 40px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

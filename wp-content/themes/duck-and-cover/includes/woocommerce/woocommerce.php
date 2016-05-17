@@ -253,7 +253,7 @@ function facewp_single_share_product() {
     ?>
 
     <div class="product-socials-wrapper">
-        <span><?php _e( 'Share', 'facewp-abbey' ); ?></span>
+        <b style="display:inline-block;" class="uppercase"><?php _e( 'Share', 'facewp-abbey' ); ?></b>
         <a href="//www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="//twitter.com/share?url=<?php the_permalink(); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
         <a href="//plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank"><i class="fa fa-google-plus"></i></a>

@@ -1,3 +1,14 @@
+.duck-pagination {
+  margin: 40px 0;
+  @include clearfix();
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+
 
 .celebwears-all {
   .hero {

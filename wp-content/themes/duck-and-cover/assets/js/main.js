@@ -511,7 +511,7 @@ jQuery( document ).ready( function( $ ) {
     }
 
     // Scroll event for home page parallax
-    if(window.location.pathname === '/') {
+    if(window.location.pathname === '/' && window.location.search.indexOf('?s=') === -1) {
       var st = $(this).scrollTop();
       if (st > lastScrollTop){
         if(_isScrolledIntoView('.sunglasses-image-box')) {
@@ -546,7 +546,7 @@ jQuery( document ).ready( function( $ ) {
 
     if(dir === 'down') {
       // console.log('down', newVal);
-      if(newVal > -220) {
+      if(newVal > -68) {
         newVal = newVal - 2;
       }
     } else {

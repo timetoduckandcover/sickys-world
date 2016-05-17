@@ -12,15 +12,15 @@ get_header(); ?>
             <?php if ( Kirki::get_option( 'facewp', 'sidebar_home' ) == 1 ) { ?>
                 <?php $facewp_abbey_class = 'col-md-12'; ?>
             <?php } else { ?>
-                <?php $facewp_abbey_class = 'col-md-9'; ?>
+                <?php $facewp_abbey_class = 'col-md-12'; ?>
             <?php } ?>
             <div class="<?php echo esc_attr($facewp_abbey_class); ?>">
                 <main id="main" class="site-main">
 
                     <?php if ( have_posts() ) : ?>
 
-                        <header class="page-header">
-                            <h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'facewp-abbey' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+                        <header class="page-header search-results">
+                            <h1><?php printf( esc_html__( 'Search Results for: %s', 'facewp-abbey' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
                         </header><!-- .page-header -->
 
                         <?php /* Start the Loop */ ?>

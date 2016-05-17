@@ -2,7 +2,7 @@
     #ship-to-different-address, h3,
     .woocommerce-billing-fields h3 {
         font-size: 24px;
-        text-align: center;
+        text-align: left;
     }
     #ship-to-different-address {
         span:after {
@@ -16,7 +16,8 @@
         thead {
             border-bottom: 1px solid #000;
             th {
-                padding: 20px 0;
+                //padding: 20px 0;
+                text-transform: uppercase;
             }
         }
         th, td {

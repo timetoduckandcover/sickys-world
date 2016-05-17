@@ -1,3 +1,5 @@
+
+
 #sticky-promo-cta {
   position: fixed;
   top: 57%;
@@ -58,9 +60,42 @@
   }
 
   #single-featured-product-section {
-    //margin: 60px 0 0 0;
-    .single-featured-product-caption {
-      padding: 40px 20px;
+    position: relative;
+
+    // Image area
+    .single-featured-image-area {
+      width: 50%;
+    }
+
+    // Caption area
+    .single-featured-caption-area {
+      background: #d8d8d8;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      .single-featured-product-caption {
+        @include centre;
+        width: 100%;
+        max-width: 60%;
+        text-align: center;
+        h1 {
+          color: #fff !important;
+          font-size: 52px !important;
+        }
+        h3 {
+          color: #4c4c4c !important;
+          font-size: 14px !important;
+          line-height: 14px !important;
+          margin: 0 0 10px 0;
+          @extend .gibson-light;
+        }
+        p {
+          font-style: italic;
+        }
+      }
     }
   }
 

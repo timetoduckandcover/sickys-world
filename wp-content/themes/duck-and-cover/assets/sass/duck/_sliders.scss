@@ -4,8 +4,21 @@
   border-radius: 50% !important;
 }
 
+.forcefullwidth_wrapper_tp_banner {
+  min-height: 410px;
+}
+
 .duck-slider-caption {
   text-align: left !important;
+  transform: scale(.7);
+  width: 100%;
+  min-width: 320px;
+  @include media-breakpoint-up(sm) {
+    transform: scale(.9);
+  }
+  @include media-breakpoint-up(md) {
+    transform: scale(1);
+  }
   h3 {
     text-transform: uppercase;
     color: #4c4c4c;

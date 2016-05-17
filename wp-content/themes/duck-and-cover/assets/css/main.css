@@ -707,7 +707,7 @@ table th[class*="col-"] {
   margin-left: -15px;
   margin-right: -15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .related li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .comments-area .comment-respond .comment-form .form-submit, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .related li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .search-results article, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .comments-area .comment-respond .comment-form .form-submit, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   min-height: 1px;
   width: 100%;
@@ -781,7 +781,7 @@ table th[class*="col-"] {
     -ms-flex-preferred-size: 91.66667%;
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
-  .col-xs-12 {
+  .col-xs-12, .search-results article {
     flex: 100%;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -897,7 +897,7 @@ table th[class*="col-"] {
     -ms-flex-preferred-size: 41.66667%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
-  .col-sm-6 {
+  .col-sm-6, .search-results article {
     flex: 50%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -1037,7 +1037,7 @@ table th[class*="col-"] {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     max-width: 25%; }
-  .col-md-4 {
+  .col-md-4, .search-results article {
     flex: 33.33333%;
     -webkit-flex-basis: 33.33333%;
     -ms-flex-preferred-size: 33.33333%;
@@ -6094,7 +6094,7 @@ Copyright (c) 2015 Daniel Eden
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
 .menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], .product-summary .product-title, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
+#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .woocommerce-tabs .wc-tabs > li a, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #sticky-promo-cta, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #sticky-promo-cta, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -9102,7 +9102,7 @@ object {
   padding: 80px 0; }
   .site-footer .footer-inner {
     padding: 0 20px; }
-    .site-footer .footer-inner .col-xs-12 {
+    .site-footer .footer-inner .col-xs-12, .site-footer .footer-inner .search-results article, .search-results .site-footer .footer-inner article {
       margin-bottom: 38px; }
   .site-footer .menu {
     margin-top: 8px; }
@@ -9251,7 +9251,7 @@ form .form-row-last {
   margin-left: -4px; }
 
 .form-row {
-  margin-bottom: 7px; }
+  margin-bottom: 20px; }
   .form-row label {
     display: block;
     font-size: 13px;
@@ -9778,7 +9778,6 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   padding-right: 15px; }
 
 .navigation-shop {
-  margin-bottom: 50px;
   padding: 106px 0 40px 0; }
   .navigation-shop.wide {
     padding-left: 20px;
@@ -10033,7 +10032,10 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     color: #FFF; }
 
 .product-socials-wrapper {
-  margin: 20px 0; }
+  margin: 50px 0 20px 0; }
+  .product-socials-wrapper b {
+    color: #ccc;
+    font-size: 12px; }
   .product-socials-wrapper span {
     display: block;
     text-transform: uppercase;
@@ -10326,7 +10328,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 .woocommerce-checkout #ship-to-different-address, .woocommerce-checkout h3,
 .woocommerce-checkout .woocommerce-billing-fields h3 {
   font-size: 24px;
-  text-align: center; }
+  text-align: left; }
 
 .woocommerce-checkout #ship-to-different-address span:after {
   right: -55px; }
@@ -10337,7 +10339,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 .woocommerce-checkout .woocommerce-checkout-review-order-table thead {
   border-bottom: 1px solid #000; }
   .woocommerce-checkout .woocommerce-checkout-review-order-table thead th {
-    padding: 20px 0; }
+    text-transform: uppercase; }
 
 .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td {
   padding: 0.4em 0; }
@@ -11422,6 +11424,17 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   .lookbooks-all li .lookbooks-all_single {
     padding: 620px 0 50px 0; }
 
+.duck-pagination {
+  margin: 40px 0; }
+  .duck-pagination::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .duck-pagination .prev {
+    float: left; }
+  .duck-pagination .next {
+    float: right; }
+
 .celebwears-all .hero {
   margin-bottom: 40px;
   position: relative;
@@ -11558,8 +11571,36 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category .top-category-images:hover .top-cat-first {
         opacity: 0; }
 
-#duck-front-page #single-featured-product-section .single-featured-product-caption {
-  padding: 40px 20px; }
+#duck-front-page #single-featured-product-section {
+  position: relative; }
+  #duck-front-page #single-featured-product-section .single-featured-image-area {
+    width: 50%; }
+  #duck-front-page #single-featured-product-section .single-featured-caption-area {
+    background: #d8d8d8;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0; }
+    #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 60%;
+      text-align: center; }
+      #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h1 {
+        color: #fff !important;
+        font-size: 52px !important; }
+      #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3 {
+        color: #4c4c4c !important;
+        font-size: 14px !important;
+        line-height: 14px !important;
+        margin: 0 0 10px 0; }
+      #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption p {
+        font-style: italic; }
 
 #duck-front-page #sunglasses-section {
   background: #f4f4f4;
@@ -11716,13 +11757,74 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   .fullwidthbanner-container .fullwidthabanner {
     min-height: 500px !important; }
 
+.search-results {
+  padding-top: 40px; }
+  .search-results article {
+    margin-bottom: 60px; }
+
+.myaccount_user {
+  margin-bottom: 60px; }
+
+.account-sign-out-link {
+  padding-left: 60px;
+  text-decoration: underline; }
+
+.duck-addresses {
+  margin-top: 50px; }
+  .duck-addresses .duck-account-address {
+    margin-top: 40px;
+    padding-left: 40px; }
+    .duck-addresses .duck-account-address a {
+      text-decoration: underline; }
+
+.woocommerce-info {
+  margin: 40px 0; }
+  .woocommerce-info a {
+    color: #d8120f; }
+
+.checkout_coupon {
+  padding-left: 15px; }
+  .checkout_coupon #coupon_code {
+    width: 100%;
+    height: 41px; }
+
+.woocommerce-checkout-review-order .product-name {
+  width: 50%; }
+
+.woocommerce-checkout-review-order .product-total {
+  width: 50%; }
+
+.woocommerce-checkout-review-order .order-total th, .woocommerce-checkout-review-order .order-total td {
+  border-top: 1px solid #4c4c4c; }
+
+.wc_payment_methods.payment_methods {
+  margin: 80px 0; }
+  .wc_payment_methods.payment_methods label {
+    padding-left: 10px; }
+    .wc_payment_methods.payment_methods label img {
+      padding-left: 30px; }
+  .wc_payment_methods.payment_methods .about_paypal {
+    padding-left: 30px; }
+
 .tp-bullet {
   width: 8px !important;
   height: 8px !important;
   border-radius: 50% !important; }
 
+.forcefullwidth_wrapper_tp_banner {
+  min-height: 410px; }
+
 .duck-slider-caption {
-  text-align: left !important; }
+  text-align: left !important;
+  transform: scale(0.7);
+  width: 100%;
+  min-width: 320px; }
+  @media (min-width: 768px) {
+    .duck-slider-caption {
+      transform: scale(0.9); } }
+  @media (min-width: 1024px) {
+    .duck-slider-caption {
+      transform: scale(1); } }
   .duck-slider-caption h3 {
     text-transform: uppercase;
     color: #4c4c4c;

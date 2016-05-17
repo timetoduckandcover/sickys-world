@@ -1,0 +1,9 @@
+.search-results {
+  padding-top: 40px;
+  article {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+    @extend .col-md-4;
+    margin-bottom: 60px;
+  }
+}
