@@ -17,6 +17,26 @@
     }
 }
 
+.button-sunglasses {
+  display: inline-block;
+  height: 41px;
+  padding: 1px 30px;
+  border: 1px solid #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+  background: transparent;
+  @extend .gibson-semibold;
+  color: #ffffff !important;
+  transition: all .1s ease;
+  &:hover {
+    color: #ffffff;
+    background: #fb0a09;
+    border: 1px solid #fb0a09;
+  }
+}
+
 button,
 input[type="button"],
 input[type="reset"],

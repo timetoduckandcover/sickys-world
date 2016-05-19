@@ -190,11 +190,11 @@
         @include media-breakpoint-up(md) {
           display: block;
         }
-        .button {
+        .button-sunglasses {
           bottom: 40px;
           @include centre(x);
-          color: white;
-          border: 1px solid white;
+          // color: white;
+          // border: 1px solid white;
         }
       }
       .sunglasses-video {

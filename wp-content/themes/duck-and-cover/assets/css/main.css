@@ -6109,7 +6109,7 @@ strong, .header-2, .widget-title, h1, h2, h3, h4, h6, .button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"]:not(.grey-button),
-#respond #submit, .button-transparent, .grey-button, .menu .menu-item > a .menu-item-text, .header-01 #primary-menu > .menu-item > a,
+#respond #submit, .button-sunglasses, .button-transparent, .grey-button, .menu .menu-item > a .menu-item-text, .header-01 #primary-menu > .menu-item > a,
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
@@ -6382,6 +6382,23 @@ input[type="submit"]:not(.grey-button),
   #respond #submit:hover {
     color: #ffffff;
     background: #fc3c3b !important; }
+
+.button-sunglasses {
+  display: inline-block;
+  height: 41px;
+  padding: 1px 30px;
+  border: 1px solid #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+  background: transparent;
+  color: #ffffff !important;
+  transition: all .1s ease; }
+  .button-sunglasses:hover {
+    color: #ffffff;
+    background: #fb0a09;
+    border: 1px solid #fb0a09; }
 
 .button-transparent {
   border: 1px solid #fb0a09;
@@ -11756,18 +11773,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       @media (min-width: 1024px) {
         #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
           display: block; } }
-      #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box button, #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
-      input[type="button"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
-      input[type="reset"], #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
-      input[type="submit"]:not(.grey-button), #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box
-      #respond #submit,
-      #respond #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box #submit {
+      #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box .button-sunglasses {
         bottom: 40px;
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 0);
-        color: white;
-        border: 1px solid white; }
+        transform: translate(-50%, 0); }
     #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-video {
       position: absolute;
       top: 0;
@@ -12051,7 +12061,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .home-flexslider {
   position: relative;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  margin-top: -77px; }
+  @media (min-width: 768px) {
+    .home-flexslider {
+      margin-top: 0; } }
   .home-flexslider .flexslider ul li {
     background-position: center center;
     background-repeat: no-repeat;
