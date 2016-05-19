@@ -43,8 +43,8 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
   <!-- START Friendbuy's SmartPixel -->
   <?php
   if ( is_user_logged_in() ) { ?>
-    <?php global $current_user;
-      get_currentuserinfo();
+    <?php
+      $current_user = wp_get_current_user();
     ?>
     <script>
         window['friendbuy'] = window['friendbuy'] || [];
@@ -135,7 +135,7 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
         <div class="duck-collection-header" style="background-image:url(<?php echo $image ;?>);">
             <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
               <div class="container">
-                <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+                <h1 class="page-title duck-collection-header-title"><?php woocommerce_page_title(); ?></h1>
               </div>
 
                 <?php $facewp_abbey_category_output = woocommerce_product_subcategories( array(

@@ -8,7 +8,7 @@ $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_ti
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="page-title"><?php esc_html_e( 'Category: ', 'facewp-abbey' ); ?><?php printf( __( '%s', 'facewp-abbey' ), single_cat_title( '', false ) ); ?></h1>
+                    <h1 class="page-title duck-col-title"><?php esc_html_e( 'Category: ', 'facewp-abbey' ); ?><?php printf( __( '%s', 'facewp-abbey' ), single_cat_title( '', false ) ); ?></h1>
                 </div>
             </div>
         </div>

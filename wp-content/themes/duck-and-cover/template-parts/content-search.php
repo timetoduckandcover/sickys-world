@@ -86,5 +86,5 @@ $facewp_abbey_hide_comment_link   =  Kirki::get_option( 'facewp', 'post_hide_com
         <?php } ?>
       </div>
     </div>
-  </footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+  </footer>
+</article>

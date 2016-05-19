@@ -24,8 +24,8 @@ if ( $order ) : ?>
   <!-- Friendbuy's Conversion Tracker -->
   <?php _e( 'Order Number:', 'woocommerce' ); ?>
   <?php _e( 'Total:', 'woocommerce' ); ?>
-  <?php global $current_user;
-    get_currentuserinfo();
+  <?php
+		$current_user = wp_get_current_user();
   ?>
   <script>
     window['friendbuy'] = window['friendbuy'] || [];

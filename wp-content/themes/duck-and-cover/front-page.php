@@ -29,7 +29,24 @@ get_header(); ?>
     					$image_url = $image_array[0];
     				?>
             <li style="background-image:url(<?php echo $image_url; ?>)">
-              <div class="container">
+              <div style="background-image:url(<?php echo $image_url; ?>)" class="home-flexslider-mobile-image"></div>
+              <div class="home-flexslider-mobile">
+                <div class="home-flexslider-caption">
+                  <?php if( get_field('sub_title') ): ?>
+                    <h3 class="home-flexslider-title uppercase"><?php the_field('sub_title');?></h3>
+                  <?php endif; ?>
+                  <h2 class="home-flexslider-title uppercase"><?php the_field('main_title');?></h2>
+                  <?php if( get_field('copy') ): ?>
+                    <div class="copy">
+                      <?php the_field('copy');?>
+                    </div>
+                  <?php endif; ?>
+                  <a href="<?php the_field('button_link');?>" class="button">
+                    <?php the_field('button_text');?>
+                  </a>
+                </div>
+              </div>
+              <div class="container home-flexslider-desktop">
                 <div class="home-flexslider-caption">
                   <?php if( get_field('sub_title') ): ?>
                     <h3 class="home-flexslider-title uppercase" style="color:<?php the_field('sub_title_color');?>"><?php the_field('sub_title');?></h3>

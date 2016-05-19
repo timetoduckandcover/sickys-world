@@ -75,8 +75,9 @@ input[type="submit"]:not(.grey-button),
 
 .primary-button {
     background: #FFF;
+    border-color: #fb0a09 !important;
     &:hover {
-        text-decoration: underline;
+      text-decoration: none !important;
     }
 }
 
