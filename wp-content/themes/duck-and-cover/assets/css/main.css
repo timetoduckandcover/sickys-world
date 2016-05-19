@@ -6364,7 +6364,7 @@ input[type="submit"]:not(.grey-button),
   text-transform: uppercase;
   line-height: 39px !important;
   letter-spacing: 0.1em !important;
-  background: #fb0a09;
+  background: #fb0a09 !important;
   color: #ffffff !important;
   transition: all .1s ease; }
   .button:hover, button:hover,
@@ -6373,7 +6373,7 @@ input[type="submit"]:not(.grey-button),
   input[type="submit"]:hover:not(.grey-button),
   #respond #submit:hover {
     color: #ffffff;
-    background: #fc3c3b; }
+    background: #fc3c3b !important; }
 
 .button-transparent {
   border: 1px solid #fb0a09;
@@ -9390,12 +9390,20 @@ form .form-row-last {
   .grid-list-toggle.grid-toggle {
     padding-right: 7px; }
 
+.products-grid.yith-wcan-loading {
+  margin-bottom: 60px; }
+
 .products-grid .product {
   margin-bottom: 25px; }
 
 .product-layout-grid .product {
   margin-top: 10px;
   margin-bottom: 20px; }
+  .product-layout-grid .product .product-title, .product-layout-grid .product .price {
+    opacity: 0;
+    transition: all .1s ease; }
+  .product-layout-grid .product:hover .product-title, .product-layout-grid .product:hover .price {
+    opacity: 1; }
 
 .product-layout-grid .added_to_cart {
   display: none; }
@@ -9507,7 +9515,7 @@ form .form-row-last {
 
 @media (min-width: 1024px) {
   .product-layout-grid .product {
-    margin-bottom: 50px; } }
+    margin-bottom: 10px; } }
 
 /*--------------------------------------------------------------
 ## Product
@@ -11542,7 +11550,13 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   .duck-collection-header .page-title {
     font-size: 42px !important;
     text-align: center;
-    color: #fff !important; }
+    color: #fff !important;
+    line-height: 75px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 4px !important;
+    font-weight: 400;
+    text-transform: uppercase; }
 
 .duck-collection-description {
   padding: 70px 0 64px 0;

@@ -42,8 +42,8 @@ $woocommerce_loop['loop']++;
 // Extra post classes
 $classes = array(
     'col-xs-12',
-    'col-sm-4',
-    'col-lg-3'
+    'col-sm-6',
+    'col-md-3'
 );
 if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] ) {
 	$classes[] = 'first';

@@ -7,13 +7,13 @@
     text-transform: uppercase;
     line-height: 39px !important;
     letter-spacing: 0.1em !important;
-    background: #fb0a09;
+    background: #fb0a09 !important;
     @extend .gibson-semibold;
     color: #ffffff !important;
     transition: all .1s ease;
     &:hover {
       color: #ffffff;
-      background: lighten(#fb0a09, 10%);
+      background: lighten(#fb0a09, 10%) !important;
     }
 }
 

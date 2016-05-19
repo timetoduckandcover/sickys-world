@@ -25,6 +25,7 @@
 
 </head>
 
+
 <?php
 
 $facewp_abbey_header_type = Kirki::get_option( 'facewp', 'header_type' );
@@ -37,6 +38,31 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
 ?>
 
 <body <?php body_class(); ?>>
+
+
+  <!-- START Friendbuy's SmartPixel -->
+  <?php
+  if ( is_user_logged_in() ) { ?>
+    <?php global $current_user;
+      get_currentuserinfo();
+    ?>
+    <script>
+        window['friendbuy'] = window['friendbuy'] || [];
+        window['friendbuy'].push(['site', 'site-d487e0af-sickyeyewear.com']);
+        window['friendbuy'].push(['track', 'customer',
+          {
+            id: '<?php echo $current_user->ID; ?>',
+            email: '<?php echo $current_user->user_email; ?>',
+            first_name: '<?php echo $current_user->user_firstname; ?>',
+            last_name: '<?php echo $current_user->user_lastname; ?>'
+          }
+        ]);
+        (function (f, r, n, d, b, y) {
+            b = f.createElement(r), y = f.getElementsByTagName(r)[0];b.async = 1;b.src = n;y.parentNode.insertBefore(b, y);
+        })(document, 'script', '//djnf6e5yyirys.cloudfront.net/js/friendbuy.min.js');
+    </script>
+  <?php } ?>
+  <!-- END Friendbuy's SmartPixel -->
 
   <?php $args = array(
     'post_type' => 'sticky_promo_cta',

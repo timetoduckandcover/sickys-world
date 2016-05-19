@@ -24,6 +24,9 @@
 }
 
 .products-grid {
+    &.yith-wcan-loading {
+      margin-bottom: 60px;
+    }
     .product {
         margin-bottom: 25px;
     }
@@ -33,6 +36,15 @@
     .product {
         margin-top: 10px;
         margin-bottom: 20px;
+        .product-title, .price {
+          opacity: 0;
+          transition: all .1s ease;
+        }
+        &:hover {
+          .product-title, .price {
+            opacity: 1;
+          }
+        }
     }
 }
 
@@ -198,7 +210,7 @@
 @include media-breakpoint-up(md) {
     .product-layout-grid {
         .product {
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
     }
 }
