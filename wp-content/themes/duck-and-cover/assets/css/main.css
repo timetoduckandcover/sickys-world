@@ -11642,7 +11642,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     width: 100%; }
     @media (min-width: 1024px) {
       #duck-front-page #single-featured-product-section .single-featured-image-area {
-        width: 50%; } }
+        width: 51%; } }
   #duck-front-page #single-featured-product-section .single-featured-caption-area {
     background: #d8d8d8;
     padding: 40px 20px; }
@@ -11675,8 +11675,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
-          transform: scale(1); } }
+          transform: translate(-50%, -50%); } }
 
 #duck-front-page #sunglasses-section {
   background: #f4f4f4;
@@ -11753,6 +11752,18 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       overflow: hidden; }
       #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-video video {
         width: 100%; }
+
+#duck-front-page .sunglasses-section-main-desktop {
+  display: none; }
+  @media (min-width: 1024px) {
+    #duck-front-page .sunglasses-section-main-desktop {
+      display: block; } }
+
+#duck-front-page .sunglasses-section-main-mobile {
+  display: block; }
+  @media (min-width: 1024px) {
+    #duck-front-page .sunglasses-section-main-mobile {
+      display: none; } }
 
 #duck-front-page .front-page-instagram {
   margin: 100px 0 60px 0; }

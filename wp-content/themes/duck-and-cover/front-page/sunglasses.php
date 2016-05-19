@@ -26,37 +26,51 @@
     <p><?php the_field('sunglasses_copy');?></p>
   </div>
 
-  <!-- START If image to be shown -->
-  <?php if(get_field('show_image_or_video') == "image") { ;?>
+  <!-- Desktop -->
+  <div class="sunglasses-section-main-desktop">
+    <!-- START If image to be shown -->
+    <?php if(get_field('show_image_or_video') == "image") { ;?>
+      <div class="sunglasses-section_main" style="background-image:url(<?php echo $sunglassesbg2_url; ?>)">
+        <div class="container">
+          <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
+          <div class="sunglasses-image-box" style="background-image:url(<?php echo $sunglasses2_url; ?>)">
+            <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
+          </div>
+        </div>
+      </div>
+    <?php };?>
+    <!-- END If image to be shown -->
+
+
+    <!-- START If video to be shown -->
+    <?php if(get_field('show_image_or_video') == "video") { ;?>
+      <div class="sunglasses-section_main">
+        <div class="sunglasses-video">
+          <video autoplay loop muted>
+            <source src="<?php the_field('sunglasses_second_background_video');?>" type="video/mp4">
+            <source src="<?php the_field('sunglasses_second_background_video');?>" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="container">
+          <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
+          <div class="sunglasses-image-box" style="background-image:url(<?php echo $sunglasses2_url; ?>)">
+            <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
+          </div>
+        </div>
+      </div>
+    <?php };?>
+    <!-- END If video to be shown -->
+  </div>
+
+  <!-- Mobile -->
+  <div class="sunglasses-section-main-mobile">
     <div class="sunglasses-section_main" style="background-image:url(<?php echo $sunglassesbg2_url; ?>)">
       <div class="container">
         <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
-        <div class="sunglasses-image-box" style="background-image:url(<?php echo $sunglasses2_url; ?>)">
-          <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
-        </div>
+        <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
       </div>
     </div>
-  <?php };?>
-  <!-- END If image to be shown -->
-  
-  <!-- START If video to be shown -->
-  <?php if(get_field('show_image_or_video') == "video") { ;?>
-    <div class="sunglasses-section_main">
-      <div class="sunglasses-video">
-        <video autoplay loop muted>
-          <source src="<?php the_field('sunglasses_second_background_video');?>" type="video/mp4">
-          <source src="<?php the_field('sunglasses_second_background_video');?>" type="video/ogg">
-        Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="container">
-        <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
-        <div class="sunglasses-image-box" style="background-image:url(<?php echo $sunglasses2_url; ?>)">
-          <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
-        </div>
-      </div>
-    </div>
-  <?php };?>
-  <!-- END If video to be shown -->
+  </div>
 
 </div>

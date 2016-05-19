@@ -83,7 +83,7 @@
     .single-featured-image-area {
       width: 100%;
       @include media-breakpoint-up(md) {
-        width: 50%;
+        width: 51%;
       }
     }
 
@@ -121,7 +121,6 @@
         @include media-breakpoint-up(md) {
           max-width: 60%;
           @include centre;
-          transform: scale(1);
         }
       }
     }
@@ -211,6 +210,19 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  .sunglasses-section-main-desktop {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+  .sunglasses-section-main-mobile {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
     }
   }
 
