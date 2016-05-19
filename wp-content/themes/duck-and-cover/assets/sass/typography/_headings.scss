@@ -6,32 +6,40 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: normal !important;
   @extend .gibson-light;
-  color: #4C4C4C !important;
   @extend .gibson-semibold;
+}
+h1:not(.blog-flexslider-title):not(.home-flexslider-title) {
+  color: #4C4C4C !important;
 }
 
 h2 {
   text-transform: uppercase;
   @extend .gibson-semibold;
   font-size: 22px !important;
-  color: #4C4C4C;
   @extend .gibson-semibold;
+}
+h2:not(.home-flexslider-title) {
+  color: #4C4C4C;
 }
 
 h3 {
   font-size: 20px !important;
-  color: #AAAAAA !important;
   @extend .gibson-semibold;
   &.widget-title {
     color: #4c4c4c !important;
   }
 }
+h3:not(.home-flexslider-title) {
+  color: #AAAAAA !important;
+}
 
 h4 {
   font-size: 18px !important;
   line-height: 24px !important;
-  color: #4C4C4C !important;
   @extend .gibson-semibold;
+}
+h4:not(.allow-color-picker) {
+  color: #4C4C4C !important;
 }
 
 h5 {

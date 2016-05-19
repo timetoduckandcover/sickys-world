@@ -11,15 +11,53 @@
  */
 get_header(); ?>
 
+    <!-- START Home Flexslider -->
+    <?php
+      $args = array(
+        'post_type' => 'home_flexslider'
+      );
+      $the_query = new WP_Query( $args )
+    ;?>
+    <div class="home-flexslider">
+      <div class="flexslider">
+        <ul class="slides">
+          <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <?php
+    					$image_id = get_field('image');
+    					$image_size = 'full-size';
+    					$image_array = wp_get_attachment_image_src($image_id, $image_size);
+    					$image_url = $image_array[0];
+    				?>
+            <li style="background-image:url(<?php echo $image_url; ?>)">
+              <div class="container">
+                <div class="home-flexslider-caption">
+                  <?php if( get_field('sub_title') ): ?>
+                    <h3 class="home-flexslider-title uppercase" style="color:<?php the_field('sub_title_color');?>"><?php the_field('sub_title');?></h3>
+                  <?php endif; ?>
+                  <h2 class="home-flexslider-title uppercase" style="color:<?php the_field('main_title_color');?>"><?php the_field('main_title');?></h2>
+                  <?php if( get_field('copy') ): ?>
+                    <div class="copy" style="color:<?php the_field('copy_color');?>">
+                      <?php the_field('copy');?>
+                    </div>
+                  <?php endif; ?>
+                  <a href="<?php the_field('button_link');?>" class="button">
+                    <?php the_field('button_text');?>
+                  </a>
+                </div>
+              </div>
+            </li>
+          <?php endwhile; endif; ?>
+        </ul>
+      </div>
+    </div>
+    <?php wp_reset_query();?>
+    <!-- END Home Flexslider -->
+
     <div class="content-wrapper">
         <main class="content site-main" id="duck-front-page">
           <?php while ( have_posts() ) : the_post(); ?>
 
             <div class="container">
-              <!-- Main Slider -->
-              <div class="hero-slider">
-                <?php the_field('main_slider_shortcode');?>
-              </div>
 
               <!-- Men's/Women's Categories -->
               <?php include('front-page/top-categories.php');?>

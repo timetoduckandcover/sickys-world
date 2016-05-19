@@ -5,18 +5,10 @@ $facewp_abbey_post_archives_sidebar_position = Kirki::get_option( 'facewp', 'pos
 $facewp_abbey_big_title_color = Kirki::get_option( 'facewp', 'post_archives_big_title_color' );
 $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_title_image' );
 ?>
-<div class="archive-box" style="background-image: url('<?php echo esc_url( $facewp_abbey_big_title_img ); ?>')">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="page-title"><?php esc_html_e( 'Browsing Tag:', 'facewp-abbey' ); ?><?php printf( __( '%s', 'facewp-abbey' ), single_tag_title( '', false ) ); ?></h1>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="container">
     <div class="row">
         <main id="main" class="site-main col-xs-12 <?php echo esc_attr( ( 'no-sidebar' != FaceWPC()->get( 'facewp_abbey_sidebar_position' ) && is_active_sidebar( FaceWPC()->get( 'facewp_abbey_sidebar' ) ) ) ? 'col-md-9' : '' ); ?>">
+          <h1 class="uppercase"><?php esc_html_e( 'Browsing Tag:', 'facewp-abbey' ); ?><?php printf( __( '%s', 'facewp-abbey' ), single_tag_title( '', false ) ); ?></h1>
 
             <?php if ( have_posts() ) : ?>
 
@@ -86,6 +78,3 @@ $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_ti
 
 <?php } ?>
 <?php get_footer(); ?>
-
-
-

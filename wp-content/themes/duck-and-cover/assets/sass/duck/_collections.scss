@@ -39,6 +39,10 @@
 .price_slider_amount {
   button {
     color: #4c4c4c !important;
+    background: none !important;
+    &:hover{
+      background: none !important;
+    }
   }
 }
 

@@ -32,7 +32,7 @@ Template Name: Crew
             <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
               <div class="container">
                 <div class="sicky-crew-member" style="text-align:<?php the_field('alignment');?>">
-                  <h4 class="uppercase" style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
+                  <h4 class="uppercase allow-color-picker" style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
                   <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
                   <span style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></span>
                   <a href="<?php the_permalink();?>" class="button"><?php the_field('button_text');?></a>
