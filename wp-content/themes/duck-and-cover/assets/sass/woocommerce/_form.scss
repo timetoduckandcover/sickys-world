@@ -20,6 +20,7 @@ form {
     .form-row-last {
         padding-left: 5px;
         margin-left: -4px;
+        vertical-align: top;
     }
 }
 .form-row {
@@ -37,10 +38,14 @@ form {
     }
     input {
         width: 100%;
+        transition: all .2s ease;
         &#rememberme,
         &.button,
         &.input-checkbox {
             width: auto;
+        }
+        &:focus {
+          border: 1px solid #ccc !important;
         }
     }
 }

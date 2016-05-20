@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -9294,7 +9294,8 @@ form .form-row-first {
 
 form .form-row-last {
   padding-left: 5px;
-  margin-left: -4px; }
+  margin-left: -4px;
+  vertical-align: top; }
 
 .form-row {
   margin-bottom: 20px; }
@@ -9306,7 +9307,8 @@ form .form-row-last {
     .form-row label.checkbox {
       display: inline-block; }
   .form-row input {
-    width: 100%; }
+    width: 100%;
+    transition: all .2s ease; }
     .form-row input#rememberme, .form-row input.button, .form-row
     input[type="button"], .form-row
     input[type="reset"], .form-row
@@ -9314,6 +9316,8 @@ form .form-row-last {
     #respond input#submit,
     #respond .form-row input#submit, .form-row input.input-checkbox {
       width: auto; }
+    .form-row input:focus {
+      border: 1px solid #ccc !important; }
 
 .select2-container .select2-choice {
   height: 40px;
@@ -11958,12 +11962,21 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .wc_payment_methods.payment_methods {
   margin: 80px 0; }
-  .wc_payment_methods.payment_methods label {
+  .wc_payment_methods.payment_methods label:not([for="payment_method_stripe"]) {
     padding-left: 10px; }
-    .wc_payment_methods.payment_methods label img {
+    .wc_payment_methods.payment_methods label:not([for="payment_method_stripe"]) img {
       padding-left: 30px; }
   .wc_payment_methods.payment_methods .about_paypal {
     padding-left: 30px; }
+
+label[for="payment_method_stripe"] {
+  padding-left: 10px; }
+  label[for="payment_method_stripe"] img {
+    padding-left: 10px;
+    width: 50px !important; }
+
+#order_review_heading span {
+  text-transform: uppercase; }
 
 .tp-bullet {
   width: 8px !important;
