@@ -7,7 +7,7 @@
     </div> <!-- / .main-content -->
 </div><!-- #page -->
 <footer class="site-footer <?php echo esc_attr( Kirki::get_option( 'facewp', 'footer_type' ));?>">
-  <div class="container boxed">
+  <div class="wrapper">
     <div class="footer-inner">
       <div class="row">
         <div class="col-xs-12">

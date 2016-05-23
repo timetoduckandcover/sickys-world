@@ -23,3 +23,17 @@ function my_theme_thumb() {
 set_post_thumbnail_size( 400, 400, true );
 }
 add_action( 'after_setup_theme', 'my_theme_thumb', 11 );
+
+// Remove additional information tab
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+function woo_remove_product_tabs( $tabs ) {
+  unset( $tabs['additional_information'] );  	// Remove the additional information tab
+  return $tabs;
+}
+
+// Rename description tab
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+	$tabs['description']['title'] = __( 'Tech' );		// Rename the description tab
+	return $tabs;
+}

@@ -40,6 +40,7 @@ if ( ! empty( $tabs ) ) : ?>
 				</li>
 			<?php endif; ?>
 		</ul>
+
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 			<div class="panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
 				<?php call_user_func( $tab['callback'], $key, $tab ); ?>
@@ -56,6 +57,47 @@ if ( ! empty( $tabs ) ) : ?>
 				<?php echo html_entity_decode( do_shortcode( $custom_tab_content ), ENT_QUOTES, 'UTF-8' ); ?>
 			</div>
 		<?php endif; ?>
+
+		<!-- Duck custom tab -->
+		<div class="panel entry-content wc-tab" id="duck-description">
+			<?php if( get_field('description_tab_image_1') ): ?>
+				<div class="duck-description-frame-1">
+					<?php
+						$image1_id = get_field('description_tab_image_1');
+						$image1_size = 'full-size';
+						$image1_array = wp_get_attachment_image_src($image1_id, $image1_size);
+						$image1_url = $image1_array[0];
+					?>
+					<img src="<?php echo $image1_url; ?>" alt="" />
+					<div class="duck-description-frame-caption">
+						<h2 style="margin-bottom:0;color:<?php the_field('description_tab_title_color');?>"><?php the_field('description_tab_title');?></h2>
+						<p style="color:<?php the_field('description_tab_copy_color');?>"><?php the_field('description_tab_copy');?></p>
+					</div>
+				</div>
+			<?php endif; ?>
+			<?php if( get_field('description_tab_image_2') ): ?>
+				<div class="duck-description-frame-2">
+					<?php
+						$image2_id = get_field('description_tab_image_2');
+						$image2_size = 'full-size';
+						$image2_array = wp_get_attachment_image_src($image2_id, $image2_size);
+						$image2_url = $image2_array[0];
+					?>
+						<img src="<?php echo $image2_url; ?>" alt="" />
+				</div>
+			<?php endif; ?>
+			<?php if( get_field('description_tab_image_3') ): ?>
+				<div class="duck-description-frame-3">
+					<?php
+						$image3_id = get_field('description_tab_image_3');
+						$image3_size = 'full-size';
+						$image3_array = wp_get_attachment_image_src($image3_id, $image3_size);
+						$image3_url = $image3_array[0];
+					?>
+						<img src="<?php echo $image3_url; ?>" alt="" />
+				</div>
+			<?php endif; ?>
+		</div>
 	</div>
 
 <?php endif; ?>

@@ -503,7 +503,7 @@ jQuery( document ).ready( function( $ ) {
 
   // If product page, replace container class
   if(window.location.href.indexOf('/product/') > -1) {
-    $('#container').addClass('container-wide').removeClass('container').css('padding', '0 40px');
+    $('#container').addClass('container-wide').removeClass('container');
   }
 
   // Scroll events
@@ -605,6 +605,13 @@ jQuery( document ).ready( function( $ ) {
         })
       }
     }
+  }
+
+  // Inject new tab into product page
+  if(window.location.href.indexOf('/product/') > -1) {
+    var tabContainer = $('.wc-tabs');
+    $( "<li class='duck-description-tab'><a href='#duck-description' id='duck-description-tab-click'>Description</a></li>" ).prependTo( tabContainer );
+    $( "#duck-description-tab-click" ).trigger( "click" );
   }
 
   // Flexslider

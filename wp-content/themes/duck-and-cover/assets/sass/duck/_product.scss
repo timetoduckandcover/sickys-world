@@ -40,3 +40,48 @@
     @extend .col-xs-6;
   }
 }
+
+// Tabs
+.wc-tabs-wrapper {
+  margin-top: 40px;
+  .entry-content.panel:not(#duck-description) {
+    padding: 0 40px;
+  }
+}
+
+// Custom D&C Tab
+#duck-description {
+  margin: 0 0 60px 0 !important;
+  .duck-description-frame-1 {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .duck-description-frame-caption {
+      @include centre(y);
+      left: 20px;
+      max-width: 500px;
+      @include media-breakpoint-up(md) {
+        left: 170px;
+      }
+    }
+  }
+  .duck-description-frame-2 {
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .duck-description-frame-3 {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
