@@ -491,11 +491,14 @@ jQuery( document ).ready( function( $ ) {
 
   // Fade in CTA
   setTimeout(function() {
-    $('.sticky-promo-cta-wrapper').animate({opacity: 1}, 3000);
+    if(localStorage.getItem('hide_sticky_promo_cta') === null) {
+      $('.sticky-promo-cta-wrapper').animate({opacity: 1}, 2000);
+    }
   }, 5000);
 
   $('.sticky-promo-close').on('click', function () {
     $('.sticky-promo-cta-wrapper').hide();
+    localStorage.hide_sticky_promo_cta = 'true';
   });
 
   // Fitvids
@@ -588,7 +591,7 @@ jQuery( document ).ready( function( $ ) {
 
     if (window.location.href.indexOf('/shop') > -1) {
 
-      var mq = window.matchMedia('(min-width: 1020px)')
+      var mq = window.matchMedia('(min-width: 1023px)')
       if (!mq.matches) {
         // Hide all widgets
         hideWidgets()
@@ -612,6 +615,26 @@ jQuery( document ).ready( function( $ ) {
     var tabContainer = $('.wc-tabs');
     $( "<li class='duck-description-tab'><a href='#duck-description' id='duck-description-tab-click'>Description</a></li>" ).prependTo( tabContainer );
     $( "#duck-description-tab-click" ).trigger( "click" );
+  }
+
+  // Split filters if > 5 on collection page
+  if(window.location.href.indexOf('/shop/') > -1) {
+    var sidebarWidget = $('.sidebar aside');
+    sidebarWidget.each(function() {
+      var $this = $(this);
+      var listItems = $this.find('ul.yith-wcan li');
+      var listItemsLength = listItems.size();
+      if(listItemsLength > 5) {
+        var matchMedia = window.matchMedia('(max-width: 1023px)')
+        if (!matchMedia.matches) {
+          $this.addClass('clearfix');
+          listItems.css({
+            'float': 'left',
+            'width': '50%'
+          });
+        }
+      }
+    });
   }
 
   // Flexslider

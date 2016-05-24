@@ -16,6 +16,9 @@
             @extend %transition;
         }
     }
+    .labels {
+      display: none;
+    }
     img {
         display: block;
         width: 100%;

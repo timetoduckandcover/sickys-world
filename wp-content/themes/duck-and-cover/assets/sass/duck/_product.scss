@@ -30,14 +30,21 @@
 .navigation-shop-desktop {
   display: none;
   @include media-breakpoint-up(md) {
-    display: block;
+    //display: block;
   }
 }
 
 // Related products
 .related {
+  margin-bottom: 60px;
+  .yit-wcan-container {
+    padding: 0 20px;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
   li {
-    @extend .col-xs-6;
+    //@extend .col-xs-6;
   }
 }
 
@@ -83,5 +90,11 @@
       height: auto;
       display: block;
     }
+  }
+}
+
+.product.type-product {
+  @include media-breakpoint-up(md) {
+    margin-top: 60px;
   }
 }

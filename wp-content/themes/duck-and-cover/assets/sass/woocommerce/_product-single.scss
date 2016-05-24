@@ -111,8 +111,18 @@ body.boxed {
   @include media-breakpoint-up(sm) {
     padding: 0 0 0 3%;
   }
-  @include media-breakpoint-up(md) {
-    padding: 0 0 0 5%;
+  // @include media-breakpoint-up(md) {
+  //   padding: 0 0 0 5%;
+  // }
+  .slick-current {
+    a:first-child {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  .slick-arrow-prev, .slick-arrow-next {
+    display: none !important;
   }
     .out-of-stock-overlay {
         display: none;

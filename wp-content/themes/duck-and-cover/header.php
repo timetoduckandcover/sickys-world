@@ -64,6 +64,7 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
   <?php } ?>
   <!-- END Friendbuy's SmartPixel -->
 
+  <!-- START Sticky Promo CTA -->
   <?php $args = array(
     'post_type' => 'sticky_promo_cta',
     'posts_per_page' => 1
@@ -72,12 +73,28 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
   ?>
 
   <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-    <div class="sticky-promo-cta-wrapper">
-      <a id="sticky-promo-cta" href="<?php the_field('link');?>"><?php the_field('text');?></a>
-      <i><a href="javascript:;" class="sticky-promo-close"></a></i>
-    </div>
+    <?php if( get_field('image') ): ?>
+      <div class="sticky-promo-cta-wrapper">
+        <?php
+          $imagepromo_id = get_field('image');
+          $imagepromo_size = 'full-size';
+          $imagepromo_array = wp_get_attachment_image_src($imagepromo_id, $imagepromo_size);
+          $imagepromo_url = $imagepromo_array[0];
+        ?>
+        <a id="sticky-promo-cta" href="<?php the_field('link');?>">
+          <img src="<?php echo $imagepromo_url; ?>" alt="" />
+        </a>
+        <i class="sticky-glued"><a href="javascript:;" class="sticky-promo-close"></a></i>
+      </div>
+    <?php else: ?>
+      <div class="sticky-promo-cta-wrapper sticky-rotate">
+        <a id="sticky-promo-cta" href="<?php the_field('link');?>"><?php the_field('text');?></a>
+        <i><a href="javascript:;" class="sticky-promo-close"></a></i>
+      </div>
+    <?php endif; ?>
   <?php endwhile; endif; ?>
   <?php wp_reset_query();?>
+  <!-- END Sticky Promo CTA -->
 
 <div id="slide-menu">
     <?php

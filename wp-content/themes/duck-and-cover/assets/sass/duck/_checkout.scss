@@ -28,7 +28,10 @@
 }
 
 .wc_payment_methods.payment_methods {
-  margin: 80px 0;
+  margin: 30px 0;
+  li:first-child {
+    margin-bottom: 16px;
+  }
   label:not([for="payment_method_stripe"]) {
     padding-left: 10px;
     img {
@@ -45,6 +48,12 @@ label[for="payment_method_stripe"] {
   img {
     padding-left: 10px;
     width: 50px !important;
+  }
+}
+
+label[for="payment_method_paypal"] {
+  img {
+    width: 120px;
   }
 }
 

@@ -9,6 +9,22 @@
 .blog-list-image-square {
   display: block;
   margin-bottom: 20px;
+  position: relative;
+  &:hover {
+    .blog-list-image-square-overlay {
+      opacity: 1;
+    }
+  }
+  .blog-list-image-square-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .2s ease;
+    background: rgba(216, 18, 15, 0.73);
+  }
   img {
     width: 100%;
     height: auto;
@@ -17,7 +33,7 @@
 }
 .duck-blog {
   article {
-    padding: 0 40px 100px 40px;
+    padding: 0 40px 60px 40px;
     .post-meta {
       margin: 0 0 8px 0;
       .post-meta-date {
@@ -27,6 +43,9 @@
     }
     h4 {
       margin: 0 0 10px 0;
+    }
+    p {
+      font-size: 14px;
     }
     .blog-meta-footer {
       margin: 30px 0 0 0;

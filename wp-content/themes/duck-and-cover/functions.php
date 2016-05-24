@@ -37,3 +37,9 @@ function woo_rename_tabs( $tabs ) {
 	$tabs['description']['title'] = __( 'Tech' );		// Rename the description tab
 	return $tabs;
 }
+
+// Replace paypal icon
+function replacePayPalIcon($iconUrl) {
+	return get_bloginfo('stylesheet_directory') . '/assets/img/paypal-new-logo.png';
+}
+add_filter('woocommerce_paypal_icon', 'replacePayPalIcon');

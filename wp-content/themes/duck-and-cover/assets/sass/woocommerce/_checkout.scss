@@ -12,6 +12,9 @@
     .woocommerce-checkout-review-order-table {
         &, th, td {
             border: none;
+            @extend .gibson-semibold;
+            letter-spacing: 1px;
+            font-size: 13px;
         }
         thead {
             border-bottom: 1px solid #000;
@@ -23,8 +26,17 @@
         th, td {
             padding: 0.4em 0;
         }
+        th {
+          text-transform: uppercase;
+        }
         tbody {
             padding-top: 5px;
+        }
+        .shipping {
+          p {
+            color: #ccc;
+            margin-top: 10px;
+          }
         }
     }
 }

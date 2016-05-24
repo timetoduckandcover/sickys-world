@@ -21,11 +21,11 @@ Template Name: Celeb Wears
           <?php endwhile; // end of the loop. ?>
 
           <?php
-            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
               'post_type' => 'celeb-wears',
-              'posts_per_page' => 12,
-              'paged' => $paged
+              'posts_per_page' => -1
+              //'paged' => $paged
             );
       			$the_query = new WP_Query( $args )
           ;?>
@@ -51,7 +51,6 @@ Template Name: Celeb Wears
               </li>
       			<?php endwhile; endif; ?>
           </ul>
-          <?php include('template-parts/duck-pagination.php');?>
         </div>
       </main>
     </div><!--.content-wrapper-->

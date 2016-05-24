@@ -707,7 +707,7 @@ table th[class*="col-"] {
   margin-left: -15px;
   margin-right: -15px; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .related li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .comments-area .comment-respond .comment-form .form-submit, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .comments-area .comment-respond .comment-form .form-submit, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
   position: relative;
   min-height: 1px;
   width: 100%;
@@ -745,7 +745,7 @@ table th[class*="col-"] {
     -ms-flex-preferred-size: 41.66667%;
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
-  .col-xs-6, .sicky-single .widget_facewp_instagram ul li, .related li {
+  .col-xs-6, .sicky-single .widget_facewp_instagram ul li {
     flex: 50%;
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -6093,7 +6093,7 @@ Copyright (c) 2015 Daniel Eden
 .menu > ul > li .menu-item > a .menu-item-text,
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
-.menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], .product-summary .product-title, #customer_login .register-sub-header, #customer_login .login .lost_password a,
+.menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], .form-row input, .product-summary .product-title, #customer_login .register-sub-header, #customer_login .login .lost_password a,
 #customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, .sticky-promo-cta-wrapper #sticky-promo-cta, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p, .blog-flexslider .flexslider ul li a h1, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h3, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -9308,7 +9308,9 @@ form .form-row-last {
       display: inline-block; }
   .form-row input {
     width: 100%;
-    transition: all .2s ease; }
+    transition: all .2s ease;
+    letter-spacing: 1px !important;
+    font-size: 13px; }
     .form-row input#rememberme, .form-row input.button, .form-row
     input[type="button"], .form-row
     input[type="reset"], .form-row
@@ -9351,7 +9353,6 @@ form .form-row-last {
 ## Minicart
 --------------------------------------------------------------*/
 .mini-cart .cart-details {
-  border: 1px solid #000;
   border-radius: 0;
   box-shadow: none;
   padding: 20px;
@@ -9564,6 +9565,8 @@ form .form-row-last {
       display: block;
       width: 100%;
       height: 100%; }
+  .product-thumb .labels {
+    display: none; }
   .product-thumb img {
     display: block;
     width: 100%; }
@@ -9899,9 +9902,10 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   @media (min-width: 768px) {
     .images {
       padding: 0 0 0 3%; } }
-  @media (min-width: 1024px) {
-    .images {
-      padding: 0 0 0 5%; } }
+  .images .slick-current a:first-child img {
+    margin: 0 auto; }
+  .images .slick-arrow-prev, .images .slick-arrow-next {
+    display: none !important; }
   .images .out-of-stock-overlay {
     display: none; }
   .images .main-images .slick-arrow {
@@ -10398,7 +10402,9 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   right: -55px; }
 
 .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td {
-  border: none; }
+  border: none;
+  letter-spacing: 1px;
+  font-size: 13px; }
 
 .woocommerce-checkout .woocommerce-checkout-review-order-table thead {
   border-bottom: 1px solid #000; }
@@ -10408,8 +10414,15 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td {
   padding: 0.4em 0; }
 
+.woocommerce-checkout .woocommerce-checkout-review-order-table th {
+  text-transform: uppercase; }
+
 .woocommerce-checkout .woocommerce-checkout-review-order-table tbody {
   padding-top: 5px; }
+
+.woocommerce-checkout .woocommerce-checkout-review-order-table .shipping p {
+  color: #ccc;
+  margin-top: 10px; }
 
 /*--------------------------------------------------------------
 ## Order Tracking
@@ -11633,27 +11646,41 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .sticky-promo-cta-wrapper {
   position: fixed;
-  top: 62%;
-  right: -30px;
+  bottom: 0;
+  right: 0;
   z-index: 90;
   opacity: 0;
   transition: all .2s ease;
-  -webkit-transform: rotate(90deg) translateX(-50%);
-  -moz-transform: rotate(90deg) translateX(-50%);
-  -o-transform: rotate(90deg) translateX(-50%);
-  transform: rotate(90deg) translateX(-50%); }
+  text-align: center; }
   .sticky-promo-cta-wrapper:hover {
     opacity: 1; }
+  .sticky-promo-cta-wrapper.sticky-rotate {
+    right: -30px;
+    top: 62%;
+    bottom: auto;
+    margin-top: 0;
+    -webkit-transform: rotate(90deg) translateX(-50%);
+    -moz-transform: rotate(90deg) translateX(-50%);
+    -o-transform: rotate(90deg) translateX(-50%);
+    transform: rotate(90deg) translateX(-50%);
+    text-align: left; }
   .sticky-promo-cta-wrapper #sticky-promo-cta {
     font-size: 12px;
     color: #d8120f;
     text-transform: uppercase; }
+  .sticky-promo-cta-wrapper img {
+    display: block;
+    height: 300px; }
   .sticky-promo-cta-wrapper i {
     display: inline-block;
     width: 12px;
     height: 12px;
     padding-left: 10px;
     vertical-align: middle; }
+    .sticky-promo-cta-wrapper i.sticky-glued {
+      position: absolute;
+      top: 59%;
+      left: -30px; }
     .sticky-promo-cta-wrapper i .sticky-promo-close {
       background-image: url(../img/x-out.png);
       background-repeat: no-repeat;
@@ -11742,7 +11769,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     padding: 0 20px; }
   #duck-front-page #sunglasses-section .sunglasses-section_main {
     background: #d8d8d8;
-    margin: 100px 0 180px 0;
+    margin: 100px 0;
     position: relative;
     padding: 250px 0 350px 0;
     background-size: cover;
@@ -11764,12 +11791,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       transform: rotate(-3deg);
       display: none; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:after {
-      height: 134px;
-      width: 127%;
-      bottom: -83px;
-      left: -5px;
+      height: 180px;
+      width: 147%;
+      bottom: -59px;
+      left: -14px;
       transform: rotate(4deg);
       background: #fff; }
+      @media (min-width: 1200px) {
+        #duck-front-page #sunglasses-section .sunglasses-section_main:after {
+          height: 153px;
+          bottom: -104px; } }
     #duck-front-page #sunglasses-section .sunglasses-section_main .sunglasses-image-box {
       display: none;
       position: absolute;
@@ -11877,20 +11908,34 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 .blog-list-image-square {
   display: block;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+  .blog-list-image-square:hover .blog-list-image-square-overlay {
+    opacity: 1; }
+  .blog-list-image-square .blog-list-image-square-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .2s ease;
+    background: rgba(216, 18, 15, 0.73); }
   .blog-list-image-square img {
     width: 100%;
     height: auto;
     display: block; }
 
 .duck-blog article {
-  padding: 0 40px 100px 40px; }
+  padding: 0 40px 60px 40px; }
   .duck-blog article .post-meta {
     margin: 0 0 8px 0; }
     .duck-blog article .post-meta .post-meta-date {
       position: relative; }
   .duck-blog article h4 {
     margin: 0 0 10px 0; }
+  .duck-blog article p {
+    font-size: 14px; }
   .duck-blog article .blog-meta-footer {
     margin: 30px 0 0 0; }
 
@@ -11966,7 +12011,9 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   border-top: 1px solid #4c4c4c; }
 
 .wc_payment_methods.payment_methods {
-  margin: 80px 0; }
+  margin: 30px 0; }
+  .wc_payment_methods.payment_methods li:first-child {
+    margin-bottom: 16px; }
   .wc_payment_methods.payment_methods label:not([for="payment_method_stripe"]) {
     padding-left: 10px; }
     .wc_payment_methods.payment_methods label:not([for="payment_method_stripe"]) img {
@@ -11979,6 +12026,9 @@ label[for="payment_method_stripe"] {
   label[for="payment_method_stripe"] img {
     padding-left: 10px;
     width: 50px !important; }
+
+label[for="payment_method_paypal"] img {
+  width: 120px; }
 
 #order_review_heading span {
   text-transform: uppercase; }
@@ -12477,9 +12527,14 @@ html[xmlns] .flexslider .slides {
 
 .navigation-shop-desktop {
   display: none; }
-  @media (min-width: 1024px) {
-    .navigation-shop-desktop {
-      display: block; } }
+
+.related {
+  margin-bottom: 60px; }
+  .related .yit-wcan-container {
+    padding: 0 20px; }
+    @media (min-width: 1024px) {
+      .related .yit-wcan-container {
+        padding: 0; } }
 
 .wc-tabs-wrapper {
   margin-top: 40px; }
@@ -12514,3 +12569,7 @@ html[xmlns] .flexslider .slides {
     width: 100%;
     height: auto;
     display: block; }
+
+@media (min-width: 1024px) {
+  .product.type-product {
+    margin-top: 60px; } }

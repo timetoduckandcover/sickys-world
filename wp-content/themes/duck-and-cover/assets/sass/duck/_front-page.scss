@@ -1,17 +1,27 @@
 
 .sticky-promo-cta-wrapper {
   position: fixed;
-  top: 62%;
-  right: -30px;
+  //top: auto;
+  bottom: 0;
+  right: 0;
   z-index: 90;
   opacity: 0;
   transition: all .2s ease;
-  -webkit-transform: rotate(90deg) translateX(-50%);
-  -moz-transform: rotate(90deg) translateX(-50%);
-  -o-transform: rotate(90deg) translateX(-50%);
-  transform: rotate(90deg) translateX(-50%);
+  text-align: center;
+  //margin-top: -150px;
   &:hover {
     opacity: 1;
+  }
+  &.sticky-rotate {
+    right: -30px;
+    top: 62%;
+    bottom: auto;
+    margin-top: 0;
+    -webkit-transform: rotate(90deg) translateX(-50%);
+    -moz-transform: rotate(90deg) translateX(-50%);
+    -o-transform: rotate(90deg) translateX(-50%);
+    transform: rotate(90deg) translateX(-50%);
+    text-align: left;
   }
   #sticky-promo-cta {
     font-size: 12px;
@@ -19,12 +29,21 @@
     @extend .gibson-light;
     text-transform: uppercase;
   }
+  img {
+    display: block;
+    height: 300px;
+  }
   i {
     display: inline-block;
     width: 12px;
     height: 12px;
     padding-left: 10px;
     vertical-align: middle;
+    &.sticky-glued {
+      position: absolute;
+      top: 59%;
+      left: -30px;
+    }
     .sticky-promo-close {
       background-image: url(../img/x-out.png);
       background-repeat: no-repeat;
@@ -142,7 +161,7 @@
     }
     .sunglasses-section_main {
       background: #d8d8d8;
-      margin: 100px 0 180px 0;
+      margin: 100px 0;
       position: relative;
       padding: 250px 0 350px 0;
       background-size: cover;
@@ -170,12 +189,16 @@
         display: none; // Hide for now
       }
       &:after {
-        height: 134px;
-        width: 127%;
-        bottom: -83px;
-        left: -5px;
+        height: 180px;
+        width: 147%;
+        bottom: -59px;
+        left: -14px;
         transform: rotate(4deg);
         background: #fff;
+        @media(min-width:1200px) {
+          height: 153px;
+          bottom: -104px;
+        }
       }
       .sunglasses-image-box {
         display: none;

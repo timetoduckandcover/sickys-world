@@ -39,6 +39,9 @@ form {
     input {
         width: 100%;
         transition: all .2s ease;
+        @extend .gibson-light;
+        letter-spacing: 1px !important;
+        font-size: 13px;
         &#rememberme,
         &.button,
         &.input-checkbox {
