@@ -84,7 +84,7 @@ $sub-menu-padding-narrow: 25px;
       opacity: 0;
       transform: translateY(-100%);
       visibility: hidden;
-      @include transition(transform 0.2s ease);
+      @include transition(transform 0.8s ease);
     }
   }
 
@@ -206,7 +206,7 @@ $sub-menu-padding-narrow: 25px;
   > li {
     padding: $menu-item-padding-narrow;
     margin-bottom: 20px;
-    width: $menu-item-width-narrow;
+    //width: $menu-item-width-narrow;
     &:last-child {
       padding-bottom: 0;
     }
@@ -515,10 +515,9 @@ $sub-menu-padding-narrow: 25px;
     text-align: center;
     padding: 27px 40px;
     background: rgba(255,255,255,.8);
-    display: table;
-    table-layout: fixed;
     & > li {
-      display: table-cell;
+      display: inline-block;
+      margin: 0 20px;
     }
   }
 }
