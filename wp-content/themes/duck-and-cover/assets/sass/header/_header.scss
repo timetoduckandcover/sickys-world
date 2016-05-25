@@ -26,6 +26,9 @@
     font-size: 30px;
     margin-left: 20px;
   }
+  .row.row-xs-center {
+    background: white !important;
+  }
   &.reduced-header {
     #logo {
       padding: 2px 0 2px 15px;
@@ -40,6 +43,9 @@
       li.menu-item {
         padding: 16px 0;
       }
+    }
+    .sub-menu {
+      top: 53px !important;
     }
   }
   .container-fluid {
