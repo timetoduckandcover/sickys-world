@@ -14,6 +14,12 @@ Template Name: Our Story
               $image_array = wp_get_attachment_image_src($image_id, $image_size);
               $image_url = $image_array[0];
             ?>
+            <?php
+              $image2bg_id = get_field('second_section_background_image');
+              $image2bg_size = 'full-size';
+              $image2bg_array = wp_get_attachment_image_src($image2bg_id, $image2bg_size);
+              $image2bg_url = $image2bg_array[0];
+            ?>
             <div class="our-story-header-image">
               <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
             </div>
@@ -22,9 +28,11 @@ Template Name: Our Story
                 <?php the_field('first_section');?>
               </div>
             </div>
-            <div class="our-story-second-section text-center">
+            <div class="our-story-second-section text-center" style="background-image:url(<?php echo $image2bg_url; ?>)">
               <div class="wrapper wrapper-padded">
-                <?php the_field('second_section');?>
+                <p style="color:<?php the_field('second_section_text_color');?>">
+                  <strong><?php the_field('second_section');?></strong>
+                </p>
               </div>
             </div>
             <div class="our-story-third-section text-center">

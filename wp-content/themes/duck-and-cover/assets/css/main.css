@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .mini-cart .widget_shopping_cart .empty, .mini-cart .widget_shopping_cart .mini_cart_item a, .mini-cart .widget_shopping_cart .mini_cart_item .quantity, .mini-cart .widget_shopping_cart .mini_cart_item .quantity .amount, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -7526,8 +7526,8 @@ a {
   .menu > .menu-item.narrow .sub-menu > li, .menu > .menu-item.narrow .children > li,
   .menu > ul > li .sub-menu > li,
   .menu > ul > li .children > li, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li, #menu-side > .menu-item.narrow > .sub-menu > li, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li {
-    padding: 0;
-    padding-bottom: 20px;
+    padding: 0 !important;
+    margin-bottom: 20px;
     width: 100px; }
     .menu > .menu-item.narrow .sub-menu > li:last-child, .menu > .menu-item.narrow .children > li:last-child,
     .menu > ul > li .sub-menu > li:last-child,
@@ -9367,12 +9367,14 @@ form .form-row-last {
     margin-bottom: 0;
     padding: 12px 0;
     text-align: center;
-    font-size: 24px;
-    letter-spacing: -0.04em; }
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #aaaaaa;
+    text-transform: uppercase; }
   .mini-cart .widget_shopping_cart .mini_cart_item {
     margin-bottom: 20px; }
     .mini-cart .widget_shopping_cart .mini_cart_item a {
-      font-weight: 400; }
+      text-transform: uppercase; }
     .mini-cart .widget_shopping_cart .mini_cart_item .remove {
       float: right;
       font-size: 22px;
@@ -11501,6 +11503,12 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   .lookbooks-all li .lookbooks-all_single {
     padding: 620px 0 50px 0; }
 
+.lookbooks-single .lookbooks-single_hero {
+  height: 620px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 .duck-pagination {
   margin: 40px 0; }
   .duck-pagination::after {
@@ -11648,12 +11656,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 90;
+  z-index: -999;
   opacity: 0;
+  pointer-events: none;
   transition: all .2s ease;
-  text-align: center; }
-  .sticky-promo-cta-wrapper:hover {
-    opacity: 1; }
+  text-align: center;
+  transition: opacity 2s ease; }
+  .sticky-promo-cta-wrapper.fadeIn {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 90; }
   .sticky-promo-cta-wrapper.sticky-rotate {
     right: -30px;
     top: 62%;
@@ -11696,7 +11708,10 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 #duck-front-page .duck-front-page-top-categories {
   text-align: center;
-  padding: 40px 0 80px 0; }
+  padding: 0 0 80px 0; }
+  @media (min-width: 1024px) {
+    #duck-front-page .duck-front-page-top-categories {
+      padding: 40px 0 80px 0; } }
   #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category {
     display: block;
     padding: 50px; }
@@ -11883,14 +11898,19 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       padding: 100px 0; } }
 
 #our-story .our-story-second-section {
-  background: #D8D8D8;
+  background-color: #D8D8D8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding: 30px 0 20px 0; }
   @media (min-width: 768px) {
     #our-story .our-story-second-section {
       padding: 60px 0 40px 0; } }
   @media (min-width: 1024px) {
     #our-story .our-story-second-section {
-      padding: 100px 0; } }
+      padding: 120px 0; } }
+  #our-story .our-story-second-section p {
+    margin: 0; }
 
 #our-story .our-story-third-section {
   padding: 30px 0 20px 0; }

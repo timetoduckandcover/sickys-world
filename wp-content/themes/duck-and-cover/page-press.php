@@ -26,7 +26,7 @@ Template Name: Press
       			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
               <?php
       					$image_id = get_field('image_thumbnail');
-      					$image_size = 'custom-crop';
+      					$image_size = 'single-size';
       					$image_array = wp_get_attachment_image_src($image_id, $image_size);
       					$image_url = $image_array[0];
     					?>

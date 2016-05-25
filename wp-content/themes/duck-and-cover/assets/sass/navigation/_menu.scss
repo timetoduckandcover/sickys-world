@@ -1,5 +1,5 @@
 $menu-item-width-narrow: 100px;
-$menu-item-padding-narrow: 0;
+$menu-item-padding-narrow: 0 !important;
 $sub-menu-padding-narrow: 25px;
 
 .menu-inner {
@@ -203,7 +203,7 @@ $sub-menu-padding-narrow: 25px;
   padding: $sub-menu-padding-narrow;
   > li {
     padding: $menu-item-padding-narrow;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: $menu-item-width-narrow;
     &:last-child {
       padding-bottom: 0;

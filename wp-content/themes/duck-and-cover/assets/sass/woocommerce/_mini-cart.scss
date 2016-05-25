@@ -15,13 +15,18 @@
             margin-bottom: 0;
             padding: 12px 0;
             text-align: center;
-            font-size: 24px;
-            letter-spacing: -0.04em;
+            font-size: 20px;
+            letter-spacing: 0.01em;
+            color: #aaaaaa;
+            @extend .gibson-semibold;
+            text-transform: uppercase;
         }
         .mini_cart_item {
             margin-bottom: 20px;
             a {
-                font-weight: 400;
+                //font-weight: 400;
+                text-transform: uppercase;
+                @extend .gibson-semibold;
             }
             .remove {
                 float: right;
@@ -34,6 +39,10 @@
             }
             .quantity {
                 display: block;
+                @extend .gibson-semibold;
+                .amount {
+                  @extend .gibson-semibold;
+                }
             }
         }
         .total {

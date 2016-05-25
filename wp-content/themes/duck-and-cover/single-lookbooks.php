@@ -10,9 +10,7 @@
 				$image_url = $image_array[0];
 			?>
 
-      <div class="lookbooks-single_hero">
-        <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
-      </div>
+      <div class="lookbooks-single_hero" style="background-image:url(<?php echo $image_url; ?>)"></div>
       <div class="container">
         <p><?php the_content();?></p>
       </div>

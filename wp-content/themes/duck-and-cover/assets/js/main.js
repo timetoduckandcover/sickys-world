@@ -492,9 +492,9 @@ jQuery( document ).ready( function( $ ) {
   // Fade in CTA
   setTimeout(function() {
     if(localStorage.getItem('hide_sticky_promo_cta') === null) {
-      $('.sticky-promo-cta-wrapper').animate({opacity: 1}, 2000);
+      $('.sticky-promo-cta-wrapper').addClass('fadeIn');
     }
-  }, 5000);
+  }, 2000);
 
   $('.sticky-promo-close').on('click', function () {
     $('.sticky-promo-cta-wrapper').hide();
@@ -563,11 +563,11 @@ jQuery( document ).ready( function( $ ) {
     if(dir === 'down') {
       // console.log('down', newVal);
       if(newVal > -68) {
-        newVal = newVal - 2;
+        newVal = newVal - 4;
       }
     } else {
       // console.log('up', newVal);
-      if(newVal < 100) {
+      if(newVal < 50) {
         newVal = newVal + 2;
       }
     }

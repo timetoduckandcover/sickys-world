@@ -13,7 +13,7 @@ Template Name: Lookbooks
     			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <?php
-    					$image_id = get_field('hero_image');
+    					$image_id = get_field('listing_image');
     					$image_size = 'full-size';
     					$image_array = wp_get_attachment_image_src($image_id, $image_size);
     					$image_url = $image_array[0];
