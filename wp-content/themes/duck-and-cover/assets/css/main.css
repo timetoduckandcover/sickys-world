@@ -11715,10 +11715,10 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 
 #duck-front-page .duck-front-page-top-categories {
   text-align: center;
-  padding: 0 0 80px 0; }
+  padding: 80px 0; }
   @media (min-width: 1024px) {
     #duck-front-page .duck-front-page-top-categories {
-      padding: 40px 0 80px 0; } }
+      padding: 40px 0 36px 0; } }
   #duck-front-page .duck-front-page-top-categories .duck-front-page-top-category {
     display: block;
     padding: 50px; }
@@ -12156,7 +12156,7 @@ label[for="payment_method_paypal"] img {
 
 .home-flexslider {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 0;
   margin-top: -77px; }
   @media (min-width: 768px) {
     .home-flexslider {
@@ -12530,6 +12530,9 @@ html[xmlns] .flexslider .slides {
     margin-right: 16px; }
     .share-buttons li a {
       font-size: 160%; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
 
 .navigation-shop-mobile .product_list_widget {
   display: none !important; }

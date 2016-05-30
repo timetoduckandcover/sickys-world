@@ -124,7 +124,7 @@ $home-slider-height-desktop: 620px;
 
 .home-flexslider {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 0;
   margin-top: -77px;
   @include media-breakpoint-up(sm) {
     margin-top: 0;

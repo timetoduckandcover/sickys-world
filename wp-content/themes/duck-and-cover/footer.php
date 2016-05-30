@@ -13,6 +13,11 @@
         <div class="col-xs-12">
           <ul class="footer-social">
             <li>
+              <a href="https://www.instagram.com/sickysworld/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
               <a href="https://www.facebook.com/sickysworld/" target="_blank">
                 <i class="fa fa-facebook"></i>
               </a>
@@ -25,11 +30,6 @@
             <li>
               <a href="https://uk.pinterest.com/sickysworld/" target="_blank">
                 <i class="fa fa-pinterest"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/sickysworld/" target="_blank">
-                <i class="fa fa-instagram"></i>
               </a>
             </li>
             <li>

@@ -113,7 +113,7 @@ get_header(); ?>
               <div class="caption">
                 <h2><?php the_field('pre_footer_second_header');?></h2>
                 <h1><?php the_field('pre_footer_main_header');?></h1>
-                <a href="<?php the_field('pre_footer_link');?>" class="button">View More</a>
+                <a href="<?php the_field('pre_footer_link');?>" class="button"><?php the_field('pre_footer_button_copy');?></a>
               </div>
             </div>
           <?php endwhile; // end of the loop. ?>

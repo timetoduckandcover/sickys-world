@@ -14,7 +14,7 @@
       <h3 class="uppercase"><?php the_field('single_featured_product_sub_header');?></h3>
       <h1 class="uppercase"><?php the_field('single_featured_product_main_header');?></h1>
       <p><?php the_field('single_featured_product_copy');?></p>
-      <a href="<?php the_field('single_featured_product_link');?>" class="button">See The Frame</a>
+      <a href="<?php the_field('single_featured_product_link');?>" class="button"><?php the_field('single_featured_product_button_copy');?></a>
     </div>
   </div>
 </div>
