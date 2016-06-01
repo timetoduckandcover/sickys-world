@@ -29,7 +29,7 @@ Template Name: Crew
     					$signature_url = $signature_array[0];
   					?>
 
-            <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
+            <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>);background-position:<?php the_field('image_mobile_alignment');?>% center">
               <div class="container">
                 <div class="sicky-crew-member" style="text-align:<?php the_field('alignment');?>">
                   <h4 class="uppercase allow-color-picker" style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('job_title');?></h4>
@@ -37,6 +37,13 @@ Template Name: Crew
                   <span style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></span>
                   <a href="<?php the_permalink();?>" class="button"><?php the_field('button_text');?></a>
                   <ul class="sicky-crew-member-social">
+                    <?php if( get_field('instagram_page') ): ?>
+                      <li>
+                        <a href="https://www.instagram.com/<?php the_field('instagram_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    <?php endif; ?>
                     <?php if( get_field('facebook_page') ): ?>
                       <li>
                         <a href="https://www.facebook.com/<?php the_field('facebook_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
@@ -46,15 +53,8 @@ Template Name: Crew
                     <?php endif; ?>
                     <?php if( get_field('twitter_page') ): ?>
                       <li>
-                        <a href="https://www.facebook.com/<?php the_field('twitter_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
+                        <a href="https://www.twitter.com/<?php the_field('twitter_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
                           <i class="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                    <?php endif; ?>
-                    <?php if( get_field('instagram_page') ): ?>
-                      <li>
-                        <a href="https://www.facebook.com/<?php the_field('instagram_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
-                          <i class="fa fa-instagram"></i>
                         </a>
                       </li>
                     <?php endif; ?>

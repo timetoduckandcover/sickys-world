@@ -140,6 +140,7 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
         <?php if ( is_product_category() ){
             global $wp_query;
 
+
             // get the query object
             $cat = $wp_query->get_queried_object();
 
@@ -153,6 +154,19 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
             <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
               <div class="container">
                 <h1 class="page-title duck-collection-header-title"><?php woocommerce_page_title(); ?></h1>
+                <div class="duck-collection-description">
+                  <div class="container">
+                    <?php
+                    /**
+                     * woocommerce_archive_description hook
+                     *
+                     * @hooked woocommerce_taxonomy_archive_description - 10
+                     * @hooked woocommerce_product_archive_description - 10
+                     */
+                    do_action( 'woocommerce_archive_description' );
+                    ?>
+                  </div>
+                </div>
               </div>
 
                 <?php $facewp_abbey_category_output = woocommerce_product_subcategories( array(
@@ -161,19 +175,6 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
                                                                             ) ); ?>
 
             <?php endif; ?>
-        </div>
-        <div class="duck-collection-description">
-          <div class="container">
-            <?php
-            /**
-             * woocommerce_archive_description hook
-             *
-             * @hooked woocommerce_taxonomy_archive_description - 10
-             * @hooked woocommerce_product_archive_description - 10
-             */
-            do_action( 'woocommerce_archive_description' );
-            ?>
-          </div>
         </div>
     <?php elseif ( function_exists( 'is_product' ) && is_product() ) : ?>
         <div class="container wide navigation-shop navigation-shop-mobile text-center">

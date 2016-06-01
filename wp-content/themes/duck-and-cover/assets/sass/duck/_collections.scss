@@ -3,6 +3,10 @@
   background-position: center center;
   background-size: cover;
   padding: 150px 15px;
+  margin-bottom: -77px;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: -71px;
+  }
   @include media-breakpoint-up(md) {
     margin-top: 71px;
   }
@@ -21,8 +25,12 @@
 }
 
 .duck-collection-description {
-  padding: 70px 0 64px 0;
-  margin-bottom: -90px;
+  // padding: 70px 0 64px 0;
+  // margin-bottom: -90px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
 }
 
 .yith-woocommerce-ajax-product-filter {
@@ -30,6 +38,7 @@
     text-transform: uppercase;
     color: #4c4c4c;
     @extend .gibson-light;
+    font-size: 12px;
   }
   .chosen a {
     color: #d8120f;

@@ -38,7 +38,7 @@ get_header( 'shop' ); ?>
 							</div>
 
 							<?php if ( have_posts() ) : ?>
-									<div class="col-md-5 end-xs duck-collection-dropdowns">
+									<div class="col-md-3 col-md-push-2 end-xs duck-collection-dropdowns">
 											<?php
 											/**
 											 * woocommerce_before_shop_loop hook

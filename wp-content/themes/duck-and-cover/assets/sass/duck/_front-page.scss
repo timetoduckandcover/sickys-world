@@ -141,6 +141,7 @@
         }
         p {
           font-style: italic;
+          font-size: 14px;
         }
         @include media-breakpoint-up(md) {
           max-width: 60%;

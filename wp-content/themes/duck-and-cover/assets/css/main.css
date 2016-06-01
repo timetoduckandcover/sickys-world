@@ -9415,7 +9415,7 @@ form .form-row-last {
   padding-right: 20px; }
 
 .woocommerce-ordering {
-  display: inline-block; }
+  display: none; }
   .woocommerce-ordering .orderby {
     height: auto;
     padding: 0;
@@ -11461,11 +11461,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
 --------------------------------------------------------------*/
 .sicky-crew-all li {
   background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
+  @media (min-width: 1024px) {
+    .sicky-crew-all li {
+      background-position: center center !important; } }
   .sicky-crew-all li .sicky-crew-member {
     padding: 180px 0 90px 0; }
     .sicky-crew-all li .sicky-crew-member span {
@@ -11607,7 +11607,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 150px 15px; }
+  padding: 150px 15px;
+  margin-bottom: -77px; }
+  @media (min-width: 768px) {
+    .duck-collection-header {
+      margin-bottom: -71px; } }
   @media (min-width: 1024px) {
     .duck-collection-header {
       margin-top: 71px; } }
@@ -11623,12 +11627,15 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     text-transform: uppercase; }
 
 .duck-collection-description {
-  padding: 70px 0 64px 0;
-  margin-bottom: -90px; }
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center; }
 
 .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span {
   text-transform: uppercase;
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  font-size: 12px; }
 
 .yith-woocommerce-ajax-product-filter .chosen a {
   color: #d8120f; }
@@ -11770,7 +11777,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
         line-height: 12px !important;
         margin: 0 0 10px 0; }
       #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption p {
-        font-style: italic; }
+        font-style: italic;
+        font-size: 14px; }
       @media (min-width: 1024px) {
         #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption {
           max-width: 60%;

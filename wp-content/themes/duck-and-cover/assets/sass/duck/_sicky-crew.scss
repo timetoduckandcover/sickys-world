@@ -1,7 +1,12 @@
 // All members page
 .sicky-crew-all {
   li {
-    @include backgroundCover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include media-breakpoint-up(md) {
+      background-position: center center !important;
+    }
     .sicky-crew-member {
       padding: 180px 0 90px 0;
       span {

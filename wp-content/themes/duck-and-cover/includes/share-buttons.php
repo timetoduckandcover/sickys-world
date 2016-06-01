@@ -1,17 +1,23 @@
 <ul class="share-buttons">
+  <?php if( get_field('instagram_page') ): ?>
   <li>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+    <a href="https://www.instagram.com/<?php the_field('instagram_page');?>">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </li>
+  <?php endif; ?>
+  <?php if( get_field('facebook_page') ): ?>
+  <li>
+    <a href="https://www.facebook.com/<?php the_field('facebook_page');?>">
       <i class="fa fa-facebook"></i>
     </a>
   </li>
+  <?php endif; ?>
+  <?php if( get_field('twitter_page') ): ?>
   <li>
-    <a href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo wp_title('');?>" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+    <a href="https://www.twitter.com/<?php the_field('twitter_page');?>">
       <i class="fa fa-twitter"></i>
     </a>
   </li>
-  <li>
-    <a href="https://pinterest.com/pin/create/button/?url=<?php the_permalink();?>&media=&description=<?php echo wp_title('');?>" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
-      <i class="fa fa-pinterest"></i>
-    </a>
-  </li>
+  <?php endif; ?>
 </ul>
