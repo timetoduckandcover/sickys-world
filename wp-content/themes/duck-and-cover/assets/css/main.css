@@ -1322,7 +1322,7 @@ table th[class*="col-"] {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .col-xl-1 {
     flex: 8.33333%;
     -webkit-flex-basis: 8.33333%;
@@ -1514,7 +1514,7 @@ table th[class*="col-"] {
     order: 1;
     -ms-flex-order: 1; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .col-xl-first {
     box-ordinal-group: -1;
     order: -1;
@@ -1581,7 +1581,7 @@ table th[class*="col-"] {
     align-items: flex-end;
     -ms-flex-align: end; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .row-xl-top {
     box-align: start;
     align-items: flex-start;
@@ -1640,7 +1640,7 @@ table th[class*="col-"] {
     align-self: flex-end;
     -ms-flex-item-align: end; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .col-xl-top {
     align-self: flex-start;
     -ms-flex-item-align: start; }
@@ -1732,7 +1732,7 @@ table th[class*="col-"] {
     justify-content: flex-end;
     text-align: end; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .start-xl {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -2067,7 +2067,7 @@ table th[class*="col-"] {
   .text-lg-center {
     text-align: center; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .text-xl-left {
     text-align: left; }
   .text-xl-right {
@@ -2187,11 +2187,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   .hidden-lg-up {
     display: none !important; } }
 
-@media (max-width: 1919.9px) {
+@media (max-width: 1679.9px) {
   .hidden-lg-down {
     display: none !important; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .hidden-xl-up {
     display: none !important; } }
 
@@ -7223,7 +7223,7 @@ a {
   .slick-arrow {
     top: -70px; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .pagination-vertical .slick-dots {
     right: -70px; } }
 
@@ -9165,8 +9165,7 @@ object {
   .site-footer input[type=email] {
     width: 100%;
     color: #4c4c4c;
-    text-transform: uppercase;
-    padding: 8px 10px 3px 10px;
+    padding: 6px 10px 3px 10px;
     letter-spacing: 1px !important; }
   .site-footer input[type=email]::-webkit-input-placeholder {
     color: #4c4c4c; }
@@ -10343,7 +10342,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   #reviews .commentlist .comment_container .comment-text {
     padding-left: 90px; } }
 
-@media (min-width: 1920px) {
+@media (min-width: 1680px) {
   .single-product .main-content.wide .product-summary {
     padding-left: 100px; } }
 
@@ -12182,6 +12181,9 @@ label[for="payment_method_paypal"] img {
     @media (min-width: 1024px) {
       .home-flexslider .flexslider ul li {
         height: 620px; } }
+    @media (min-width: 1680px) {
+      .home-flexslider .flexslider ul li {
+        height: 860px; } }
     .home-flexslider .flexslider ul li .container.home-flexslider-desktop, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar {
       position: relative;
       display: none;
@@ -12193,6 +12195,9 @@ label[for="payment_method_paypal"] img {
       @media (min-width: 1024px) {
         .home-flexslider .flexslider ul li .container.home-flexslider-desktop, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar {
           height: 620px; } }
+      @media (min-width: 1680px) {
+        .home-flexslider .flexslider ul li .container.home-flexslider-desktop, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar {
+          height: 860px; } }
       .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption {
         position: absolute;
         top: 50%;
@@ -12247,6 +12252,9 @@ label[for="payment_method_paypal"] img {
       @media (min-width: 1024px) {
         .home-flexslider .flexslider ul li .home-flexslider-mobile {
           height: 620px; } }
+      @media (min-width: 1680px) {
+        .home-flexslider .flexslider ul li .home-flexslider-mobile {
+          height: 860px; } }
       .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3 {
         color: #aaa;
         font-size: 14px !important;

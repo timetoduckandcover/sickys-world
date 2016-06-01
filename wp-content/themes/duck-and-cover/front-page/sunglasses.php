@@ -55,7 +55,7 @@
         <div class="container">
           <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
           <div class="sunglasses-image-box" style="background-image:url(<?php echo $sunglasses2_url; ?>)">
-            <a href="<?php the_field('sunglasses_link');?>" class="button-sunglasses">View</a>
+            <a href="<?php the_field('sunglasses_main_link');?>" class="button-sunglasses">View</a>
           </div>
         </div>
       </div>

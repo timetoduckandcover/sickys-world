@@ -23,8 +23,7 @@
   input[type=email] {
     width: 100%;
     color: #4c4c4c;
-    text-transform: uppercase;
-    padding: 8px 10px 3px 10px;
+    padding: 6px 10px 3px 10px;
     @extend .gibson-light;
     letter-spacing: 1px !important;
   }

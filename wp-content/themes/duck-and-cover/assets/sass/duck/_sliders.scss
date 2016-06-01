@@ -121,6 +121,7 @@ $home-slider-height-mobile: 340px;
 $home-slider-height-mobile-push: 340px + 20px;
 $home-slider-height-tablet: 550px;
 $home-slider-height-desktop: 620px;
+$home-slider-height-large: 860px;
 
 .home-flexslider {
   position: relative;
@@ -145,6 +146,9 @@ $home-slider-height-desktop: 620px;
         @include media-breakpoint-up(md) {
           height: $home-slider-height-desktop;
         }
+        @include media-breakpoint-up(xl) {
+          height: $home-slider-height-large;
+        }
         .container.home-flexslider-desktop {
           position: relative;
           display: none;
@@ -155,6 +159,9 @@ $home-slider-height-desktop: 620px;
           }
           @include media-breakpoint-up(md) {
             height: $home-slider-height-desktop;
+          }
+          @include media-breakpoint-up(xl) {
+            height: $home-slider-height-large;
           }
           .home-flexslider-caption {
             position: absolute;
@@ -219,6 +226,9 @@ $home-slider-height-desktop: 620px;
           }
           @include media-breakpoint-up(md) {
             height: $home-slider-height-desktop;
+          }
+          @include media-breakpoint-up(xl) {
+            height: $home-slider-height-large;
           }
           .home-flexslider-caption {
             h3 {

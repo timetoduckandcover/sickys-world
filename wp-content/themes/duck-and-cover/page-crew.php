@@ -36,29 +36,6 @@ Template Name: Crew
                   <img src="<?php echo $signature_url; ?>" alt="" class="sicky-crew_signature" />
                   <span style="color:<?php the_field('sicky_crew_font_color');?>"><?php the_field('name');?></span>
                   <a href="<?php the_permalink();?>" class="button"><?php the_field('button_text');?></a>
-                  <ul class="sicky-crew-member-social">
-                    <?php if( get_field('instagram_page') ): ?>
-                      <li>
-                        <a href="https://www.instagram.com/<?php the_field('instagram_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
-                          <i class="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                    <?php endif; ?>
-                    <?php if( get_field('facebook_page') ): ?>
-                      <li>
-                        <a href="https://www.facebook.com/<?php the_field('facebook_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
-                          <i class="fa fa-facebook"></i>
-                        </a>
-                      </li>
-                    <?php endif; ?>
-                    <?php if( get_field('twitter_page') ): ?>
-                      <li>
-                        <a href="https://www.twitter.com/<?php the_field('twitter_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
-                          <i class="fa fa-twitter"></i>
-                        </a>
-                      </li>
-                    <?php endif; ?>
-                  </ul>
                 </div>
               </div>
             </li>

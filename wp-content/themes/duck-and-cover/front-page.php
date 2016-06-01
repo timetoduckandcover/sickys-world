@@ -111,8 +111,8 @@ get_header(); ?>
             <div class="pre-footer-image">
               <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
               <div class="caption">
-                <h2><?php the_field('pre_footer_second_header');?></h2>
-                <h1><?php the_field('pre_footer_main_header');?></h1>
+                <h1 class="uppercase"><?php the_field('pre_footer_main_header');?></h1>
+                <p><em><?php the_field('pre_footer_second_header');?></em></p>
                 <a href="<?php the_field('pre_footer_link');?>" class="button"><?php the_field('pre_footer_button_copy');?></a>
               </div>
             </div>

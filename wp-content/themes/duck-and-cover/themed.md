@@ -1,3 +1,28 @@
+// Link buttons on crew listing
+<ul class="sicky-crew-member-social">
+  <?php if( get_field('instagram_page') ): ?>
+    <li>
+      <a href="https://www.instagram.com/<?php the_field('instagram_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </li>
+  <?php endif; ?>
+  <?php if( get_field('facebook_page') ): ?>
+    <li>
+      <a href="https://www.facebook.com/<?php the_field('facebook_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+  <?php endif; ?>
+  <?php if( get_field('twitter_page') ): ?>
+    <li>
+      <a href="https://www.twitter.com/<?php the_field('twitter_page');?>" style="color:<?php the_field('sicky_crew_font_color');?>">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+  <?php endif; ?>
+</ul>
+
 // share buttons
 <!-- <ul class="share-buttons">
   <li>
