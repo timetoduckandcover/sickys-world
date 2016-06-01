@@ -43,3 +43,22 @@ function replacePayPalIcon($iconUrl) {
 	return get_bloginfo('stylesheet_directory') . '/assets/img/paypal-new-logo.png';
 }
 add_filter('woocommerce_paypal_icon', 'replacePayPalIcon');
+
+// Strip leading zeros from blog posts
+add_filter( 'the_permalink', 't5_strip_leading_zeros_in_url' );
+add_filter( 'month_link', 't5_strip_leading_zeros_in_url' );
+add_filter( 'day_link',   't5_strip_leading_zeros_in_url' );
+function t5_strip_leading_zeros_in_url( $url )
+{
+  // no pretty permalinks
+  if ( ! $GLOBALS['wp_rewrite']->get_month_permastruct() )
+  {
+    return $url;
+  }
+  return str_replace( '/0', '/', $url );
+}
+
+// Only show 3 related products on 1 row
+function woocommerce_output_related_products() {
+  woocommerce_related_products(3,1);
+}

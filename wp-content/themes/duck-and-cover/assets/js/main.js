@@ -612,13 +612,18 @@ jQuery( document ).ready( function( $ ) {
 
   // Inject new tab into product page
   if(window.location.href.indexOf('/product/') > -1) {
-    var tabContainer = $('.wc-tabs');
-    $( "<li class='duck-description-tab'><a href='#duck-description' id='duck-description-tab-click'>Description</a></li>" ).prependTo( tabContainer );
-    $( "#duck-description-tab-click" ).trigger( "click" );
+    var valueoftoggle = $('.toggle-description-hide').val();
+    if(valueoftoggle !== 'Hide') {
+      var tabContainer = $('.wc-tabs');
+      $( "<li class='duck-description-tab'><a href='#duck-description' id='duck-description-tab-click'>Description</a></li>" ).prependTo( tabContainer );
+      $( "#duck-description-tab-click" ).trigger( "click" );
+    }
   }
 
-  // Split filters if > 5 on collection page
+  // If collection page
   if(window.location.href.indexOf('/shop/') > -1) {
+
+    // Split filters if > 5 on collection page
     var sidebarWidget = $('.sidebar aside');
     sidebarWidget.each(function() {
       var $this = $(this);
@@ -633,6 +638,42 @@ jQuery( document ).ready( function( $ ) {
             'width': '50%'
           });
         }
+      }
+    });
+
+    // Custom grid for collection
+    function switchGrid(size) {
+      $('.products-grid li').each(function() {
+        if(size === 'large') {
+          $(this).removeClass('col-md-3 col-md-2').addClass('col-md-4');
+          localStorage.setItem('collection_layout', 'large');
+          $('#duck-grid-large').addClass('active');
+          $('#duck-grid-small').removeClass('active');
+        } else {
+          $(this).removeClass('col-md-3 col-md-4').addClass('col-md-2');
+          localStorage.setItem('collection_layout', 'small');
+          $('#duck-grid-large').removeClass('active');
+          $('#duck-grid-small').addClass('active');
+        }
+      });
+    };
+
+    // If no localstorage variable is set, then assume large grid
+    if(localStorage.getItem('collection_layout') === null) switchGrid('large');
+
+    // If variable in localstorage is large, ensure large layout
+    if(localStorage.getItem('collection_layout') === 'large') switchGrid('large');
+
+    // If variable in localstorage is small, ensure small layout
+    if(localStorage.getItem('collection_layout') === 'small') switchGrid('small');
+
+    // Click events for switching grid
+    $('.duck-grid-switch').on('click', function() {
+      var gridType = $(this).attr('id');
+      if(gridType === 'duck-grid-large') {
+        switchGrid('large');
+      } else {
+        switchGrid('small');
       }
     });
   }

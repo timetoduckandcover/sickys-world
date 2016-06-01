@@ -1,3 +1,18 @@
+// Grid change buttons in archive-product.php
+<?php if ( have_posts() ) : ?>
+    <div class="col-md-3 col-md-push-2 end-xs duck-collection-dropdowns">
+        <?php
+        /**
+         * woocommerce_before_shop_loop hook
+         *
+         * @hooked woocommerce_result_count - 20
+         * @hooked woocommerce_catalog_ordering - 30
+         */
+        do_action( 'woocommerce_before_shop_loop' );
+        ?>
+    </div>
+<?php endif; ?>
+
 // Link buttons on crew listing
 <ul class="sicky-crew-member-social">
   <?php if( get_field('instagram_page') ): ?>

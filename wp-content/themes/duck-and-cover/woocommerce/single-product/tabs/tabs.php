@@ -60,6 +60,7 @@ if ( ! empty( $tabs ) ) : ?>
 
 		<!-- Duck custom tab -->
 		<div class="panel entry-content wc-tab" id="duck-description">
+			<input type="hidden" name="name" class="toggle-description-hide" value="<?php the_field('show_description_tab');?>">
 			<?php if( get_field('description_tab_image_1') ): ?>
 				<div class="duck-description-frame-1">
 					<?php

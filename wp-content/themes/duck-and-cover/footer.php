@@ -57,7 +57,7 @@
           wp_nav_menu( $args ); ?>
         </div>
         <div class="col-xs-12 col-sm-3">
-          <h4 class="uppercase gibson-semibold">Newsletter</h4>
+          <h4 class="uppercase gibson-semibold">Join The Movement</h4>
           <?php dynamic_sidebar('Mailchimp Signup');?>
         </div>
       </div>

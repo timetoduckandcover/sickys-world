@@ -39,15 +39,20 @@ get_header( 'shop' ); ?>
 
 							<?php if ( have_posts() ) : ?>
 									<div class="col-md-3 col-md-push-2 end-xs duck-collection-dropdowns">
-											<?php
-											/**
-											 * woocommerce_before_shop_loop hook
-											 *
-											 * @hooked woocommerce_result_count - 20
-											 * @hooked woocommerce_catalog_ordering - 30
-											 */
-											do_action( 'woocommerce_before_shop_loop' );
-											?>
+											<ul>
+												<li>
+													<a href="javascript:;" class="duck-grid-switch fa fa-th-large" id="duck-grid-large"></a>
+												</li>
+												<li>
+													<a href="javascript:;" class="duck-grid-switch fa fa-th" id="duck-grid-small"></a>
+												</li>
+											</ul>
+											<span>
+												<?php $args = array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => -1 );
+													$products = new WP_Query( $args );
+													echo $products->found_posts;?>
+													 products available
+											</span>
 									</div>
 							<?php endif; ?>
 					</div>

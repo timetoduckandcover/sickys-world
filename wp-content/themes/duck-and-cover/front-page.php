@@ -90,7 +90,9 @@ get_header(); ?>
             <div class="container">
 
               <!-- Featured products 2 -->
-              <?php the_field('featured_products_2_shortcode');?>
+              <div class="duck-best-sellers">
+                <?php the_field('featured_products_2_shortcode');?>
+              </div>
 
               <!-- Other content -->
               <?php get_template_part( 'template-parts/content', 'page' ); ?>
@@ -108,12 +110,13 @@ get_header(); ?>
               $image_array = wp_get_attachment_image_src($image_id, $image_size);
               $image_url = $image_array[0];
             ?>
-            <div class="pre-footer-image">
-              <img src="<?php echo $image_url; ?>" alt="<?php echo $image['alt']; ?>" class="img-full" />
-              <div class="caption">
-                <h1 class="uppercase"><?php the_field('pre_footer_main_header');?></h1>
-                <p><em><?php the_field('pre_footer_second_header');?></em></p>
-                <a href="<?php the_field('pre_footer_link');?>" class="button"><?php the_field('pre_footer_button_copy');?></a>
+            <div class="pre-footer-image" style="background-image:url(<?php echo $image_url; ?>)">
+              <div class="container">
+                <div class="caption <?php the_field('pre_footer_caption_position');?>">
+                  <h2 class="uppercase" style="color:<?php the_field('pre_footer_main_header_color');?>"><?php the_field('pre_footer_main_header');?></h2>
+                  <p style="color:<?php the_field('pre_footer_second_header_color');?>"><em><?php the_field('pre_footer_second_header');?></em></p>
+                  <a href="<?php the_field('pre_footer_link');?>" class="button"><?php the_field('pre_footer_button_copy');?></a>
+                </div>
               </div>
             </div>
           <?php endwhile; // end of the loop. ?>

@@ -43,7 +43,7 @@ $woocommerce_loop['loop']++;
 $classes = array(
     'col-xs-12',
     'col-sm-6',
-    'col-md-3'
+    'col-md-4'
 );
 if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] ) {
 	$classes[] = 'first';

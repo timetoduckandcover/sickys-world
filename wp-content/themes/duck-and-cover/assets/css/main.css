@@ -6094,7 +6094,7 @@ Copyright (c) 2015 Daniel Eden
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
 .menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], .form-row input, .product-summary .product-title, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, .sticky-promo-cta-wrapper #sticky-promo-cta, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p, .blog-flexslider .flexslider ul li a h1, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h3, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption p {
+#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, .sticky-promo-cta-wrapper #sticky-promo-cta, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, #duck-front-page .pre-footer-image .caption h3, #duck-front-page .pre-footer-image .caption p, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p, .blog-flexslider .flexslider ul li a h1, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h3, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption p {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .mini-cart .widget_shopping_cart .empty, .mini-cart .widget_shopping_cart .mini_cart_item a, .mini-cart .widget_shopping_cart .mini_cart_item .quantity, .mini-cart .widget_shopping_cart .mini_cart_item .quantity .amount, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .mini-cart .widget_shopping_cart .empty, .mini-cart .widget_shopping_cart .mini_cart_item a, .mini-cart .widget_shopping_cart .mini_cart_item .quantity, .mini-cart .widget_shopping_cart .mini_cart_item .quantity .amount, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #duck-front-page .pre-footer-image .caption h2, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -11657,7 +11657,16 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   text-align: center; }
   @media (min-width: 1024px) {
     .duck-collection-dropdowns {
-      text-align: left; } }
+      text-align: right; } }
+  .duck-collection-dropdowns ul {
+    display: inline-block; }
+    .duck-collection-dropdowns ul li {
+      display: inline-block;
+      padding-right: 12px; }
+      .duck-collection-dropdowns ul li a.active {
+        color: #d8120f; }
+  .duck-collection-dropdowns span {
+    display: inline-block; }
 
 .duck-collection-filter-list .widget {
   width: 100%; }
@@ -11809,6 +11818,9 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       z-index: 1; }
       #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1 {
         font-size: 42px; }
+      #duck-front-page #sunglasses-section .sunglasses-section_main .container p, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar p {
+        max-width: 400px;
+        color: #ffffff; }
     #duck-front-page #sunglasses-section .sunglasses-section_main:before, #duck-front-page #sunglasses-section .sunglasses-section_main:after {
       content: '';
       position: absolute;
@@ -11871,8 +11883,11 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     #duck-front-page .sunglasses-section-main-mobile {
       display: none; } }
 
+#duck-front-page .duck-best-sellers ul li {
+  margin-top: 30px; }
+
 #duck-front-page .front-page-instagram {
-  margin: 100px 0 60px 0; }
+  margin: 50px 0 60px 0; }
 
 #duck-front-page .widget_facewp_instagram ul {
   display: flex;
@@ -11885,22 +11900,80 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
         width: 20%; } }
 
 #duck-front-page .pre-footer-image {
-  position: relative; }
+  position: relative;
+  height: 440px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #duck-front-page .pre-footer-image {
+      height: 550px; } }
+  @media (min-width: 1024px) {
+    #duck-front-page .pre-footer-image {
+      height: 620px; } }
+  @media (min-width: 1680px) {
+    #duck-front-page .pre-footer-image {
+      height: 860px; } }
+  #duck-front-page .pre-footer-image .container, #duck-front-page .pre-footer-image .sidebar {
+    position: relative;
+    height: 100%; }
   #duck-front-page .pre-footer-image .caption {
     position: absolute;
     top: 50%;
-    right: 4%;
-    -webkit-transform: scale(0.7) translateY(-50%);
-    -moz-transform: scale(0.7) translateY(-50%);
-    -o-transform: scale(0.7) translateY(-50%);
-    transform: scale(0.7) translateY(-50%); }
+    right: 0;
+    -webkit-transform: scale(1) translateY(-50%);
+    -moz-transform: scale(1) translateY(-50%);
+    -o-transform: scale(1) translateY(-50%);
+    transform: scale(1) translateY(-50%); }
     @media (min-width: 1024px) {
       #duck-front-page .pre-footer-image .caption {
-        right: 12%;
+        right: 0;
         -webkit-transform: scale(1) translateY(-50%);
         -moz-transform: scale(1) translateY(-50%);
         -o-transform: scale(1) translateY(-50%);
         transform: scale(1) translateY(-50%); } }
+    #duck-front-page .pre-footer-image .caption.prefooterleft {
+      left: 0;
+      right: auto; }
+    #duck-front-page .pre-footer-image .caption.prefooterright {
+      right: 0;
+      left: auto; }
+    #duck-front-page .pre-footer-image .caption.prefootercenter {
+      text-align: center;
+      left: 50%;
+      right: auto;
+      -webkit-transform: scale(1) translate(-50%, -50%);
+      -moz-transform: scale(1) translate(-50%, -50%);
+      -o-transform: scale(1) translate(-50%, -50%);
+      transform: scale(1) translate(-50%, -50%); }
+      @media (min-width: 1024px) {
+        #duck-front-page .pre-footer-image .caption.prefootercenter {
+          right: 0;
+          -webkit-transform: scale(1) translate(-50%, -50%);
+          -moz-transform: scale(1) translate(-50%, -50%);
+          -o-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%); } }
+    #duck-front-page .pre-footer-image .caption h3 {
+      color: #aaa;
+      font-size: 14px !important;
+      line-height: 14px !important;
+      margin: 0 0 15px 0 !important; }
+    #duck-front-page .pre-footer-image .caption h2 {
+      color: #4c4c4c;
+      font-size: 42px !important;
+      line-height: 42px !important;
+      margin: 0 0 15px 0 !important; }
+    #duck-front-page .pre-footer-image .caption p {
+      font-style: italic;
+      color: #4c4c4c;
+      color: inherit;
+      font-size: 14px !important;
+      line-height: 22px !important;
+      margin: 0 0 15px 0 !important; }
+      #duck-front-page .pre-footer-image .caption p a {
+        font-size: 14px !important;
+        line-height: 14px !important;
+        color: #d8120f !important; }
 
 #our-story .our-story-first-section {
   padding: 20px 0; }
@@ -12187,7 +12260,7 @@ label[for="payment_method_paypal"] img {
     .home-flexslider .flexslider ul li .container.home-flexslider-desktop, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar {
       position: relative;
       display: none;
-      height: 340px; }
+      height: 440px; }
       @media (min-width: 768px) {
         .home-flexslider .flexslider ul li .container.home-flexslider-desktop, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar {
           height: 550px;
@@ -12238,13 +12311,13 @@ label[for="payment_method_paypal"] img {
       top: 0;
       left: 0;
       right: 0;
-      height: 340px; }
+      height: 440px; }
       @media (min-width: 768px) {
         .home-flexslider .flexslider ul li .home-flexslider-mobile-image {
           display: none; } }
     .home-flexslider .flexslider ul li .home-flexslider-mobile {
       position: relative;
-      padding: 360px 20px 0 20px; }
+      padding: 460px 20px 0 20px; }
       @media (min-width: 768px) {
         .home-flexslider .flexslider ul li .home-flexslider-mobile {
           height: 550px;
