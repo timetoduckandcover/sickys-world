@@ -90,6 +90,7 @@
     width: 100%;
     @include media-breakpoint-up(md) {
       width: 16.66%;
+      display: table-cell;
     }
   }
 }

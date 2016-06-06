@@ -15,7 +15,8 @@
 .sidebar {
   @extend .container;
   @include media-breakpoint-up(md) {
-    display: flex;
+    //display: flex;
+    display: block;
   }
 }
 .widget {

@@ -8172,7 +8172,7 @@ body.boxed .archive-box {
 
 @media (min-width: 1024px) {
   .sidebar {
-    display: flex; } }
+    display: block; } }
 
 .widget {
   flex: 16.66%;
@@ -11672,7 +11672,8 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   width: 100%; }
   @media (min-width: 1024px) {
     .duck-collection-filter-list .widget {
-      width: 16.66%; } }
+      width: 16.66%;
+      display: table-cell; } }
 
 .sticky-promo-cta-wrapper {
   position: fixed;
