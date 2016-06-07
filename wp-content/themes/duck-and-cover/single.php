@@ -9,7 +9,7 @@ $facewp_abbey_big_title_color = Kirki::get_option( 'facewp', 'post_archives_big_
 $facewp_abbey_big_title_img = Kirki::get_option( 'facewp', 'post_archives_big_title_image' );
 ?>
 
-<div class="container">
+<div class="wrapper">
     <div class="row">
         <main id="main" class="site-main col-xs-12 <?php echo esc_attr( ( 'no-sidebar' != FaceWPC()->get( 'facewp_abbey_sidebar_position' ) && is_active_sidebar( FaceWPC()->get( 'facewp_abbey_sidebar' ) ) ) ? 'col-md-9' : '' ); ?>">
 

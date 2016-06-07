@@ -123,52 +123,51 @@ wc_print_notices();
 
         <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
-    </form>
-
-    <div class="row row-xs-center actions">
-        <div class="col-md-7">
-            <?php if ( WC()->cart->coupons_enabled() ) { ?>
-                <div class="coupon">
+	    <div class="row row-xs-center actions">
+	        <div class="col-md-7">
+	            <?php if ( WC()->cart->coupons_enabled() ) { ?>
+	                <div class="coupon">
 										<label for="coupon_code" class="uppercase">Promo Code</label>
-                    <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button primary-button" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
+	                  <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button primary-button" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
+	                  <?php do_action( 'woocommerce_cart_coupon' ); ?>
+	                </div>
+	            <?php } ?>
+	        </div>
+	        <div class="col-md-5 end-md push-checkout-btns">
+	            <input type="submit" class="grey-button" name="update_cart" value="<?php esc_attr_e( 'Update', 'woocommerce' ); ?>" />
 
-                    <?php do_action( 'woocommerce_cart_coupon' ); ?>
-                </div>
-            <?php } ?>
-        </div>
-        <div class="col-md-5 end-md push-checkout-btns">
-            <input type="submit" class="grey-button" name="update_cart" value="<?php esc_attr_e( 'Update', 'woocommerce' ); ?>" />
+	            <?php do_action( 'woocommerce_cart_actions' ); ?>
 
-            <?php do_action( 'woocommerce_cart_actions' ); ?>
+	            <?php wp_nonce_field( 'woocommerce-cart' ); ?>
+	        </div>
+	    </div>
 
-            <?php wp_nonce_field( 'woocommerce-cart' ); ?>
-        </div>
-    </div>
+	    <div class="cart-collaterals row">
+	        <div class="col-sm-6">
+	                <?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
+	                    <h2 class="heading style3"><span><?php _e( 'Calculate Shipping', 'woocommerce' ); ?></span></h2>
 
-    <div class="cart-collaterals row">
-        <div class="col-sm-6">
-                <?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-                    <h2 class="heading style3"><span><?php _e( 'Calculate Shipping', 'woocommerce' ); ?></span></h2>
+	                    <?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-                    <?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
+	                    <?php wc_cart_totals_shipping_html(); ?>
 
-                    <?php wc_cart_totals_shipping_html(); ?>
+	                    <?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
 
-                    <?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
+	                <?php elseif ( WC()->cart->needs_shipping() ) : ?>
 
-                <?php elseif ( WC()->cart->needs_shipping() ) : ?>
+	                    <tr class="shipping">
+	                        <th><?php esc_html_e( 'Shipping', 'woocommerce' ); ?></th>
+	                        <td><?php woocommerce_shipping_calculator(); ?></td>
+	                    </tr>
 
-                    <tr class="shipping">
-                        <th><?php esc_html_e( 'Shipping', 'woocommerce' ); ?></th>
-                        <td><?php woocommerce_shipping_calculator(); ?></td>
-                    </tr>
+	                <?php endif; ?>
+	        </div>
+	        <div class="col-sm-6">
+	            <?php do_action( 'woocommerce_cart_collaterals' ); ?>
+	        </div>
+	    </div>
 
-                <?php endif; ?>
-        </div>
-        <div class="col-sm-6">
-            <?php do_action( 'woocommerce_cart_collaterals' ); ?>
-        </div>
-    </div>
+		</form>
 
     <?php do_action( 'woocommerce_after_cart' ); ?>
 </div>
