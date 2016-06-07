@@ -11507,7 +11507,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   -o-background-size: cover;
   background-size: cover; }
   .lookbooks-all li .lookbooks-all_single {
-    padding: 620px 0 50px 0; }
+    padding: 420px 0 50px 0; }
 
 .lookbooks-single .lookbooks-single_hero {
   height: 620px;
@@ -11838,7 +11838,9 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
       bottom: -59px;
       left: -14px;
       transform: rotate(4deg);
-      background: #fff; }
+      background: #fff;
+      outline: 1px solid transparent;
+      -webkit-backface-visibility: hidden; }
       @media (min-width: 1200px) {
         #duck-front-page #sunglasses-section .sunglasses-section_main:after {
           height: 153px;
@@ -12542,7 +12544,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  top: 318px;
+  top: 410px;
   text-align: center;
   z-index: 55; }
   @media (min-width: 768px) {

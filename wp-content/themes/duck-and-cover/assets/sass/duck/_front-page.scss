@@ -205,6 +205,8 @@
         left: -14px;
         transform: rotate(4deg);
         background: #fff;
+        outline: 1px solid transparent; // fixes jagged edges in safari
+        -webkit-backface-visibility: hidden; // fixes jagged edges in safari
         @media(min-width:1200px) {
           height: 153px;
           bottom: -104px;

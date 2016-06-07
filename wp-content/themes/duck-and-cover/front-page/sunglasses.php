@@ -72,6 +72,7 @@
     <div class="sunglasses-section_main" style="background-image:url(<?php echo $sunglassesbg2_url; ?>)">
       <div class="container">
         <h1 style="color:<?php the_field('sunglasses_second_header_color');?> !important"><?php the_field('sunglasses_second_header');?></h1>
+        <p><?php the_field('sunglasses_second_copy');?></p>
         <a href="<?php the_field('sunglasses_link');?>" class="button">View</a>
       </div>
     </div>

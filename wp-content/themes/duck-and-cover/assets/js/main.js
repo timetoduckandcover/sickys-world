@@ -562,12 +562,12 @@ jQuery( document ).ready( function( $ ) {
 
     if(dir === 'down') {
       // console.log('down', newVal);
-      if(newVal > -68) {
+      if(newVal > -88) {
         newVal = newVal - 4;
       }
     } else {
       // console.log('up', newVal);
-      if(newVal < 50) {
+      if(newVal < 30) {
         newVal = newVal + 2;
       }
     }
