@@ -22,6 +22,9 @@ Template Name: Lookbooks
             <li class="col-xs-12" style="background-image:url(<?php echo $image_url; ?>)">
               <div class="wrapper">
                 <div class="lookbooks-all_single">
+                  <?php if( get_field('listing_title') ): ?>
+                    <h1 class="lookbooks-all-title" style="color:<?php the_field('listing_title_color');?>"><?php the_field('listing_title');?></h1>
+                  <?php endif; ?>
                   <a href="<?php the_permalink();?>" class="button">View Lookbook</a>
                 </div>
               </div>

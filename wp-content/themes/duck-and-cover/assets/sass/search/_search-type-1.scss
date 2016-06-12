@@ -83,7 +83,10 @@
             }
         }
         .search-submit {
-            display: none;
+            //display: none;
+            position: absolute;
+            left: 0;
+            opacity: 0;
         }
     }
     &.open {

@@ -52,7 +52,7 @@
           wp_nav_menu( $args ); ?>
         </div>
         <div class="col-xs-12 col-sm-3">
-          <h4 class="uppercase gibson-semibold">Third</h4>
+          <h4 class="uppercase gibson-semibold">More Sicky</h4>
           <?php $args = array( 'menu' => 'footer-menu-3');
           wp_nav_menu( $args ); ?>
         </div>

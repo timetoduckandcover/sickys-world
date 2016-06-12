@@ -1,3 +1,16 @@
+// custom icon
+.menu-item-has-children {
+  & > a {
+    &:after {
+      content: '\f22d';
+      font-family: 'FontAwesome';
+      position: absolute;
+      right: -13px;
+      bottom: -4px;
+    }
+  }
+}
+
 
 .sticky-promo-cta-wrapper {
   position: fixed;

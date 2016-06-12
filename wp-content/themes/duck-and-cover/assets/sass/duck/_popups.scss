@@ -1,0 +1,138 @@
+.duck-newsletter-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(216, 18, 15, 0.73);
+  z-index: 999999999;
+  display: none;
+  .duck-newsletter-popup-inner {
+    @include centre;
+    width: 92%;
+    max-width: 800px;
+    height: 92%;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(../img/popup-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    overflow: scroll;
+    @include media-breakpoint-up(md) {
+      max-height: 80%;
+      height: auto;
+    }
+    .duck-popup-close-top {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fc3c3b;
+    }
+    .duck-newsletter-center-mobile {
+      @include centre;
+      width: 100%;
+      padding: 0 50px;
+      @include media-breakpoint-up(md) {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        padding: 0;
+        transform: translate(0,0);
+      }
+    }
+    .duck-newsletter_logo {
+      width: 74px;
+      margin: 0 auto 20px auto;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    h3 {
+      color: #000 !important;
+      font-size: 28px !important;
+      letter-spacing: 1px;
+    }
+    .duck-newsletter-20 {
+      display: block;
+      font-size: 50px;
+      line-height: 70px;
+      @extend .gibson-semibold;
+      @include media-breakpoint-up(md) {
+        font-size: 100px;
+        line-height: 100px;
+      }
+    }
+    .duck-newsletter-text {
+      font-size: 19px;
+      @include media-breakpoint-up(md) {
+        font-size: 30px;
+      }
+    }
+    .mc-field-group {
+      @extend .clearfix;
+      position: relative;
+      width: 100%;
+      margin: 20px auto 0 auto;
+      max-width: 540px;
+      input[type="email"] {
+        width: 100%;
+        border: 2px solid #fc3c3b;
+        margin: 0;
+        padding: 5px 12px 0 12px;
+        background: transparent;
+        @extend .gibson-light;
+        margin-bottom: 12px;
+        @include media-breakpoint-up(md) {
+          float: left;
+          padding: 5px 200px 0 12px;
+          margin-bottom: 0;
+        }
+      }
+      input[type="submit"] {
+        &:focus {
+          outline: none;
+        }
+        @include media-breakpoint-up(md) {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 40px;
+        }
+      }
+      a {
+        display: block;
+        font-size: 12px;
+        opacity: .6;
+        text-decoration: underline;
+        font-style: italic;
+        margin-top: 10px;
+        @include media-breakpoint-up(md) {
+          position: absolute;
+          right: 37px;
+          bottom: -23px;
+          margin-top: 0;
+        }
+      }
+    }
+    .mce_inline_error {
+      clear: both;
+    }
+    #mce-success-response,
+    #mce-error-response {
+      margin-top: 30px;
+    }
+    .close-duck-popup {
+      color: #fc3c3b;
+      text-decoration: underline;
+      font-style: italic;
+      display: none;
+      font-size: 13px;
+    }
+  }
+}

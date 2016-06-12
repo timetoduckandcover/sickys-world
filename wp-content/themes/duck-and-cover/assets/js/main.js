@@ -682,4 +682,24 @@ jQuery( document ).ready( function( $ ) {
   $('.blog-flexslider').flexslider();
   $('.home-flexslider').flexslider();
 
+  // Duck popup
+  function checkIfPopupSeen() {
+    if(localStorage.getItem('duckPopupSeen') === null) {
+      setTimeout(function() {
+        $('.duck-newsletter-popup').fadeIn();
+        localStorage.setItem('duckPopupSeen', 'true');
+      }, 5000);
+    }
+  };
+  checkIfPopupSeen();
+
+  window.mc.ajaxOptions.complete = function() {
+    $('.nah-full-price').hide();
+    $('.close-duck-popup').show();
+  };
+
+  $('.js-close-duck-popup').on('click', function() {
+    $('.duck-newsletter-popup').fadeOut();
+  });
+
 });

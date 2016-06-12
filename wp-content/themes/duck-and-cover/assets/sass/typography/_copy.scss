@@ -4,7 +4,7 @@ p {
     letter-spacing: 1px;
 }
 
-span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]):not([class="amount"]) {
+span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]):not([class="amount"]):not([class="duck-newsletter-20"]) {
   @extend .gibson-light;
 }
 

@@ -107,6 +107,45 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
   <?php wp_reset_query();?>
   <!-- END Sticky Promo CTA -->
 
+  <!-- START Newsletter popup -->
+  <div class="duck-newsletter-popup">
+    <div class="duck-newsletter-popup-inner">
+      <a href="javascript:;" class="js-close-duck-popup duck-popup-close-top fa fa-times"></a>
+      <div class="duck-newsletter-center-mobile">
+        <div class="duck-newsletter_logo">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/img/sicky-logo.png" alt="" />
+        </div>
+        <h3>Share our vision.</h3>
+        <span class="duck-newsletter-text">Join in the creative pursuit with us and get</span>
+        <span class="duck-newsletter-20">20% OFF</span>
+        <span class="duck-newsletter-text">off your first pair of frames.</span>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="//sickysworld.us6.list-manage.com/subscribe/post?u=c7c2970520d9777ddd5f5f245&amp;id=1f12d1e387" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+            	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address" />
+              <input type="submit" value="GIMME, GIMMME" name="subscribe" id="mc-embedded-subscribe" class="button" />
+              <a href="javascript:;" class="js-close-duck-popup nah-full-price">Nah, I like to pay full price</a>
+            </div>
+          	<div id="mce-responses" class="clear">
+          		<div class="response" id="mce-error-response" style="display:none"></div>
+          		<div class="response" id="mce-success-response" style="display:none"></div>
+              <a href="javascript:;" class="js-close-duck-popup close-duck-popup">Close</a>
+          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_c7c2970520d9777ddd5f5f245_1f12d1e387" tabindex="-1" value="">
+            </div>
+            </div>
+          </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='imageurl';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->
+        </div>
+    </div>
+  </div>
+  <!-- END Newsletter popup -->
+
 <div id="slide-menu">
     <?php
     $facewp_abbey_language_switcher = facewp_abbey_language_switcher('language-switcher-mobile-menu');

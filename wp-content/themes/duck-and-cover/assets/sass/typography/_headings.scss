@@ -8,7 +8,7 @@ h1 {
   @extend .gibson-light;
   @extend .gibson-semibold;
 }
-h1:not(.blog-flexslider-title):not(.home-flexslider-title):not(.duck-collection-header-title) {
+h1:not(.blog-flexslider-title):not(.home-flexslider-title):not(.duck-collection-header-title):not(.lookbooks-all-title) {
   color: #4C4C4C !important;
 }
 

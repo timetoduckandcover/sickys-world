@@ -1968,7 +1968,7 @@ table th[class*="col-"] {
 .embed-responsive-4by3 {
   padding-bottom: 75%; }
 
-.clearfix::after {
+.clearfix::after, .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group::after {
   content: "";
   display: table;
   clear: both; }
@@ -6089,12 +6089,12 @@ Copyright (c) 2015 Daniel Eden
   src: url("../fonts/30E28C_7_0.eot");
   src: url("../fonts/30E28C_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30E28C_7_0.woff2") format("woff2"), url("../fonts/30E28C_7_0.woff") format("woff"), url("../fonts/30E28C_7_0.ttf") format("truetype"); }
 
-.gibson-light, h1, h5, p, span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]):not([class="amount"]), .menu > .menu-item .menu-item > a .menu-item-text, .menu > .menu-item li > a .menu-item-text,
+.gibson-light, h1, h5, p, span:not([class^='icon-']):not([class*='icon-']):not([class^='slick-']):not([class*='slick-']):not(.menu-item-text):not([class^="pe-7s"]):not([class*="pe-7s"]):not([class="amount"]):not([class="duck-newsletter-20"]), .menu > .menu-item .menu-item > a .menu-item-text, .menu > .menu-item li > a .menu-item-text,
 .menu > ul > li .menu-item > a .menu-item-text,
 .menu > ul > li li > a .menu-item-text, .menu > .menu-item.narrow .sub-menu > li > a, .menu > .menu-item.narrow .children > li > a,
 .menu > ul > li .sub-menu > li > a,
 .menu > ul > li .children > li > a, .menu > .menu-item.menu-item-mega-menu > .sub-menu > .menu-item > .sub-menu .sub-menu > li > a, #menu-side > .menu-item.narrow > .sub-menu > li > a, #menu-side > .menu-item .menu-item.narrow > .sub-menu > li > a, .site-footer .menu li a, .site-footer input[type=email], .form-row input, .product-summary .product-title, #customer_login .register-sub-header, #customer_login .login .lost_password a,
-#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, .sticky-promo-cta-wrapper #sticky-promo-cta, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, #duck-front-page .pre-footer-image .caption h3, #duck-front-page .pre-footer-image .caption p, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p, .blog-flexslider .flexslider ul li a h1, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h3, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption p {
+#customer_login .register .lost_password a, .celebwears-all .hero .caption h1, .duck-collection-header .page-title, .yith-woocommerce-ajax-product-filter a, .yith-woocommerce-ajax-product-filter span, .sticky-promo-cta-wrapper #sticky-promo-cta, #duck-front-page #single-featured-product-section .single-featured-caption-area .single-featured-product-caption h3, #duck-front-page #sunglasses-section .sunglasses-section_main .container h1, #duck-front-page #sunglasses-section .sunglasses-section_main .sidebar h1, #duck-front-page .pre-footer-image .caption h3, #duck-front-page .pre-footer-image .caption p, .blog-title, .blog-slider-caption h1, .duck-slider-caption h3, .duck-slider-caption p, .blog-flexslider .flexslider ul li a h1, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h3, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption p, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h3, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption p, .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group input[type="email"] {
   font-family: 'Gibson-Light', arial, sans-serif !important; }
 
 .gibson-regular, body,
@@ -6113,7 +6113,7 @@ input[type="submit"]:not(.grey-button),
 .header-02 #primary-menu > .menu-item > a,
 .header-03 #primary-menu > .menu-item > a, .header-04 #primary-menu > .menu-item > a, .header-01 #primary-menu > ul > li > a,
 .header-02 #primary-menu > ul > li > a,
-.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .mini-cart .widget_shopping_cart .empty, .mini-cart .widget_shopping_cart .mini_cart_item a, .mini-cart .widget_shopping_cart .mini_cart_item .quantity, .mini-cart .widget_shopping_cart .mini_cart_item .quantity .amount, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #duck-front-page .pre-footer-image .caption h2, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a {
+.header-03 #primary-menu > ul > li > a, .header-04 #primary-menu > ul > li > a, .post-share-buttons .share-buttons-text, .full-layout .entry-meta time, .comments-area .comment-list .metadata .post-date, .comments-area .comment-respond .comment-form label, .form-row label, .mini-cart .widget_shopping_cart .empty, .mini-cart .widget_shopping_cart .mini_cart_item a, .mini-cart .widget_shopping_cart .mini_cart_item .quantity, .mini-cart .widget_shopping_cart .mini_cart_item .quantity .amount, .product .price span, .product-socials-wrapper span, .woocommerce-tabs .wc-tabs > li a, .woocommerce-checkout .woocommerce-checkout-review-order-table, .woocommerce-checkout .woocommerce-checkout-review-order-table th, .woocommerce-checkout .woocommerce-checkout-review-order-table td, .cart-empty .page-title, .shop_table.cart thead th, .coupon label, .celebwears-single .celebwears-single_share span:first-child, #duck-front-page .pre-footer-image .caption h2, .duck-blog article .post-meta .post-meta-date, #order_review_heading span, .duck-slider-caption h2, .duck-slider-caption .duck-slider-button, .home-flexslider .flexslider ul li .container.home-flexslider-desktop .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-desktop.sidebar .home-flexslider-caption h2, .home-flexslider .flexslider ul li .home-flexslider-mobile .home-flexslider-caption h2, .navigation-shop-mobile .duck-nav-links-wrapper .duck-nav-links a, .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-20 {
   font-family: 'Gibson-SemiBold', arial, sans-serif !important; }
 
 .gibson-bold {
@@ -6145,7 +6145,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: normal !important; }
 
-h1:not(.blog-flexslider-title):not(.home-flexslider-title):not(.duck-collection-header-title) {
+h1:not(.blog-flexslider-title):not(.home-flexslider-title):not(.duck-collection-header-title):not(.lookbooks-all-title) {
   color: #4C4C4C !important; }
 
 h2 {
@@ -6599,7 +6599,9 @@ select:focus {
     font-size: 25px;
     line-height: 25px; }
   .full-screen-search-container .search-form .search-submit {
-    display: none; }
+    position: absolute;
+    left: 0;
+    opacity: 0; }
   .full-screen-search-container.open {
     visibility: visible;
     opacity: 1; }
@@ -11466,7 +11468,7 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     .sicky-crew-all li {
       background-position: center center !important; } }
   .sicky-crew-all li .sicky-crew-member {
-    padding: 180px 0 90px 0; }
+    padding: 300px 0 90px 0; }
     .sicky-crew-all li .sicky-crew-member span {
       display: block;
       font-size: 34px; }
@@ -11508,6 +11510,10 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
   background-size: cover; }
   .lookbooks-all li .lookbooks-all_single {
     padding: 530px 0 80px 0; }
+    .lookbooks-all li .lookbooks-all_single h1 {
+      font-size: 42px;
+      text-transform: uppercase;
+      color: #ffffff; }
 
 .lookbooks-single .lookbooks-single_hero {
   height: 620px;
@@ -11674,6 +11680,13 @@ body.boxed .navigation-shop.container, body.boxed .navigation-shop.sidebar {
     .duck-collection-filter-list .widget {
       width: 16.66%;
       display: table-cell; } }
+
+.menu-item-has-children > a:after {
+  content: '\f22d';
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: -13px;
+  bottom: -4px; }
 
 .sticky-promo-cta-wrapper {
   position: fixed;
@@ -12626,6 +12639,9 @@ html[xmlns] .flexslider .slides {
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
 
+.slick-track {
+  margin: 0 auto; }
+
 .navigation-shop-mobile .product_list_widget {
   display: none !important; }
 
@@ -12695,3 +12711,127 @@ input:-webkit-autofill {
 @media (min-width: 1024px) {
   .product.type-product {
     margin-top: 60px; } }
+
+.duck-newsletter-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(216, 18, 15, 0.73);
+  z-index: 999999999;
+  display: none; }
+  .duck-newsletter-popup .duck-newsletter-popup-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    max-width: 800px;
+    height: 92%;
+    text-align: center;
+    background-color: #fff;
+    background-image: url(../img/popup-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    overflow: scroll; }
+    @media (min-width: 1024px) {
+      .duck-newsletter-popup .duck-newsletter-popup-inner {
+        max-height: 80%;
+        height: auto; } }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .duck-popup-close-top {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fc3c3b; }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-center-mobile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 50px; }
+      @media (min-width: 1024px) {
+        .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-center-mobile {
+          position: static;
+          top: auto;
+          left: auto;
+          right: auto;
+          bottom: auto;
+          padding: 0;
+          transform: translate(0, 0); } }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter_logo {
+      width: 74px;
+      margin: 0 auto 20px auto; }
+      .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter_logo img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .duck-newsletter-popup .duck-newsletter-popup-inner h3 {
+      color: #000 !important;
+      font-size: 28px !important;
+      letter-spacing: 1px; }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-20 {
+      display: block;
+      font-size: 50px;
+      line-height: 70px; }
+      @media (min-width: 1024px) {
+        .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-20 {
+          font-size: 100px;
+          line-height: 100px; } }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-text {
+      font-size: 19px; }
+      @media (min-width: 1024px) {
+        .duck-newsletter-popup .duck-newsletter-popup-inner .duck-newsletter-text {
+          font-size: 30px; } }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group {
+      position: relative;
+      width: 100%;
+      margin: 20px auto 0 auto;
+      max-width: 540px; }
+      .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group input[type="email"] {
+        width: 100%;
+        border: 2px solid #fc3c3b;
+        margin: 0;
+        padding: 5px 12px 0 12px;
+        background: transparent;
+        margin-bottom: 12px; }
+        @media (min-width: 1024px) {
+          .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group input[type="email"] {
+            float: left;
+            padding: 5px 200px 0 12px;
+            margin-bottom: 0; } }
+      .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group input[type="submit"]:focus {
+        outline: none; }
+      @media (min-width: 1024px) {
+        .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group input[type="submit"] {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 40px; } }
+      .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group a {
+        display: block;
+        font-size: 12px;
+        opacity: .6;
+        text-decoration: underline;
+        font-style: italic;
+        margin-top: 10px; }
+        @media (min-width: 1024px) {
+          .duck-newsletter-popup .duck-newsletter-popup-inner .mc-field-group a {
+            position: absolute;
+            right: 37px;
+            bottom: -23px;
+            margin-top: 0; } }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .mce_inline_error {
+      clear: both; }
+    .duck-newsletter-popup .duck-newsletter-popup-inner #mce-success-response,
+    .duck-newsletter-popup .duck-newsletter-popup-inner #mce-error-response {
+      margin-top: 30px; }
+    .duck-newsletter-popup .duck-newsletter-popup-inner .close-duck-popup {
+      color: #fc3c3b;
+      text-decoration: underline;
+      font-style: italic;
+      display: none;
+      font-size: 13px; }
