@@ -118,14 +118,14 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
         <h3>Share our vision.</h3>
         <span class="duck-newsletter-text">Join in the creative pursuit with us and get</span>
         <span class="duck-newsletter-20">20% OFF</span>
-        <span class="duck-newsletter-text">off your first pair of frames.</span>
+        <span class="duck-newsletter-text">your first pair of frames.</span>
           <!-- Begin MailChimp Signup Form -->
           <div id="mc_embed_signup">
           <form action="//sickysworld.us6.list-manage.com/subscribe/post?u=c7c2970520d9777ddd5f5f245&amp;id=1f12d1e387" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
             <div class="mc-field-group">
             	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address" />
-              <input type="submit" value="GIMME, GIMMME" name="subscribe" id="mc-embedded-subscribe" class="button" />
+              <input type="submit" value="GIMME, GIMME" name="subscribe" id="mc-embedded-subscribe" class="button" />
               <a href="javascript:;" class="js-close-duck-popup nah-full-price">Nah, I like to pay full price</a>
             </div>
           	<div id="mce-responses" class="clear">
