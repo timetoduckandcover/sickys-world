@@ -3,6 +3,16 @@
   margin: 0 auto;
 }
 
+.almost-sold-out {
+  color: #d8120f;
+  padding-left: 30px;
+  vertical-align: middle;
+}
+
+.product-summary .quantity {
+  display: none !important;
+}
+
 // Top navigation
 .navigation-shop-mobile {
   .product_list_widget {
@@ -42,6 +52,10 @@
 // Related products
 .related {
   margin-bottom: 60px;
+  padding: 0 30px;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
   .yit-wcan-container {
     padding: 0 20px;
     @include media-breakpoint-up(md) {

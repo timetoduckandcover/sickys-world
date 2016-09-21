@@ -62,3 +62,72 @@ function t5_strip_leading_zeros_in_url( $url )
 function woocommerce_output_related_products() {
   woocommerce_related_products(3,1);
 }
+
+// Change yoast SEO sitemap frequency
+add_filter( 'wpseo_sitemap_product_single_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_homepage_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_blogpage_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_post_single_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_product_archive_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_page_single_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_product_brand_term_change_freq', 'my_custom_freq', 10, 2 );
+add_filter( 'wpseo_sitemap_product_cat_term_change_freq', 'my_custom_freq', 10, 2 );
+function my_custom_freq( $default, $url ) {
+  return 'daily';
+}
+
+/**
+ * Adds product images to the WooCommerce order emails table
+ * Uses WooCommerce 2.5 or newer
+ *
+ * @param string $output the buffered email order items content
+ * @param \WC_Order $order
+ * @return $output the updated output
+ */
+function sww_add_images_woocommerce_emails( $output, $order ) {
+
+	// set a flag so we don't recursively call this filter
+	static $run = 0;
+
+	// if we've already run this filter, bail out
+	if ( $run ) {
+		return $output;
+	}
+
+	$args = array(
+		'show_image'   	=> true,
+		'image_size'    => array( 100, 100 ),
+	);
+
+	// increment our flag so we don't run again
+	$run++;
+
+	// if first run, give WooComm our updated table
+	return $order->email_order_items_table( $args );
+}
+add_filter( 'woocommerce_email_order_items_table', 'sww_add_images_woocommerce_emails', 10, 2 );
+
+
+/**
+ *Reduce the strength requirement on the woocommerce password.
+ *
+ * Strength Settings
+ * 3 = Strong (default)
+ * 2 = Medium
+ * 1 = Weak
+ * 0 = Very Weak / Anything
+ */
+function reduce_woocommerce_min_strength_requirement( $strength ) {
+    return 1;
+}
+add_filter( 'woocommerce_min_password_strength', 'reduce_woocommerce_min_strength_requirement' );
+
+/**
+ * Add discount code to admin-new-order.php template
+ */
+add_action( 'woocommerce_email_after_order_table', 'add_discount_info', PHP_INT_MAX, 3 );
+function add_discount_info( $_order, $sent_to_admin, $plain_text ) {
+   if ( true === $sent_to_admin && 0 != $_order->get_total_discount() ) {
+       echo '<p>' . 'Discount: ' . $_order->get_discount_to_display() . '</p>';
+   }
+}

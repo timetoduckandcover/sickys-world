@@ -312,7 +312,7 @@ body.boxed {
     .single_add_to_cart_button {
         height: 50px;
         padding: 0 60px;
-        vertical-align: top;
+        vertical-align: middle;
     }
     .yith-wcwl-add-to-wishlist {
         display: block;
@@ -601,6 +601,9 @@ body.boxed {
                 &:after {
                     @extend %fontawesome;
                     font-size: 17px;
+                }
+                &.active {
+                  color: #ffd700;
                 }
             }
             &.star-1 {

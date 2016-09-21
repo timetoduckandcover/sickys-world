@@ -93,11 +93,11 @@ jQuery( document ).ready( function( $ ) {
     } );
 
     // Mobile Menu
-    $('.mobile-menu .mobile-menu-toggle').on('click', function () {
-        $(this).parent('.menu-item').toggleClass('open');
-
-        return false;
+    $('.mobile-menu-toggle').on('click', function () {
+      $(this).parent('.menu-item').toggleClass('open');
+      return false;
     });
+
 
     // Search
     var $searchContainer = $( '.full-screen-search-container ');

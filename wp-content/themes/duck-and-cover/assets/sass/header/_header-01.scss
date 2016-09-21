@@ -37,6 +37,20 @@
     }
 }
 
+#header {
+  .row {
+    position: relative;
+  }
+  .mobile-right {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    @include media-breakpoint-up(sm) {
+      position: static;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
     .header-01 {
         .header-item {

@@ -11,6 +11,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+?>
+
+<div class="col-xs-12" style="margin:20px 0;clear: both;">
+	<script src="//foursixty.com/media/scripts/fs.slider.v2.js" data-feed-id="sickysworld"  data-theme="slider_v2" data-cell-size="33.333%" data-for-url="true"></script><style>div.fs-has-links { text-indent: -9999px; position: static; font-weight: 500; } .fs-has-links::after {  padding: 10px 15px; background-color: #fff; color: rgba(255, 0, 0, 0.8); content: "SHOP IT"; text-indent: 0; display: block; font-size: 10pt; margin: 10px; }.fs-wrapper { height: auto } .fs-entry-container { height: 0 !important; width: 33.333% !important; padding-top: 33.333% !important; }.fs-desktop .fs-timeline-entry div.fs-text-container { display: flex; flex-direction: column;align-items: center; justify-content: center; display: -webkit-flex;  -webkit-flex-direction: column;  -webkit-align-items: center;  -webkit-justify-content: center;  display: -ms-flexbox;  -ms-flex-direction: column;  -ms-flex-align: center;  -ms-flex-pack: center; transition: opacity .25s; } .fs-desktop .fs-timeline-entry .fs-text-container:hover { opacity: 1; } .fs-wrapper div.fs-text-container .fs-entry-title, div.fs-detail-title{font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:italic;font-weight:normal;}div.fs-text-container .fs-entry-date, div.fs-detail-container .fs-post-info, div.fs-wrapper div.fs-has-links::after, .fs-text-product, .fs-overlink-text{font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-style:normal;font-weight:bold;}.fs-slider-next-button, .fs-slider-prev-button { opacity: 1; }.fs-wrapper div.fs-text-container * {color:#fff}.fs-wrapper div.fs-text-container {background-color:rgba(255, 0, 0, 0.8); margin: 0px}div.fs-entry-date{display:none}div.fs-entry-title{display:none}.fs-wrapper div.fs-timeline-entry{ margin: 1px }</style>
+</div>
+
+<?php
+
 /**
  * Filter tabs and allow third parties to add their own
  *

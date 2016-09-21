@@ -22,7 +22,7 @@
             text-transform: uppercase;
         }
         .mini_cart_item {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             a {
                 //font-weight: 400;
                 text-transform: uppercase;
@@ -36,6 +36,10 @@
             img {
                 float: left;
                 margin-right: 20px;
+                width: 60px;
+                @include media-breakpoint-up(sm) {
+                  width: 100px;
+                }
             }
             .quantity {
                 display: block;
@@ -55,6 +59,14 @@
             text-align: center;
             a {
                 margin: 0 3px;
+                &:first-child {
+                  margin: 0 3px 12px 3px;
+                  @include media-breakpoint-up(sm) {
+                    &:first-child {
+                      margin: 0 3px;
+                    }
+                  }
+                }
             }
         }
     }

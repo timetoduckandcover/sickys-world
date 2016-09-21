@@ -100,7 +100,9 @@ table {
         > tr {
           > th,
           > td {
-            white-space: nowrap;
+            @include media-breakpoint-up(sm) {
+              white-space: nowrap;
+            }
           }
         }
       }

@@ -56,6 +56,7 @@ jQuery(document).ready(function ($) {
         'overflow-y': 'auto',
         'transition': speed + 's',
         'z-index': zIndexMenu,
+        'overflow-x': 'hidden'
     });
 
     //Si es derecho

@@ -21,6 +21,9 @@
 
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+    <!-- Load jQuery before any other scripts -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
     <?php wp_head(); ?>
 
     <!-- Google Analytics -->
@@ -202,8 +205,8 @@ $facewp_core->set( 'facewp_abbey_sidebar', facewp_abbey_get_sidebar() );
         } ;?>
         <div class="duck-collection-header" style="background-image:url(<?php echo $image ;?>);">
             <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-              <div class="container">
-                <h1 class="page-title duck-collection-header-title"><?php woocommerce_page_title(); ?></h1>
+              <div class="container" style="text-align: center;">
+                <span class="page-title duck-collection-header-title"><?php woocommerce_page_title(); ?></span>
                 <div class="duck-collection-description">
                   <div class="container">
                     <?php

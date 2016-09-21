@@ -13,6 +13,21 @@
   }
 }
 
+.shop_table {
+  .cart_item {
+    .product-name {
+      a {
+        &:last-child {
+          display: block;
+          @include media-breakpoint-up(sm) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
 .woocommerce-checkout-review-order {
   .product-name {
     width: 50%;

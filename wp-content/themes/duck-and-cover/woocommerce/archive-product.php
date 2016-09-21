@@ -30,6 +30,21 @@ get_header( 'shop' ); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<div class="container breadcrumb-row">
+				<?php
+					// vars
+					$queried_object = get_queried_object();
+					$taxonomy = $queried_object->taxonomy;
+					$term_id = $queried_object->term_id;
+
+					// load desc for this taxonomy term (term object)
+					$thumbnail = get_field('h1_tag', $queried_object);
+
+					// load desc for this taxonomy term (term string)
+					$thumbnail = get_field('h1_tag', $taxonomy . '_' . $term_id);
+					?>
+				<h1>
+				<?php the_field( 'h1_tag', $queried_object ); ?>
+				</h1>
 					<div class="row">
 							<div class="col-md-7 start-xs duck-collection-breadcrumbs">
 									<?php if ( Kirki::get_option( 'facewp', 'site_breadcrumb_enable' ) == 1 ) : ?>
@@ -91,5 +106,23 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
+
+	<?php
+		// vars
+		$queried_object = get_queried_object();
+		$taxonomy = $queried_object->taxonomy;
+		$term_id = $queried_object->term_id;
+
+		// load desc for this taxonomy term (term object)
+		$thumbnail = get_field('category_copy', $queried_object);
+
+		// load desc for this taxonomy term (term string)
+		$thumbnail = get_field('category_copy', $taxonomy . '_' . $term_id);
+		?>
+		<div class="col-xs-12">
+			<div class="text-center" style="max-width:640px;width:100%;margin:20px auto 60px auto;">
+				<?php the_field( 'category_copy', $queried_object ); ?>
+			</div>
+		</div>
 
 <?php get_footer( 'shop' ); ?>

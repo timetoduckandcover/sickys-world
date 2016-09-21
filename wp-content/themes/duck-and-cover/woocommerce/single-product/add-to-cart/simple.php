@@ -24,7 +24,7 @@ if ( ! $product->is_purchasable() ) {
 	$availability      = $product->get_availability();
 	$availability_html = empty( $availability['availability'] ) ? '' : '<p class="stock ' . esc_attr( $availability['class'] ) . '">' . esc_html( $availability['availability'] ) . '</p>';
 
-	echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
+	//echo apply_filters( 'woocommerce_stock_html', $availability_html, $availability['availability'], $product );
 ?>
 
 <?php if ( $product->is_in_stock() ) : ?>
@@ -45,8 +45,16 @@ if ( ! $product->is_purchasable() ) {
 	 	?>
 
 	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-
 	 	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		<span class="almost-sold-out">
+			<?php
+				global $product;
+				$numleft = $product->get_stock_quantity();
+				if($numleft<10) {
+					echo "Almost Sold Out!";
+				}
+			?>
+		</span>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

@@ -212,16 +212,16 @@
         display: none; // Hide for now
       }
       &:after {
-        height: 180px;
+        height: 260px;
         width: 147%;
-        bottom: -59px;
+        bottom: -60px;
         left: -14px;
         transform: rotate(4deg);
         background: #fff;
         outline: 1px solid transparent; // fixes jagged edges in safari
         -webkit-backface-visibility: hidden; // fixes jagged edges in safari
         @media(min-width:1200px) {
-          height: 153px;
+          height: 211px;
           bottom: -104px;
         }
       }
