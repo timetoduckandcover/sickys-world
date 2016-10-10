@@ -682,6 +682,21 @@ jQuery( document ).ready( function( $ ) {
   $('.blog-flexslider').flexslider();
   $('.home-flexslider').flexslider();
 
+  // Remove nav on landing page
+  var body = $('body');
+  if(body.hasClass('page-template-page-landing')) {
+    $('.menu-primary-menu-container').hide();
+  }
+
+  $('#mobile-expand-filters').on('click', function() {
+    $('.duck-collection-filter-list .sidebar').slideToggle();
+    if($('.mobile-expand-filters-i').hasClass('fa-chevron-down')) {
+      $('.mobile-expand-filters-i').addClass('fa-chevron-up').removeClass('fa-chevron-down');
+    } else {
+      $('.mobile-expand-filters-i').addClass('fa-chevron-down').removeClass('fa-chevron-up');
+    }
+  });
+
   // Duck popup
   function checkIfPopupSeen() {
     if(localStorage.getItem('duckPopupSeen') === null) {

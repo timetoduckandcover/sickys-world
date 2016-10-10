@@ -6,6 +6,7 @@
   margin-bottom: -77px;
   @include media-breakpoint-up(sm) {
     margin-bottom: -71px;
+    //padding: 70px 15px;
   }
   @include media-breakpoint-up(md) {
     margin-top: 71px;
@@ -31,6 +32,7 @@
   margin: 0 auto;
   color: #fff;
   text-align: center;
+  //display: none;
 }
 
 .yith-woocommerce-ajax-product-filter {
@@ -86,6 +88,28 @@
 }
 
 .duck-collection-filter-list {
+  #mobile-expand-filters {
+    display: block;
+    background: #ddd;
+    padding: 12px 32px 10px 32px;
+    font-size: 20px;
+    text-align: center;
+    i {
+      padding-left: 6px;
+      font-size: 15px;
+      vertical-align: middle;
+      margin-top: -3px;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+  .sidebar {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
   .widget {
     width: 100%;
     @include media-breakpoint-up(md) {
