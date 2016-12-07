@@ -37,6 +37,14 @@ if ( $order ) : ?>
         email: '<?php echo $current_user->user_email; ?>' //INPUT EMAIL
       }
     ]);
+
+fbq('track', 'Purchase', {
+
+value: 247.35,
+
+currency: 'USD'
+
+});
   </script>
 
 	<?php if ( $order->has_status( 'failed' ) ) : ?>
