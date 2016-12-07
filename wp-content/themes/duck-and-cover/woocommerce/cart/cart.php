@@ -14,7 +14,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 ?>
+<script>
+fbq('track', 'AddToCart', {
+value: 3.50,
+currency: 'USD'
+});
 
+</script>
 <div class="container cart_container" id="cart">
     <?php do_action( 'woocommerce_before_cart' ); ?>
 		<h2 class="header-2 uppercase">Your Cart</h2>
