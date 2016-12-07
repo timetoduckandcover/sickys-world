@@ -5,8 +5,8 @@ function facewp_abbey_scripts() {
     wp_enqueue_style( 'facewp-pe-icon-7-stroke', FaceWP_Abbey_THEME_URL . '/assets/lib/pe-icon-7-stroke/css/pe-icon-7-stroke.css' );
     wp_enqueue_style( 'facewp-style-font-awesome', FaceWP_Abbey_THEME_URL . '/assets/lib/font-awesome/css/font-awesome.min.css' );
     //todo: fix kirki load font. remove when done.
-    wp_enqueue_style( 'facewp-style-font-lato', 'https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' );
-    wp_enqueue_style( 'facewp-style-font-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
+    // wp_enqueue_style( 'facewp-style-font-lato', 'https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' );
+    // wp_enqueue_style( 'facewp-style-font-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,700' );
 
     // Slide Menu
     wp_enqueue_script( 'slide-menu', FaceWP_Abbey_THEME_URL . '/assets/lib/slide-menu.js', array( 'jquery' ), null, true );
@@ -47,7 +47,7 @@ function facewp_abbey_scripts() {
     wp_enqueue_script( 'fitvids', FaceWP_Abbey_THEME_URL . '/assets/lib/fitvids/fitvids.js', array( 'jquery' ), null, true );
 
     // Google Maps
-    wp_register_script( 'googleapis', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', array(), null , false );
+    //wp_register_script( 'googleapis', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', array(), null , false );
 
     if( ! is_single() ) {
         wp_dequeue_script( 'jm_like_post' );
@@ -59,7 +59,7 @@ function facewp_abbey_scripts() {
     wp_enqueue_style( 'facewp-style', FaceWP_Abbey_THEME_URL . '/style.css' );
     wp_enqueue_style( 'facewp-main', FaceWP_Abbey_THEME_URL . '/assets/css/main.css' );
 
-    wp_enqueue_script( 'facewp-js-main', FaceWP_Abbey_THEME_URL . '/assets/js/main.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'facewp-js-main', FaceWP_Abbey_THEME_URL . '/assets/js/main.js?v=0.1', array( 'jquery' ), null, true );
     wp_localize_script( 'facewp-js-main', 'facewp_abbey_params', array(
         'ajax_url'         => esc_js( admin_url( 'admin-ajax.php' ) ),
         'wc_ajax_url'      => class_exists( 'WooCommerce' ) && version_compare( WC_VERSION, '2.4', '>=' ) ? WC_AJAX::get_endpoint( "%%endpoint%%" ) : '',

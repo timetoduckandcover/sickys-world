@@ -37,7 +37,7 @@ jQuery( document ).ready( function( $ ) {
     });
 
     // Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
+    //$('[data-toggle="tooltip"]').tooltip();
 
     // Height Home 6
     $('#header.header-06' ).css("height", $( window ).height());
@@ -128,16 +128,16 @@ jQuery( document ).ready( function( $ ) {
     });
 
     //Masonry for Gallery Post
-    var $grid = $( ".post-gallery.masonry" ).masonry( {
-        itemSelector: '.thumb-masonry-item',
-        columnWidth: '.grid-thumb-sizer',
-        percentPosition: true,
-        gutter: 3
-    } );
+    // var $grid = $( ".post-gallery.masonry" ).masonry( {
+    //     itemSelector: '.thumb-masonry-item',
+    //     columnWidth: '.grid-thumb-sizer',
+    //     percentPosition: true,
+    //     gutter: 3
+    // } );
 
-    $grid.imagesLoaded().progress( function() {
-        $grid.masonry( 'layout' );
-    } )
+    // $grid.imagesLoaded().progress( function() {
+    //     $grid.masonry( 'layout' );
+    // } )
 
     // WooCommerce Message
     if ($('.woocommerce-message').length) {
@@ -342,19 +342,19 @@ jQuery( document ).ready( function( $ ) {
     }
 
     // Masonry
-    $('.masonry').each(function(){
-        var $masonry = $(this);
-
-        $masonry.isotope({
-            resizable: false,
-            itemSelector : 'li',
-            layoutMode: 'masonry',
-            transitionDuration: '0.6s',
-            masonry: {
-                gutter: 30
-            },
-        });
-    });
+    // $('.masonry').each(function(){
+    //     var $masonry = $(this);
+    //
+    //     $masonry.isotope({
+    //         resizable: false,
+    //         itemSelector : 'li',
+    //         layoutMode: 'masonry',
+    //         transitionDuration: '0.6s',
+    //         masonry: {
+    //             gutter: 30
+    //         },
+    //     });
+    // });
      var $window = $( window );
      // Scroll up
      var $scrollup = $( '.scrollup' );
@@ -488,6 +488,14 @@ jQuery( document ).ready( function( $ ) {
 
 // D & C
 jQuery( document ).ready( function( $ ) {
+
+  // On 'add to cart' button click
+  $('.single_add_to_cart_button').on('click', function() {
+    fbq('track', 'AddToCart', {
+      value: 3.50,
+      currency: 'USD'
+    });
+  });
 
   // Fade in CTA
   setTimeout(function() {
@@ -708,10 +716,10 @@ jQuery( document ).ready( function( $ ) {
   };
   checkIfPopupSeen();
 
-  window.mc.ajaxOptions.complete = function() {
-    $('.nah-full-price').hide();
-    $('.close-duck-popup').show();
-  };
+  // window.mc.ajaxOptions.complete = function() {
+  //   $('.nah-full-price').hide();
+  //   $('.close-duck-popup').show();
+  // };
 
   $('.js-close-duck-popup').on('click', function() {
     $('.duck-newsletter-popup').fadeOut();

@@ -21,6 +21,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $order ) : ?>
 
+	<!-- FB Tracking pixel -->
+	<script>
+		fbq('track', 'Purchase', {
+			value: 247.35,
+			currency: 'USD'
+		});
+	</script>
+	<!-- END FB Tracking pixel -->
+
   <!-- Friendbuy's Conversion Tracker -->
   <?php _e( 'Order Number:', 'woocommerce' ); ?>
   <?php _e( 'Total:', 'woocommerce' ); ?>

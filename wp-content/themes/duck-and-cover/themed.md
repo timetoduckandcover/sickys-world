@@ -1,3 +1,6 @@
+<!-- <?php dynamic_sidebar('Mailchimp Signup');?> -->
+
+
 // Grid change buttons in archive-product.php
 <?php if ( have_posts() ) : ?>
     <div class="col-md-3 col-md-push-2 end-xs duck-collection-dropdowns">

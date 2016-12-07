@@ -16,10 +16,16 @@ Template Name: Landing Page
       					$image_size = 'full-size';
       					$image_array = wp_get_attachment_image_src($image_id, $image_size);
       					$image_url = $image_array[0];
+                $emptyimage = get_field('image');
     					?>
+
               <div class="landing-page-hero">
-                <img src="<?php echo $image_url; ?>" alt="" class="img-full" />
-                <h1 class="duck-collection-header-title"><?php the_field('hero_title');?></h1>
+                <?php if( !empty($emptyimage) ): ?>
+                  <img src="<?php echo $image_url; ?>" alt="" class="img-full" />
+                <?php endif; ?>
+                <?php if( get_field('hero_title') ): ?>
+                  <h1 class="duck-collection-header-title"><?php the_field('hero_title');?></h1>
+                <?php endif; ?>
               </div>
 
               <div class="wrapper wrapper-padded">
