@@ -13,7 +13,7 @@
         <div class="col-xs-12">
           <ul class="footer-social">
             <li>
-              <a href="https://www.instagram.com/sickysworld/" target="_blank">
+              <a href="https://www.instagram.com/sicky/" target="_blank">
                 <i class="fa fa-instagram"></i>
               </a>
             </li>
