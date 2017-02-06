@@ -85,7 +85,7 @@ if ( ! $facewp_abbey_logo && ! $facewp_abbey_woocommerce_exists ) {
                 <div class="header-social">
                   <ul>
                     <li class="instagram">
-                      <a href="https://www.instagram.com/sickysworld/" target="_blank"><i class="fa fa-instagram"></i></a>
+                      <a href="https://www.instagram.com/sicky/" target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                     <li class="twitter">
                       <a href="https://twitter.com/SickysWorld" target="_blank"><i class="fa fa-twitter"></i></a>
